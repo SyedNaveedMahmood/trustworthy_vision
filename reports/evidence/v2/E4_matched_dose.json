@@ -1,0 +1,1975 @@
+{
+  "cells": {
+    "gqa/internvl/blur12/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.20918325069352509,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 4.983675444600471,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/internvl/blur12/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.0212717441385863,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 6.757068962866472,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/internvl/blur36/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.3035743233704332,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 4.908757971890798,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/internvl/blur36/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.04572360388085981,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 6.352210372430408,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/internvl/mask075/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": -0.10730465468903919,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.6,
+      "pooled_region_auroc": 0.6,
+      "pooled_region_auroc_ci95": [
+        0.2,
+        1.0
+      ],
+      "positive_mean": 1.6871625386604485,
+      "ranking_accuracy": 0.6,
+      "ranking_ci95": [
+        0.2,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/internvl/mask075/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": -0.06728367170658874,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.6,
+      "pooled_region_auroc": 0.6,
+      "pooled_region_auroc_ci95": [
+        0.2,
+        1.0
+      ],
+      "positive_mean": 1.682592465236845,
+      "ranking_accuracy": 0.6,
+      "ranking_ci95": [
+        0.2,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/internvl/mask125/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.010791669934595127,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 6.283447282195789,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/internvl/mask125/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 1.036042704665967,
+      "negative_score_gt_1_rate": 0.6,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 7.314860036671513,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/blur12/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.0656018296193559,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 5.012260176982498,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/blur12/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.027373348938378773,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 5.53967628471895,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/blur36/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.23776567252433906,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 4.91205986804359,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/blur36/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.14081023153093328,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 5.376152594503074,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/mask075/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.07765945133454925,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 3.3949171000633074,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/mask075/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.07307406196657915,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 0.92,
+      "pooled_region_auroc_ci95": [
+        0.76,
+        1.0
+      ],
+      "positive_mean": 3.4312762199967963,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/mask125/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.2984632701649307,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.8,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 5.2350923959785565,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/qwen/mask125/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.3373322868471682,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 5.874978114450224,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/blur12/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": -0.2644310685359403,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.92,
+      "pooled_region_auroc_ci95": [
+        0.52,
+        1.0
+      ],
+      "positive_mean": 2.824215419999981,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/blur12/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.10809249840861032,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.4,
+      "pooled_region_auroc": 0.56,
+      "pooled_region_auroc_ci95": [
+        0.0,
+        0.96
+      ],
+      "positive_mean": 1.4236112175308628,
+      "ranking_accuracy": 0.4,
+      "ranking_ci95": [
+        0.0,
+        0.8
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/blur36/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": -0.39563483074789946,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 0.96,
+      "pooled_region_auroc_ci95": [
+        0.84,
+        1.0
+      ],
+      "positive_mean": 2.7415328738352116,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/blur36/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.06099200447908335,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.6,
+      "pooled_region_auroc": 0.64,
+      "pooled_region_auroc_ci95": [
+        0.12,
+        1.0
+      ],
+      "positive_mean": 1.386683879472777,
+      "ranking_accuracy": 0.6,
+      "ranking_ci95": [
+        0.2,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/mask075/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": -0.19499133079648118,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 0.96,
+      "pooled_region_auroc_ci95": [
+        0.84,
+        1.0
+      ],
+      "positive_mean": 1.2821631702046101,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/mask075/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.22283560219322168,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.4,
+      "pooled_region_auroc": 0.4,
+      "pooled_region_auroc_ci95": [
+        0.0,
+        0.8
+      ],
+      "positive_mean": 0.27793334910552653,
+      "ranking_accuracy": 0.4,
+      "ranking_ci95": [
+        0.0,
+        0.8
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/mask125/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": -0.09414524901560248,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 0.96,
+      "pooled_region_auroc_ci95": [
+        0.84,
+        1.0
+      ],
+      "positive_mean": 3.1291145533393654,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "gqa/smol/mask125/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "1159758",
+        "2346628",
+        "2370398",
+        "2403045",
+        "2330750"
+      ],
+      "n": 5,
+      "negative_mean": 0.05583749729107146,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.6,
+      "pooled_region_auroc": 0.64,
+      "pooled_region_auroc_ci95": [
+        0.32,
+        0.96
+      ],
+      "positive_mean": 1.4173548410928007,
+      "ranking_accuracy": 0.6,
+      "ranking_ci95": [
+        0.2,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/blur12/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -1.8764330041823,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 6.659650489610405,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/blur12/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.05387513020374275,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 6.63808764102493,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/blur36/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -2.2531560015550376,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 6.850270865750008,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/blur36/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.007052258659560629,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 7.657777547703754,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/mask075/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.9012532862325081,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.84,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 4.816150041631368,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/mask075/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.10347707401591144,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 6.814419381932325,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/mask125/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -2.3494807745416706,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 6.660287660557842,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/internvl/mask125/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.854155819638617,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.92,
+      "pooled_region_auroc_ci95": [
+        0.52,
+        1.0
+      ],
+      "positive_mean": 7.511202805391244,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/blur12/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.36723145295477694,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.92,
+      "pooled_region_auroc_ci95": [
+        0.52,
+        1.0
+      ],
+      "positive_mean": 3.081538111935661,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/blur12/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.3378710375867871,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 0.4,
+      "pooled_region_auroc": 0.68,
+      "pooled_region_auroc_ci95": [
+        0.04,
+        0.96
+      ],
+      "positive_mean": 2.013086817015659,
+      "ranking_accuracy": 0.4,
+      "ranking_ci95": [
+        0.0,
+        0.8
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/blur36/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.4202583689195459,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.92,
+      "pooled_region_auroc_ci95": [
+        0.52,
+        1.0
+      ],
+      "positive_mean": 3.1325535769163144,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/blur36/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.48689871167089127,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 0.4,
+      "pooled_region_auroc": 0.68,
+      "pooled_region_auroc_ci95": [
+        0.04,
+        0.96
+      ],
+      "positive_mean": 2.0581086949056995,
+      "ranking_accuracy": 0.4,
+      "ranking_ci95": [
+        0.0,
+        0.8
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/mask075/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.46138422523367223,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 1.0,
+      "pooled_region_auroc_ci95": [
+        1.0,
+        1.0
+      ],
+      "positive_mean": 2.414852948226561,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/mask075/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.07280213105284279,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.6,
+      "pooled_region_auroc": 0.6,
+      "pooled_region_auroc_ci95": [
+        0.12,
+        1.0
+      ],
+      "positive_mean": 1.1211526192431376,
+      "ranking_accuracy": 0.6,
+      "ranking_ci95": [
+        0.2,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/mask125/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.04626127433429437,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.92,
+      "pooled_region_auroc_ci95": [
+        0.52,
+        1.0
+      ],
+      "positive_mean": 3.169424619294243,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/qwen/mask125/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.8500009367368883,
+      "negative_score_gt_1_rate": 0.4,
+      "pairwise_auroc": 0.4,
+      "pooled_region_auroc": 0.6,
+      "pooled_region_auroc_ci95": [
+        0.04,
+        0.96
+      ],
+      "positive_mean": 1.8807179223869412,
+      "ranking_accuracy": 0.4,
+      "ranking_ci95": [
+        0.0,
+        0.8
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.1176182311592533,
+        0.769280067791163
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/blur12/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.19062149021715663,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.68,
+      "pooled_region_auroc_ci95": [
+        0.36,
+        1.0
+      ],
+      "positive_mean": 0.4630549374111679,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/blur12/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.4012943484432821,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.72,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 1.014289507498186,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/blur36/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.22714069743969945,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 1.0,
+      "pooled_region_auroc": 0.76,
+      "pooled_region_auroc_ci95": [
+        0.68,
+        1.0
+      ],
+      "positive_mean": 0.5471638808559416,
+      "ranking_accuracy": 1.0,
+      "ranking_ci95": [
+        1.0,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.5655085052479191,
+        1
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.8
+        ],
+        "effect": 0.4,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/blur36/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.40995550527331004,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.72,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 1.0758527010299872,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/mask075/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.0977810579864761,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.6,
+      "pooled_region_auroc": 0.68,
+      "pooled_region_auroc_ci95": [
+        0.32,
+        1.0
+      ],
+      "positive_mean": 0.33244188567649413,
+      "ranking_accuracy": 0.6,
+      "ranking_ci95": [
+        0.2,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.23071993220883708,
+        0.8823817688407467
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.8,
+          0.0
+        ],
+        "effect": -0.4,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/mask075/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.16191440957780193,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.68,
+      "pooled_region_auroc_ci95": [
+        0.28,
+        1.0
+      ],
+      "positive_mean": 0.7575990612230664,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/mask125/gold": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": -0.3404699000953772,
+      "negative_score_gt_1_rate": 0.0,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.72,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 0.40491042326209126,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          -0.6,
+          0.0
+        ],
+        "effect": -0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    },
+    "refcocog/smol/mask125/predicted": {
+      "bootstrap_unit": "image pairs; same indices for every method/model",
+      "image_ids": [
+        "160628",
+        "385401",
+        "220471",
+        "218603",
+        "275625"
+      ],
+      "n": 5,
+      "negative_mean": 0.38414338004865034,
+      "negative_score_gt_1_rate": 0.2,
+      "pairwise_auroc": 0.8,
+      "pooled_region_auroc": 0.72,
+      "pooled_region_auroc_ci95": [
+        0.4,
+        1.0
+      ],
+      "positive_mean": 1.22167127016766,
+      "ranking_accuracy": 0.8,
+      "ranking_ci95": [
+        0.4,
+        1.0
+      ],
+      "replicates": 2000,
+      "seed": 20269,
+      "supplementary_wilson_ci95_tie_free": [
+        0.3755282641185388,
+        0.9637768390302125
+      ],
+      "tie_count": 0,
+      "versus_base_dose": {
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "effect": 0.2,
+        "n": 5,
+        "seed": 20269
+      }
+    }
+  },
+  "human_audit": "HUMAN_AUDIT_PENDING",
+  "selection": "fixed first five initial images/task, shared by all three models",
+  "status": "EXPLORATORY"
+}

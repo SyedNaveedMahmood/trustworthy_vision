@@ -1,0 +1,8 @@
+{
+  "cuda_stream_seconds": 1207.1095388717633,
+  "failed_calls": 0,
+  "forward_calls": 11984,
+  "forward_wall_seconds": 1422.419807701037,
+  "gpu_time_bound_scope": "prior measured model-process wall + entire current autonomous-session wall; conservative, not active kernel time",
+  "gpu_time_conservative_upper_bound_seconds": 5082.128887333718
+}

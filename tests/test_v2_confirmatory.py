@@ -29,3 +29,16 @@ def test_amended_cli_lock_and_e5_refuse(monkeypatch):
     for args in [['lock'],['run','--stage','E5'],['prepare-data','--split','confirmatory']]:
         monkeypatch.setattr('sys.argv',['cli','--config','configs/exploratory_v2.yaml']+args)
         assert main()==2
+
+
+def test_manifest_generation_on_synthetic_fixture_is_reproducible_and_disjoint():
+    from src.storage import digest
+    def fixture(task,i):
+        return {'dataset':task,'image_id':str(i),'image_sha256':digest(task+str(i)),'image_path':f'{task}/{i}.jpg','partition':'development',
+                'options':['red','blue','green','yellow'],'gold':'A','source_url':'https://example.invalid','source_license':'SYNTHETIC_TEST_ONLY',
+                'audit_status':'NOT_REVIEWED','annotation_ids':['fixture'],'task_subtype':'fixture','seed':1}
+    development=[fixture('gqa',0)];pool=[fixture(t,i) for t in ['gqa','refcocog'] for i in range(5)]
+    a=generate_confirmatory_manifest(pool,development,ready(),0,per_task=2,seed=12)
+    b=generate_confirmatory_manifest(pool,development,ready(),0,per_task=2,seed=12)
+    assert a==b and len(a['items'])==4
+    assert all(r['partition']=='confirmatory' and (r['dataset'],r['image_id'])!=('gqa','0') for r in a['items'])

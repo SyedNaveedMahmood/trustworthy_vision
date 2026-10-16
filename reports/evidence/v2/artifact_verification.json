@@ -1,0 +1,104 @@
+{
+  "errors": [],
+  "scope": "Computational integrity only; no semantic or human validity pass",
+  "stages": {
+    "corrected/internvl": {
+      "all4_probability_values": 3100,
+      "cache_hits_during_original_stage": 0,
+      "canonical_label_mass_coverage_rows": 0,
+      "complete_cache_checksums_verified": true,
+      "control_geometry_reconstructed": true,
+      "input_integrity": {
+        "edit_manifest_sha256": "6f246d29974f7354aeed2e55cc9b0176180bdb0e0f1788b8b54385abde989574",
+        "edit_requests": 372,
+        "expected_score_rows": 775,
+        "selected_images": 31
+      },
+      "min_total_canonical_label_mass": null,
+      "probability_clamps_if_all4_answers_scored": 0,
+      "score_rows": 775
+    },
+    "corrected/qwen": {
+      "all4_probability_values": 3100,
+      "cache_hits_during_original_stage": 0,
+      "canonical_label_mass_coverage_rows": 0,
+      "complete_cache_checksums_verified": true,
+      "control_geometry_reconstructed": true,
+      "input_integrity": {
+        "edit_manifest_sha256": "6f246d29974f7354aeed2e55cc9b0176180bdb0e0f1788b8b54385abde989574",
+        "edit_requests": 372,
+        "expected_score_rows": 775,
+        "selected_images": 31
+      },
+      "min_total_canonical_label_mass": null,
+      "probability_clamps_if_all4_answers_scored": 0,
+      "score_rows": 775
+    },
+    "corrected/smol": {
+      "all4_probability_values": 3100,
+      "cache_hits_during_original_stage": 0,
+      "canonical_label_mass_coverage_rows": 775,
+      "complete_cache_checksums_verified": true,
+      "control_geometry_reconstructed": true,
+      "input_integrity": {
+        "edit_manifest_sha256": "6f246d29974f7354aeed2e55cc9b0176180bdb0e0f1788b8b54385abde989574",
+        "edit_requests": 372,
+        "expected_score_rows": 775,
+        "selected_images": 31
+      },
+      "min_total_canonical_label_mass": 0.9995432879337488,
+      "probability_clamps_if_all4_answers_scored": 0,
+      "score_rows": 775
+    },
+    "extension/internvl": {
+      "all4_probability_values": 5000,
+      "cache_hits_during_original_stage": 0,
+      "canonical_label_mass_coverage_rows": 1250,
+      "complete_cache_checksums_verified": true,
+      "control_geometry_reconstructed": true,
+      "input_integrity": {
+        "edit_manifest_sha256": "deca6de1eeda9d75d59718bbe2d8e9711a4c5df2da52ee88527225a6607f903d",
+        "edit_requests": 600,
+        "expected_score_rows": 1250,
+        "selected_images": 50
+      },
+      "min_total_canonical_label_mass": 0.960481593199991,
+      "probability_clamps_if_all4_answers_scored": 0,
+      "score_rows": 1250
+    },
+    "extension/qwen": {
+      "all4_probability_values": 5000,
+      "cache_hits_during_original_stage": 0,
+      "canonical_label_mass_coverage_rows": 1250,
+      "complete_cache_checksums_verified": true,
+      "control_geometry_reconstructed": true,
+      "input_integrity": {
+        "edit_manifest_sha256": "deca6de1eeda9d75d59718bbe2d8e9711a4c5df2da52ee88527225a6607f903d",
+        "edit_requests": 600,
+        "expected_score_rows": 1250,
+        "selected_images": 50
+      },
+      "min_total_canonical_label_mass": 0.9975447284506224,
+      "probability_clamps_if_all4_answers_scored": 0,
+      "score_rows": 1250
+    },
+    "extension/smol": {
+      "all4_probability_values": 5000,
+      "cache_hits_during_original_stage": 0,
+      "canonical_label_mass_coverage_rows": 1250,
+      "complete_cache_checksums_verified": true,
+      "control_geometry_reconstructed": true,
+      "input_integrity": {
+        "edit_manifest_sha256": "deca6de1eeda9d75d59718bbe2d8e9711a4c5df2da52ee88527225a6607f903d",
+        "edit_requests": 600,
+        "expected_score_rows": 1250,
+        "selected_images": 50
+      },
+      "min_total_canonical_label_mass": 0.9995539768077525,
+      "probability_clamps_if_all4_answers_scored": 0,
+      "score_rows": 1250
+    }
+  },
+  "status": "PASS_CPU_ARTIFACT_VERIFICATION",
+  "verified_score_rows": 6075
+}

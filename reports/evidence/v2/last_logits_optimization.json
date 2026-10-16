@@ -1,0 +1,148 @@
+{
+  "adoption": "Not applied retroactively to experiments. Official optional flag tested on six fixed real inputs only; future adoption requires recorded configuration.",
+  "all_logits_bit_identical": false,
+  "forward_calls": 12,
+  "median_cuda_stream_seconds": {
+    "full": 0.19859747314455944,
+    "last": 0.19640863800043462
+  },
+  "model": "smol",
+  "peak_allocated_bytes_by_mode": {
+    "full": 4910684160,
+    "last": 4910959616
+  },
+  "qwen": "Pinned4.51.3 Qwen implementation has no equivalent explicit logits_to_keep parameter; no unverified custom replacement attempted.",
+  "rows": [
+    {
+      "all_vocabulary_max_abs_logit_difference": 0.03125,
+      "choice_max_abs_logit_difference": 0.0,
+      "image_id": "1159758",
+      "measurements": {
+        "full": {
+          "cuda_stream_seconds": 0.49065979003898974,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4816370688,
+          "wall_seconds": 0.5117463000060525
+        },
+        "last": {
+          "cuda_stream_seconds": 0.1944504699706613,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4817320960,
+          "wall_seconds": 0.2094224999891594
+        }
+      },
+      "task": "gqa"
+    },
+    {
+      "all_vocabulary_max_abs_logit_difference": 0.03125,
+      "choice_max_abs_logit_difference": 0.0,
+      "image_id": "2346628",
+      "measurements": {
+        "full": {
+          "cuda_stream_seconds": 0.24776742553717668,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4910684160,
+          "wall_seconds": 0.26542239999980666
+        },
+        "last": {
+          "cuda_stream_seconds": 0.24476159667960928,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4910959616,
+          "wall_seconds": 0.26229019998572767
+        }
+      },
+      "task": "gqa"
+    },
+    {
+      "all_vocabulary_max_abs_logit_difference": 0.03125,
+      "choice_max_abs_logit_difference": 0.0,
+      "image_id": "2370398",
+      "measurements": {
+        "full": {
+          "cuda_stream_seconds": 0.20014697265628456,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4817353728,
+          "wall_seconds": 0.21458470000652596
+        },
+        "last": {
+          "cuda_stream_seconds": 0.1972759399413917,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4817353728,
+          "wall_seconds": 0.2118041999929119
+        }
+      },
+      "task": "gqa"
+    },
+    {
+      "all_vocabulary_max_abs_logit_difference": 0.03125,
+      "choice_max_abs_logit_difference": 0.0,
+      "image_id": "160628",
+      "measurements": {
+        "full": {
+          "cuda_stream_seconds": 0.19704797363283433,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4816468992,
+          "wall_seconds": 0.2113699000037741
+        },
+        "last": {
+          "cuda_stream_seconds": 0.19650431823720282,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4816468992,
+          "wall_seconds": 0.21145289999549277
+        }
+      },
+      "task": "refcocog"
+    },
+    {
+      "all_vocabulary_max_abs_logit_difference": 0.015625,
+      "choice_max_abs_logit_difference": 0.0,
+      "image_id": "385401",
+      "measurements": {
+        "full": {
+          "cuda_stream_seconds": 0.19626188659663057,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4816468992,
+          "wall_seconds": 0.2105112999852281
+        },
+        "last": {
+          "cuda_stream_seconds": 0.19506262207028158,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4816468992,
+          "wall_seconds": 0.20916999998735264
+        }
+      },
+      "task": "refcocog"
+    },
+    {
+      "all_vocabulary_max_abs_logit_difference": 0.015625,
+      "choice_max_abs_logit_difference": 0.0,
+      "image_id": "220471",
+      "measurements": {
+        "full": {
+          "cuda_stream_seconds": 0.19691996765141084,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4816468992,
+          "wall_seconds": 0.21048050001263618
+        },
+        "last": {
+          "cuda_stream_seconds": 0.19631295776366642,
+          "logit_count": 49280,
+          "torch_peak_allocated_bytes": 4816468992,
+          "wall_seconds": 0.21302030002698302
+        }
+      },
+      "task": "refcocog"
+    }
+  ],
+  "status": "COMPLETE_NUMERICAL_OPTIMIZATION_DIAGNOSTIC",
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 6715514880,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 5511974912,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 69,
+    "torch_peak_allocated_bytes": 4816468992,
+    "torch_peak_reserved_bytes": 5496635392,
+    "wall_seconds": 8.137527999992017
+  }
+}

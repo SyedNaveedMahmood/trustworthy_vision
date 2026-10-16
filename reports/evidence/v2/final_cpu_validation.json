@@ -1,0 +1,54 @@
+{
+  "branch": "pilot/controlled-evidence-v1",
+  "confirmatory_forwards": 0,
+  "cumulative_forward_calls": 11984,
+  "evidence_parent_commit": "e3377c3d4def08bd0cf936f0f6cf92c9c00fec9a",
+  "forbidden_dataset_weight_paths_in_publish_set": false,
+  "human_judgments": 0,
+  "largest_publishable_files": [
+    {
+      "bytes": 4476618,
+      "path": "reports/evidence/v2/E3_replication.json"
+    },
+    {
+      "bytes": 4421374,
+      "path": "reports/evidence/v2/E2_pairs_extension_smol.json"
+    },
+    {
+      "bytes": 4183323,
+      "path": "reports/evidence/v2/E2_pairs_extension_qwen.json"
+    },
+    {
+      "bytes": 3373748,
+      "path": "reports/evidence/v2/E2_pairs_extension_internvl.json"
+    },
+    {
+      "bytes": 2741707,
+      "path": "reports/evidence/v2/E2_pairs_corrected_smol.json"
+    },
+    {
+      "bytes": 2520752,
+      "path": "reports/evidence/v2/E4_qwen.json"
+    },
+    {
+      "bytes": 2475797,
+      "path": "reports/evidence/v2/E2_grid_corrected_qwen.json"
+    },
+    {
+      "bytes": 2444298,
+      "path": "reports/evidence/v2/E2_pairs_corrected_qwen.json"
+    }
+  ],
+  "new_forwards_during_final_validation": 0,
+  "original_evidence_files_unchanged": true,
+  "previous_verdict_archived_verbatim_modulo_line_endings": true,
+  "question_mismatches": 0,
+  "sampled_question_strings_checked_against_official_utf8": 208,
+  "status": "PASS_FINAL_CPU_VALIDATION",
+  "strict_json_files_parsed": 106,
+  "test_failures": 0,
+  "test_skips": 0,
+  "tests_passed": 75,
+  "timestamp_utc": "2026-10-16T11:24:58.187705+00:00",
+  "unique_questions_checked": 152
+}

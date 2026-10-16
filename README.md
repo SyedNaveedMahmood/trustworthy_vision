@@ -1,6 +1,6 @@
 # Trustworthy Vision: Controlled Visual Evidence Pilot
 
-Status: PARTIAL PILOT EXECUTED (2026-10-16). Both frozen models ran on the RTX 4080 SUPER; 40 development images/task were scored. SmolVLM2 RefCOCOg failed the 40% competence gate (15/40). E2–E5 were not executed. Verdict: INCONCLUSIVE. See [final report](reports/FINAL_VERDICT.md), [status](reports/STATUS.md), and [reproducibility](REPRODUCIBILITY.md).
+Status: AMENDED DEVELOPMENT EXPERIMENTS EXECUTED (2026-10-16). Three frozen BF16 backbones,81 paired images,6,075 verified intervention scores; corrected Smol qualifies. S3 underperforms raw median in development. Verdict: INCONCLUSIVE; E5 blocked by independent semantic review and cumulative compute. See [handoff](reports/TWO_HOUR_HANDOFF.md), [verdict](reports/FINAL_VERDICT.md), [status](reports/STATUS.md), and [reproduction](REPRODUCIBILITY.md).
 
 Objective: test whether a controlled, artifact-aware, operator-stable intervention score is a better measure of frozen vision-language model (VLM) reliance on task-relevant visual evidence than raw answer sensitivity to a single masked image.
 

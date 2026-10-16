@@ -4,7 +4,6 @@ from pathlib import Path
 import truststore
 truststore.inject_into_ssl()
 from PIL import Image
-from src.models.choice import ChoiceModel,Telemetry
 from src.presentation import present
 from src.storage import atomic_json,digest
 from src.session import update,check_window
@@ -25,6 +24,12 @@ def run(key,mode='pairs',cohort='corrected'):
     result['edit_manifest_sha256']=integrity['edit_manifest_sha256'];result['status']='RUNNING'
     done={(r['task'],r['image_id'],r['variant']) for r in result['rows']}
     selected={(e['task'],e['image_id']) for e in edits}
+    expected={(t,i,'clean') for t,i in selected}|{(e['task'],e['image_id'],f"r{e['region_index']}_{e['operator']}_{c}") for e in edits for c in ['removal','sham']}
+    if len(done)!=len(result['rows']) or not done<=expected:raise ValueError('Duplicate or unknown score checkpoint cells')
+    if done==expected:
+        print('Complete input-hash-verified checkpoint: zero model loads and zero new forwards',flush=True)
+        return
+    from src.models.choice import ChoiceModel,Telemetry
     tm=Telemetry();update('D E2 computational scoring',model=key,mode=mode,cohort=cohort,completed=len(done))
     try:
         with tm:

@@ -94,13 +94,15 @@ def main():
                 prepare(args.mode,'corrected')
                 for model in ([args.model] if args.model else ['qwen','smol']):run(model,args.mode,'corrected')
             elif args.stage=='E3':
-                from scripts.analyze_interventions_v2 import run
+                from scripts.analyze_replication_v2 import run
                 run()
             else:
                 from scripts.run_ablations_v2 import run
                 for model in ([args.model] if args.model else ['qwen','internvl']):
-                    if model=='smol':parser.error('E4 fixed exploratory backbones are qwen and internvl')
-                    run(model)
+                    if model=='smol':
+                        from scripts.run_smol_bounded_e4 import run as bounded_run
+                        bounded_run()
+                    else:run(model)
             return 0
     elif pins.get("protocol_config_sha256") and digest(config)!=pins["protocol_config_sha256"]:
         parser.error("This implementation was run only with the hashed pilot_v1 protocol. Record and implement amendments before using changed config.")

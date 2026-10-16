@@ -48,5 +48,5 @@ def validate_result_row(row):
     required={'task','model','image_id','candidate_correct','baseline_correct','protocol_sha256','manifest_sha256'}
     if not required<=row.keys():raise ValueError('Missing confirmatory result fields')
     if row['task'] not in ['gqa','refcocog'] or row['candidate_correct'] not in [0,.5,1] or row['baseline_correct'] not in [0,.5,1]:raise ValueError('Invalid paired result')
-    if any(len(row[k])!=64 for k in ['protocol_sha256','manifest_sha256']):raise ValueError('Immutable hashes required')
+    if any(len(row[k])!=64 or any(c not in '0123456789abcdef' for c in row[k]) for k in ['protocol_sha256','manifest_sha256']):raise ValueError('Immutable hashes required')
     return True

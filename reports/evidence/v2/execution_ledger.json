@@ -1,20 +1,24 @@
 {
   "budget": {
-    "cuda_stream_seconds": 676.7845839538576,
+    "cuda_stream_seconds": 1207.1095388717633,
     "failed_calls": 0,
-    "forward_calls": 7987,
-    "forward_wall_seconds": 891.4940912000748,
+    "forward_calls": 11984,
+    "forward_wall_seconds": 1422.419807701037,
     "gpu_time_bound_scope": "prior measured model-process wall + entire current autonomous-session wall; conservative, not active kernel time",
-    "gpu_time_conservative_upper_bound_seconds": 3972.8225306652457
+    "gpu_time_conservative_upper_bound_seconds": 5082.128887333718
   },
   "current": {
-    "completed": 700,
-    "last_image_id": "92269",
-    "mode": "pairs",
-    "model": "smol",
-    "status": "RUNNING",
-    "task": "D E2 computational scoring",
-    "timestamp_utc": "2026-10-16T08:21:24.304353+00:00"
+    "active_experiment": null,
+    "confirmatory_forwards": 0,
+    "human_audit": "HUMAN_AUDIT_PENDING",
+    "observed_max_e2_device_gib": 8.853096008300781,
+    "remaining_forward_calls": 16,
+    "remaining_work": "Independent semantic review and an explicitly amended feasible study; no complete25-score pair fits remaining budget",
+    "status": "COMPLETE",
+    "task": "Final scientific handoff validation",
+    "test_count": 75,
+    "timestamp_utc": "2026-10-16T11:24:58.211707+00:00",
+    "verified_pair_score_rows": 6075
   },
   "deadline_utc": "2026-10-16T09:18:11+00:00",
   "events": [
@@ -2749,8 +2753,1690 @@
       "status": "RUNNING",
       "task": "D E2 computational scoring",
       "timestamp_utc": "2026-10-16T08:21:24.304353+00:00"
+    },
+    {
+      "completed": 725,
+      "last_image_id": "191806",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:21:36.685715+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image_id": "419996",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:21:46.797289+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image_id": "216716",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:21:56.969319+00:00"
+    },
+    {
+      "mode": "pairs",
+      "model": "smol",
+      "score_rows": 775,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:21:57.077528+00:00"
+    },
+    {
+      "attempt": 1,
+      "category": "SUCCESS",
+      "log": "outputs/v2/supervision/E2_corrected_pairs_smol/attempt_1.log",
+      "model": "smol",
+      "returncode": 0,
+      "stage": "E2",
+      "status": "RUNNING",
+      "task": "G stage supervision",
+      "timestamp_utc": "2026-10-16T08:21:57.669946+00:00"
+    },
+    {
+      "cohort": "extension",
+      "completed": 0,
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:01.428212+00:00"
+    },
+    {
+      "completed": 25,
+      "last_image_id": "2389885",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:08.979685+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image_id": "2375580",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:11.418250+00:00"
+    },
+    {
+      "cohorts": [
+        "corrected"
+      ],
+      "models": [
+        "qwen",
+        "smol",
+        "internvl"
+      ],
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "E corrected three-backbone comparison",
+      "timestamp_utc": "2026-10-16T08:22:12.460252+00:00"
+    },
+    {
+      "completed": 75,
+      "last_image_id": "2343797",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:14.730302+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image_id": "2336230",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:18.108590+00:00"
+    },
+    {
+      "completed": 125,
+      "last_image_id": "2365742",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:21.290567+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image_id": "2338399",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:24.552458+00:00"
+    },
+    {
+      "completed": 175,
+      "last_image_id": "2409967",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:28.096688+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image_id": "2330921",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:31.451285+00:00"
+    },
+    {
+      "completed": 225,
+      "last_image_id": "2400040",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:34.877344+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image_id": "2323535",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:38.342130+00:00"
+    },
+    {
+      "completed": 275,
+      "last_image_id": "1592978",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:45.126086+00:00"
+    },
+    {
+      "completed": 300,
+      "last_image_id": "2390480",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:48.130720+00:00"
+    },
+    {
+      "completed": 325,
+      "last_image_id": "2413324",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:52.232035+00:00"
+    },
+    {
+      "completed": 350,
+      "last_image_id": "2352692",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:22:56.216080+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image_id": "2401809",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:00.716495+00:00"
+    },
+    {
+      "completed": 400,
+      "last_image_id": "2341346",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:04.833117+00:00"
+    },
+    {
+      "completed": 425,
+      "last_image_id": "2376813",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:09.112203+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image_id": "2410083",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:13.841813+00:00"
+    },
+    {
+      "completed": 475,
+      "last_image_id": "2361626",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:18.123521+00:00"
+    },
+    {
+      "completed": 500,
+      "last_image_id": "2357812",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:22.216289+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image_id": "2363295",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:26.613305+00:00"
+    },
+    {
+      "byte_identical": true,
+      "status": "COMPLETE",
+      "task": "D official real-image replay",
+      "timestamp_utc": "2026-10-16T08:23:30.596303+00:00"
+    },
+    {
+      "completed": 550,
+      "last_image_id": "2412358",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:31.350872+00:00"
+    },
+    {
+      "completed": 575,
+      "last_image_id": "2390681",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:35.794517+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image_id": "2389074",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:40.091186+00:00"
+    },
+    {
+      "completed": 625,
+      "last_image_id": "2367682",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:44.848479+00:00"
+    },
+    {
+      "completed": 650,
+      "last_image_id": "323226",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:51.056976+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image_id": "72442",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:23:55.596454+00:00"
+    },
+    {
+      "completed": 700,
+      "last_image_id": "102220",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:01.965410+00:00"
+    },
+    {
+      "completed": 725,
+      "last_image_id": "327979",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:09.223720+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image_id": "500638",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:15.613542+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image_id": "479563",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:21.335742+00:00"
+    },
+    {
+      "completed": 800,
+      "last_image_id": "487182",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:26.834050+00:00"
+    },
+    {
+      "completed": 825,
+      "last_image_id": "267548",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:32.380363+00:00"
+    },
+    {
+      "completed": 850,
+      "last_image_id": "383536",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:37.381307+00:00"
+    },
+    {
+      "packets": 360,
+      "ratings": 0,
+      "status": "HUMAN_AUDIT_PENDING",
+      "task": "D blinded human review preparation",
+      "timestamp_utc": "2026-10-16T08:24:38.190309+00:00"
+    },
+    {
+      "completed": 875,
+      "last_image_id": "35670",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:43.413815+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image_id": "273736",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:50.264043+00:00"
+    },
+    {
+      "completed": 925,
+      "last_image_id": "539682",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:24:56.303731+00:00"
+    },
+    {
+      "completed": 950,
+      "last_image_id": "443248",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:02.800738+00:00"
+    },
+    {
+      "completed": 975,
+      "last_image_id": "28085",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:10.310264+00:00"
+    },
+    {
+      "completed": 1000,
+      "last_image_id": "256276",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:17.235585+00:00"
+    },
+    {
+      "completed": 1025,
+      "last_image_id": "536648",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:24.610815+00:00"
+    },
+    {
+      "completed": 1050,
+      "last_image_id": "451165",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:31.669195+00:00"
+    },
+    {
+      "completed": 1075,
+      "last_image_id": "243839",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:38.548125+00:00"
+    },
+    {
+      "completed": 1100,
+      "last_image_id": "465559",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:44.784780+00:00"
+    },
+    {
+      "completed": 1125,
+      "last_image_id": "576598",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:52.323466+00:00"
+    },
+    {
+      "completed": 1150,
+      "last_image_id": "60117",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:25:59.311256+00:00"
+    },
+    {
+      "completed": 1175,
+      "last_image_id": "178791",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:05.920984+00:00"
+    },
+    {
+      "completed": 1200,
+      "last_image_id": "148044",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:12.923103+00:00"
+    },
+    {
+      "completed": 1225,
+      "last_image_id": "479066",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:20.271157+00:00"
+    },
+    {
+      "completed": 1250,
+      "last_image_id": "155049",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:27.023423+00:00"
+    },
+    {
+      "mode": "pairs",
+      "model": "qwen",
+      "score_rows": 1250,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:27.166323+00:00"
+    },
+    {
+      "attempt": 1,
+      "category": "SUCCESS",
+      "log": "outputs/v2/supervision/E2_extension_pairs_qwen/attempt_1.log",
+      "model": "qwen",
+      "returncode": 0,
+      "stage": "E2",
+      "status": "RUNNING",
+      "task": "G stage supervision",
+      "timestamp_utc": "2026-10-16T08:26:27.725674+00:00"
+    },
+    {
+      "cohort": "extension",
+      "completed": 0,
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:31.351593+00:00"
+    },
+    {
+      "completed": 25,
+      "last_image_id": "2389885",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:37.472673+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image_id": "2375580",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:41.012468+00:00"
+    },
+    {
+      "completed": 75,
+      "last_image_id": "2343797",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:42.832467+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image_id": "2336230",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:44.722121+00:00"
+    },
+    {
+      "completed": 125,
+      "last_image_id": "2365742",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:48.509881+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image_id": "2338399",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:52.292272+00:00"
+    },
+    {
+      "completed": 175,
+      "last_image_id": "2409967",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:54.375490+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image_id": "2330921",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:26:58.252695+00:00"
+    },
+    {
+      "completed": 225,
+      "last_image_id": "2400040",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:02.173514+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image_id": "2323535",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:06.168507+00:00"
+    },
+    {
+      "completed": 275,
+      "last_image_id": "1592978",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:12.874986+00:00"
+    },
+    {
+      "completed": 300,
+      "last_image_id": "2390480",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:15.026767+00:00"
+    },
+    {
+      "completed": 325,
+      "last_image_id": "2413324",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:17.274837+00:00"
+    },
+    {
+      "completed": 350,
+      "last_image_id": "2352692",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:21.423403+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image_id": "2401809",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:23.757581+00:00"
+    },
+    {
+      "completed": 400,
+      "last_image_id": "2341346",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:27.989833+00:00"
+    },
+    {
+      "completed": 425,
+      "last_image_id": "2376813",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:30.385245+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image_id": "2410083",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:32.774938+00:00"
+    },
+    {
+      "completed": 475,
+      "last_image_id": "2361626",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:35.280413+00:00"
+    },
+    {
+      "completed": 500,
+      "last_image_id": "2357812",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:39.631076+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image_id": "2363295",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:42.214966+00:00"
+    },
+    {
+      "completed": 550,
+      "last_image_id": "2412358",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:44.935247+00:00"
+    },
+    {
+      "completed": 575,
+      "last_image_id": "2390681",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:47.656504+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image_id": "2389074",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:52.185174+00:00"
+    },
+    {
+      "completed": 625,
+      "last_image_id": "2367682",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:54.964579+00:00"
+    },
+    {
+      "completed": 650,
+      "last_image_id": "323226",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:27:57.963250+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image_id": "72442",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:02.673705+00:00"
+    },
+    {
+      "completed": 700,
+      "last_image_id": "102220",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:07.562871+00:00"
+    },
+    {
+      "completed": 725,
+      "last_image_id": "327979",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:10.640220+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image_id": "500638",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:13.778412+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image_id": "479563",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:18.738168+00:00"
+    },
+    {
+      "completed": 800,
+      "last_image_id": "487182",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:23.657912+00:00"
+    },
+    {
+      "completed": 825,
+      "last_image_id": "267548",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:28.627387+00:00"
+    },
+    {
+      "completed": 850,
+      "last_image_id": "383536",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:31.737750+00:00"
+    },
+    {
+      "completed": 875,
+      "last_image_id": "35670",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:35.036230+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image_id": "273736",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:38.417220+00:00"
+    },
+    {
+      "completed": 925,
+      "last_image_id": "539682",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:41.814841+00:00"
+    },
+    {
+      "completed": 950,
+      "last_image_id": "443248",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:45.266134+00:00"
+    },
+    {
+      "completed": 975,
+      "last_image_id": "28085",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:48.861781+00:00"
+    },
+    {
+      "completed": 1000,
+      "last_image_id": "256276",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:52.457400+00:00"
+    },
+    {
+      "completed": 1025,
+      "last_image_id": "536648",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:56.100141+00:00"
+    },
+    {
+      "completed": 1050,
+      "last_image_id": "451165",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:28:59.802450+00:00"
+    },
+    {
+      "completed": 1075,
+      "last_image_id": "243839",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:03.551144+00:00"
+    },
+    {
+      "completed": 1100,
+      "last_image_id": "465559",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:09.019722+00:00"
+    },
+    {
+      "completed": 1125,
+      "last_image_id": "576598",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:12.776006+00:00"
+    },
+    {
+      "completed": 1150,
+      "last_image_id": "60117",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:16.704140+00:00"
+    },
+    {
+      "completed": 1175,
+      "last_image_id": "178791",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:22.257558+00:00"
+    },
+    {
+      "completed": 1200,
+      "last_image_id": "148044",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:27.926666+00:00"
+    },
+    {
+      "completed": 1225,
+      "last_image_id": "479066",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:33.643120+00:00"
+    },
+    {
+      "completed": 1250,
+      "last_image_id": "155049",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:39.317167+00:00"
+    },
+    {
+      "mode": "pairs",
+      "model": "internvl",
+      "score_rows": 1250,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:39.433306+00:00"
+    },
+    {
+      "attempt": 1,
+      "category": "SUCCESS",
+      "log": "outputs/v2/supervision/E2_extension_pairs_internvl/attempt_1.log",
+      "model": "internvl",
+      "returncode": 0,
+      "stage": "E2",
+      "status": "RUNNING",
+      "task": "G stage supervision",
+      "timestamp_utc": "2026-10-16T08:29:40.037382+00:00"
+    },
+    {
+      "cohort": "extension",
+      "completed": 0,
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:43.712826+00:00"
+    },
+    {
+      "completed": 25,
+      "last_image_id": "2389885",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:29:56.825024+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image_id": "2375580",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:30:02.806875+00:00"
+    },
+    {
+      "completed": 75,
+      "last_image_id": "2343797",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:30:11.100178+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image_id": "2336230",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:30:19.475930+00:00"
+    },
+    {
+      "completed": 125,
+      "last_image_id": "2365742",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:30:28.036085+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image_id": "2338399",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:30:36.668434+00:00"
+    },
+    {
+      "completed": 175,
+      "last_image_id": "2409967",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:30:45.195377+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image_id": "2330921",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:30:54.023309+00:00"
+    },
+    {
+      "completed": 225,
+      "last_image_id": "2400040",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:31:02.905051+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image_id": "2323535",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:31:11.753305+00:00"
+    },
+    {
+      "completed": 275,
+      "last_image_id": "1592978",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:31:20.744940+00:00"
+    },
+    {
+      "status": "COMPLETE",
+      "task": "G experiment artifact verification",
+      "timestamp_utc": "2026-10-16T08:31:25.334195+00:00",
+      "verified_rows": 4825
+    },
+    {
+      "completed": 300,
+      "last_image_id": "2390480",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:31:31.834346+00:00"
+    },
+    {
+      "completed": 325,
+      "last_image_id": "2413324",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:31:40.957590+00:00"
+    },
+    {
+      "completed": 350,
+      "last_image_id": "2352692",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:31:50.143019+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image_id": "2401809",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:31:59.251782+00:00"
+    },
+    {
+      "completed": 400,
+      "last_image_id": "2341346",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:32:08.545922+00:00"
+    },
+    {
+      "completed": 425,
+      "last_image_id": "2376813",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:32:17.733167+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image_id": "2410083",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:32:26.906975+00:00"
+    },
+    {
+      "completed": 475,
+      "last_image_id": "2361626",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:32:36.211543+00:00"
+    },
+    {
+      "completed": 500,
+      "last_image_id": "2357812",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:32:45.652418+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image_id": "2363295",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:32:55.045241+00:00"
+    },
+    {
+      "completed": 550,
+      "last_image_id": "2412358",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:33:06.807556+00:00"
+    },
+    {
+      "completed": 575,
+      "last_image_id": "2390681",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:33:16.309525+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image_id": "2389074",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:33:26.053405+00:00"
+    },
+    {
+      "completed": 625,
+      "last_image_id": "2367682",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:33:37.924208+00:00"
+    },
+    {
+      "completed": 650,
+      "last_image_id": "323226",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:33:47.733263+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image_id": "72442",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:33:57.703114+00:00"
+    },
+    {
+      "completed": 700,
+      "last_image_id": "102220",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:34:07.740503+00:00"
+    },
+    {
+      "completed": 725,
+      "last_image_id": "327979",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:34:19.905040+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image_id": "500638",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:34:29.974792+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image_id": "479563",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:34:40.226584+00:00"
+    },
+    {
+      "completed": 800,
+      "last_image_id": "487182",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:34:50.488800+00:00"
+    },
+    {
+      "completed": 825,
+      "last_image_id": "267548",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:35:00.854439+00:00"
+    },
+    {
+      "completed": 850,
+      "last_image_id": "383536",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:35:11.295201+00:00"
+    },
+    {
+      "completed": 875,
+      "last_image_id": "35670",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:35:21.859067+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image_id": "273736",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:35:32.312114+00:00"
+    },
+    {
+      "completed": 925,
+      "last_image_id": "539682",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:35:42.757656+00:00"
+    },
+    {
+      "completed": 950,
+      "last_image_id": "443248",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:35:53.456369+00:00"
+    },
+    {
+      "completed": 975,
+      "last_image_id": "28085",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:36:04.151359+00:00"
+    },
+    {
+      "completed": 1000,
+      "last_image_id": "256276",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:36:14.833482+00:00"
+    },
+    {
+      "completed": 1025,
+      "last_image_id": "536648",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:36:27.786043+00:00"
+    },
+    {
+      "completed": 1050,
+      "last_image_id": "451165",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:36:38.580657+00:00"
+    },
+    {
+      "completed": 1075,
+      "last_image_id": "243839",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:36:49.599358+00:00"
+    },
+    {
+      "completed": 1100,
+      "last_image_id": "465559",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:37:00.620830+00:00"
+    },
+    {
+      "completed": 1125,
+      "last_image_id": "576598",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:37:11.843940+00:00"
+    },
+    {
+      "completed": 1150,
+      "last_image_id": "60117",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:37:23.091524+00:00"
+    },
+    {
+      "completed": 1175,
+      "last_image_id": "178791",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:37:34.188712+00:00"
+    },
+    {
+      "completed": 1200,
+      "last_image_id": "148044",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:37:45.531807+00:00"
+    },
+    {
+      "completed": 1225,
+      "last_image_id": "479066",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:37:56.860093+00:00"
+    },
+    {
+      "completed": 1250,
+      "last_image_id": "155049",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:38:08.289854+00:00"
+    },
+    {
+      "mode": "pairs",
+      "model": "smol",
+      "score_rows": 1250,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:38:08.447053+00:00"
+    },
+    {
+      "attempt": 1,
+      "category": "SUCCESS",
+      "log": "outputs/v2/supervision/E2_extension_pairs_smol/attempt_1.log",
+      "model": "smol",
+      "returncode": 0,
+      "stage": "E2",
+      "status": "RUNNING",
+      "task": "G stage supervision",
+      "timestamp_utc": "2026-10-16T08:38:09.017571+00:00"
+    },
+    {
+      "completed": 20,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:38:50.835548+00:00"
+    },
+    {
+      "cohorts": [
+        "corrected",
+        "extension",
+        "pooled"
+      ],
+      "models": [
+        "qwen",
+        "smol",
+        "internvl"
+      ],
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "E corrected three-backbone comparison",
+      "timestamp_utc": "2026-10-16T08:38:56.449814+00:00"
+    },
+    {
+      "completed": 40,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:38:57.715623+00:00"
+    },
+    {
+      "completed": 60,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:03.106300+00:00"
+    },
+    {
+      "status": "COMPLETE",
+      "task": "G experiment artifact verification",
+      "timestamp_utc": "2026-10-16T08:39:06.300578+00:00",
+      "verified_rows": 6075
+    },
+    {
+      "completed": 80,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:08.432166+00:00"
+    },
+    {
+      "completed": 100,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:13.809407+00:00"
+    },
+    {
+      "completed": 120,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:19.281498+00:00"
+    },
+    {
+      "completed": 140,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:24.724425+00:00"
+    },
+    {
+      "completed": 160,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:30.341662+00:00"
+    },
+    {
+      "completed": 180,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:35.997310+00:00"
+    },
+    {
+      "completed": 200,
+      "status": "RUNNING",
+      "task": "F corrected Smol bounded E4",
+      "timestamp_utc": "2026-10-16T08:39:41.605312+00:00"
+    },
+    {
+      "all_logits_bit_identical": false,
+      "status": "COMPLETE",
+      "task": "G official last-logit optimization test",
+      "timestamp_utc": "2026-10-16T08:39:53.540737+00:00"
+    },
+    {
+      "packets": 360,
+      "ratings": 0,
+      "status": "HUMAN_AUDIT_PENDING",
+      "task": "D blinded human review preparation",
+      "timestamp_utc": "2026-10-16T08:41:46.428265+00:00"
+    },
+    {
+      "blockers": [
+        "amended_protocol_locked",
+        "task_scope_qualified",
+        "independent_controls_validated",
+        "operator_human_audit_passed",
+        "two_independent_raters",
+        "frozen_single_comparator",
+        "image_disjointness_verified",
+        "cumulative_forward_budget_infeasible"
+      ],
+      "cap": 12000,
+      "current_calls": 11984,
+      "maximum_per_task_with_current_factorial": 0,
+      "note": "Maximum is a projection, never authorization to change the frozen sample plan.",
+      "projected_additional_calls": 12000,
+      "projected_total_calls": 23984,
+      "ready": false,
+      "status": "BLOCKED",
+      "task": "H E5 readiness preparation",
+      "timestamp_utc": "2026-10-16T11:22:21.955691+00:00"
+    },
+    {
+      "status": "COMPLETE",
+      "task": "G experiment artifact verification",
+      "timestamp_utc": "2026-10-16T11:22:49.478317+00:00",
+      "verified_rows": 6075
+    },
+    {
+      "blockers": [
+        "amended_protocol_locked",
+        "task_scope_qualified",
+        "independent_controls_validated",
+        "operator_human_audit_passed",
+        "two_independent_raters",
+        "frozen_single_comparator",
+        "image_disjointness_verified",
+        "cumulative_forward_budget_infeasible"
+      ],
+      "cap": 12000,
+      "current_calls": 11984,
+      "maximum_per_task_with_current_factorial": 0,
+      "note": "Maximum is a projection, never authorization to change the frozen sample plan.",
+      "projected_additional_calls": 12000,
+      "projected_total_calls": 23984,
+      "ready": false,
+      "status": "BLOCKED",
+      "task": "H E5 readiness preparation",
+      "timestamp_utc": "2026-10-16T11:23:59.778710+00:00"
+    },
+    {
+      "active_experiment": null,
+      "confirmatory_forwards": 0,
+      "human_audit": "HUMAN_AUDIT_PENDING",
+      "observed_max_e2_device_gib": 8.853096008300781,
+      "remaining_forward_calls": 16,
+      "remaining_work": "Independent semantic review and an explicitly amended feasible study; no complete25-score pair fits remaining budget",
+      "status": "COMPLETE",
+      "task": "Final scientific handoff validation",
+      "test_count": 75,
+      "timestamp_utc": "2026-10-16T11:24:36.284395+00:00",
+      "verified_pair_score_rows": 6075
+    },
+    {
+      "active_experiment": null,
+      "confirmatory_forwards": 0,
+      "human_audit": "HUMAN_AUDIT_PENDING",
+      "observed_max_e2_device_gib": 8.853096008300781,
+      "remaining_forward_calls": 16,
+      "remaining_work": "Independent semantic review and an explicitly amended feasible study; no complete25-score pair fits remaining budget",
+      "status": "COMPLETE",
+      "task": "Final scientific handoff validation",
+      "test_count": 75,
+      "timestamp_utc": "2026-10-16T11:24:58.211707+00:00",
+      "verified_pair_score_rows": 6075
     }
   ],
-  "git_commit": "33720e1f2672dc610214a53379ee1a22920869a6",
+  "git_commit": "e3377c3d4def08bd0cf936f0f6cf92c9c00fec9a",
   "started_utc": "2026-10-16T07:18:11+00:00"
 }

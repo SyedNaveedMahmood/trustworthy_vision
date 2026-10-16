@@ -1,36 +1,23 @@
-# Execution status
+# Execution status — amended development study
 
-**Current milestone08:20UTC:** the Smol continuation bug is fixed and all three backbones pass the fresh engineering screen. Intended pair restored: **Qwen + corrected Smol**; InternVL retained. Fresh20/task image/text scores: Qwen color13/9, Ref15/4; Smol color12/7, Ref13/4; InternVL color13/7, Ref12/5. Historical bare-token Smol outcomes below are not valid capability estimates. 67 tests pass. E2 initial Smol scoring is active; extension edits (25 new pairs/task) are complete and sequential three-model scoring is queued. **E5 BLOCKED; HUMAN_AUDIT_PENDING; scientific verdict INCONCLUSIVE.**
+Updated2026-10-16T11:23:59.948786+00:00; evidence-parent commit `e3377c3d4def08bd0cf936f0f6cf92c9c00fec9a`, branch `pilot/controlled-evidence-v1`.
 
-## Active amended development session — 2026-10-16 07:18–09:18 UTC
+**INCONCLUSIVE scientifically; E5 launch NO-GO.** All planned permissible GPU execution is finished at11984/12,000 calls, with16 remaining and0 failed model calls. No GPU experiment is continuing in the background. User resumed CPU reporting after the original autonomous window; no inference ran during that gap.
 
-Branch safely fetched/pulled at `ef7c3e84211cfc3e424a5b9ec27adac109dfe31d`; original evidence below is archival. New records: `reports/evidence/v2/`, atomic checkpoints: ignored `outputs/v2/`.
+| Stage | Status | Actual execution / validation limit |
+|---|---|---|
+| E0 | PARTIAL / EXPLORATORY | Three official frozen backbones fit BF16; processor/likelihood/repeat tests and real official LaMa replay completed. Independent semantic editor validity remains pending. |
+| E1 | COMPLETE (amended engineering screen) | Fresh20 images/task/model, fixed40% screen and positive image gain. Original broad GQA competence is unvalidated; replacement is explicitly color-only. |
+| E2 | PARTIAL / EXPLORATORY | 81 paired images shared by3 backbones;6,075 complete score rows. 16 grid images/backbone for Qwen/InternVL. Pixel/hash checks pass; no semantic audit pass. |
+| E3 | PARTIAL / EXPLORATORY | Actual baselines, S1–S3, initial/extension/pooled comparisons, paired bootstrap, AUROC and cost analysis. All development; no confirmatory claim. |
+| E4 | PARTIAL / EXPLORATORY | Real resolution/letter/fill/blur/mask studies for Qwen/InternVL; matched five/task corrected-Smol dose study; numerical ablations all3 backbones. Not every factor/model/operator transfer completed. |
+| E5 | BLOCKED | Zero confirmatory manifests or forwards. Human/control/reference validity, genuine lock and feasible amended sample/budget remain absent. |
+| E6 | PARTIAL / EXPLORATORY | Current negative-result/failure audit, verdict and handoff complete; full-study interpretation remains contingent on E5. |
 
-- Qualification: Smol grounding rises 15/40 to 18/40 at 768 pixels but fails independent qualification (7/20, threshold 8/20). Official pinned InternVL2.5-2B runs in BF16 and scores 12/20 versus 7/20 text-only on separate RefCOCOg qualification. Qwen scores 11/20 versus 7/20.
-- Dataset correction: 18/40 original GQA questions used a heterogeneous null-group distractor pool. Original GQA competence claims require withdrawal. Separate annotation-selected color diagnostic: Qwen 16/20 image, 6/20 text-only; InternVL 15/20, 7/20; Smol 15/20, 7/20. This supports only a narrow provisional Qwen+InternVL setup.
-- Estimator algebra audited; mutual-negative MAD cancellation proved/tested. Amendment 08 defines sham, robust and candidate-specific independent-control alternatives before E2 scoring; oracle and frozen-prediction anchors remain distinct.
-- 52 tests passed. Official LaMa CPU edits and Qwen/InternVL paired scoring finished for corrected pilot (15 GQA, 16 RefCOCOg; 775 score rows/model). E3 robust-independent versus raw mean: 0.0 percentage points, paired 95% CI [-5.0,+5.0]; versus sham-median: identical oracle pair rankings. No demonstrated added value from controls/dispersion. Annotation-free grid preparation and E4 image ablations are running. 360 blinded review packets prepared, zero human judgments: **HUMAN_AUDIT_PENDING**.
-- E2–E4 are explicitly exploratory. E5 remains blocked; no confirmatory sampling or inference. Current verdict: **INCONCLUSIVE**.
+Fresh qualification: Qwen color13/20 versus9/20 text, Ref15/20 versus4/20; corrected Smol color12/20 versus7/20, Ref13/20 versus4/20; InternVL color13/20 versus7/20, Ref12/20 versus5/20. Intended Qwen+Smol pair restored. The earlier Smol failure was a canonical continuation error; old outputs remain preserved, not capability evidence.
 
-08:08 UTC milestone: 63 tests passed; both models completed 775 paired and784 grid score rows each, plus900 E4 rows and240 fill/halo-factorial rows/model. Six-image ablations include both-task answer-position rotation. 360 blinded packets and structural/perimeter diagnostics are complete, zero human ratings. One GQA source “locomotive” box visibly covers only the lower coupler; retained as a potential annotation error, not silently corrected. No-oracle max-sensitivity AURC is worse than confidence in3/4 tiny n=8 cells. Fixed extension (25 new pairs/task; same estimator) is selected without model outcomes; official CPU LaMa200 edits are running. Additional12/task grid diagnostic is planned within the existing cumulative cap. E5 infrastructure refuses sampling/locking and projects the unchanged120/task factorial above budget even before these additions.
+81 development image pairs×3 models×25 scores=6,075 verified rows. S3 80.23% versus raw median85.53%, paired difference−5.30pp, descriptive95% CI[−12.02,+1.14]. Raw median is proposed from development only, not confirmatory locked. 75 tests pass. Actual blur/mask/fill/resolution/permutation ablations, frozen-answer analyses, no-oracle grid diagnostics, real official LaMa replay and full resource measurements are preserved.
 
-Live counts, errors, checkpoints and resource usage: `reports/evidence/v2/execution_ledger.json` and per-run evidence. No process continuity is promised beyond the active session.
+360 combined blinded packets with native-resolution scored overlays are ready; **HUMAN_AUDIT_PENDING**, zero judgments. Source-box completeness and edit/control semantics remain unresolved. Original GQA choices mixed types; the new color task is narrower. Original120/task confirmation alone needs12,000 additional calls under the repaired factorial, so it cannot fit the remaining budget. No confirmatory manifest, inference or lock exists.
 
-08:15UTC correction: full-vocabulary audit exposed Smol bare-label versus space-prefixed-label mismatch (4.5e-6 versus~.9998 total vocabulary mass). Earlier Smol gate conclusions are invalid as model capability claims. Amendment10 fixes the continuation and preserves all prior outputs. Corrected dev scores512/768:19/40 and18/40. Fresh image-disjoint40-image qualification for all three backbones is running. The extra extension grid allocation is cancelled before inference; budget is reserved for corrected qualification and, if qualified, identical Smol intervention comparisons. Qwen/InternVL historical intervention scores are unaffected by this model-specific label fix.
-
-## Previous session (preserved)
-
-2026-10-16 (Asia/Dhaka). Branch `pilot/controlled-evidence-v1`, based on main `853f02959495f2056fd3ffea56ecf9b7e8bf3d27`. No preexisting workspace or uncommitted user work.
-
-- G0: source inventory recorded; both VLM revisions and weights, official LaMa source/checkpoint and dataset access resolved. Faithful closest-paper equation reproductions remain unfinished.
-- E0/G1: computational smoke completed for both frozen BF16 models on 12 real images/task plus synthetic fixtures and occlusion variants. Finite likelihoods, exact repeatability and measured GPU fit. Full E0 PASS withheld because SmolVLM2 grounding debug competence is at chance and full editor semantic validity is unaudited.
-- E1/G2: 40 separate development images/task, both models, clean/text-only/shuffled/rotated-choice conditions executed. Qwen: GQA 40/40, RefCOCOg 28/40. SmolVLM2: GQA 38/40, RefCOCOg 15/40. **Two-model gate failed:** 37.5% < 40% on SmolVLM2 RefCOCOg. E1 quantifies the flagged E0 weakness; it does not retroactively mark E0 passed.
-- E2–E4: NOT EXECUTED. Competence gate failed; no eligible replacement was run. Operator human audit remains pending. Scoring/statistical core exists; full stage orchestration remains unfinished.
-- G5/E5: BLOCKED, not locked. No confirmatory manifest sampled, no confirmatory scores, no comparator/lambda selected.
-- E6: partial-run statistical reporting and failure audit completed. Scientific verdict: INCONCLUSIVE. Full-study E6 qualitative/primary-method audit remains unfinished with E2–E5.
-
-Resolved failures: archived official RefCOCOg download verified; CUDA wheel download recovered with publisher checksum; Smol processor dependency repaired; official LaMa executed after protobuf/OpenCV repairs. No fake editor output. LaMa runs on isolated CPU, so the old torch does not use the RTX GPU.
-
-Remaining blockers: prescribed model/task competence failure; official PaliGemma2-3B fallback config returns HTTP 401 and requires manual Hugging Face access; two independent human raters unavailable; ambiguity between label-free off-target controls and the 13-image oracle-negative reuse design. No inference that all possible alternative models are unavailable.
-
-Evidence: `reports/evidence/`; local complete manifests, checkpoints, source snapshots and logs: ignored `outputs/`. No model process continues in the background after the session.
+See [complete handoff](TWO_HOUR_HANDOFF.md), [verdict](FINAL_VERDICT.md), per-stage reports and `reports/evidence/v2/execution_ledger.json`. Ignored local datasets, edited images, model weights and atomic checkpoints remain on disk; small metrics/reports/configurations/code are pushed to the pilot branch. Prior status/verdict and original E0/E1 observations remain available in Git history and FINAL_VERDICT_V1_ARCHIVE.md.

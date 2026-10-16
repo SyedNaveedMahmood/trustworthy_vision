@@ -84,3 +84,25 @@ Check archive and per-image hashes against the committed summaries. Original Ref
 LaMa reproduction uses `configs/requirements-lama.lock.txt`, Python 3.8.20, torch 1.8.0+cpu, an exact checkout of `advimman/lama` at `786f5936b27fb3dacd2b1ad799e4de968ea697e7`, and author-linked `smartywu/big-lama` archive revision `05cb2be7f8dbe6ca7c6e78f4fc827a4b2baaa4a9`. Install the exact CPU torch/torchvision/torchtext wheels from the official PyTorch CPU index, then the remaining lock from PyPI. Extract weights into `third_party_weights/big-lama`; run `.venv-core\Scripts\python.exe -m scripts.lama_smoke`. It invokes the unmodified source in a separate CPU process. `opencv-python-headless` replaces the duplicate GUI/headless collision. No GPU fit or semantic validity claim is made for LaMa.
 
 Published E1 score records can be reanalyzed without datasets/models by installing the analysis lock and running `scripts.analyze_executed` then `scripts.write_reports`; `budget_snapshot.json` supplies the saved ledger if local outputs are absent. Inferential results must remain labeled development diagnostics. `configs/locked_protocol.yaml` intentionally does not exist: no confirmatory lock was achieved.
+
+## Final v2 analysis and closed inference accounting
+
+The final cumulative forward ledger is11,984/12,000;16 remain. GPU execution finished before the original deadline. CPU reporting resumed on the user's later continue instruction. Do not reset this ledger or rerun inference to regenerate tables. A complete two-candidate independent-control item needs25 scores and cannot fit the remaining allowance. Completed E2 checkpoints are verified before model loading and can be checked without new forwards. Review reports/evidence/v2/forward_budget_final.json and resource_summary.json for actual timing coverage and memory measurements.
+
+Run from repository root. Published JSON supports statistical reanalysis and plots; full input/cache verification, dose reconstruction and human-review ingestion also require the preserved ignored local artifacts:
+
+```powershell
+.venv-core\Scripts\python.exe -m scripts.analyze_replication_v2
+.venv-core\Scripts\python.exe -m scripts.plot_replication_v2
+.venv-core\Scripts\python.exe -m scripts.analyze_clean_predictions_v2
+.venv-core\Scripts\python.exe -m scripts.analyze_ablations_v2
+.venv-core\Scripts\python.exe -m scripts.analyze_matched_dose_v2
+.venv-core\Scripts\python.exe -m scripts.verify_experiment_artifacts_v2 --require-complete
+.venv-core\Scripts\python.exe -m scripts.prepare_confirmatory_v2
+.venv\Scripts\python.exe -m pytest -q --junitxml=reports/evidence/v2/tests_v2.xml
+.venv-core\Scripts\python.exe -m scripts.write_session_reports_v2
+```
+
+prepare_confirmatory_v2 writes NOT_LOCKED readiness/source hashes and current infeasible budget projection; it does not sample a confirmatory manifest or score a model. The raw-median proposal remains development-selected. E4's corrected-Smol real dose experiment is independently implemented in run_smol_bounded_e4 and matched analyses retain Qwen/InternVL results. No-oracle grid diagnostics exist for Qwen/InternVL, not Smol. The optional last-logit benchmark preserves its completed12-call result on rerun and was never adopted in the main experiment.
+
+The360 final review packets are in outputs/v2/human_review_combined, including full_resolution lossless scored-overlay image pairs and core/expanded masks. Keep PRIVATE_blinding_key.json hidden. Independent reviewers must fill separate real CSVs; scripts.ingest_human_review_v2 currently reports HUMAN_AUDIT_PENDING with zero submitted judgments. Passing numerical/pixel tests does not satisfy this prerequisite. See reports/TWO_HOUR_HANDOFF.md for stage-by-stage execution versus scientific-validation status.

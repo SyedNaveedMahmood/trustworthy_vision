@@ -34,3 +34,15 @@ def test_oom_recovery_is_bounded_to_one_retry(tmp_path):
 def test_vram_guard_rejects_insufficient_free_headroom():
     assert check_memory(3*GIB,16*GIB,2*GIB,'fixture')
     with pytest.raises(MemoryError,match='VRAM headroom'):check_memory(GIB,16*GIB,2*GIB,'fixture')
+
+
+def test_e3_cli_uses_corrected_primary_pair_replication(monkeypatch):
+    from src.cli import main
+    import scripts.analyze_replication_v2 as current
+    import scripts.analyze_interventions_v2 as historical
+    called=[]
+    monkeypatch.setattr(current,'run',lambda:called.append('corrected_three_backbone_replication'))
+    def stale():raise AssertionError('E3 must not default to the historical fallback-only comparison')
+    monkeypatch.setattr(historical,'run',stale)
+    monkeypatch.setattr('sys.argv',['cli','run','--config','configs/exploratory_v2.yaml','--stage','E3'])
+    assert main()==0 and called==['corrected_three_backbone_replication']

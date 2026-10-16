@@ -1,0 +1,88 @@
+{
+  "budget": {
+    "cuda_stream_seconds": 1207.1095388717633,
+    "failed_calls": 0,
+    "forward_calls": 11984,
+    "forward_wall_seconds": 1422.419807701037,
+    "gpu_time_bound_scope": "prior measured model-process wall + entire current autonomous-session wall; conservative, not active kernel time",
+    "gpu_time_conservative_upper_bound_seconds": 5082.128887333718
+  },
+  "confirmatory_forwards": 0,
+  "cuda_stream_timed_call_count": 10225,
+  "cuda_stream_timing_starts_after_call": 1759,
+  "free_disk_bytes_now": 860483522560,
+  "hardware": "NVIDIA RTX4080SUPER16GB driver610.88",
+  "human_review_completed": 0,
+  "new_session_calls": 11208,
+  "official_lama_batches": [
+    {
+      "device": "cpu",
+      "file": "reports/evidence/v2/lama_batch_grid_corrected.json",
+      "pending_requests": 128,
+      "returncode": 0,
+      "source_revision": "786f5936b27fb3dacd2b1ad799e4de968ea697e7",
+      "wall_seconds": 660.5481026000052
+    },
+    {
+      "device": "cpu",
+      "file": "reports/evidence/v2/lama_batch_pairs.json",
+      "pending_requests": 128,
+      "returncode": 0,
+      "source_revision": "786f5936b27fb3dacd2b1ad799e4de968ea697e7",
+      "wall_seconds": 631.0499170000257
+    },
+    {
+      "device": "cpu",
+      "file": "reports/evidence/v2/lama_batch_pairs_corrected.json",
+      "pending_requests": 61,
+      "returncode": 0,
+      "source_revision": "786f5936b27fb3dacd2b1ad799e4de968ea697e7",
+      "wall_seconds": 313.0699537000037
+    },
+    {
+      "device": "cpu",
+      "file": "reports/evidence/v2/lama_batch_pairs_extension.json",
+      "pending_requests": 200,
+      "returncode": 0,
+      "source_revision": "786f5936b27fb3dacd2b1ad799e4de968ea697e7",
+      "wall_seconds": 978.7991361000168
+    }
+  ],
+  "paired_models": {
+    "internvl": {
+      "instrumented_model_interval_seconds": 289.5782543999958,
+      "nvml_peak_device_used_bytes": 7885365248,
+      "paired_score_rows": 2025,
+      "peak_host_rss_bytes": 5613125632,
+      "scope": "E2 initial+extension interval includes model load/preprocess/scoring/checkpoint I/O; excludes prior input-integrity scan. NVML whole device incl desktop.",
+      "score_rows_per_instrumented_second": 6.992928402706848,
+      "torch_peak_allocated_bytes": 5611240960,
+      "torch_peak_reserved_bytes": 6599737344
+    },
+    "qwen": {
+      "instrumented_model_interval_seconds": 417.3304513999901,
+      "nvml_peak_device_used_bytes": 9505939456,
+      "paired_score_rows": 2025,
+      "peak_host_rss_bytes": 4601114624,
+      "scope": "E2 initial+extension interval includes model load/preprocess/scoring/checkpoint I/O; excludes prior input-integrity scan. NVML whole device incl desktop.",
+      "score_rows_per_instrumented_second": 4.852269929517173,
+      "torch_peak_allocated_bytes": 8131575808,
+      "torch_peak_reserved_bytes": 8220835840
+    },
+    "smol": {
+      "instrumented_model_interval_seconds": 800.4018814000301,
+      "nvml_peak_device_used_bytes": 6930112512,
+      "paired_score_rows": 2025,
+      "peak_host_rss_bytes": 5632286720,
+      "scope": "E2 initial+extension interval includes model load/preprocess/scoring/checkpoint I/O; excludes prior input-integrity scan. NVML whole device incl desktop.",
+      "score_rows_per_instrumented_second": 2.5299790605913532,
+      "torch_peak_allocated_bytes": 4910959616,
+      "torch_peak_reserved_bytes": 5643436032
+    }
+  },
+  "prior_session_calls": 776,
+  "remaining_forward_allowance": 16,
+  "status": "MEASURED_FINAL_GPU_EXECUTION",
+  "timestamp_utc": "2026-10-16T08:43:48.379447+00:00",
+  "timing_warning": "CUDA events measure elapsed stream time around synchronized forwards, not summed active kernel time. Earlier calls were not CUDA-event profiled. Conservative GPU-time upper bound charges the entire session wall plus prior179.802s."
+}

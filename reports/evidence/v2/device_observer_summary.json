@@ -1,0 +1,56 @@
+{
+  "by_label": {
+    "internvl/COMPLETE_COMPUTATIONAL_ONLY": {
+      "max_memory_used_bytes": 7819141120,
+      "max_temperature_celsius": 51,
+      "mean_gpu_utilization_percent": 3.4444444444444446,
+      "mean_power_watts": 66.18844444444444,
+      "p95_gpu_utilization_percent": 4.6,
+      "samples": 9
+    },
+    "internvl/RUNNING": {
+      "max_memory_used_bytes": 7885365248,
+      "max_temperature_celsius": 62,
+      "mean_gpu_utilization_percent": 44.165333333333336,
+      "mean_power_watts": 155.63111199999997,
+      "p95_gpu_utilization_percent": 90.0,
+      "samples": 375
+    },
+    "qwen/COMPLETE_COMPUTATIONAL_ONLY": {
+      "max_memory_used_bytes": 9439977472,
+      "max_temperature_celsius": 48,
+      "mean_gpu_utilization_percent": 4.875,
+      "mean_power_watts": 59.009125,
+      "p95_gpu_utilization_percent": 10.899999999999997,
+      "samples": 8
+    },
+    "qwen/RUNNING": {
+      "max_memory_used_bytes": 9505939456,
+      "max_temperature_celsius": 56,
+      "mean_gpu_utilization_percent": 31.355263157894736,
+      "mean_power_watts": 125.95276315789471,
+      "p95_gpu_utilization_percent": 68.25,
+      "samples": 76
+    },
+    "smol/COMPLETE_COMPUTATIONAL_ONLY": {
+      "max_memory_used_bytes": 6861791232,
+      "max_temperature_celsius": 63,
+      "mean_gpu_utilization_percent": 29.88562091503268,
+      "mean_power_watts": 94.16230392156864,
+      "p95_gpu_utilization_percent": 100.0,
+      "samples": 306
+    },
+    "smol/RUNNING": {
+      "max_memory_used_bytes": 6928605184,
+      "max_temperature_celsius": 65,
+      "mean_gpu_utilization_percent": 51.58151093439364,
+      "mean_power_watts": 184.87008946322067,
+      "p95_gpu_utilization_percent": 100.0,
+      "samples": 1006
+    }
+  },
+  "elapsed_seconds": 892.5470000000205,
+  "sample_interval_seconds": 0.5,
+  "scope": "whole device incl desktop; label from latest E2 ledger event, not per-kernel or process-isolated attribution",
+  "status": "COMPLETE"
+}

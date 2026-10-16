@@ -17,10 +17,10 @@ def run():
     record['execution']['memory_headroom_gib']=1
     record['execution']['model_admission_free_gib']={'qwen':10,'smol':7,'internvl':8}
     Path('configs/runtime_v2.yaml').write_text(yaml.safe_dump(record,sort_keys=False),encoding='utf-8')
-    git=str(Path('../.tools/git/cmd/git.exe').resolve())
+    from src.session import git_revision
     environment={'timestamp_utc':__import__('datetime').datetime.now(__import__('datetime').timezone.utc).isoformat(),
                  'initial_commit':'ef7c3e84211cfc3e424a5b9ec27adac109dfe31d','initial_branch':'pilot/controlled-evidence-v1','initial_worktree_clean':True,
-                 'safe_update':'fetch origin; pull --ff-only; no remote changes at session start','current_commit':subprocess.check_output([git,'rev-parse','HEAD'],text=True).strip(),
+                 'safe_update':'fetch origin; pull --ff-only; no remote changes at session start','current_commit':git_revision(),
                  'free_disk_bytes_now':shutil.disk_usage('.').free,'platform':platform.platform(),
                  'gpu_now':subprocess.check_output(['nvidia-smi','--query-gpu=name,driver_version,memory.total,memory.used','--format=csv,noheader'],text=True).strip(),
                  'initial_free_disk_approx_gb':866,'initial_gpu':'NVIDIA RTX 4080 SUPER 16376 MiB driver 610.88'}

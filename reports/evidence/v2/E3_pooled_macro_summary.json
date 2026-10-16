@@ -1,0 +1,76 @@
+{
+  "baseline": "raw_median",
+  "contrast_vs_selected_baseline": {
+    "ci95": [
+      -0.12020198170731708,
+      0.011432926829268296
+    ],
+    "effect": -0.052972560975609755,
+    "replicates": 5000,
+    "seed": 20269,
+    "unit": "image_id clustered jointly across models within task"
+  },
+  "methods": {
+    "raw_mean": {
+      "ci95": [
+        0.7605182926829268,
+        0.8772865853658536
+      ],
+      "effect": 0.8214939024390244,
+      "replicates": 5000,
+      "seed": 20269,
+      "unit": "image_id clustered jointly across models within task"
+    },
+    "raw_median": {
+      "ci95": [
+        0.7999199695121951,
+        0.910594512195122
+      ],
+      "effect": 0.8552591463414634,
+      "replicates": 5000,
+      "seed": 20269,
+      "unit": "image_id clustered jointly across models within task"
+    },
+    "raw_occlusion": {
+      "ci95": [
+        0.7719512195121951,
+        0.8945121951219512
+      ],
+      "effect": 0.8335365853658536,
+      "replicates": 5000,
+      "seed": 20269,
+      "unit": "image_id clustered jointly across models within task"
+    },
+    "robust_independent": {
+      "ci95": [
+        0.7285060975609756,
+        0.8699733231707317
+      ],
+      "effect": 0.8022865853658536,
+      "replicates": 5000,
+      "seed": 20269,
+      "unit": "image_id clustered jointly across models within task"
+    },
+    "robust_sham": {
+      "ci95": [
+        0.7957317073170731,
+        0.9134146341463415
+      ],
+      "effect": 0.8576219512195122,
+      "replicates": 5000,
+      "seed": 20269,
+      "unit": "image_id clustered jointly across models within task"
+    },
+    "sham_median": {
+      "ci95": [
+        0.7780487804878049,
+        0.901219512195122
+      ],
+      "effect": 0.8454268292682927,
+      "replicates": 5000,
+      "seed": 20269,
+      "unit": "image_id clustered jointly across models within task"
+    }
+  },
+  "status": "EXPLORATORY_NOT_CONFIRMATORY"
+}

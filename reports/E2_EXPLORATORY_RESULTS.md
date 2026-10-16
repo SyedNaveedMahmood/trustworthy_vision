@@ -1,25 +1,29 @@
-# E2 exploratory intervention results
+# E2 exploratory results — completed computational development
 
-**Real computational pilot executed; semantic validity remains HUMAN_AUDIT_PENDING.** The corrected cohort contains 15 annotation-selected harder color GQA and 16 original-development RefCOCOg images, shared by Qwen and InternVL. Each model has 775 complete score rows: clean plus 24 removal/sham/control images per item. Source-native images are capped at 768 without upscaling; RefCOCOg overlays are applied consistently after intervention. No confirmatory image was sampled or scored.
+**81 real images, three qualified frozen backbones,6,075 complete paired score rows; HUMAN_AUDIT_PENDING.** Initial15 GQA/16 RefCOCOg plus25 new images/task. Every image has clean+24 edits per model. All3 backbones use identical cached edited images; no confirmatory sample was accessed.
 
-The original mixed-type GQA intervention preparation is preserved as a separate unscored legacy cohort. It is excluded from corrected E3 evidence because of the audited distractor defect. New cohort IDs, exclusions, box-area mismatches, independent-control overlaps and hashes are saved in `evidence/v2/pilot_sample_summary_corrected.json`; full local manifest is `outputs/v2/pilot_manifest_corrected.json`.
+972 content/mask/operator requests produce 1944 removal/sham images. Mean-fill occlusion, Gaussian blur sigma24 and official LaMa share canonical RGB capped at768 and a fixed8px halo. Shams restore exact original core pixels; outside-mask compositing is exact. Independent controls use dimensions, candidate geometry and seed only, never relevance labels, questions, model predictions or sensitivities. Contextual irrelevance is not guaranteed.
 
-| Operator | Requests | Inside expanded-mask mean absolute RGB change | Outside-mask max change | Sham-core max change |
-|---|---:|---:|---:|---:|
-| Global mean fill | 124 | 53.23 | 0 | 0 |
-| Gaussian blur, sigma 24 | 124 | 31.73 | 0 | 0 |
-| Official LaMa | 124 | 34.28 | 0 | 0 |
+| Operator | Requests | Mean mask area | Mean inside RGB change | Outside max | Sham-core max |
+|---|---:|---:|---:|---:|---:|
+| blur | 324 | 10.88% | 33.38 | 0 | 0 |
+| lama | 324 | 10.88% | 35.56 | 0 | 0 |
+| occlusion | 324 | 10.88% | 55.69 | 0 | 0 |
 
-Each request yields removal and sham: **372 requests, 744 edited images**. No identity removals or identity shams in this pilot. Mean core area is 7.83% and expanded-mask area 9.68%. Mask perimeter, exact output hashes, pixel differences and geometry are recorded per request. The 8px halo lets the sham retain an operator-induced boundary while restoring exact core pixels. This does not guarantee matched semantic artifacts: contextual evidence can change in the halo; blur can retain color or shape; inpainting can reconstruct or hallucinate objects. Off-target controls have equal candidate dimensions and are selected from image geometry/seed alone. They can overlap relevant contextual content; their validity is unknown.
+No identity removals/shams in this paired cohort. Exact masks, perimeters, inside/outside changes, SSIM maps, source image/annotation IDs and hashes are preserved. Whole-image SSIM can be dominated by unchanged pixels; local windows cross boundaries. Neither SSIM nor exact pixel restoration establishes semantic validity. Blur can retain coarse color; LaMa can reconstruct or invent content; rectangular overlays leak geometric cues; candidate controls need not match texture.
 
-LaMa ran the unmodified official predictor from pinned source `786f5936b27fb3dacd2b1ad799e4de968ea697e7` and the pinned downloaded big-lama checkpoint in its isolated Python3.8 CPU environment. Completed raw predictions are reused by content/mask/operator hash. The corrected batch needed 61 remaining requests after reuse of previously completed RefCOCOg edits; the original legacy preparation and CPU wall times remain recorded separately. No substitute inpainting was used. Outputs are composited back to original pixels outside the mask; raw LaMa outside-region change was also zero in this batch.
+Official LaMa source786f5936b27fb3dacd2b1ad799e4de968ea697e7 and verified big-lama weights ran in the isolated CPU environment. No substitute editor. A fixed real-image official replay was byte-identical with0 pixel difference; CPU replay12.21s including loading. Batch logs, raw outputs and content caches remain local. The unscored original mixed-choice GQA edit cohort is preserved separately.
 
-Measured paired-score model process resources (includes load, preprocessing, cache and atomic checkpoint I/O): Qwen **151.75s**, peak NVML **8.83 GiB**, Torch allocated **7.57 GiB**; InternVL **101.62s**, peak NVML **7.10 GiB**, Torch allocated **5.23 GiB**. NVML includes desktop usage and is sampled at 100ms; short spikes can be missed. Detailed reserved/RSS peaks, input tensors, image-token counts and per-forward timings are in the score files. BF16, batch one, sequential model process lock; LaMa never occupies GPU memory.
+| Model | E2 score rows | Model interval(s) | Rows/s | NVML peakGiB | Torch allocated/reservedGiB | Peak hostRSS GiB |
+|---|---:|---:|---:|---:|---|---:|
+| internvl | 2025 | 289.58 | 6.99 | 7.34 | 5.23/6.15 | 5.23 |
+| qwen | 2025 | 417.33 | 4.85 | 8.85 | 7.57/7.66 | 4.29 |
+| smol | 2025 | 800.40 | 2.53 | 6.45 | 4.57/5.26 | 5.25 |
 
-## Review material and examples
+These measured intervals include model load, preprocessing, forwards and checkpoint I/O, not the prior integrity scan. NVML includes the Windows desktop and100ms sampling can miss short peaks. All models run sequentially in BF16, batch1, without quantization; LaMa never shares GPU memory. Per-row tensors, image-token counts and timings are in actual score records.
 
-**360 randomized packets** are ready: 30 per operator × candidate/control role × removal/sham condition. `outputs/v2/human_review/review_form.csv` contains empty reviewer fields for removal validity, sham preservation, off-target validity, unexpected semantics, artifacts and confidence. Independent raters must complete it. The separate private key maps blinded IDs to conditions; keep it hidden while reviewing. **Zero ratings and zero independent reviewers have been recorded.**
+All6,075 paired score rows passed CPU verification of input/cache hashes, source/gold mapping, exact probability normalization, canonical answer labels, complete factorials and independent-control reconstruction. This is a computational pass only. The source-locomotive-box failure and other semantic uncertainties remain; see the dataset/failure reports.
 
-Genuine local examples: `outputs/v2/human_review/contact_sheet_01.jpg` (12 randomized original/edit pairs), all individual `V2_*.jpg`, and further contact sheets. Dataset-derived image files are preserved locally rather than uploaded to GitHub. Agent visual inspection of the first sheet shows visible filled/blurred patches and shams retaining recognizable content, but is not an independent human audit or a validity pass. Reviewers need the intended-region pointer and both original/edited full-resolution images for ambiguous cases; the packet is being strengthened accordingly.
+**360 balanced randomized review packets**,15/task for each operator×candidate/control×removal/sham group, are at `outputs/v2/human_review_combined/`. Native-resolution lossless original/edited PNGs include exactly the scored task overlays; contact sheets add a cyan review-only extent pointer. Core and expanded masks are supplied. Reviewers must judge source referent matching and box completeness as well as removal, preservation, off-target validity, artifacts, unintended semantics and confidence. Keep the separate PRIVATE key hidden. Original initial-only packets also remain preserved. Zero submitted judgments; two real independent reviewers are still required. The ingestion tool rejects missing/duplicate raters, incomplete panels and missing ratings; uncertain judgments do not disappear from denominators. No ratings were fabricated.
 
-E3 can summarize provisional numerical sensitivities, and E4 can diagnose artifacts, while E2 semantic validity remains unresolved. A four-grid-candidate, predicted-answer diagnostic is in progress and is distinct from these oracle-region pairs. E2 is **PARTIAL / EXPLORATORY**, not officially passed.
+E2 is **PARTIAL / EXPLORATORY**, never a semantic-validity pass. The fixed-grid diagnostic generated further edits for16 Qwen/InternVL images with49 scores/image; it is separately labeled no-oracle evidence candidates, not annotation-free task/image construction. E3's numerical sensitivity results remain provisional.

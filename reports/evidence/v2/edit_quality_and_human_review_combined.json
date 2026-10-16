@@ -1,0 +1,69 @@
+{
+  "cohorts": [
+    "corrected",
+    "extension"
+  ],
+  "completed_ratings": 0,
+  "geometry": {
+    "by_operator": {
+      "blur": {
+        "identity_removals": 0,
+        "identity_shams": 0,
+        "mean_core_fraction": 0.08889282745783258,
+        "mean_expanded_fraction": 0.1087615142834263,
+        "mean_inside_absolute_change": 33.381667062429685,
+        "n": 324,
+        "outside_mask_max_change": 0,
+        "raw_lama_outside_max_change": 0,
+        "sham_core_max_change": 0
+      },
+      "lama": {
+        "identity_removals": 0,
+        "identity_shams": 0,
+        "mean_core_fraction": 0.08889282745783258,
+        "mean_expanded_fraction": 0.1087615142834263,
+        "mean_inside_absolute_change": 35.558781980701525,
+        "n": 324,
+        "outside_mask_max_change": 0,
+        "raw_lama_outside_max_change": 0,
+        "sham_core_max_change": 0
+      },
+      "occlusion": {
+        "identity_removals": 0,
+        "identity_shams": 0,
+        "mean_core_fraction": 0.08889282745783258,
+        "mean_expanded_fraction": 0.1087615142834263,
+        "mean_inside_absolute_change": 55.6872710664536,
+        "n": 324,
+        "outside_mask_max_change": 0,
+        "raw_lama_outside_max_change": 0,
+        "sham_core_max_change": 0
+      }
+    },
+    "edit_requests": 972,
+    "rendered_images": 1944
+  },
+  "independent_reviewers": 0,
+  "limitation": "Automated geometry and exact pixel restoration do not establish semantic intervention validity.",
+  "local_directory": "outputs/v2/human_review_combined",
+  "native_resolution_lossless_pairs": 360,
+  "per_operator_role_condition": {
+    "blur/candidate/removal": 30,
+    "blur/candidate/sham": 30,
+    "blur/independent_control/removal": 30,
+    "blur/independent_control/sham": 30,
+    "lama/candidate/removal": 30,
+    "lama/candidate/sham": 30,
+    "lama/independent_control/removal": 30,
+    "lama/independent_control/sham": 30,
+    "occlusion/candidate/removal": 30,
+    "occlusion/candidate/sham": 30,
+    "occlusion/independent_control/removal": 30,
+    "occlusion/independent_control/sham": 30
+  },
+  "private_key_sha256": "5629279067506061cfc49c173d672dac9240f48c0a0d6d0b8af2b313f348aa5b",
+  "review_packet_count": 360,
+  "scored_task_overlays_preserved": true,
+  "seed": 20270,
+  "status": "HUMAN_AUDIT_PENDING"
+}

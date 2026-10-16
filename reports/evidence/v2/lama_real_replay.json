@@ -1,0 +1,19 @@
+{
+  "byte_identical": true,
+  "device": "cpu",
+  "edit_key": "e76d257788e4326b92715b29fba955151f5e6e065ae42cce8f152e48c36dfcc7",
+  "image_id": "1159758",
+  "official_subprocess_wall_seconds": 12.207488000014564,
+  "original_sha256": "a01746ac558026c439ba6886723dc74ce9bc3755f2ac0386158b9217ebc126ea",
+  "pixel_max_absolute_error": 0,
+  "replay_sha256": "a01746ac558026c439ba6886723dc74ce9bc3755f2ac0386158b9217ebc126ea",
+  "semantic_validity": "HUMAN_AUDIT_PENDING",
+  "shape": [
+    768,
+    576,
+    3
+  ],
+  "source_revision": "786f5936b27fb3dacd2b1ad799e4de968ea697e7",
+  "status": "REAL_IMAGE_REPLAY",
+  "task": "gqa"
+}
