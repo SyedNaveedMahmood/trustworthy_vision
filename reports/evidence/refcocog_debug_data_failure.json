@@ -1,0 +1,4 @@
+{
+  "detail": "HTTPSConnectionPool(host='images.cocodataset.org', port=443): Max retries exceeded with url: /train2014/COCO_train2014_000000197212.jpg (Caused by SSLError(SSLCertVerificationError(\"The certificate's CN name does not match the passed value.\")))",
+  "exception": "SSLError"
+}

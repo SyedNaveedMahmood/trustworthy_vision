@@ -1,0 +1,79 @@
+{
+  "count": 12,
+  "items": [
+    {
+      "dataset": "refcocog",
+      "image_id": "197212",
+      "image_sha256": "bc824d5b0a71e019bcf19b2548ff43dd91d066031053f519b1b93c4e290ef8b0",
+      "item_id": "6952"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "186056",
+      "image_sha256": "eaaf3358ed84dbf6e02f38b68d40646c82f34e2011c40959e394b123aebbff75",
+      "item_id": "37303"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "114392",
+      "image_sha256": "4897e72bfd69cfcc43f3ca3966728e03e2d4fa4ccd34f1b15784d855285d3ef0",
+      "item_id": "32081"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "438375",
+      "image_sha256": "422bb002d425fd2447d91827be53063e56d790d64f95d3aba117d725cc198dfd",
+      "item_id": "7942"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "111943",
+      "image_sha256": "190d0ab5f292186c317aa81204800512a4b8424c0c5cfdaae8063a7b79cd7b52",
+      "item_id": "6724"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "581198",
+      "image_sha256": "431c023f0afed2f6fa681ca98c1b94a4a15e950f277ceb2b6ed0e0fe4718ce40",
+      "item_id": "16920"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "367048",
+      "image_sha256": "578a9c2bbd6b52f651c42ccc7339877ee1a4c82b45e5f7a66e50fc4d8f1022e5",
+      "item_id": "42540"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "359249",
+      "image_sha256": "2b32063827f06add77e79929635ef8770597c81996f809a514b98f50fabf1a5e",
+      "item_id": "35142"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "90146",
+      "image_sha256": "aa50c150941bbef4b31b84eb3d8e90d5106ef3788faadcf61e17c5b8edd3c54d",
+      "item_id": "5213"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "821",
+      "image_sha256": "d371300b3eb4fc710e02b8cd3efeeb0e84a915391e2ac80fd9e11473e3a9fd94",
+      "item_id": "9339"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "451337",
+      "image_sha256": "991ec9e9635403d4ede434cacd3f6340e66bbdaa5ba0f49ba8883a2108e99330",
+      "item_id": "35796"
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "192464",
+      "image_sha256": "e3d5da64e91d180b734122772e790f53351abffe3b455ae06dd9db9fea2b77cf",
+      "item_id": "29263"
+    }
+  ],
+  "sha256": "3a9b1995c40e980cff8b7e987213ee56e7ab5ecc1fa84d4a5067ab73a3591fdb",
+  "status": "INPUTS_PREPARED_NOT_E0_PASS"
+}
