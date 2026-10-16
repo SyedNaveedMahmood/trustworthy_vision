@@ -1,6 +1,6 @@
 # Two-hour research handoff
 
-Generated2026-10-16T11:23:59.948786+00:00. Original autonomous window07:18:11–09:18:11UTC on2026-10-16. GPU execution completed around08:40UTC. The user later said “continue”; remaining CPU validation/reporting resumed after the original window. No GPU inference continued during the gap or after its completed runs. This file does not claim two hours of continuous GPU work.
+Generated2026-10-16T11:25:42.218850+00:00. Original autonomous window07:18:11–09:18:11UTC on2026-10-16. GPU execution completed around08:40UTC. The user later said “continue”; remaining CPU validation/reporting resumed after the original window. No GPU inference continued during the gap or after its completed runs. This file does not claim two hours of continuous GPU work.
 
 ## A. Executive summary
 
@@ -99,6 +99,6 @@ Artifact verification and dose reconstruction require ignored local manifests/ca
 
 ## I. GitHub and modified files
 
-Branch: [pilot/controlled-evidence-v1](https://github.com/SyedNaveedMahmood/trustworthy_vision/tree/pilot/controlled-evidence-v1). [Latest branch commits](https://github.com/SyedNaveedMahmood/trustworthy_vision/commits/pilot/controlled-evidence-v1). Evidence-parent commit when this report was generated: [e3377c3d4def08bd0cf936f0f6cf92c9c00fec9a](https://github.com/SyedNaveedMahmood/trustworthy_vision/commit/e3377c3d4def08bd0cf936f0f6cf92c9c00fec9a); report publication follows on the same branch. Use `git rev-parse HEAD` for the checked-out final handoff commit; no self-referential commit hash is fabricated.
+Branch: [pilot/controlled-evidence-v1](https://github.com/SyedNaveedMahmood/trustworthy_vision/tree/pilot/controlled-evidence-v1). [Latest branch commits](https://github.com/SyedNaveedMahmood/trustworthy_vision/commits/pilot/controlled-evidence-v1). Evidence-parent commit when this report was generated: [677e84ee9bf1ffd5a98008351215e8c847d0e654](https://github.com/SyedNaveedMahmood/trustworthy_vision/commit/677e84ee9bf1ffd5a98008351215e8c847d0e654); report publication follows on the same branch. Use `git rev-parse HEAD` for the checked-out final handoff commit; no self-referential commit hash is fabricated.
 
 Main files: [qualification](MODEL_QUALIFICATION_V2.md), [mathematical audit](ESTIMATOR_MATHEMATICAL_AUDIT.md), [dataset/prompt audit](DATASET_AND_PROMPT_AUDIT.md), [E2](E2_EXPLORATORY_RESULTS.md), [E3](E3_EXPLORATORY_COMPARISON.md), [E4](E4_EXPLORATORY_ABLATIONS.md), [verdict](FINAL_VERDICT.md), [status](STATUS.md), [deviations](DEVIATIONS.md); `docs/08–10`, configs/runtime_v2.yaml, requirements locks, src/models/choice.py, src/models/internvl.py, src/scoring/v2.py, src/edits/pilot.py, src/evaluation/, scripts/*v2.py and tests/test_v2*.py. Public metrics/figures/checksum evidence: `reports/evidence/v2/`. Original E0/E1 JSON is unchanged. No main merge, force push, reset, overwritten user work or fabricated human audit.

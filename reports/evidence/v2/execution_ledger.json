@@ -9,16 +9,25 @@
   },
   "current": {
     "active_experiment": null,
+    "actual_pair_images": 81,
+    "actual_pair_score_rows": 6075,
     "confirmatory_forwards": 0,
+    "e5_launch": "NO_GO",
+    "evidence_commit": "677e84ee9bf1ffd5a98008351215e8c847d0e654",
+    "evidence_push_verified": true,
     "human_audit": "HUMAN_AUDIT_PENDING",
-    "observed_max_e2_device_gib": 8.853096008300781,
+    "remaining_dependencies": [
+      "two real independent semantic reviewers",
+      "source/reference/control validity",
+      "explicit feasible protocol and compute amendment"
+    ],
     "remaining_forward_calls": 16,
-    "remaining_work": "Independent semantic review and an explicitly amended feasible study; no complete25-score pair fits remaining budget",
-    "status": "COMPLETE",
-    "task": "Final scientific handoff validation",
-    "test_count": 75,
-    "timestamp_utc": "2026-10-16T11:24:58.211707+00:00",
-    "verified_pair_score_rows": 6075
+    "scientific_verdict": "INCONCLUSIVE",
+    "status": "HANDOFF_COMPLETE",
+    "task": "Handoff and evidence published",
+    "tests_passed": 75,
+    "timestamp_utc": "2026-10-16T11:25:42.313850+00:00",
+    "work_remaining": "E5 and full E6 unexecuted; no complete25-score pair fits remaining allowance"
   },
   "deadline_utc": "2026-10-16T09:18:11+00:00",
   "events": [
@@ -4435,8 +4444,30 @@
       "test_count": 75,
       "timestamp_utc": "2026-10-16T11:24:58.211707+00:00",
       "verified_pair_score_rows": 6075
+    },
+    {
+      "active_experiment": null,
+      "actual_pair_images": 81,
+      "actual_pair_score_rows": 6075,
+      "confirmatory_forwards": 0,
+      "e5_launch": "NO_GO",
+      "evidence_commit": "677e84ee9bf1ffd5a98008351215e8c847d0e654",
+      "evidence_push_verified": true,
+      "human_audit": "HUMAN_AUDIT_PENDING",
+      "remaining_dependencies": [
+        "two real independent semantic reviewers",
+        "source/reference/control validity",
+        "explicit feasible protocol and compute amendment"
+      ],
+      "remaining_forward_calls": 16,
+      "scientific_verdict": "INCONCLUSIVE",
+      "status": "HANDOFF_COMPLETE",
+      "task": "Handoff and evidence published",
+      "tests_passed": 75,
+      "timestamp_utc": "2026-10-16T11:25:42.313850+00:00",
+      "work_remaining": "E5 and full E6 unexecuted; no complete25-score pair fits remaining allowance"
     }
   ],
-  "git_commit": "e3377c3d4def08bd0cf936f0f6cf92c9c00fec9a",
+  "git_commit": "677e84ee9bf1ffd5a98008351215e8c847d0e654",
   "started_utc": "2026-10-16T07:18:11+00:00"
 }

@@ -1,6 +1,6 @@
 # Execution status — amended development study
 
-Updated2026-10-16T11:23:59.948786+00:00; evidence-parent commit `e3377c3d4def08bd0cf936f0f6cf92c9c00fec9a`, branch `pilot/controlled-evidence-v1`.
+Updated2026-10-16T11:25:42.218850+00:00; evidence-parent commit `677e84ee9bf1ffd5a98008351215e8c847d0e654`, branch `pilot/controlled-evidence-v1`.
 
 **INCONCLUSIVE scientifically; E5 launch NO-GO.** All planned permissible GPU execution is finished at11984/12,000 calls, with16 remaining and0 failed model calls. No GPU experiment is continuing in the background. User resumed CPU reporting after the original autonomous window; no inference ran during that gap.
 
