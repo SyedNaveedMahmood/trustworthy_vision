@@ -1,0 +1,77 @@
+{
+  "qwen": {
+    "image_processor": {
+      "_processor_class": "Qwen2_5_VLProcessor",
+      "do_convert_rgb": true,
+      "do_normalize": true,
+      "do_rescale": true,
+      "do_resize": true,
+      "image_mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "image_processor_type": "Qwen2VLImageProcessor",
+      "image_std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ],
+      "max_pixels": 12845056,
+      "merge_size": 2,
+      "min_pixels": 3136,
+      "patch_size": 14,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "longest_edge": 12845056,
+        "shortest_edge": 3136
+      },
+      "temporal_patch_size": 2
+    },
+    "processor": {
+      "processor_class": "Qwen2_5_VLProcessor"
+    }
+  },
+  "smol": {
+    "image_processor": {
+      "_processor_class": "SmolVLMProcessor",
+      "do_convert_rgb": true,
+      "do_image_splitting": true,
+      "do_normalize": true,
+      "do_pad": true,
+      "do_rescale": true,
+      "do_resize": true,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_processor_type": "SmolVLMImageProcessor",
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "max_image_size": {
+        "longest_edge": 384
+      },
+      "resample": 1,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "longest_edge": 1536
+      },
+      "video_sampling": {
+        "fps": 1,
+        "max_frames": 64,
+        "video_size": {
+          "longest_edge": 384
+        }
+      }
+    },
+    "processor": {
+      "image_seq_len": 81,
+      "processor_class": "SmolVLMProcessor"
+    }
+  }
+}

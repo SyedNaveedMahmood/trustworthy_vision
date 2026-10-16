@@ -1,0 +1,51 @@
+{
+  "card_data": {
+    "base_model": [
+      "OpenGVLab/InternViT-300M-448px-V2_5",
+      "internlm/internlm2_5-1_8b-chat"
+    ],
+    "base_model_relation": "merge",
+    "datasets": [
+      "HuggingFaceFV/finevideo"
+    ],
+    "language": [
+      "multilingual"
+    ],
+    "library_name": "transformers",
+    "license": "mit",
+    "pipeline_tag": "image-text-to-text",
+    "tags": [
+      "internvl",
+      "custom_code"
+    ]
+  },
+  "files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "configuration_intern_vit.py",
+    "configuration_internlm2.py",
+    "configuration_internvl_chat.py",
+    "conversation.py",
+    "eval_llm_benchmark.log",
+    "examples/image1.jpg",
+    "examples/image2.jpg",
+    "examples/red-panda.mp4",
+    "generation_config.json",
+    "model.safetensors",
+    "modeling_intern_vit.py",
+    "modeling_internlm2.py",
+    "modeling_internvl_chat.py",
+    "preprocessor_config.json",
+    "runs/Nov21_17-13-40_HOST-10-140-60-15/events.out.tfevents.1732180755.HOST-10-140-60-15.42974.0",
+    "special_tokens_map.json",
+    "tokenization_internlm2.py",
+    "tokenization_internlm2_fast.py",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "gated": false,
+  "model_id": "OpenGVLab/InternVL2_5-2B",
+  "revision": "573169ee54df216786bb9a189e9a32a060a008cf"
+}

@@ -1,0 +1,6372 @@
+{
+  "cumulative_budget": {
+    "failed_calls": 0,
+    "forward_calls": 1759,
+    "forward_wall_seconds": 213.90238689999387
+  },
+  "metrics": {
+    "image": 15,
+    "n": 20,
+    "screen_passed": true,
+    "shuffled": 8,
+    "text_only": 7
+  },
+  "model": "smol",
+  "partition": "development_hard",
+  "rows": [
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.1875,
+        4.40625,
+        4.15625,
+        3.171875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2403045",
+      "image_sha256": "78e3f1c7a3af55aaed9bf21a98213711c8c83877ccd96f5724c27154493724ec",
+      "input_tokens": 1133,
+      "item_id": "05276748",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "manual_probability_max_abs_error": 5.551115123125783e-16,
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1133
+          ],
+          "input_ids": [
+            1,
+            1133
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.9549458536192251,
+        0.021767208521452214,
+        0.01695231904178554,
+        0.0063346188175364675
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "4b61e7b9a5a79fee61e7fb884cca85cbb9b292bf947cdaab3af4bca3627d54a9",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "af4a77b0eec8cc1139b4c55213dfbff44b947cab7dcde53a2fa4ad65f8710d0d",
+      "status": "OK",
+      "wall_seconds": 0.5030299000209197
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.75,
+        6.3125,
+        6.65625,
+        6.09375
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2403045",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 50,
+      "item_id": "05276748",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            50
+          ],
+          "input_ids": [
+            1,
+            50
+          ]
+        }
+      },
+      "probabilities": [
+        0.1505955044298592,
+        0.26430334136690964,
+        0.37272745311347355,
+        0.21237370108975762
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "0dd01bba96192011c2e0f6d91f0970e9ba2070d007c7015e96b394268b670f89",
+      "retry_count": 0,
+      "run_key": "906e190643a84d5da0567e3911f94415eebac323587fe44d32738169ec51f6da",
+      "status": "OK",
+      "wall_seconds": 0.0249515000032261
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.875,
+        6.5625,
+        7.4375,
+        7.625
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2403045",
+      "image_sha256": "f2ef8375b0b7bdce3fa52fc2547a22820b6709a8bc15a022a89cd3a43f5652e2",
+      "input_tokens": 1133,
+      "item_id": "05276748",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1133
+          ],
+          "input_ids": [
+            1,
+            1133
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.17845446752111097,
+        0.13056007749379567,
+        0.31319734427829615,
+        0.3777881107067979
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "4b61e7b9a5a79fee61e7fb884cca85cbb9b292bf947cdaab3af4bca3627d54a9",
+      "retry_count": 0,
+      "run_key": "133e9495f289851611802ca42536038d146f9ca48c73d37e42edf1f075610d27",
+      "status": "OK",
+      "wall_seconds": 0.19668239998281933
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.34375,
+        9.25,
+        7.875,
+        7.9375
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "1159758",
+      "image_sha256": "630c70f2bfdffee9cd20879ad30886b895bffcb408c503879aa7753933bac3eb",
+      "input_tokens": 1138,
+      "item_id": "1652426",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          576,
+          768
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.08897085664883118,
+        0.5985792093698659,
+        0.1513445253542016,
+        0.1611054086271011
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "c2400a0a9f7b6251b4d3ecba35fa1a6c2a01eec665d57b92f1d18136d836e348",
+      "retry_count": 0,
+      "run_key": "51896c4840a1eb9dd1ac595397d3fb6d56310bfc3e6e5553deddc33e911e2157",
+      "status": "OK",
+      "wall_seconds": 0.1963337000051979
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.375,
+        6.21875,
+        5.28125,
+        6.5625
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "1159758",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 54,
+      "item_id": "1652426",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            54
+          ],
+          "input_ids": [
+            1,
+            54
+          ]
+        }
+      },
+      "probabilities": [
+        0.1330768713202488,
+        0.30941299599131306,
+        0.12116787019712405,
+        0.43634226249131425
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5748efb46ebeb5f8d6a2fbbab915cd0cd4961a31a2a30ab670f0cbcd357b9454",
+      "retry_count": 0,
+      "run_key": "e5c42091372adc44c1ba3effd3b74c4b88e20672be2a88489ed74a0d34c25d34",
+      "status": "OK",
+      "wall_seconds": 0.017501599999377504
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.25,
+        6.5,
+        5.9375,
+        7.1875
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "1159758",
+      "image_sha256": "9b75f3d4e938076c1302f307a438bd1002004a3b908f381676957174d0752f78",
+      "input_tokens": 1138,
+      "item_id": "1652426",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          576,
+          768
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.17955801961080953,
+        0.23055706095039535,
+        0.13136745344997586,
+        0.4585174659888195
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "c2400a0a9f7b6251b4d3ecba35fa1a6c2a01eec665d57b92f1d18136d836e348",
+      "retry_count": 0,
+      "run_key": "b8dbb36ca440b8fd067ba33c6dbe9cb57912233c3cc22b55cc5cd6f406046cdb",
+      "status": "OK",
+      "wall_seconds": 0.1958446000062395
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.875,
+        5.5,
+        5.9375,
+        9.6875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2352791",
+      "image_sha256": "c6c6a227f54ecfb042c95108295875fcf6baf716ed4716c9a91adc8e949fb551",
+      "input_tokens": 1132,
+      "item_id": "16773901",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          332,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1132
+          ],
+          "input_ids": [
+            1,
+            1132
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.020826720886780364,
+        0.014313981977856155,
+        0.022169928981406548,
+        0.9426893681539562
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "6746c67252742f1234374dc1141c968884359dec3064597c34499169ea433ca0",
+      "retry_count": 0,
+      "run_key": "f8a7e34cac2867272400ab7c6a4c1bc25e4e3753527ee203ad711e60395f13e4",
+      "status": "OK",
+      "wall_seconds": 0.19624889999977313
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.4375,
+        6.15625,
+        6.25,
+        5.125
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2352791",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 48,
+      "item_id": "16773901",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            48
+          ],
+          "input_ids": [
+            1,
+            48
+          ]
+        }
+      },
+      "probabilities": [
+        0.16564471635343073,
+        0.33988088968944496,
+        0.3732861306205208,
+        0.12118826333660329
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "6424d69aca6ae819c86c0cc53c338588460a989f8c9830033950f1481c733671",
+      "retry_count": 0,
+      "run_key": "a61d45cc225cfe026ddf42b224ed6c39974879a3d1c8e210e2efa5da40011241",
+      "status": "OK",
+      "wall_seconds": 0.017350600013742223
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.78125,
+        6.53125,
+        6.84375,
+        6.9375
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2352791",
+      "image_sha256": "05af4b7a5444f496d243cd09f1251132e7b90dd0164590489ca58bc134dfef9c",
+      "input_tokens": 1132,
+      "item_id": "16773901",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          332,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1132
+          ],
+          "input_ids": [
+            1,
+            1132
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.24922654484784268,
+        0.1940978282896805,
+        0.26530027600577194,
+        0.29137535085670413
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "6746c67252742f1234374dc1141c968884359dec3064597c34499169ea433ca0",
+      "retry_count": 0,
+      "run_key": "2dab0dd140d64c45fbb7a9161735163da6e5658d03d3f1558dbaa5cc9cee8862",
+      "status": "OK",
+      "wall_seconds": 0.1961754999938421
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.03125,
+        10.8125,
+        4.75,
+        7.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "1593212",
+      "image_sha256": "442ed416b15e3652ca8586d7c14c2dc58e909fd7d5729caedc71c4d6e6a49e80",
+      "input_tokens": 1135,
+      "item_id": "00974643",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          768,
+          576
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1135
+          ],
+          "input_ids": [
+            1,
+            1135
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.021374934753589803,
+        0.9377364715464334,
+        0.00218358705441088,
+        0.03870500664556599
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "90302705de5dd18b4646f0ac8eb36d09ad80dccb6dd62ecf3f800fb8555b8c11",
+      "retry_count": 0,
+      "run_key": "6047462ccd9349447b8465b62ca10479f9efc41cd56abb59a9e44de5a9b84e63",
+      "status": "OK",
+      "wall_seconds": 0.1959093000041321
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.8125,
+        6.84375,
+        5.90625,
+        6.46875
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "1593212",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 52,
+      "item_id": "00974643",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            52
+          ],
+          "input_ids": [
+            1,
+            52
+          ]
+        }
+      },
+      "probabilities": [
+        0.14640420411403124,
+        0.4106007444825121,
+        0.16079356185703436,
+        0.282201489546422
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "3c17bb5cdd51f031be0c7738e70e181847940297eef98b2fd606c8732d69678c",
+      "retry_count": 0,
+      "run_key": "c823b15d997d361a7e276d93c4f2d94b54f8c576ff8157daff4a5379104a4120",
+      "status": "OK",
+      "wall_seconds": 0.01764320000074804
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.625,
+        8.4375,
+        6.46875,
+        6.1875
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "1593212",
+      "image_sha256": "92b342e4784720ec1f8973dda0e5b45ec6be2c4ae93c08314b730c83f26bb654",
+      "input_tokens": 1135,
+      "item_id": "00974643",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          768,
+          576
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1135
+          ],
+          "input_ids": [
+            1,
+            1135
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.2627623980981686,
+        0.5921442048857888,
+        0.08268185699227894,
+        0.06241154002376385
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "90302705de5dd18b4646f0ac8eb36d09ad80dccb6dd62ecf3f800fb8555b8c11",
+      "retry_count": 0,
+      "run_key": "2a61a4ebcb0e78088a5940ee53f3d3c7dd1379ed94a9dae06b40a2fcef6b28ee",
+      "status": "OK",
+      "wall_seconds": 0.19625499998801388
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.75,
+        7.59375,
+        8.125,
+        6.8125
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2346628",
+      "image_sha256": "5fca0008c0e65008664bf129eff36239f8e37f1220dc26c16aa9ed819b510a27",
+      "input_tokens": 1465,
+      "item_id": "12555802",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          483,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1465
+          ],
+          "input_ids": [
+            1,
+            1465
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.11983739251580257,
+        0.27863028550521307,
+        0.47396608167474735,
+        0.12756624030423638
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "74cc4c8641db78b89da64ad64c0965c54b2780843988693b155e60dfd300ee6b",
+      "retry_count": 0,
+      "run_key": "6a617b9583543d959022a3a29c2b2ea7ac8356bf39041be515da17a97e0d5e3e",
+      "status": "OK",
+      "wall_seconds": 0.24881470002583228
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.1875,
+        6.53125,
+        6.125,
+        6.59375
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2346628",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 49,
+      "item_id": "12555802",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            49
+          ],
+          "input_ids": [
+            1,
+            49
+          ]
+        }
+      },
+      "probabilities": [
+        0.08720216190445866,
+        0.3342800528017679,
+        0.2226785213595222,
+        0.3558392639342514
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "1035819999e2eab8eae201e68c635bd7cd6ad28ebd91f17a964a6c3458ac2b72",
+      "retry_count": 0,
+      "run_key": "c4ada9905d7b472064ed3f39b58cf4ea728baef153c3a70ea4b4fa620eb847af",
+      "status": "OK",
+      "wall_seconds": 0.017259799991734326
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.25,
+        7.71875,
+        6.3125,
+        6.9375
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2346628",
+      "image_sha256": "4c2f9cf7b3ca12aad46eb5ac2ebf0868c903d250e082f1e06bda0172c5a2fa3a",
+      "input_tokens": 1465,
+      "item_id": "12555802",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          483,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1465
+          ],
+          "input_ids": [
+            1,
+            1465
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.11908967014801965,
+        0.5173019466014946,
+        0.12677029398692255,
+        0.2368380892635624
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "74cc4c8641db78b89da64ad64c0965c54b2780843988693b155e60dfd300ee6b",
+      "retry_count": 0,
+      "run_key": "18bdefdea0a08a0a5eece8089ef3b39129dd02b05435af169cef951612af7c1b",
+      "status": "OK",
+      "wall_seconds": 0.2453825999982655
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.15625,
+        8.0625,
+        7.8125,
+        9.3125
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2373289",
+      "image_sha256": "08810d0ff6bf67922fd08c66cabde2c082f975615e901e326f68be6838e22146",
+      "input_tokens": 1465,
+      "item_id": "07379298",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          500,
+          436
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1465
+          ],
+          "input_ids": [
+            1,
+            1465
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.07121870006726468,
+        0.17626797553234738,
+        0.13727763737500337,
+        0.6152356870253849
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "f8a782879e9448521f6b81392c3fb6051d715e8485f2be0e02b404e19ee5fadb",
+      "retry_count": 0,
+      "run_key": "333c7fee98e03a01521a28d3ab734d78a0e8c57d6628b8da03b81133bfe5120f",
+      "status": "OK",
+      "wall_seconds": 0.24749080001492985
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.40625,
+        6.25,
+        6.25,
+        6.125
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2373289",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 49,
+      "item_id": "07379298",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            49
+          ],
+          "input_ids": [
+            1,
+            49
+          ]
+        }
+      },
+      "probabilities": [
+        0.1298363033980896,
+        0.30187844983343337,
+        0.30187844983343337,
+        0.26640679693504415
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b309fa5b500e71bd2207310e511617557b0338b5cd81349fcdc212cec4b0b08a",
+      "retry_count": 0,
+      "run_key": "5ae5c539faa477e030002b3848a2052a0d9b19406cc5c6f9f3554355026cb499",
+      "status": "OK",
+      "wall_seconds": 0.017567900009453297
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.65625,
+        8.1875,
+        7.75,
+        6.59375
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2373289",
+      "image_sha256": "9dd8af82cfda4f20bb1a73f31c73c3ec75ed7803832f0cba3ef39515c35d5ca8",
+      "input_tokens": 1465,
+      "item_id": "07379298",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          500,
+          436
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1465
+          ],
+          "input_ids": [
+            1,
+            1465
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.10472503924955387,
+        0.48424367541320174,
+        0.31265121546256014,
+        0.09838006987468487
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "f8a782879e9448521f6b81392c3fb6051d715e8485f2be0e02b404e19ee5fadb",
+      "retry_count": 0,
+      "run_key": "80e5ee0e5911ef31e4d3d340d7ec75fcfc40d8716361cdbb136b1f9629d374e2",
+      "status": "OK",
+      "wall_seconds": 0.2482167000125628
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.375,
+        4.15625,
+        9.25,
+        5.09375
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2367174",
+      "image_sha256": "ff37216b7fbc1fdfe7c004032fa24ea9c089313531db8a14eb449d2e9ea10412",
+      "input_tokens": 1128,
+      "item_id": "11386374",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.019907177874660405,
+        0.005884550539706503,
+        0.9591815453620001,
+        0.015026726223633033
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5f6a311171cca8f604873383b8e2f3f8d7992aaebfabd242a3f14cb806e4b821",
+      "retry_count": 0,
+      "run_key": "2cea457f0eaa6a2e7020a6bc6c1db1771e951b6a0cf249ed352e6fe652abeca9",
+      "status": "OK",
+      "wall_seconds": 0.1964399999997113
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        4.21875,
+        4.28125,
+        6.65625,
+        3.640625
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2367174",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "11386374",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.07107402583898155,
+        0.07565790667858063,
+        0.8133991523323546,
+        0.039868915150082715
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "174acf6a8e0ecc55fd49b9f0fc6a483e671b696865abdd15dd41786b6a2f28a3",
+      "retry_count": 0,
+      "run_key": "4dc296fca4dda249d0086d695296264931d54f35310d94a4c5cc03b101570401",
+      "status": "OK",
+      "wall_seconds": 0.016996199992718175
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.6875,
+        4.65625,
+        8.8125,
+        5.46875
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2367174",
+      "image_sha256": "47ded493a185f36d87f4e6c661968f03dc90dadf2a51e6b35ccf1e7ff390c3a4",
+      "input_tokens": 1128,
+      "item_id": "11386374",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.04012844529804933,
+        0.01430823780799202,
+        0.9133192052499285,
+        0.03224411164402928
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5f6a311171cca8f604873383b8e2f3f8d7992aaebfabd242a3f14cb806e4b821",
+      "retry_count": 0,
+      "run_key": "d0514768c91e33202477b18f0b35b8465feec8747e52e67e3ee802f7991df598",
+      "status": "OK",
+      "wall_seconds": 0.19668049999745563
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.03125,
+        6.9375,
+        9.375,
+        6.21875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2340236",
+      "image_sha256": "dcec852fda0283397773b832673941efd5b84ff7b49bb0011f5af0bb9dd9248c",
+      "input_tokens": 1129,
+      "item_id": "19321644",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.07828096898593105,
+        0.07127563336055932,
+        0.815706428235463,
+        0.034736969418047346
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "3e25bffd5fe0a0b77b84a69bdbb371ed0ff42f2c3fe23050556489bbae08aa7b",
+      "retry_count": 0,
+      "run_key": "f4f7c22b982781df93bc740618b592c6174c4cbafb288961aefb07932be22e03",
+      "status": "OK",
+      "wall_seconds": 0.1979290999879595
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.96875,
+        6.53125,
+        5.25,
+        6.5
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2340236",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "19321644",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.20228693325811603,
+        0.35502462425687364,
+        0.09858677759777143,
+        0.34410166488723837
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "4246791715e64b2aa49d6a0456fb9d04ca6911910582dea8419bc3046ec20c87",
+      "retry_count": 0,
+      "run_key": "a9c225e1cf4213653c083f4f1b01c7d7b34a045d7917ff97a141980c3832e7e7",
+      "status": "OK",
+      "wall_seconds": 0.01664149999851361
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.0625,
+        6.15625,
+        4.21875,
+        9.4375
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2340236",
+      "image_sha256": "e8defeaddcf965b294a0b62fd19053b6d25ceb470be06858e51cb4b00735fbe2",
+      "input_tokens": 1129,
+      "item_id": "19321644",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.1951171311701354,
+        0.029001572449106925,
+        0.004178072646714239,
+        0.7717032237340435
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "3e25bffd5fe0a0b77b84a69bdbb371ed0ff42f2c3fe23050556489bbae08aa7b",
+      "retry_count": 0,
+      "run_key": "1ced0f5a690bd23b8198847814f9531e5d6faea119674b604be7f04aa5b62ad5",
+      "status": "OK",
+      "wall_seconds": 0.19550259999232367
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.5625,
+        7.28125,
+        7.78125,
+        8.6875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2408571",
+      "image_sha256": "2859a8909bacbfc4fc0aa95f6c72048f960510e55db02e96a6c7f4a4931a063f",
+      "input_tokens": 1133,
+      "item_id": "05753791",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1133
+          ],
+          "input_ids": [
+            1,
+            1133
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.06753233824778727,
+        0.13856736098658598,
+        0.22845895548336737,
+        0.5654413452822589
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8cb724f9f07ea764b99cd4558cd00b9c85fbc6570c0cdf637572d61247eb80aa",
+      "retry_count": 0,
+      "run_key": "0d8bb837e7eec164297dbc3dc05ef58952dd29e4170db7f410ba6eca69a6eb3d",
+      "status": "OK",
+      "wall_seconds": 0.19575909999548458
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        4.84375,
+        5.8125,
+        6.15625,
+        5.59375
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2408571",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 49,
+      "item_id": "05753791",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            49
+          ],
+          "input_ids": [
+            1,
+            49
+          ]
+        }
+      },
+      "probabilities": [
+        0.10562896943570127,
+        0.2782952680763045,
+        0.39245923243783465,
+        0.2236165300501593
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "2956825e713ca47ce57cc8181f97417ab3d4d8bd1027c7624114fcbbfefd8c49",
+      "retry_count": 0,
+      "run_key": "d6a1c167f2e35581c78b3266d526814ceee2a17eb48366d8d8e85f58f0d5b8fd",
+      "status": "OK",
+      "wall_seconds": 0.017504000017652288
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.34375,
+        7.21875,
+        6.3125,
+        7.46875
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2408571",
+      "image_sha256": "47f4543dda2571a591fa0fe32c761a080ac973ce06d96cef4ae95750d9de7c16",
+      "input_tokens": 1133,
+      "item_id": "05753791",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1133
+          ],
+          "input_ids": [
+            1,
+            1133
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.05397130088743764,
+        0.3519370907758929,
+        0.1421954387052818,
+        0.4518961696313874
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8cb724f9f07ea764b99cd4558cd00b9c85fbc6570c0cdf637572d61247eb80aa",
+      "retry_count": 0,
+      "run_key": "8c51ff2e55a21ab0eb46605038d3fb3e4d8388e1290e7fe4d244442ca1b6117c",
+      "status": "OK",
+      "wall_seconds": 0.19639709999319166
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.71875,
+        10.125,
+        3.890625,
+        4.625
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2400139",
+      "image_sha256": "098b21fcf070df388d3fcc2be93ea6e6e578ff675b20a89c83bf195806b758ed",
+      "input_tokens": 799,
+      "item_id": "06937161",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 729,
+        "native_input_size": [
+          500,
+          197
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            799
+          ],
+          "input_ids": [
+            1,
+            799
+          ],
+          "pixel_attention_mask": [
+            1,
+            9,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            9,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.031913898941199566,
+        0.9622666723011888,
+        0.0018868648050655145,
+        0.00393256395254636
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "53d65b342654fb0961058beff64dc046377c31303f665e150be6c655e6fa592e",
+      "retry_count": 0,
+      "run_key": "4579d217eef88459cbab6540ac53369537438831ad115807fffe1882572f56f6",
+      "status": "OK",
+      "wall_seconds": 0.13867389998631552
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.65625,
+        6.84375,
+        5.96875,
+        4.71875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2400139",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 49,
+      "item_id": "06937161",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            49
+          ],
+          "input_ids": [
+            1,
+            49
+          ]
+        }
+      },
+      "probabilities": [
+        0.16563648130138717,
+        0.543101113552783,
+        0.22639822708526006,
+        0.06486417806056963
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "56b968010ddcb43d41b0935a24c2225b8701db1a9e4abd25fcc4e9c661eb98c1",
+      "retry_count": 0,
+      "run_key": "ec7b6ade924558112d8d0f159f7a43df82c6bf014b39a70a50d1192614522c6e",
+      "status": "OK",
+      "wall_seconds": 0.017381399986334145
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.96875,
+        7.875,
+        7.625,
+        7.0625
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2400139",
+      "image_sha256": "a243574e92444e825d24cbdd3220eee93b75a4887911498992ff065b017866fa",
+      "input_tokens": 799,
+      "item_id": "06937161",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 729,
+        "native_input_size": [
+          500,
+          197
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            799
+          ],
+          "input_ids": [
+            1,
+            799
+          ],
+          "pixel_attention_mask": [
+            1,
+            9,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            9,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.15382581664288808,
+        0.3807225526251219,
+        0.2965070221173891,
+        0.16894460861460023
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "53d65b342654fb0961058beff64dc046377c31303f665e150be6c655e6fa592e",
+      "retry_count": 0,
+      "run_key": "d0d052c02a3ffd8ac75cb04f8e781d8524c1ab346107a2f2250ea320d22fbcbb",
+      "status": "OK",
+      "wall_seconds": 0.14055979999830015
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.875,
+        8.375,
+        7.3125,
+        8.375
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2395818",
+      "image_sha256": "c31e20d6609eeb776332f29896ba2f185efe91e2303aecc0ed4dc2cc894992f3",
+      "input_tokens": 1128,
+      "item_id": "18333235",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.4127672703314372,
+        0.2503560047819095,
+        0.08652072010474472,
+        0.2503560047819095
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "a68ab9d55cbff401cf251453abce88c495fd85c1d24455f92fac86e992b6afd5",
+      "retry_count": 0,
+      "run_key": "9f4a8624493e1b7ccf4ff0db84693af1af291f39ba0efd6ec216dd86987afe20",
+      "status": "OK",
+      "wall_seconds": 0.1963796999771148
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.15625,
+        6.96875,
+        6.0625,
+        5.46875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2395818",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "18333235",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.21427606911233177,
+        0.4828785758119413,
+        0.19510058112256237,
+        0.10774477395316419
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "d278e24fe55d871a18f18b28da6ea2f5b8e88c34b64c4e4505653fbc768cd148",
+      "retry_count": 0,
+      "run_key": "c1706cdad9dec4d25b92ff0708939c4dbc2f3c2cac3a0aa2100a8d853850f65f",
+      "status": "OK",
+      "wall_seconds": 0.01704869998502545
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.59375,
+        9.0625,
+        7.21875,
+        6.625
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2395818",
+      "image_sha256": "3fa9c58ee97290809c67ede2f13bddde90fc342a2cb3335fbebb35eb4df4df70",
+      "input_tokens": 1128,
+      "item_id": "18333235",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.1559904596479042,
+        0.6775916695950696,
+        0.10721057050968033,
+        0.05920730024734622
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "a68ab9d55cbff401cf251453abce88c495fd85c1d24455f92fac86e992b6afd5",
+      "retry_count": 0,
+      "run_key": "9c8a1f0dd3389af0d7b651857a9ecc7e40567d5fe30414354e95e5b08a862685",
+      "status": "OK",
+      "wall_seconds": 0.1976188000116963
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.5,
+        9.9375,
+        4.78125,
+        6.4375
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2370398",
+      "image_sha256": "98311736127aa27cdfc5ebe70b3301d44be1ed7a2be8f6cceeffb031387ee2d6",
+      "input_tokens": 1129,
+      "item_id": "08495165",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          357,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.030095289510464418,
+        0.93623701430993,
+        0.005395788084321887,
+        0.02827190809528365
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8d9b7a2c6be68f0568a835392d5b43ec861af7881ded20067f0006f2a06c9e84",
+      "retry_count": 0,
+      "run_key": "66be9996a6715b67ef9e021577a93a47b0572d11b13a01572bdc86894419f76c",
+      "status": "OK",
+      "wall_seconds": 0.19721479999134317
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.65625,
+        6.8125,
+        6.125,
+        6.34375
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2370398",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "08495165",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.12878753935444495,
+        0.4092859536173255,
+        0.20580190189874115,
+        0.25612460512948865
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "946ba401a9d5332765a22dcd7ada8c3bbcf57f2dda370866ffa5f146d887ba5b",
+      "retry_count": 0,
+      "run_key": "b1e94dbe69be10f35a13c0e9ff814b47d6d1a6427ac98ae1420d8f6ed5ed69c0",
+      "status": "OK",
+      "wall_seconds": 0.01727710000704974
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.0,
+        8.0625,
+        6.84375,
+        7.21875
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2370398",
+      "image_sha256": "1e20a72b20aa504e865882981d015bb8c7659bfd89b94e0e333a97d2cda9da0c",
+      "input_tokens": 1129,
+      "item_id": "08495165",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          357,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.16684849317005598,
+        0.48279212312804376,
+        0.1427130790012918,
+        0.20764630470060869
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8d9b7a2c6be68f0568a835392d5b43ec861af7881ded20067f0006f2a06c9e84",
+      "retry_count": 0,
+      "run_key": "9687a768975b08cf92d17161f3fb8af22bedd1fce9a0b0c2ee39b7a6e48feb39",
+      "status": "OK",
+      "wall_seconds": 0.1967253999901004
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.40625,
+        8.6875,
+        8.25,
+        9.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2359534",
+      "image_sha256": "c982d7f57ea5d31c43009b0a36b7c46d57c68289a05ac846308e24e545d0b62c",
+      "input_tokens": 1129,
+      "item_id": "14645551",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.02374960802422012,
+        0.23248274938962674,
+        0.1501021445633174,
+        0.5936654980228362
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b269a319fcb0707400948d7bf90e18d86447a1b1fb267e09770a8bdb46177f3e",
+      "retry_count": 0,
+      "run_key": "7854d0de4fe1ec37b8030daef9f7dfdb7705d07d891d7ee35b6261e241b4c517",
+      "status": "OK",
+      "wall_seconds": 0.19658949997392483
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.53125,
+        6.59375,
+        6.375,
+        5.71875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2359534",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "14645551",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.13468202378607091,
+        0.38971535778021943,
+        0.313145087289715,
+        0.16245753114399478
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "4c6faf6dda1381b3fe2716aa12760747dd56a6f928c730cba6ac3593cf23cc2f",
+      "retry_count": 0,
+      "run_key": "b4cd0ae6c367e24ed33a865137c655849780466c8d78976c2df7b4f6183ba3fa",
+      "status": "OK",
+      "wall_seconds": 0.016195800009882078
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.375,
+        8.125,
+        7.875,
+        7.90625
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2359534",
+      "image_sha256": "9729d49e3518e9241083a6727cb3ce3daa9e0e5dd5eabcd5f7dcc0394da6d266",
+      "input_tokens": 1129,
+      "item_id": "14645551",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.33210284222304687,
+        0.25864195358354813,
+        0.20143055598598522,
+        0.20782464820741917
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b269a319fcb0707400948d7bf90e18d86447a1b1fb267e09770a8bdb46177f3e",
+      "retry_count": 0,
+      "run_key": "401276b5c0ce42630dc48bed05ae7edc2db8a5e33c0598b7c234f98602ae7583",
+      "status": "OK",
+      "wall_seconds": 0.19633469998370856
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        4.46875,
+        9.125,
+        5.84375,
+        8.0
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2410072",
+      "image_sha256": "8ef3e91b42e93dba02eac011da2b0bb33bd83754a0e4f431089e00378f6f353a",
+      "input_tokens": 1133,
+      "item_id": "08700704",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          349
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1133
+          ],
+          "input_ids": [
+            1,
+            1133
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.006927010762998087,
+        0.7290033831549939,
+        0.02739685902815404,
+        0.2366727470538532
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b64aeb390d467315e8d5be85b9f0b81615e13fac34dbb2b9a2fa5cf0c90ede5b",
+      "retry_count": 0,
+      "run_key": "07b136952a4f49e0dad8837cc5d5526e5e6145b023c83dd28d11492d972c943e",
+      "status": "OK",
+      "wall_seconds": 0.19720279998728074
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.125,
+        6.40625,
+        6.5,
+        6.4375
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2410072",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 50,
+      "item_id": "08700704",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            50
+          ],
+          "input_ids": [
+            1,
+            50
+          ]
+        }
+      },
+      "probabilities": [
+        0.08148852947360724,
+        0.2934514674538521,
+        0.3222933861060914,
+        0.3027666169664494
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "9ff72c3dc1b8093779f9014641a4e5d9b72f13f312b2f3bbd7b90eed2d3d47f4",
+      "retry_count": 0,
+      "run_key": "df837bf9da0a6046a8a9cb39ba6c8f0a02bb98db39da0d56c836f9366dc86457",
+      "status": "OK",
+      "wall_seconds": 0.01783529997919686
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.0,
+        7.34375,
+        6.78125,
+        7.28125
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2410072",
+      "image_sha256": "355a5938f66982f929cbdb21090eda0ab09dec08cab906645c36302a1a9d9dd9",
+      "input_tokens": 1133,
+      "item_id": "08700704",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          349
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1133
+          ],
+          "input_ids": [
+            1,
+            1133
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.0368372677709199,
+        0.3838531447505564,
+        0.2187129290978199,
+        0.36059665838070465
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b64aeb390d467315e8d5be85b9f0b81615e13fac34dbb2b9a2fa5cf0c90ede5b",
+      "retry_count": 0,
+      "run_key": "25f5102637bd4ad12f7ec3d28d6f7918d267673b936c1b3cf09df45898ce98aa",
+      "status": "OK",
+      "wall_seconds": 0.19668610001099296
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.375,
+        4.96875,
+        3.828125,
+        10.8125
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2447",
+      "image_sha256": "1a9e94ddfe9a22fa282cf1605acb99f52ed38b913ec222ba7627d3de4a7cb9e6",
+      "input_tokens": 1130,
+      "item_id": "1330560",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          768,
+          512
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1130
+          ],
+          "input_ids": [
+            1,
+            1130
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.03102886558513054,
+        0.0027973370725799984,
+        0.0008940826299374076,
+        0.9652797147123527
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "d2625c3ed27b7cdf0c47e40c3e7cae586dc64255d12579352a33b86c6eb6750e",
+      "retry_count": 0,
+      "run_key": "c8fcc94107ef2fb5e4fd2744ff8b3a374a58bf4964ee829a0c6e5a9ca08e23c2",
+      "status": "OK",
+      "wall_seconds": 0.19615329999942333
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.6875,
+        6.84375,
+        6.03125,
+        6.875
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2447",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 47,
+      "item_id": "1330560",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            47
+          ],
+          "input_ids": [
+            1,
+            47
+          ]
+        }
+      },
+      "probabilities": [
+        0.11277652935589193,
+        0.35840306907366537,
+        0.1590403978262425,
+        0.3697800037441998
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "aa468cb2299cc13e278346ef02a2e29bca40c52bd95cf4f128030b8753a9caf2",
+      "retry_count": 0,
+      "run_key": "c9e3558dc3c46bf1b47e6579a4561e32b0e795005068e79f3ad8ed7f14b2df9f",
+      "status": "OK",
+      "wall_seconds": 0.018882499978644773
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.8125,
+        6.1875,
+        5.25,
+        9.5
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2447",
+      "image_sha256": "83f71b3da2433dfc9ac18270e10f25d562115e202144b79e5a6693e18b8b30b5",
+      "input_tokens": 1130,
+      "item_id": "1330560",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          768,
+          512
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1130
+          ],
+          "input_ids": [
+            1,
+            1130
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.0608281180954583,
+        0.03255894538589685,
+        0.012750266211779809,
+        0.8938626703068653
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "d2625c3ed27b7cdf0c47e40c3e7cae586dc64255d12579352a33b86c6eb6750e",
+      "retry_count": 0,
+      "run_key": "d6a37c01dc6e4f1d959c464d19765110ed24dc416acc900d6adedac63cf508af",
+      "status": "OK",
+      "wall_seconds": 0.19584269999177195
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.09375,
+        8.625,
+        4.5625,
+        10.0
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2386490",
+      "image_sha256": "0e65cd519c8857fbf03cc9d53fe2c786c3ed3864f8cefe1c7d76c399000417ba",
+      "input_tokens": 1131,
+      "item_id": "09811334",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          334,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1131
+          ],
+          "input_ids": [
+            1,
+            1131
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.01574861324858572,
+        0.1979475929692059,
+        0.003405876471544764,
+        0.782897917310663
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "33bbc5bcebc55a6628d780f825ef24b27652bb925c941f9a6474010f0bed989e",
+      "retry_count": 0,
+      "run_key": "d8390b91a47dfbaf6aa1baced2afd8693de91de42b23d70a934d65885817e3fb",
+      "status": "OK",
+      "wall_seconds": 0.19618470000568777
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.46875,
+        6.15625,
+        6.03125,
+        5.5
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2386490",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 47,
+      "item_id": "09811334",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            47
+          ],
+          "input_ids": [
+            1,
+            47
+          ]
+        }
+      },
+      "probabilities": [
+        0.17314411695779228,
+        0.3443381930317002,
+        0.30387738879205195,
+        0.17864030121845578
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "f08105b32fc7415408bd66e03377ccfb8a6418e599d5ad0cd23332304cf99a56",
+      "retry_count": 0,
+      "run_key": "eddbeb9d69883552b7e7750f463245374c485bb4a969f2e9d3019ac8234fa432",
+      "status": "OK",
+      "wall_seconds": 0.017775099986465648
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.21875,
+        6.875,
+        6.15625,
+        6.03125
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2386490",
+      "image_sha256": "f84eccf23c29955f4c8e6eb2c28cf19134a4c6450ecb01253cd61d4601d35cfd",
+      "input_tokens": 1131,
+      "item_id": "09811334",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          334,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1131
+          ],
+          "input_ids": [
+            1,
+            1131
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.42378632931461513,
+        0.3005095061494449,
+        0.1464566364796714,
+        0.12924752805626807
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "33bbc5bcebc55a6628d780f825ef24b27652bb925c941f9a6474010f0bed989e",
+      "retry_count": 0,
+      "run_key": "73d17373076f07cbc201d623018ad82c21f453013562dc4329c5f5921da7de52",
+      "status": "OK",
+      "wall_seconds": 0.19744260000879876
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        4.59375,
+        5.5625,
+        10.125,
+        6.125
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2399078",
+      "image_sha256": "d99bcf3abb16d9e2420e58874600b9bca1a97bbda3a827e82f08828cad64cadd",
+      "input_tokens": 1128,
+      "item_id": "00817427",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.003835563409718613,
+        0.010105363642509718,
+        0.9683236074267072,
+        0.01773546552106397
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "0de3e425e6fdcee8ea51baf0d0f2f276176d6fda4a555ca4d50d8eb58221bb57",
+      "retry_count": 0,
+      "run_key": "3b3447f7c888d9a2b825e3adab88b035c145d40f8b0173be99a637e18a5321c9",
+      "status": "OK",
+      "wall_seconds": 0.19642730001942255
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        4.46875,
+        6.625,
+        6.3125,
+        6.21875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2399078",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "00817427",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.046054342413125886,
+        0.39784880892631647,
+        0.29107240656829936,
+        0.26502444209225845
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "2ac42e0d6b03a392cf41013bbfc9656173780f1c35974e8258bee7227bff5c67",
+      "retry_count": 0,
+      "run_key": "065920f26fccbaa02de8c9f43e40dc4726e6481c627776a4bef79a7796b8cd92",
+      "status": "OK",
+      "wall_seconds": 0.017031499999575317
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.3125,
+        7.21875,
+        6.90625,
+        8.3125
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2399078",
+      "image_sha256": "9989606e5ece8b1ef3f6e239f1e2dac46bb84121d7e737e5e335e5bbcdee5764",
+      "input_tokens": 1128,
+      "item_id": "00817427",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.07889642246176866,
+        0.1952705209579222,
+        0.14286296500536863,
+        0.5829700915749408
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "0de3e425e6fdcee8ea51baf0d0f2f276176d6fda4a555ca4d50d8eb58221bb57",
+      "retry_count": 0,
+      "run_key": "8eb9de1de24dbb80517f6879b4bfc4da723a7ab746fde7fa0d68fbdacf05f005",
+      "status": "OK",
+      "wall_seconds": 0.19774730000062846
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.09375,
+        6.875,
+        6.875,
+        6.90625
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2330750",
+      "image_sha256": "809ecaca2fe382d859e901d40f067268d6ac5298a96df42be6ebb1395499053d",
+      "input_tokens": 1128,
+      "item_id": "0929909",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.29102979816923524,
+        0.23384901244515183,
+        0.23384901244515183,
+        0.241272176940461
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "f45e644853ea7f284f7eb399dfa6d12d623b0f49b1942f16522b77bc85d0c476",
+      "retry_count": 0,
+      "run_key": "8dc9db02f7c429d888f4caf6322a3d9802698749e1b73357c6c6ddd672e86b00",
+      "status": "OK",
+      "wall_seconds": 0.19641209999099374
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.125,
+        6.375,
+        5.375,
+        6.4375
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2330750",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "0929909",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.10537608653951376,
+        0.36779868153808143,
+        0.13530557342782268,
+        0.39151965849458203
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b75fc26f58cc3e73f385a74886edc0a79cfe09d67555bbb636501ea12091d1e1",
+      "retry_count": 0,
+      "run_key": "61e78a0e7f07490c74d5053b4822136788866c8a6ae6f60431e1ea4165fdd2aa",
+      "status": "OK",
+      "wall_seconds": 0.017200900008901954
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.875,
+        7.59375,
+        5.6875,
+        7.46875
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2330750",
+      "image_sha256": "076ec6b69fa0619d5adbed0a8bcab2ae483c7081006ac4c3d44e78a0b71ab0f5",
+      "input_tokens": 1128,
+      "item_id": "0929909",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.19351284511742714,
+        0.3970625771395738,
+        0.05901808328506732,
+        0.3504064944579309
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "f45e644853ea7f284f7eb399dfa6d12d623b0f49b1942f16522b77bc85d0c476",
+      "retry_count": 0,
+      "run_key": "8136d1cb41189e8317f5f72715a8fa497e33e79c07d3ceba2e02f52c8a2a3bf6",
+      "status": "OK",
+      "wall_seconds": 0.19677099998807535
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        3.90625,
+        9.3125,
+        5.375,
+        5.53125
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2320419",
+      "image_sha256": "68263f119e066755b8b13920fe0a8f3d490097f11c5fa913d2b6c564226b6584",
+      "input_tokens": 1129,
+      "item_id": "04293454",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          333
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.004287856485888306,
+        0.9553110119559752,
+        0.018625599551505265,
+        0.021775532006631255
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "a578dffa8493a8441bdba999e1e1676edc006d871b5f005f06d17790ff8e4abf",
+      "retry_count": 0,
+      "run_key": "67e991b373fb5f2ad9b3bf4418dba57f143e36d03b5a786d7f0e3c54befe094e",
+      "status": "OK",
+      "wall_seconds": 0.20149690000107512
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        4.21875,
+        6.875,
+        6.84375,
+        4.375
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2320419",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 46,
+      "item_id": "04293454",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            46
+          ],
+          "input_ids": [
+            1,
+            46
+          ]
+        }
+      },
+      "probabilities": [
+        0.033094533064717796,
+        0.47135810101680703,
+        0.4568559368451472,
+        0.038691429073328155
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "578e5411b9f4fa321c210c3e8e1bef9fda1ec0e7204e22163dd1d30b2940eada",
+      "retry_count": 0,
+      "run_key": "2540b50a13bb4383ca406a9f15292aad9891179695c0ccd128eba9f5ce51e628",
+      "status": "OK",
+      "wall_seconds": 0.018917700013844296
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        4.34375,
+        6.0625,
+        8.5625,
+        4.6875
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2320419",
+      "image_sha256": "169c3e5ac61e01a560f617258a3d56acd77f9abf0f510c8e296607d1b2bf5e5e",
+      "input_tokens": 1129,
+      "item_id": "04293454",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          333
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1129
+          ],
+          "input_ids": [
+            1,
+            1129
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.01316893693156102,
+        0.07345043269062773,
+        0.8948094526646293,
+        0.018571177713182053
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "a578dffa8493a8441bdba999e1e1676edc006d871b5f005f06d17790ff8e4abf",
+      "retry_count": 0,
+      "run_key": "635993d648e8eb4ddacbb5ab073637c272e4e30cf4696647d6361c2b3d98855a",
+      "status": "OK",
+      "wall_seconds": 0.1973745000141207
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.1875,
+        10.3125,
+        7.15625,
+        6.4375
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2376280",
+      "image_sha256": "582502460fdcfe7c931175b4d9a7724e90027bdf34163e7ae554a25024f25d57",
+      "input_tokens": 1128,
+      "item_id": "16161462",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.10097713134187095,
+        0.8454711693706481,
+        0.03600450497588968,
+        0.01754719431159045
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "689da22fcf59577134d4e4d96a9bb4ea948a436f25319af6cf9a7e049d765f4a",
+      "retry_count": 0,
+      "run_key": "ab1c7b231fb519fd868295a5523513bf7785e9d823a88053ad819df0deb6f795",
+      "status": "OK",
+      "wall_seconds": 0.19647739999345504
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.53125,
+        6.9375,
+        6.0,
+        6.03125
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2376280",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 45,
+      "item_id": "16161462",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            45
+          ],
+          "input_ids": [
+            1,
+            45
+          ]
+        }
+      },
+      "probabilities": [
+        0.12008635089086968,
+        0.4900272857498093,
+        0.19189744232478492,
+        0.19798892103453614
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "76edf65c11c18083f73032703208de9ab0672ef0b6f5e856fc92383be40b8c15",
+      "retry_count": 0,
+      "run_key": "0f9805e97be284e346cf05387b6cd518117878f02428ebad3c752c061ed40c41",
+      "status": "OK",
+      "wall_seconds": 0.016665999981341884
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.6875,
+        8.0625,
+        6.34375,
+        6.78125
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2376280",
+      "image_sha256": "e93983116af1b053fd886ce89a41411d4637afdf867c9aad5794fba260fa1710",
+      "input_tokens": 1128,
+      "item_id": "16161462",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1128
+          ],
+          "input_ids": [
+            1,
+            1128
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "probabilities": [
+        0.32052375896058977,
+        0.4663593174688119,
+        0.08361361824865432,
+        0.12950330532194368
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "SmolVLMProcessor",
+          "do_convert_rgb": true,
+          "do_image_splitting": true,
+          "do_normalize": true,
+          "do_pad": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "image_processor_type": "SmolVLMImageProcessor",
+          "image_std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "max_image_size": {
+            "longest_edge": 384
+          },
+          "resample": 1,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 1536
+          },
+          "video_sampling": {
+            "fps": 1,
+            "max_frames": 64,
+            "video_size": {
+              "longest_edge": 384
+            }
+          }
+        },
+        "processor_class": "SmolVLMProcessor"
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "689da22fcf59577134d4e4d96a9bb4ea948a436f25319af6cf9a7e049d765f4a",
+      "retry_count": 0,
+      "run_key": "c639fc8d7d4f190c3be63c9441f624019b4cf1dccfbd821082d8ad6a96cce2f2",
+      "status": "OK",
+      "wall_seconds": 0.1963566000049468
+    }
+  ],
+  "status": "COMPLETE",
+  "task": "GQA_color_focused_diagnostic",
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 6694686720,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 5338284032,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 168,
+    "torch_peak_allocated_bytes": 4910959616,
+    "torch_peak_reserved_bytes": 5498732544,
+    "wall_seconds": 18.108165999990888
+  }
+}

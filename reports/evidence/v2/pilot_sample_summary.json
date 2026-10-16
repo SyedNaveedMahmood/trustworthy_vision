@@ -1,0 +1,509 @@
+{
+  "exclusions": [
+    {
+      "image_id": "2339632",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2349334",
+      "reason": "No equal-area translated control fits",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2400080",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2318090",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2409623",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2393949",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2397728",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2383990",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2399938",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2341708",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "gqa"
+    },
+    {
+      "image_id": "2332837",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "gqa"
+    },
+    {
+      "image_id": "562296",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "288317",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "420608",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "466207",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "224790",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "112253",
+      "reason": "No nonoverlapping independent control in 256 fixed proposals",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "203054",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "46852",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "208295",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "446688",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "213642",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "76245",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "411430",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "247351",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "236963",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "572016",
+      "reason": "target_area_outside_1_to_35pct",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "565211",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    },
+    {
+      "image_id": "297665",
+      "reason": "no_nonoverlapping_negative_within_50pct_area",
+      "task": "refcocog"
+    }
+  ],
+  "human_audit": "HUMAN_AUDIT_PENDING",
+  "items": [
+    {
+      "area_mismatch": 0.02110389610389607,
+      "canonical_sha256": "d4223d5293debb71ced8977d435f12132e78b3792e6ca870053fd6bff7ddb75a",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.058937520882058135
+      ],
+      "dataset": "gqa",
+      "image_id": "2352184",
+      "item_id": "18724594"
+    },
+    {
+      "area_mismatch": 0.2777226318774816,
+      "canonical_sha256": "b639607b713028c5258d11d4f6e2df48949bbd715a9da7ff5b8f1170575164c0",
+      "controls_overlap_opposite_reference": [
+        0.08845274902540665,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2337945",
+      "item_id": "10877162"
+    },
+    {
+      "area_mismatch": 0.2885823271288037,
+      "canonical_sha256": "55cd7021e9141efb66e0c897618ffc3faee88b41391fca1feb9ab9727e01efd2",
+      "controls_overlap_opposite_reference": [
+        0.10376974584736044,
+        0.12319536205695786
+      ],
+      "dataset": "gqa",
+      "image_id": "2409189",
+      "item_id": "11680766"
+    },
+    {
+      "area_mismatch": 0.1194345628159521,
+      "canonical_sha256": "94a9610d9e2afdae798a7e092a58551483637ee9f9018e821950dfee5ff066f9",
+      "controls_overlap_opposite_reference": [
+        0.6588930913174889,
+        0.2931596091205212
+      ],
+      "dataset": "gqa",
+      "image_id": "2416222",
+      "item_id": "00902688"
+    },
+    {
+      "area_mismatch": 0.09567496723460023,
+      "canonical_sha256": "32a05fd0382d88fcab029f8a8e9358b73d088cadb711fecdb27c93839ed36993",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2348133",
+      "item_id": "01839542"
+    },
+    {
+      "area_mismatch": 0.00015535187199011702,
+      "canonical_sha256": "fbfbe960fab683624cc78e5adabf748f013fa4c7dff5d06e1b962c22410ecc93",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.001477909147479776
+      ],
+      "dataset": "gqa",
+      "image_id": "2417896",
+      "item_id": "041019603"
+    },
+    {
+      "area_mismatch": 0.34668028600612866,
+      "canonical_sha256": "d9a5be9a85bff35e391812a64879dcf5de8f1858b17451432fabe7296d787160",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2319740",
+      "item_id": "0347287"
+    },
+    {
+      "area_mismatch": 0.3437990580847724,
+      "canonical_sha256": "61d0736cef53637c63936b590898740b933f1bae8622bb04ebaffea175e6cdf8",
+      "controls_overlap_opposite_reference": [
+        0.18472768107804605,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2341067",
+      "item_id": "04618474"
+    },
+    {
+      "area_mismatch": 0.0024026033271493663,
+      "canonical_sha256": "c98a7efdcd26f684a1c39d88ab29cdade75e4a44965446c19c673af9252518bf",
+      "controls_overlap_opposite_reference": [
+        0.3237469517725065,
+        0.3237469517725065
+      ],
+      "dataset": "gqa",
+      "image_id": "2382787",
+      "item_id": "12664472"
+    },
+    {
+      "area_mismatch": 0.17811704834605602,
+      "canonical_sha256": "dcf4b69a1cf289472462932358c5844b386521bd0c30220e5b703c61a59f69df",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2384592",
+      "item_id": "15556256"
+    },
+    {
+      "area_mismatch": 0.368421052631579,
+      "canonical_sha256": "6e1e42fa357eda5704cb74a4506ffe297b3d089006accb2ce4095b0463d362ba",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2401269",
+      "item_id": "02326913"
+    },
+    {
+      "area_mismatch": 0.18427230046948362,
+      "canonical_sha256": "b819eb8df6e95b75df37d47911525102c89e05f3eb1fe7ad01b132d497de40c3",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2380622",
+      "item_id": "03996945"
+    },
+    {
+      "area_mismatch": 0.42273307790549175,
+      "canonical_sha256": "ec00a808a10f71e297c3a0273e4a9e10c3e60f3ab204d2229436ab9b0f69db5b",
+      "controls_overlap_opposite_reference": [
+        0.5772669220945083,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2347520",
+      "item_id": "05149177"
+    },
+    {
+      "area_mismatch": 0.10998958583673801,
+      "canonical_sha256": "aa6a2359973fa9decaa38ba315428afd084405373d786ef8d67d9c08c4124861",
+      "controls_overlap_opposite_reference": [
+        0.4052653523140151,
+        0.46555544052179315
+      ],
+      "dataset": "gqa",
+      "image_id": "2367770",
+      "item_id": "00364710"
+    },
+    {
+      "area_mismatch": 0.18789808917197448,
+      "canonical_sha256": "f675035316b9d643dc2034d6b819a98db3ff57c5e474f33849251c1708f4755c",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2415822",
+      "item_id": "11245392"
+    },
+    {
+      "area_mismatch": 0.4003059663437022,
+      "canonical_sha256": "914eb37179a331238a5adee29a46086b7b20be5f9bfa4735e0a4320484e6eb5a",
+      "controls_overlap_opposite_reference": [
+        0.2296335010126086,
+        0.0
+      ],
+      "dataset": "gqa",
+      "image_id": "2351458",
+      "item_id": "04782084"
+    },
+    {
+      "area_mismatch": 0.21397742655908436,
+      "canonical_sha256": "03cdf07d0bf8fd4d867c43e9ece528544c038778bd1be5f232f226c7170c51ba",
+      "controls_overlap_opposite_reference": [
+        0.036341625484124646,
+        0.0
+      ],
+      "dataset": "refcocog",
+      "image_id": "160628",
+      "item_id": "7363"
+    },
+    {
+      "area_mismatch": 0.12598161401832653,
+      "canonical_sha256": "b970a08fd56b16a5127cfb48db9eaf48f8e4fb07324ff8261d6d1d757c2e2da0",
+      "controls_overlap_opposite_reference": [
+        0.4438444399678297,
+        0.6576695529945541
+      ],
+      "dataset": "refcocog",
+      "image_id": "385401",
+      "item_id": "11121"
+    },
+    {
+      "area_mismatch": 0.4861355787035142,
+      "canonical_sha256": "e61d0735e7d2ce29bbc0cb33b07e2c9d869cb899aaba80b5166a5a7cfd470c6d",
+      "controls_overlap_opposite_reference": [
+        0.29601309788365,
+        0.5908208476874165
+      ],
+      "dataset": "refcocog",
+      "image_id": "220471",
+      "item_id": "7132"
+    },
+    {
+      "area_mismatch": 0.3650391664107482,
+      "canonical_sha256": "1f1d42dc724980e31e580486745d7b6e7243ab8b96b3b1fa495f3b28eac778bd",
+      "controls_overlap_opposite_reference": [
+        0.16134563306031738,
+        0.0699597639001648
+      ],
+      "dataset": "refcocog",
+      "image_id": "218603",
+      "item_id": "25783"
+    },
+    {
+      "area_mismatch": 0.060326872148428135,
+      "canonical_sha256": "f3359b372ffc8c4f9d1b8ce4a79cab3db24d86be896953bb956bc08a3615f596",
+      "controls_overlap_opposite_reference": [
+        0.09549137211724891,
+        0.40674584849548356
+      ],
+      "dataset": "refcocog",
+      "image_id": "275625",
+      "item_id": "25484"
+    },
+    {
+      "area_mismatch": 0.4931323365730115,
+      "canonical_sha256": "9703b4f9fbbc67f3a7a5afb22cfb0f33c16b56f4c2776a9d873af49a08d93322",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.396277587134458
+      ],
+      "dataset": "refcocog",
+      "image_id": "565476",
+      "item_id": "8648"
+    },
+    {
+      "area_mismatch": 0.0867265683126961,
+      "canonical_sha256": "ff5947c873f25376d8a7ba0060842e2cbe08fac442b64cb50816b7dc3b7fceb6",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.26975542978220973
+      ],
+      "dataset": "refcocog",
+      "image_id": "387421",
+      "item_id": "21199"
+    },
+    {
+      "area_mismatch": 0.2944065586839075,
+      "canonical_sha256": "bbe4201bc0dea68c24e3c8b4b5a9d28f9dce6a12f86e616ca5fde8d93f2e3238",
+      "controls_overlap_opposite_reference": [
+        0.0630693560059447,
+        0.2338952400901309
+      ],
+      "dataset": "refcocog",
+      "image_id": "360617",
+      "item_id": "10722"
+    },
+    {
+      "area_mismatch": 0.07054777347103802,
+      "canonical_sha256": "2fdcb56b7b557198c0aa55277d8a28ae26077a4fbeaea017716ac17f562830c6",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.07145947969599314
+      ],
+      "dataset": "refcocog",
+      "image_id": "485788",
+      "item_id": "36877"
+    },
+    {
+      "area_mismatch": 0.12077373612436126,
+      "canonical_sha256": "6f0454abc073c4d83976359a89ddae60be25e5d6372c3e42b1c5cda77d8e4013",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "refcocog",
+      "image_id": "15117",
+      "item_id": "26052"
+    },
+    {
+      "area_mismatch": 0.03451119318560447,
+      "canonical_sha256": "031cb45cbb602e4bf88e2100380f5d382fa4f56f564283741a47bac3ced8ab8b",
+      "controls_overlap_opposite_reference": [
+        0.10852046963885004,
+        0.0
+      ],
+      "dataset": "refcocog",
+      "image_id": "555654",
+      "item_id": "30373"
+    },
+    {
+      "area_mismatch": 0.4449649398437724,
+      "canonical_sha256": "1c1da0e239255224c58a3c004c2126b9e0c398106465dd36e0014f7d54a16f9b",
+      "controls_overlap_opposite_reference": [
+        0.15822021399643013,
+        0.0
+      ],
+      "dataset": "refcocog",
+      "image_id": "192745",
+      "item_id": "10775"
+    },
+    {
+      "area_mismatch": 0.29331223542970963,
+      "canonical_sha256": "8325c868ad5acfd3332e23796eecba8551d6e5e706fd7a61bdee3e3dd033a2d1",
+      "controls_overlap_opposite_reference": [
+        0.4136686749180326,
+        0.04288575848705756
+      ],
+      "dataset": "refcocog",
+      "image_id": "92269",
+      "item_id": "28620"
+    },
+    {
+      "area_mismatch": 0.3794031696628478,
+      "canonical_sha256": "5d1509f33d60663edb804c25f9335a65d67e9b2264c42eba30b42613383bb78d",
+      "controls_overlap_opposite_reference": [
+        0.2161835945699524,
+        0.08251191337205445
+      ],
+      "dataset": "refcocog",
+      "image_id": "191806",
+      "item_id": "44378"
+    },
+    {
+      "area_mismatch": 0.17345129875940457,
+      "canonical_sha256": "958ec46ccfd1e1881cfc2e0a0d7db528ffb201767ab5508de39820da2757a4da",
+      "controls_overlap_opposite_reference": [
+        0.0,
+        0.0
+      ],
+      "dataset": "refcocog",
+      "image_id": "419996",
+      "item_id": "18924"
+    },
+    {
+      "area_mismatch": 0.145149943784614,
+      "canonical_sha256": "a4d2ec111f8a2ca9f9923e2768836319436a7b65316af39047e5a839a5af4a3c",
+      "controls_overlap_opposite_reference": [
+        0.16054668744484293,
+        0.2876831026965783
+      ],
+      "dataset": "refcocog",
+      "image_id": "216716",
+      "item_id": "28034"
+    }
+  ],
+  "manifest_sha256": "911fb1ace2f403825eb9a14971cd28eda2ebbc8017c3c8db7b500b2b5465dfc3",
+  "task_counts": {
+    "gqa": 16,
+    "refcocog": 16
+  }
+}

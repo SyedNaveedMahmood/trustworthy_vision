@@ -1,0 +1,5812 @@
+{
+  "cumulative_budget": {
+    "failed_calls": 0,
+    "forward_calls": 1637,
+    "forward_wall_seconds": 201.521073899974
+  },
+  "metrics": {
+    "image": 16,
+    "n": 20,
+    "screen_passed": true,
+    "shuffled": 4,
+    "text_only": 6
+  },
+  "model": "qwen",
+  "partition": "development_hard",
+  "rows": [
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        30.25,
+        23.625,
+        24.0,
+        23.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2403045",
+      "image_sha256": "78e3f1c7a3af55aaed9bf21a98213711c8c83877ccd96f5724c27154493724ec",
+      "input_tokens": 296,
+      "item_id": "05276748",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "manual_probability_max_abs_error": 9.992007221626409e-16,
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            296
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            296
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.9950636342286163,
+        0.0013202309575211283,
+        0.0019209247085064088,
+        0.0016952101053551226
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "1387da4954141eb8d7ee65008f57c96cc44b0bfb4fb0b6734eefe3be29b46025",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "d0020564a2be649bc3617982a6da6980fcae366f283ed9cc89fd40bd527027d0",
+      "status": "OK",
+      "wall_seconds": 0.45302000001538545
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.375,
+        27.375,
+        27.125,
+        27.25
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2403045",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 60,
+      "item_id": "05276748",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            60
+          ],
+          "input_ids": [
+            1,
+            60
+          ]
+        }
+      },
+      "probabilities": [
+        0.27312720402870716,
+        0.27312720402870716,
+        0.21271168037566052,
+        0.2410339115669249
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f7908744f4dd80a8f5025403e6936cfdd65eb70321a97658bfe586e60c8fcd99",
+      "retry_count": 0,
+      "run_key": "0d7e8065f8adc98bedac9d891d2f6094dbaa4889f235170a5712170caf6e30e3",
+      "status": "OK",
+      "wall_seconds": 0.03387529999599792
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.75,
+        24.875,
+        25.75,
+        25.5
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2403045",
+      "image_sha256": "f2ef8375b0b7bdce3fa52fc2547a22820b6709a8bc15a022a89cd3a43f5652e2",
+      "input_tokens": 296,
+      "item_id": "05276748",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            296
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            296
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.5531771382190511,
+        0.084832461690955,
+        0.20350249647684224,
+        0.15848790361315054
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "1387da4954141eb8d7ee65008f57c96cc44b0bfb4fb0b6734eefe3be29b46025",
+      "retry_count": 0,
+      "run_key": "b67b65c7db84713e2d48afa0e5738bde7782e2365c2175875cc0b8df377a265f",
+      "status": "OK",
+      "wall_seconds": 0.09484230002271943
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.75,
+        25.25,
+        29.375,
+        24.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "1159758",
+      "image_sha256": "630c70f2bfdffee9cd20879ad30886b895bffcb408c503879aa7753933bac3eb",
+      "input_tokens": 633,
+      "item_id": "1652426",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 567,
+        "native_input_size": [
+          576,
+          768
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            633
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            633
+          ],
+          "pixel_values": [
+            2268,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.025285654671165385,
+        0.015336524808967772,
+        0.948837191444753,
+        0.010540629075115313
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6b3cc6891966da79a95d6e0c3f847c6a56f166700459eb2868ed5111c0895911",
+      "retry_count": 0,
+      "run_key": "10afd622d5d63cc9253aeda472fb15cff75c11d1ae753dd6cc4375cb86b8671b",
+      "status": "OK",
+      "wall_seconds": 0.190888500015717
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        28.0,
+        25.625,
+        27.125,
+        27.0
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "1159758",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 64,
+      "item_id": "1652426",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            64
+          ],
+          "input_ids": [
+            1,
+            64
+          ]
+        }
+      },
+      "probabilities": [
+        0.5325505691875037,
+        0.04953491917182375,
+        0.22200010585244198,
+        0.19591440578823238
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "58750086f1d0cffdf0322740efe2b7a1584a73e5cc990aa8bb28512c86daa885",
+      "retry_count": 0,
+      "run_key": "d78f114b08f082934f6b92275683ec39c8a209c1c95883d43a37619b52d70279",
+      "status": "OK",
+      "wall_seconds": 0.029531100008171052
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.125,
+        25.125,
+        25.375,
+        26.125
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "1159758",
+      "image_sha256": "9b75f3d4e938076c1302f307a438bd1002004a3b908f381676957174d0752f78",
+      "input_tokens": 633,
+      "item_id": "1652426",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 567,
+        "native_input_size": [
+          576,
+          768
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            633
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            633
+          ],
+          "pixel_values": [
+            2268,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.35208217955181204,
+        0.12952379545994402,
+        0.16631184543643243,
+        0.35208217955181204
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6b3cc6891966da79a95d6e0c3f847c6a56f166700459eb2868ed5111c0895911",
+      "retry_count": 0,
+      "run_key": "87de7160e091b5d44a0a15f5051d4e4d0dc001c0bae46ed0bd58e68d9febeb7f",
+      "status": "OK",
+      "wall_seconds": 0.1874709000112489
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.125,
+        24.75,
+        24.0,
+        29.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2352791",
+      "image_sha256": "c6c6a227f54ecfb042c95108295875fcf6baf716ed4716c9a91adc8e949fb551",
+      "input_tokens": 275,
+      "item_id": "16773901",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          332,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            275
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            275
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.010866131396247617,
+        0.007468175610574965,
+        0.0035277163684318187,
+        0.9781379766247442
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "617abc5b4cb65a0c271a56dc700c988a998e7341e4db994273a284a0f0fe840a",
+      "retry_count": 0,
+      "run_key": "a07e13c0fd65f360fbb410610cfb085c25c11a5a76a488a4721341a8784552c3",
+      "status": "OK",
+      "wall_seconds": 0.08670489999349229
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        28.125,
+        27.375,
+        27.0,
+        26.75
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2352791",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 57,
+      "item_id": "16773901",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            57
+          ],
+          "input_ids": [
+            1,
+            57
+          ]
+        }
+      },
+      "probabilities": [
+        0.4878385232236808,
+        0.23043860150943754,
+        0.15837798023702157,
+        0.12334489502985987
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "c40be155fd2a484fe62bf79a51a0dc20d1d5ddbf484dc1fef10de5ded200af42",
+      "retry_count": 0,
+      "run_key": "0e0eb644208d1f9ae516f79cb6e87e92d7428c09118221c6c532d70486f7de63",
+      "status": "OK",
+      "wall_seconds": 0.02662590000545606
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.125,
+        25.25,
+        24.875,
+        26.25
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2352791",
+      "image_sha256": "05af4b7a5444f496d243cd09f1251132e7b90dd0164590489ca58bc134dfef9c",
+      "input_tokens": 275,
+      "item_id": "16773901",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          332,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            275
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            275
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.5967953719857468,
+        0.09152153448408096,
+        0.06290176942940709,
+        0.24878132410076517
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "617abc5b4cb65a0c271a56dc700c988a998e7341e4db994273a284a0f0fe840a",
+      "retry_count": 0,
+      "run_key": "5e818ae91ebf258f0f639e3a4ee6c69d1f101f70a3ee669adb55241c5def4f12",
+      "status": "OK",
+      "wall_seconds": 0.09161880001192912
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.875,
+        29.125,
+        24.25,
+        26.0
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "1593212",
+      "image_sha256": "442ed416b15e3652ca8586d7c14c2dc58e909fd7d5729caedc71c4d6e6a49e80",
+      "input_tokens": 631,
+      "item_id": "00974643",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 567,
+        "native_input_size": [
+          768,
+          576
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            631
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            631
+          ],
+          "pixel_values": [
+            2268,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.03556137175798476,
+        0.9171398655600963,
+        0.007002449285423894,
+        0.040296313396494754
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "5e7fa6ee94af527038801ac22c33f5ef87983e11c8686b4d08aae87e0f69864a",
+      "retry_count": 0,
+      "run_key": "ba31db9d9148302235e036ef5e3dac70d331a2ca41cb2b3e25859b24be2d05eb",
+      "status": "OK",
+      "wall_seconds": 0.18696619998081587
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.0,
+        26.875,
+        26.125,
+        26.875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "1593212",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 62,
+      "item_id": "00974643",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            62
+          ],
+          "input_ids": [
+            1,
+            62
+          ]
+        }
+      },
+      "probabilities": [
+        0.31428199612025653,
+        0.2773528881142302,
+        0.1310122276512833,
+        0.2773528881142302
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f8596b272de011326c8f0e8d6f5eafd2510b89fabd5270a6c91d05bee2a5585d",
+      "retry_count": 0,
+      "run_key": "23125a69e904182a8fa8ee8ac0785d24b6a7c343b395590733c12a1d897080eb",
+      "status": "OK",
+      "wall_seconds": 0.03050449999864213
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.875,
+        25.25,
+        24.625,
+        24.875
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "1593212",
+      "image_sha256": "92b342e4784720ec1f8973dda0e5b45ec6be2c4ae93c08314b730c83f26bb654",
+      "input_tokens": 631,
+      "item_id": "00974643",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 567,
+        "native_input_size": [
+          768,
+          576
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            631
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            631
+          ],
+          "pixel_values": [
+            2268,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.4566948960172691,
+        0.24445116243953516,
+        0.13084527841051333,
+        0.1680086631326829
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "5e7fa6ee94af527038801ac22c33f5ef87983e11c8686b4d08aae87e0f69864a",
+      "retry_count": 0,
+      "run_key": "4bbe69988e61413576634f0ae7fac4ab544e7ec70522d1a25e0445ea6f9f51dd",
+      "status": "OK",
+      "wall_seconds": 0.18539530000998639
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.375,
+        26.125,
+        29.375,
+        26.0
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2346628",
+      "image_sha256": "5fca0008c0e65008664bf129eff36239f8e37f1220dc26c16aa9ed819b510a27",
+      "input_tokens": 366,
+      "item_id": "12555802",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 306,
+        "native_input_size": [
+          483,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            366
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            366
+          ],
+          "pixel_values": [
+            1224,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.016783199129491434,
+        0.03553003283594719,
+        0.9163316241081091,
+        0.03135514392645237
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "7bbd25d2e1acf0f0e98cb922fb2670bfc5df7282707acf15874fa971fa0e374c",
+      "retry_count": 0,
+      "run_key": "4631d973479e0fd75d21064ce79b8d6ec189e32cb56dca2edd1433bb352401eb",
+      "status": "OK",
+      "wall_seconds": 0.11333780002314597
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.625,
+        27.25,
+        26.5,
+        26.625
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2346628",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 58,
+      "item_id": "12555802",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            58
+          ],
+          "input_ids": [
+            1,
+            58
+          ]
+        }
+      },
+      "probabilities": [
+        0.2104933963941087,
+        0.3932534368794719,
+        0.18575977033231236,
+        0.2104933963941087
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "86123af0e843e712de3203f033aa2e1d3539cfc6805c4e533acf14a1849162bd",
+      "retry_count": 0,
+      "run_key": "ca0111b90a3cdabf6cbc9ced33ee4a27a471f36123f1c71a006184f0d615c755",
+      "status": "OK",
+      "wall_seconds": 0.030166200012899935
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.5,
+        25.5,
+        24.125,
+        25.625
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2346628",
+      "image_sha256": "4c2f9cf7b3ca12aad46eb5ac2ebf0868c903d250e082f1e06bda0172c5a2fa3a",
+      "input_tokens": 366,
+      "item_id": "12555802",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 306,
+        "native_input_size": [
+          483,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            366
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            366
+          ],
+          "pixel_values": [
+            1224,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.5325505691875037,
+        0.19591440578823238,
+        0.04953491917182375,
+        0.22200010585244198
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "7bbd25d2e1acf0f0e98cb922fb2670bfc5df7282707acf15874fa971fa0e374c",
+      "retry_count": 0,
+      "run_key": "88ec62c68242e349e6b45df89f114e61169ddd27ab36de303b82f11d82d1ce8f",
+      "status": "OK",
+      "wall_seconds": 0.10962400000425987
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.5,
+        24.625,
+        26.625,
+        27.0
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2373289",
+      "image_sha256": "08810d0ff6bf67922fd08c66cabde2c082f975615e901e326f68be6838e22146",
+      "input_tokens": 349,
+      "item_id": "07379298",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 288,
+        "native_input_size": [
+          500,
+          436
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            349
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            349
+          ],
+          "pixel_values": [
+            1152,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.04407511476383566,
+        0.04994364811338322,
+        0.36903641769504053,
+        0.5369448194277404
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f246f56d5462b2a3d27b23a7d319f11e35ca1d068bebd8a9d01beb3a855be9e8",
+      "retry_count": 0,
+      "run_key": "35d9972f24791a8dd437174e071755779ba82ae443c03be969b7b377ece15b68",
+      "status": "OK",
+      "wall_seconds": 0.10341139999218285
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.125,
+        27.5,
+        28.0,
+        26.75
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2373289",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 59,
+      "item_id": "07379298",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            59
+          ],
+          "input_ids": [
+            1,
+            59
+          ]
+        }
+      },
+      "probabilities": [
+        0.18046775840243012,
+        0.2625790390909276,
+        0.4329196469892128,
+        0.12403355551742962
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "b9d7598b99f6759c2358504f89483bc3c010908d1404fcded7b23f40c8acc47c",
+      "retry_count": 0,
+      "run_key": "d4f4d89935e910f35003c11b4ccf547ae809ce3672041671d62037bb9681c76a",
+      "status": "OK",
+      "wall_seconds": 0.026836600009119138
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.5,
+        26.875,
+        25.375,
+        25.75
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2373289",
+      "image_sha256": "9dd8af82cfda4f20bb1a73f31c73c3ec75ed7803832f0cba3ef39515c35d5ca8",
+      "input_tokens": 349,
+      "item_id": "07379298",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 288,
+        "native_input_size": [
+          500,
+          436
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            349
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            349
+          ],
+          "pixel_values": [
+            1152,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.056688598646947246,
+        0.60945987155352,
+        0.1359888787437784,
+        0.19786265105575318
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f246f56d5462b2a3d27b23a7d319f11e35ca1d068bebd8a9d01beb3a855be9e8",
+      "retry_count": 0,
+      "run_key": "6a070ab28c81e143ea7e380a9570839fc4ef2b841fac3882caca9de29fb01436",
+      "status": "OK",
+      "wall_seconds": 0.10208419998525642
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.625,
+        24.5,
+        29.625,
+        24.375
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2367174",
+      "image_sha256": "ff37216b7fbc1fdfe7c004032fa24ea9c089313531db8a14eb449d2e9ea10412",
+      "input_tokens": 291,
+      "item_id": "11386374",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.01779064799197261,
+        0.005775777766497779,
+        0.9713364682525769,
+        0.005097105988951262
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "01896541a3048829a94aec1c34c1fe9508daa2d57cf2744a73ad42eb7ca4f7f6",
+      "retry_count": 0,
+      "run_key": "835f59c744d282c82e12813523941e85fca3e4312cf6ad3c40c4456b15b48624",
+      "status": "OK",
+      "wall_seconds": 0.0947613000171259
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.75,
+        25.875,
+        31.75,
+        26.0
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2367174",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "11386374",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.006653254252768987,
+        0.002773489005243905,
+        0.9874304819660982,
+        0.003142774775889982
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "28656f6b7a46f79e64e3ff0a2e0aeac8fdd83f1bdb9f8c2d7089def38d27932c",
+      "retry_count": 0,
+      "run_key": "831c85e5bb33978e5acaf6e236c93bb0f4279a6c01be720e1a9d3b699e9d95d4",
+      "status": "OK",
+      "wall_seconds": 0.02839800002402626
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.25,
+        24.75,
+        29.0,
+        24.75
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2367174",
+      "image_sha256": "47ded493a185f36d87f4e6c661968f03dc90dadf2a51e6b35ccf1e7ff390c3a4",
+      "input_tokens": 291,
+      "item_id": "11386374",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.022354289716874025,
+        0.013558562089382938,
+        0.9505285861043606,
+        0.013558562089382938
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "01896541a3048829a94aec1c34c1fe9508daa2d57cf2744a73ad42eb7ca4f7f6",
+      "retry_count": 0,
+      "run_key": "bc71b332b9ac19b90c3d943aa10381393d0fc16d847f64834c7a03c1d243261d",
+      "status": "OK",
+      "wall_seconds": 0.09556309998151846
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.875,
+        24.5,
+        28.125,
+        24.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2340236",
+      "image_sha256": "dcec852fda0283397773b832673941efd5b84ff7b49bb0011f5af0bb9dd9248c",
+      "input_tokens": 273,
+      "item_id": "19321644",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.09037319511902973,
+        0.022849922125478966,
+        0.8574370019770398,
+        0.029339880778450574
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "270ecf3cb6ec96b11cf0ee953f1e792e0f491f2b9cad1d8854d099d6a249c3fb",
+      "retry_count": 0,
+      "run_key": "ea262a9a26d0fe3f104bb2e0a5416227c738bcb59b567830bc5aa67f30e645d9",
+      "status": "OK",
+      "wall_seconds": 0.08658750000176951
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.75,
+        27.25,
+        27.5,
+        27.125
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2340236",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "19321644",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.34239623393788776,
+        0.20767381365346824,
+        0.2666584551115269,
+        0.18327149729711617
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "9c4e39254a857fb4f9b92a1106e6712275a940f590b7b73d99d60c722230adb3",
+      "retry_count": 0,
+      "run_key": "75a10199468b73ad272b57af75c1115289a8814bdaede22b95c5b93ff95790e6",
+      "status": "OK",
+      "wall_seconds": 0.025861900008749217
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.25,
+        25.625,
+        24.125,
+        28.0
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2340236",
+      "image_sha256": "e8defeaddcf965b294a0b62fd19053b6d25ceb470be06858e51cb4b00735fbe2",
+      "input_tokens": 273,
+      "item_id": "19321644",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.007708069329923288,
+        0.08286955500519601,
+        0.0184906970797385,
+        0.8909316785851421
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "270ecf3cb6ec96b11cf0ee953f1e792e0f491f2b9cad1d8854d099d6a249c3fb",
+      "retry_count": 0,
+      "run_key": "82e0a28e1687d6479644cb3de58e334764ea8b00e0ac32e1517edc7d790ace97",
+      "status": "OK",
+      "wall_seconds": 0.08557359999394976
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.125,
+        24.5,
+        26.25,
+        26.5
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2408571",
+      "image_sha256": "2859a8909bacbfc4fc0aa95f6c72048f960510e55db02e96a6c7f4a4931a063f",
+      "input_tokens": 295,
+      "item_id": "05753791",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            295
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            295
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.04634156065419172,
+        0.06742657289185759,
+        0.38801313679737914,
+        0.4982187296565724
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "998a605a0d05f84f1dbeb903489d0df566579ca615fc8109310e3329235fbefd",
+      "retry_count": 0,
+      "run_key": "d42858c75b5aa8726d7b4f5b35af57cc2165801f7d9dac1e05184c6328104bfa",
+      "status": "OK",
+      "wall_seconds": 0.09448969998629764
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.25,
+        27.0,
+        27.75,
+        26.625
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2408571",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 59,
+      "item_id": "05753791",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            59
+          ],
+          "input_ids": [
+            1,
+            59
+          ]
+        }
+      },
+      "probabilities": [
+        0.25234787731122565,
+        0.19652872445638933,
+        0.416051312939044,
+        0.13507208529334153
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "3c089a0b46137d9b02ca77462153fe81ab9ae223957a015967d57570f47f349c",
+      "retry_count": 0,
+      "run_key": "fccf27fed4290657b227cf135231b298433e042ef0ba7cc877a207dd63397199",
+      "status": "OK",
+      "wall_seconds": 0.02748689998406917
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.0,
+        25.625,
+        24.875,
+        25.75
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2408571",
+      "image_sha256": "47f4543dda2571a591fa0fe32c761a080ac973ce06d96cef4ae95750d9de7c16",
+      "input_tokens": 295,
+      "item_id": "05753791",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            295
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            295
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.17042328217599292,
+        0.3183926079776297,
+        0.15039801864861424,
+        0.36078609119776356
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "998a605a0d05f84f1dbeb903489d0df566579ca615fc8109310e3329235fbefd",
+      "retry_count": 0,
+      "run_key": "e6cffdf331f330a8e0e7512f8f0c4d4eae50fd06acbf791b137ed1621cfd6275",
+      "status": "OK",
+      "wall_seconds": 0.09376249997876585
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.875,
+        27.125,
+        22.75,
+        24.75
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2400139",
+      "image_sha256": "098b21fcf070df388d3fcc2be93ea6e6e578ff675b20a89c83bf195806b758ed",
+      "input_tokens": 188,
+      "item_id": "06937161",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 126,
+        "native_input_size": [
+          500,
+          197
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            188
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            188
+          ],
+          "pixel_values": [
+            504,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.41328771592569064,
+        0.5306719316534099,
+        0.006680173759720336,
+        0.04936017866117804
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "52dcb6a8c1e11d3c8b687583c990b2686f4151d49f81c6eb3188ecf71c6f4750",
+      "retry_count": 0,
+      "run_key": "9cfec0501a66929ca451f6a493c6c85e5ea80055c2ace43e4ebc96e1e0695c39",
+      "status": "OK",
+      "wall_seconds": 0.06358889999683015
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        28.25,
+        29.0,
+        24.875,
+        25.75
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2400139",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 60,
+      "item_id": "06937161",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            60
+          ],
+          "input_ids": [
+            1,
+            60
+          ]
+        }
+      },
+      "probabilities": [
+        0.3092812392454509,
+        0.6547483886206082,
+        0.01058302203607953,
+        0.025387350097860556
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "e030d21e83cb7f9fdede9ce52d338558e50c8e88f1ded8b08688280aa69d6590",
+      "retry_count": 0,
+      "run_key": "e459648223ff93f8f95fc2a430f6609b93f1f2609785dfed3c6bf69adbca969c",
+      "status": "OK",
+      "wall_seconds": 0.025973099982365966
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.75,
+        26.75,
+        24.25,
+        25.875
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2400139",
+      "image_sha256": "a243574e92444e825d24cbdd3220eee93b75a4887911498992ff065b017866fa",
+      "input_tokens": 188,
+      "item_id": "06937161",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 126,
+        "native_input_size": [
+          500,
+          197
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            188
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            188
+          ],
+          "pixel_values": [
+            504,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.19706140295179123,
+        0.5356684307344998,
+        0.043970342399707436,
+        0.22329982391400074
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "52dcb6a8c1e11d3c8b687583c990b2686f4151d49f81c6eb3188ecf71c6f4750",
+      "retry_count": 0,
+      "run_key": "c0ef4d8828a616af5f4cf961d2c8117cae602243a0c6ee1b10bb828559a96b13",
+      "status": "OK",
+      "wall_seconds": 0.06151349999709055
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.0,
+        26.5,
+        24.75,
+        26.25
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2395818",
+      "image_sha256": "c31e20d6609eeb776332f29896ba2f185efe91e2303aecc0ed4dc2cc894992f3",
+      "input_tokens": 291,
+      "item_id": "18333235",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.04034335452234837,
+        0.49148267282302815,
+        0.08540688219402252,
+        0.3827670904606014
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "cbc194bc69acbe280b2860d9150f41115c823b8b46e8830e17a4f7abdf2e7f29",
+      "retry_count": 0,
+      "run_key": "1b8983ae509a30c14e31aafb0b55d91d931c26945ac234e2b1990e4b648466b3",
+      "status": "OK",
+      "wall_seconds": 0.09583840001141652
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.75,
+        27.375,
+        27.875,
+        26.875
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2395818",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "18333235",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.3088994151763167,
+        0.2123032562754838,
+        0.35002889446029056,
+        0.12876843408790947
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "8bb73f76490137f707669a09f2c8b0e562a049c261b0f4d66a1bb911f12712a2",
+      "retry_count": 0,
+      "run_key": "289714c5cc0b5c269552f97f0a7f2b072bfd87a9cf650d5f36587683481d7f8e",
+      "status": "OK",
+      "wall_seconds": 0.02642020001076162
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.75,
+        27.0,
+        25.875,
+        24.75
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2395818",
+      "image_sha256": "3fa9c58ee97290809c67ede2f13bddde90fc342a2cb3335fbebb35eb4df4df70",
+      "input_tokens": 291,
+      "item_id": "18333235",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.16690671045946665,
+        0.5825616614053221,
+        0.18913008076361731,
+        0.06140154737159231
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "cbc194bc69acbe280b2860d9150f41115c823b8b46e8830e17a4f7abdf2e7f29",
+      "retry_count": 0,
+      "run_key": "72e7020e3f99c91ce641b3a0419bbd67cb23041697925e8ec03cf0e25b0def62",
+      "status": "OK",
+      "wall_seconds": 0.0937862999853678
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.0,
+        29.75,
+        24.125,
+        24.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2370398",
+      "image_sha256": "98311736127aa27cdfc5ebe70b3301d44be1ed7a2be8f6cceeffb031387ee2d6",
+      "input_tokens": 291,
+      "item_id": "08495165",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          357,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.008497011562643202,
+        0.9821210020873552,
+        0.0035420814012350837,
+        0.005839904948767597
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "024d26205a295dee0b2dd7b0886bd011448bc9da075eebbb0a29fa94796a5ad8",
+      "retry_count": 0,
+      "run_key": "df62adaac969d084ae35dfb6654e675ef9bdb1c79441128a42c8430ea7d204f8",
+      "status": "OK",
+      "wall_seconds": 0.09711780000361614
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.75,
+        28.25,
+        26.375,
+        26.75
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2370398",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "08495165",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.30586274893965854,
+        0.5042824200916282,
+        0.07733421381363192,
+        0.11252061715508276
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "2638d83a758c1b2b9a865e3c5f283c51542e43bcbc36dd04fbda9e2688ef24b9",
+      "retry_count": 0,
+      "run_key": "86b54d1645ff7bf46f4ac0f72bac0261e130a2fafdee78d4256074b48c254bd3",
+      "status": "OK",
+      "wall_seconds": 0.027627200004644692
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.625,
+        25.25,
+        24.75,
+        25.75
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2370398",
+      "image_sha256": "1e20a72b20aa504e865882981d015bb8c7659bfd89b94e0e333a97d2cda9da0c",
+      "input_tokens": 291,
+      "item_id": "08495165",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          357,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.3088994151763167,
+        0.2123032562754838,
+        0.12876843408790947,
+        0.35002889446029056
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "024d26205a295dee0b2dd7b0886bd011448bc9da075eebbb0a29fa94796a5ad8",
+      "retry_count": 0,
+      "run_key": "039bacafcba50b45609dee7ce214809e429562c35796f3ec99025b7800bf05cf",
+      "status": "OK",
+      "wall_seconds": 0.09310959998401813
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.375,
+        26.375,
+        24.125,
+        26.375
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2359534",
+      "image_sha256": "c982d7f57ea5d31c43009b0a36b7c46d57c68289a05ac846308e24e545d0b62c",
+      "input_tokens": 273,
+      "item_id": "14645551",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.0603977324246144,
+        0.44628223313367854,
+        0.04703780130802688,
+        0.44628223313367854
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "fca122ba38e3acfede6b0a809998c6e6adc19ca91aa1a6632605ec51fb5990e1",
+      "retry_count": 0,
+      "run_key": "7f040aab36d3741bfbd188af1ba916362000fbd5b10b7d569e30d0a526367294",
+      "status": "OK",
+      "wall_seconds": 0.08734749999712221
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.5,
+        27.0,
+        28.0,
+        27.0
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2359534",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "14645551",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.2589477726055854,
+        0.1570597633495827,
+        0.4269327006952486,
+        0.1570597633495827
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "d8aaf8e51f178d7f7cd624031ac9727a2242c4fed8490830e1fa3792c982b18b",
+      "retry_count": 0,
+      "run_key": "3a57879545e71cb35e4253362cd4c3f9da33d4725415117fc567ef8a28693be9",
+      "status": "OK",
+      "wall_seconds": 0.027343499998096377
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        28.375,
+        24.75,
+        26.375,
+        25.0
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2359534",
+      "image_sha256": "9729d49e3518e9241083a6727cb3ce3daa9e0e5dd5eabcd5f7dcc0394da6d266",
+      "input_tokens": 273,
+      "item_id": "14645551",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.835978858874163,
+        0.022278081981272957,
+        0.11313743564555512,
+        0.028605623499007672
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "fca122ba38e3acfede6b0a809998c6e6adc19ca91aa1a6632605ec51fb5990e1",
+      "retry_count": 0,
+      "run_key": "a4fed26bdbcf730bd668f8dd1f7bcf6e9915cea506236e0ec39b54b21cd4c070",
+      "status": "OK",
+      "wall_seconds": 0.08628029999090359
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.0,
+        30.375,
+        24.75,
+        26.25
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2410072",
+      "image_sha256": "8ef3e91b42e93dba02eac011da2b0bb33bd83754a0e4f431089e00378f6f353a",
+      "input_tokens": 278,
+      "item_id": "08700704",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          349
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            278
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            278
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.0016678058703761814,
+        0.9789777475498747,
+        0.0035307450552930922,
+        0.015823701524457216
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f8e07661a976fb303852b0874de0c04fac43d82f2db38c1c02e8883035520d74",
+      "retry_count": 0,
+      "run_key": "4e25745be59737ba9d198a6c5b1a3324e1e39f28763e42319f4389a95ab85872",
+      "status": "OK",
+      "wall_seconds": 0.0898847000207752
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.125,
+        27.25,
+        28.0,
+        27.25
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2410072",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 60,
+      "item_id": "08700704",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            60
+          ],
+          "input_ids": [
+            1,
+            60
+          ]
+        }
+      },
+      "probabilities": [
+        0.073092721353134,
+        0.22514143184519408,
+        0.4766244149564773,
+        0.22514143184519408
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "8ca911f5c2602773f1fd0b15982fdc0d953169da3330a2d604dc9a538e1bde2b",
+      "retry_count": 0,
+      "run_key": "2a308e5fa891f0558c13f1e02318c5837cf03dccb5c2eb8e1d9d9bda6058d742",
+      "status": "OK",
+      "wall_seconds": 0.02752229999168776
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.875,
+        26.5,
+        27.0,
+        25.25
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2410072",
+      "image_sha256": "355a5938f66982f929cbdb21090eda0ab09dec08cab906645c36302a1a9d9dd9",
+      "input_tokens": 278,
+      "item_id": "08700704",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          349
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            278
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            278
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.06286814034889619,
+        0.3192707607799436,
+        0.5263884944105052,
+        0.09147260446065608
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f8e07661a976fb303852b0874de0c04fac43d82f2db38c1c02e8883035520d74",
+      "retry_count": 0,
+      "run_key": "bf0b51bbba4a61c14441b2edd8bacdf215ada5dfe859342e0a50c32a3f52edcc",
+      "status": "OK",
+      "wall_seconds": 0.08709889999590814
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.75,
+        24.0,
+        23.875,
+        28.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2447",
+      "image_sha256": "1a9e94ddfe9a22fa282cf1605acb99f52ed38b913ec222ba7627d3de4a7cb9e6",
+      "input_tokens": 545,
+      "item_id": "1330560",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 486,
+        "native_input_size": [
+          768,
+          512
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            545
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            545
+          ],
+          "pixel_values": [
+            1944,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.05248640422798925,
+        0.009120769440231808,
+        0.008049050780192805,
+        0.930343775551587
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "d108c4fb6cf5957e8a531e0352e048d51afa7a4c4e412fe4a169d9a25c85f4cb",
+      "retry_count": 0,
+      "run_key": "9004e3c54b85610743e9b96a3dde9010c072c9d87bd8520c0a1baa5487326c92",
+      "status": "OK",
+      "wall_seconds": 0.1634910000138916
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.875,
+        27.125,
+        27.375,
+        27.125
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2447",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 57,
+      "item_id": "1330560",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            57
+          ],
+          "input_ids": [
+            1,
+            57
+          ]
+        }
+      },
+      "probabilities": [
+        0.39196260835213986,
+        0.18515002611067677,
+        0.23773733942650796,
+        0.18515002611067677
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "927542b8812295c72838a8bea27a749ed3fbcaacee6a02093baa1543b157a021",
+      "retry_count": 0,
+      "run_key": "5677aa224d685f680b996ff3666b85d04548b44d2e38c58e7480fb7f5d375ac4",
+      "status": "OK",
+      "wall_seconds": 0.027259199996478856
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.75,
+        24.75,
+        24.25,
+        27.625
+      ],
+      "condition": "shuffled",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2447",
+      "image_sha256": "83f71b3da2433dfc9ac18270e10f25d562115e202144b79e5a6693e18b8b30b5",
+      "input_tokens": 545,
+      "item_id": "1330560",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 486,
+        "native_input_size": [
+          768,
+          512
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            545
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            545
+          ],
+          "pixel_values": [
+            1944,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.12327676462535005,
+        0.04535098727979721,
+        0.027506764233434646,
+        0.8038654838614174
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "d108c4fb6cf5957e8a531e0352e048d51afa7a4c4e412fe4a169d9a25c85f4cb",
+      "retry_count": 0,
+      "run_key": "b0820638e168b5f6bf7c05402ab3298811e880cb7009b03d11e5439e9e97baae",
+      "status": "OK",
+      "wall_seconds": 0.16032230001292191
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.75,
+        25.875,
+        23.5,
+        28.0
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2386490",
+      "image_sha256": "0e65cd519c8857fbf03cc9d53fe2c786c3ed3864f8cefe1c7d76c399000417ba",
+      "input_tokens": 274,
+      "item_id": "09811334",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          334,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            274
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            274
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.03315972936925204,
+        0.1021391571087322,
+        0.009500421526876433,
+        0.8552006919951399
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "bec5b5d1807844b27836462bb835aaa653cb9e860baa0596d77776e2ab4c6a6c",
+      "retry_count": 0,
+      "run_key": "ccefee51f08b993c94dd98e43376c1cd9b58d61d8fb2f3c14c31350cc6f6b7cd",
+      "status": "OK",
+      "wall_seconds": 0.08610380001482554
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.875,
+        27.0,
+        27.25,
+        27.125
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2386490",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 56,
+      "item_id": "09811334",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            56
+          ],
+          "input_ids": [
+            1,
+            56
+          ]
+        }
+      },
+      "probabilities": [
+        0.41245787757957436,
+        0.17193802388013232,
+        0.22077279275715375,
+        0.19483130578313898
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "7368a6e9c892028ff1f6111715f4ef5d5a79a381ac35ae15629a71f554760d8e",
+      "retry_count": 0,
+      "run_key": "134c03cbd776ade9581f14e3381f6cf58cfe6c9a6cf1cd6dbc9323d75f05086d",
+      "status": "OK",
+      "wall_seconds": 0.028294999996433035
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.125,
+        25.375,
+        25.625,
+        25.625
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2386490",
+      "image_sha256": "f84eccf23c29955f4c8e6eb2c28cf19134a4c6450ecb01253cd61d4601d35cfd",
+      "input_tokens": 274,
+      "item_id": "09811334",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          334,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            274
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            274
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.617270895053108,
+        0.10726559761056444,
+        0.13773175366816462,
+        0.13773175366816462
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "bec5b5d1807844b27836462bb835aaa653cb9e860baa0596d77776e2ab4c6a6c",
+      "retry_count": 0,
+      "run_key": "fc6d9ff6bee356991ba450f97e1fde4a6ede472cb494ba612e55a8a7b35a6406",
+      "status": "OK",
+      "wall_seconds": 0.0868215000082273
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.625,
+        25.625,
+        30.625,
+        26.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2399078",
+      "image_sha256": "d99bcf3abb16d9e2420e58874600b9bca1a97bbda3a827e82f08828cad64cadd",
+      "input_tokens": 273,
+      "item_id": "00817427",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.0008866961015511525,
+        0.006551847237064575,
+        0.9723803464102416,
+        0.020181110251143355
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "e3839ec8120f4a8ae72c9b54048dbf023c8ad41e999e65a223fa396b78c3935f",
+      "retry_count": 0,
+      "run_key": "5ff6641719e8038d000202cdd203bea0be7d282d350f3bc3a14c9f19d9e46a6d",
+      "status": "OK",
+      "wall_seconds": 0.08738149999408051
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.875,
+        28.0,
+        27.5,
+        27.125
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2399078",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "00817427",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.055736204388472564,
+        0.4666735257219898,
+        0.28305180142657904,
+        0.194538468462959
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "eea1afe0ed5c06b568288f1af03470918743a066b11ad8a634125822cdc7b17d",
+      "retry_count": 0,
+      "run_key": "6c29a153d84bcb55363d05c3bcf58b4bab5752e4c79a752a2931e079081d5213",
+      "status": "OK",
+      "wall_seconds": 0.026814900018507615
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.875,
+        25.5,
+        24.75,
+        25.875
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2399078",
+      "image_sha256": "9989606e5ece8b1ef3f6e239f1e2dac46bb84121d7e737e5e335e5bbcdee5764",
+      "input_tokens": 273,
+      "item_id": "00817427",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.33201173338709816,
+        0.22818810478975926,
+        0.10778842843604401,
+        0.33201173338709816
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "e3839ec8120f4a8ae72c9b54048dbf023c8ad41e999e65a223fa396b78c3935f",
+      "retry_count": 0,
+      "run_key": "24a8400d797532ef219abf1a9001d4756a8912fde670ccd1a6e71cb0f15f4f1c",
+      "status": "OK",
+      "wall_seconds": 0.08690039999783039
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.5,
+        24.125,
+        31.125,
+        25.375
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2330750",
+      "image_sha256": "809ecaca2fe382d859e901d40f067268d6ac5298a96df42be6ebb1395499053d",
+      "input_tokens": 291,
+      "item_id": "0929909",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.00048586862519165493,
+        0.000907722094857461,
+        0.9954381478588343,
+        0.0031682614211182487
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "93a3e330b45376c6d70ca56176bb87a01c215c80a0c195776b8d86511a6128da",
+      "retry_count": 0,
+      "run_key": "8bf64e93eac23f1f7b1d19c3cd3beb9fef5a5623a0b4dab1cfc7638a33bcb7f6",
+      "status": "OK",
+      "wall_seconds": 0.0940763000107836
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.375,
+        27.375,
+        26.5,
+        28.0
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2330750",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "0929909",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.10070646269689003,
+        0.27374854755734485,
+        0.11411537241881298,
+        0.511429617326952
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f94493cac82c37b5c16c896235089149dfa889c1ba8abdd11338adc8e166a62b",
+      "retry_count": 0,
+      "run_key": "412a64db5d845896bd72c78f5f973874b526dea3cd673c34253543a203d7a174",
+      "status": "OK",
+      "wall_seconds": 0.02627319999737665
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.5,
+        25.25,
+        25.25,
+        25.75
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2330750",
+      "image_sha256": "076ec6b69fa0619d5adbed0a8bcab2ae483c7081006ac4c3d44e78a0b71ab0f5",
+      "input_tokens": 291,
+      "item_id": "0929909",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 234,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            291
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            291
+          ],
+          "pixel_values": [
+            936,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.11462181175905761,
+        0.24265437739809984,
+        0.24265437739809984,
+        0.4000694334447436
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "93a3e330b45376c6d70ca56176bb87a01c215c80a0c195776b8d86511a6128da",
+      "retry_count": 0,
+      "run_key": "5ec1b22ba306348e718e2976571a03c7c7dfcb14924fe91477094fe591eabf0c",
+      "status": "OK",
+      "wall_seconds": 0.09335399998235516
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.75,
+        30.5,
+        24.875,
+        25.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2320419",
+      "image_sha256": "68263f119e066755b8b13920fe0a8f3d490097f11c5fa913d2b6c564226b6584",
+      "input_tokens": 274,
+      "item_id": "04293454",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          333
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            274
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            274
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.0004257727507641809,
+        0.9884622730671911,
+        0.003564951595386446,
+        0.007547002586656488
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "42f462d885672e8bbd43f19471a517b0fa38338dff9c5db5279193dd1dc8fab1",
+      "retry_count": 0,
+      "run_key": "a8073e809c3d16f0342568248356d244cce4f3c2ed07af2cdd04d7f6f9927820",
+      "status": "OK",
+      "wall_seconds": 0.08594690001336858
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.625,
+        28.5,
+        28.25,
+        25.0
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2320419",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 56,
+      "item_id": "04293454",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            56
+          ],
+          "input_ids": [
+            1,
+            56
+          ]
+        }
+      },
+      "probabilities": [
+        0.030243222281716987,
+        0.5360739417430724,
+        0.4174948056136795,
+        0.01618803036152919
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "2b151bdfa428cdb8b3c775edb667468f8b79d46cf2c6671c70e2404fb4a5f53a",
+      "retry_count": 0,
+      "run_key": "804d7545430944404b7f2685d6ff053e1f01d2fe1f2ac984aa936b5c9c96bd77",
+      "status": "OK",
+      "wall_seconds": 0.026124399999389425
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.875,
+        27.0,
+        27.625,
+        24.25
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2320419",
+      "image_sha256": "169c3e5ac61e01a560f617258a3d56acd77f9abf0f510c8e296607d1b2bf5e5e",
+      "input_tokens": 274,
+      "item_id": "04293454",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          333
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            274
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            274
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.014763205162982613,
+        0.33600900075369644,
+        0.627747457318934,
+        0.021480336764386807
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "42f462d885672e8bbd43f19471a517b0fa38338dff9c5db5279193dd1dc8fab1",
+      "retry_count": 0,
+      "run_key": "c9fcbdc9345f0fbe625788b16cba26bfb0e60e113a151943c6ac0ccd4554075c",
+      "status": "OK",
+      "wall_seconds": 0.08606899998267181
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.375,
+        30.375,
+        24.5,
+        24.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2376280",
+      "image_sha256": "582502460fdcfe7c931175b4d9a7724e90027bdf34163e7ae554a25024f25d57",
+      "input_tokens": 273,
+      "item_id": "16161462",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.006647320668778236,
+        0.9865498600212302,
+        0.002771015519437589,
+        0.004031803790555487
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "2da2ce2e3aee25fe04ce388b3a52681849cb515b2cdabcdb3ed54467fcbdf08d",
+      "retry_count": 0,
+      "run_key": "6693abde17f60f96033080268ff4c6ed5d1e7a84ab125da80ca570cc30096c39",
+      "status": "OK",
+      "wall_seconds": 0.09113570000045002
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.25,
+        27.875,
+        27.125,
+        26.75
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2376280",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 55,
+      "item_id": "16161462",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            55
+          ],
+          "input_ids": [
+            1,
+            55
+          ]
+        }
+      },
+      "probabilities": [
+        0.22950131440499802,
+        0.428764902862519,
+        0.20253419910150414,
+        0.13919958363097995
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "ec75e384e4ef0ec3e5e2acb4e49fc1f2b397911aa318528d66774931d03a87de",
+      "retry_count": 0,
+      "run_key": "617d1289cf8308f4fe222812e4181565f9dd9b8a57133a82b3a486ff1b21435b",
+      "status": "OK",
+      "wall_seconds": 0.026201100001344457
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.375,
+        26.75,
+        27.625,
+        25.375
+      ],
+      "condition": "shuffled",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2376280",
+      "image_sha256": "e93983116af1b053fd886ce89a41411d4637afdf867c9aad5794fba260fa1710",
+      "input_tokens": 273,
+      "item_id": "16161462",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 216,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            273
+          ],
+          "image_grid_thw": [
+            1,
+            3
+          ],
+          "input_ids": [
+            1,
+            273
+          ],
+          "pixel_values": [
+            864,
+            1176
+          ]
+        }
+      },
+      "probabilities": [
+        0.06475504356226432,
+        0.25611116548481955,
+        0.6143787473906526,
+        0.06475504356226432
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "official_image_processor": {
+          "_processor_class": "Qwen2_5_VLProcessor",
+          "do_convert_rgb": true,
+          "do_normalize": true,
+          "do_rescale": true,
+          "do_resize": true,
+          "image_mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "image_processor_type": "Qwen2VLImageProcessor",
+          "image_std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "max_pixels": 589824,
+          "merge_size": 2,
+          "min_pixels": 3136,
+          "patch_size": 14,
+          "resample": 3,
+          "rescale_factor": 0.00392156862745098,
+          "size": {
+            "longest_edge": 12845056,
+            "shortest_edge": 3136
+          },
+          "temporal_patch_size": 2
+        },
+        "processor_class": "Qwen2_5_VLProcessor"
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "2da2ce2e3aee25fe04ce388b3a52681849cb515b2cdabcdb3ed54467fcbdf08d",
+      "retry_count": 0,
+      "run_key": "b7117f65a9f6b9168210f640250f6c447ab9627d48ff81dfc38cc593ac765f5d",
+      "status": "OK",
+      "wall_seconds": 0.085738499998115
+    }
+  ],
+  "status": "COMPLETE",
+  "task": "GQA_color_focused_diagnostic",
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 9417576448,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 4638412800,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 93,
+    "torch_peak_allocated_bytes": 8131575808,
+    "torch_peak_reserved_bytes": 8220835840,
+    "wall_seconds": 10.310112200008007
+  }
+}

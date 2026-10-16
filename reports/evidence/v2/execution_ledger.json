@@ -1,0 +1,1126 @@
+{
+  "budget": {
+    "cuda_stream_seconds": 194.09330491256696,
+    "failed_calls": 0,
+    "forward_calls": 3771,
+    "forward_wall_seconds": 408.24908919974405,
+    "gpu_time_bound_scope": "prior measured model-process wall + entire current autonomous-session wall; conservative, not active kernel time",
+    "gpu_time_conservative_upper_bound_seconds": 2095.281286635247
+  },
+  "current": {
+    "completed": 525,
+    "last_image": "220471",
+    "model": "qwen",
+    "status": "RUNNING",
+    "task": "F E4 real-image ablations",
+    "timestamp_utc": "2026-10-16T07:50:06.666866+00:00"
+  },
+  "deadline_utc": "2026-10-16T09:18:11+00:00",
+  "events": [
+    {
+      "completed_rows": 0,
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:21:24.476079+00:00"
+    },
+    {
+      "completed_rows": 40,
+      "condition": "legacy_512_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:21:42.174638+00:00"
+    },
+    {
+      "completed_rows": 80,
+      "condition": "legacy_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:21:55.522578+00:00"
+    },
+    {
+      "completed_rows": 120,
+      "condition": "legacy_1024_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:22:09.082113+00:00"
+    },
+    {
+      "completed_rows": 160,
+      "condition": "numbered_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:22:22.705845+00:00"
+    },
+    {
+      "completed_rows": 200,
+      "condition": "outer_rotation_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:22:36.453906+00:00"
+    },
+    {
+      "completed_rows": 240,
+      "condition": "visual_rotation_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:22:50.396631+00:00"
+    },
+    {
+      "status": "COMPLETE_IMPLEMENTATION_NOT_EMPIRICAL_VALIDATION",
+      "task": "B amendment and estimator implementation",
+      "timestamp_utc": "2026-10-16T07:22:51.144017+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "task": "A independent qualification data",
+      "timestamp_utc": "2026-10-16T07:23:45.285387+00:00"
+    },
+    {
+      "completed_rows": 253,
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:30.839200+00:00"
+    },
+    {
+      "completed_rows": 253,
+      "condition": "legacy_512_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:35.015439+00:00"
+    },
+    {
+      "completed_rows": 253,
+      "condition": "legacy_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:35.039725+00:00"
+    },
+    {
+      "completed_rows": 253,
+      "condition": "legacy_1024_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:35.049792+00:00"
+    },
+    {
+      "completed_rows": 253,
+      "condition": "numbered_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:35.082196+00:00"
+    },
+    {
+      "completed_rows": 253,
+      "condition": "outer_rotation_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:35.102036+00:00"
+    },
+    {
+      "completed_rows": 253,
+      "condition": "visual_rotation_768_image",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:35.116442+00:00"
+    },
+    {
+      "error": "WinError5 rename contention before forward; bounded atomic rename retries added; completed rows preserved",
+      "status": "RECOVERED",
+      "task": "A recovered Windows checkpoint conflict",
+      "timestamp_utc": "2026-10-16T07:24:36.488483+00:00"
+    },
+    {
+      "completed_rows": 280,
+      "condition": "numbered_768_text_only",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:36.649600+00:00"
+    },
+    {
+      "completed_rows": 0,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:40.311300+00:00"
+    },
+    {
+      "completed_rows": 40,
+      "condition": "legacy_512_image",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:49.848980+00:00"
+    },
+    {
+      "completed_rows": 80,
+      "condition": "legacy_768_image",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:24:57.336070+00:00"
+    },
+    {
+      "completed_rows": 120,
+      "condition": "legacy_1024_image",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:25:04.387997+00:00"
+    },
+    {
+      "completed_rows": 160,
+      "condition": "numbered_768_image",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:25:11.881290+00:00"
+    },
+    {
+      "completed_rows": 200,
+      "condition": "outer_rotation_768_image",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:25:18.910673+00:00"
+    },
+    {
+      "count": 144,
+      "sha256": "db3e9961dda22fffd3e6c4d46ac0259541bbae73c49ee453eb2fd9b0eca0aece",
+      "status": "COMPLETE",
+      "task": "A independent qualification data",
+      "timestamp_utc": "2026-10-16T07:25:19.086748+00:00"
+    },
+    {
+      "completed_rows": 240,
+      "condition": "visual_rotation_768_image",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:25:26.244931+00:00"
+    },
+    {
+      "completed_rows": 280,
+      "condition": "numbered_768_text_only",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A model diagnostics",
+      "timestamp_utc": "2026-10-16T07:25:28.580548+00:00"
+    },
+    {
+      "mode": "pairs",
+      "n": 32,
+      "status": "RUNNING",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T07:26:56.699439+00:00"
+    },
+    {
+      "mode": "pairs",
+      "pending": 128,
+      "status": "RUNNING",
+      "task": "D official LaMa CPU batch",
+      "timestamp_utc": "2026-10-16T07:27:16.803205+00:00"
+    },
+    {
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "A disjoint qualification",
+      "timestamp_utc": "2026-10-16T07:28:15.093772+00:00"
+    },
+    {
+      "metrics": {
+        "gqa": {
+          "image": 18,
+          "n": 20,
+          "passed": true,
+          "text_only": 16
+        },
+        "refcocog": {
+          "image": 7,
+          "n": 20,
+          "passed": false,
+          "text_only": 5
+        }
+      },
+      "model": "smol",
+      "status": "COMPLETE",
+      "task": "A disjoint qualification",
+      "timestamp_utc": "2026-10-16T07:28:34.205261+00:00"
+    },
+    {
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "A disjoint qualification",
+      "timestamp_utc": "2026-10-16T07:28:38.240981+00:00"
+    },
+    {
+      "metrics": {
+        "gqa": {
+          "image": 20,
+          "n": 20,
+          "passed": true,
+          "text_only": 16
+        },
+        "refcocog": {
+          "image": 11,
+          "n": 20,
+          "passed": true,
+          "text_only": 7
+        }
+      },
+      "model": "qwen",
+      "status": "COMPLETE",
+      "task": "A disjoint qualification",
+      "timestamp_utc": "2026-10-16T07:28:50.321194+00:00"
+    },
+    {
+      "revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "status": "RUNNING",
+      "task": "A official InternVL fallback download",
+      "timestamp_utc": "2026-10-16T07:30:09.207188+00:00"
+    },
+    {
+      "eligible_questions": 2702,
+      "status": "RUNNING",
+      "task": "C annotation-defined harder GQA data",
+      "timestamp_utc": "2026-10-16T07:31:26.909405+00:00"
+    },
+    {
+      "count": 20,
+      "status": "COMPLETE",
+      "task": "C annotation-defined harder GQA data",
+      "timestamp_utc": "2026-10-16T07:32:32.415330+00:00"
+    },
+    {
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "A disjoint qualification",
+      "timestamp_utc": "2026-10-16T07:32:48.698703+00:00"
+    },
+    {
+      "metrics": {
+        "gqa": {
+          "image": 15,
+          "n": 20,
+          "passed": false,
+          "text_only": 16
+        },
+        "refcocog": {
+          "image": 12,
+          "n": 20,
+          "passed": true,
+          "text_only": 7
+        }
+      },
+      "model": "internvl",
+      "status": "COMPLETE",
+      "task": "A disjoint qualification",
+      "timestamp_utc": "2026-10-16T07:32:57.536085+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "task": "C dataset, distractor and split audit",
+      "timestamp_utc": "2026-10-16T07:34:33.099602+00:00"
+    },
+    {
+      "hard_duplicate_count": 0,
+      "legacy_null_group": 18,
+      "near_duplicate_count": 0,
+      "status": "COMPLETE",
+      "task": "C dataset, distractor and split audit",
+      "timestamp_utc": "2026-10-16T07:34:37.671788+00:00"
+    },
+    {
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "C harder GQA scoring",
+      "timestamp_utc": "2026-10-16T07:35:29.088598+00:00"
+    },
+    {
+      "metrics": {
+        "image": 16,
+        "n": 20,
+        "screen_passed": true,
+        "shuffled": 4,
+        "text_only": 6
+      },
+      "model": "qwen",
+      "status": "COMPLETE",
+      "task": "C harder GQA scoring",
+      "timestamp_utc": "2026-10-16T07:35:39.471844+00:00"
+    },
+    {
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "C harder GQA scoring",
+      "timestamp_utc": "2026-10-16T07:35:43.285732+00:00"
+    },
+    {
+      "metrics": {
+        "image": 15,
+        "n": 20,
+        "screen_passed": true,
+        "shuffled": 5,
+        "text_only": 7
+      },
+      "model": "internvl",
+      "status": "COMPLETE",
+      "task": "C harder GQA scoring",
+      "timestamp_utc": "2026-10-16T07:35:51.051810+00:00"
+    },
+    {
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "C harder GQA scoring",
+      "timestamp_utc": "2026-10-16T07:35:54.937975+00:00"
+    },
+    {
+      "metrics": {
+        "image": 15,
+        "n": 20,
+        "screen_passed": true,
+        "shuffled": 8,
+        "text_only": 7
+      },
+      "model": "smol",
+      "status": "COMPLETE",
+      "task": "C harder GQA scoring",
+      "timestamp_utc": "2026-10-16T07:36:13.115757+00:00"
+    },
+    {
+      "mode": "pairs",
+      "n": 31,
+      "status": "RUNNING",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T07:37:29.619800+00:00"
+    },
+    {
+      "mode": "pairs",
+      "pending": 61,
+      "status": "RUNNING",
+      "task": "D official LaMa CPU batch",
+      "timestamp_utc": "2026-10-16T07:37:46.835789+00:00"
+    },
+    {
+      "edit_requests": 384,
+      "mode": "pairs",
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T07:37:53.814632+00:00"
+    },
+    {
+      "edit_requests": 372,
+      "mode": "pairs",
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T07:43:06.165623+00:00"
+    },
+    {
+      "cohort": "corrected",
+      "completed": 0,
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:15.135022+00:00"
+    },
+    {
+      "mode": "grid",
+      "n": 31,
+      "status": "RUNNING",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T07:43:22.329272+00:00"
+    },
+    {
+      "completed": 25,
+      "last_image_id": "1159758",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:26.221895+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image_id": "2346628",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:30.080344+00:00"
+    },
+    {
+      "completed": 75,
+      "last_image_id": "2370398",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:33.460111+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image_id": "2403045",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:36.996389+00:00"
+    },
+    {
+      "completed": 125,
+      "last_image_id": "2330750",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:40.437705+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image_id": "2408571",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:44.035529+00:00"
+    },
+    {
+      "mode": "grid",
+      "pending": 128,
+      "status": "RUNNING",
+      "task": "D official LaMa CPU batch",
+      "timestamp_utc": "2026-10-16T07:43:46.824232+00:00"
+    },
+    {
+      "completed": 175,
+      "last_image_id": "2376280",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:47.429249+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image_id": "2410072",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:50.933310+00:00"
+    },
+    {
+      "completed": 225,
+      "last_image_id": "2373289",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:55.191695+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image_id": "2367174",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:43:59.052755+00:00"
+    },
+    {
+      "completed": 275,
+      "last_image_id": "2447",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:05.402205+00:00"
+    },
+    {
+      "completed": 300,
+      "last_image_id": "1593212",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:12.894790+00:00"
+    },
+    {
+      "completed": 325,
+      "last_image_id": "2359534",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:16.587341+00:00"
+    },
+    {
+      "completed": 350,
+      "last_image_id": "2386490",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:20.202525+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image_id": "2395818",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:24.095451+00:00"
+    },
+    {
+      "completed": 400,
+      "last_image_id": "160628",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:28.784858+00:00"
+    },
+    {
+      "completed": 425,
+      "last_image_id": "385401",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:32.794901+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image_id": "220471",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:37.747236+00:00"
+    },
+    {
+      "completed": 475,
+      "last_image_id": "218603",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:42.743348+00:00"
+    },
+    {
+      "completed": 500,
+      "last_image_id": "275625",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:47.188404+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image_id": "565476",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:51.200053+00:00"
+    },
+    {
+      "completed": 550,
+      "last_image_id": "387421",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:44:56.842721+00:00"
+    },
+    {
+      "completed": 575,
+      "last_image_id": "360617",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:02.069246+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image_id": "485788",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:07.824892+00:00"
+    },
+    {
+      "completed": 625,
+      "last_image_id": "15117",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:12.311851+00:00"
+    },
+    {
+      "completed": 650,
+      "last_image_id": "555654",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:18.156890+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image_id": "192745",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:24.090821+00:00"
+    },
+    {
+      "packets": 360,
+      "ratings": 0,
+      "status": "HUMAN_AUDIT_PENDING",
+      "task": "D blinded human review preparation",
+      "timestamp_utc": "2026-10-16T07:45:27.796888+00:00"
+    },
+    {
+      "completed": 700,
+      "last_image_id": "92269",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:29.580973+00:00"
+    },
+    {
+      "completed": 725,
+      "last_image_id": "191806",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:36.340878+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image_id": "419996",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:40.809768+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image_id": "216716",
+      "mode": "pairs",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:46.891221+00:00"
+    },
+    {
+      "mode": "pairs",
+      "model": "qwen",
+      "score_rows": 775,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:46.991565+00:00"
+    },
+    {
+      "cohort": "corrected",
+      "completed": 0,
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:50.860127+00:00"
+    },
+    {
+      "completed": 25,
+      "last_image_id": "1159758",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:45:59.618366+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image_id": "2346628",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:01.393882+00:00"
+    },
+    {
+      "completed": 75,
+      "last_image_id": "2370398",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:04.930059+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image_id": "2403045",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:06.757595+00:00"
+    },
+    {
+      "completed": 125,
+      "last_image_id": "2330750",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:08.606061+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image_id": "2408571",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:10.505082+00:00"
+    },
+    {
+      "completed": 175,
+      "last_image_id": "2376280",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:14.222502+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image_id": "2410072",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:16.196187+00:00"
+    },
+    {
+      "completed": 225,
+      "last_image_id": "2373289",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:18.239027+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image_id": "2367174",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:20.322273+00:00"
+    },
+    {
+      "completed": 275,
+      "last_image_id": "2447",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:24.372981+00:00"
+    },
+    {
+      "completed": 300,
+      "last_image_id": "1593212",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:31.038439+00:00"
+    },
+    {
+      "completed": 325,
+      "last_image_id": "2359534",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:35.002299+00:00"
+    },
+    {
+      "completed": 350,
+      "last_image_id": "2386490",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:39.044204+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image_id": "2395818",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:41.309714+00:00"
+    },
+    {
+      "completed": 400,
+      "last_image_id": "160628",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:45.449832+00:00"
+    },
+    {
+      "completed": 425,
+      "last_image_id": "385401",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:47.821119+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image_id": "220471",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:52.121201+00:00"
+    },
+    {
+      "completed": 475,
+      "last_image_id": "218603",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:54.654062+00:00"
+    },
+    {
+      "completed": 500,
+      "last_image_id": "275625",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:46:59.020548+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image_id": "565476",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:03.340240+00:00"
+    },
+    {
+      "completed": 550,
+      "last_image_id": "387421",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:06.053490+00:00"
+    },
+    {
+      "completed": 575,
+      "last_image_id": "360617",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:08.820154+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image_id": "485788",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:11.704544+00:00"
+    },
+    {
+      "completed": 625,
+      "last_image_id": "15117",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:14.516624+00:00"
+    },
+    {
+      "completed": 650,
+      "last_image_id": "555654",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:17.438644+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image_id": "192745",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:20.408095+00:00"
+    },
+    {
+      "completed": 700,
+      "last_image_id": "92269",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:23.336140+00:00"
+    },
+    {
+      "completed": 725,
+      "last_image_id": "191806",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:26.407825+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image_id": "419996",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:29.352457+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image_id": "216716",
+      "mode": "pairs",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:32.486289+00:00"
+    },
+    {
+      "mode": "pairs",
+      "model": "internvl",
+      "score_rows": 775,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:47:32.572168+00:00"
+    },
+    {
+      "paired_images_per_model": 31,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "E E3 cached-score analysis",
+      "timestamp_utc": "2026-10-16T07:47:42.747455+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image": "1159758",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:48:47.768167+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image": "2346628",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:48:55.699548+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image": "2370398",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:49:03.021868+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image": "2403045",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:49:10.331049+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image": "2330750",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:49:18.164074+00:00"
+    },
+    {
+      "completed": 300,
+      "last_image": "2408571",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:49:25.680306+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image": "160628",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:49:39.129760+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image": "385401",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:49:51.908874+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image": "220471",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:50:06.666866+00:00"
+    }
+  ],
+  "git_commit": "ef7c3e84211cfc3e424a5b9ec27adac109dfe31d",
+  "started_utc": "2026-10-16T07:18:11+00:00"
+}

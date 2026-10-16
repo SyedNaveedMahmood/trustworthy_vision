@@ -15,26 +15,29 @@ from ..scoring import choice_probabilities
 class Budget:
     """Single process ledger, persisted BEFORE each real forward, including failures."""
     def __init__(self, path=Path("outputs/budget.json"), max_calls=12000, max_hours=24):
-        self.path = Path(path)
-        self.max_calls, self.max_seconds = max_calls, max_hours*3600
-        self.value = json.loads(self.path.read_text()) if self.path.exists() else {"forward_calls": 0, "forward_wall_seconds": 0, "failed_calls": 0}
+        from ..budget import BudgetState
+        from datetime import datetime
+        self.state=BudgetState(path,max_calls,max_hours,start_epoch=datetime.fromisoformat('2026-10-16T07:18:11+00:00').timestamp())
+
+    @property
+    def value(self): return self.state.value
 
     def forward(self, model, **inputs):
-        if self.value["forward_calls"] >= self.max_calls or self.value["forward_wall_seconds"] >= self.max_seconds:
-            raise RuntimeError("Hard compute budget reached")
-        self.value["forward_calls"] += 1
-        atomic_json(self.path, self.value)
+        self.state.reserve()
         start = time.perf_counter()
+        begin=torch.cuda.Event(enable_timing=True);end=torch.cuda.Event(enable_timing=True)
+        begin.record();failed=False;device_seconds=0
         try:
             result = model(**inputs, use_cache=False, return_dict=True)
+            end.record()
             torch.cuda.synchronize()
+            device_seconds=begin.elapsed_time(end)/1000
             return result
         except Exception:
-            self.value["failed_calls"] += 1
+            failed=True
             raise
         finally:
-            self.value["forward_wall_seconds"] += time.perf_counter()-start
-            atomic_json(self.path, self.value)
+            self.state.finish(time.perf_counter()-start,failed,device_seconds)
 
 
 class Telemetry:
@@ -97,7 +100,19 @@ class ChoiceModel:
                                         attn_implementation="sdpa", trust_remote_code=False,
                                         device_map={"": "cuda:0"}, low_cpu_mem_usage=True).eval()
         self.model.requires_grad_(False)
+        self.processor_config["official_image_processor"] = self.processor.image_processor.to_dict()
+        self.processor_config["processor_class"] = type(self.processor).__name__
         self.budget = Budget()
+
+    def set_long_edge(self, long_edge):
+        if long_edge not in (384,512,768,1024): raise ValueError("Unregistered exploratory resolution")
+        self.long_edge=long_edge
+        self.processor_config["long_edge"]=long_edge
+        if self.family=="qwen": self.processor.image_processor.max_pixels=long_edge*long_edge
+        self.processor_config["official_image_processor"]=self.processor.image_processor.to_dict()
+
+    def forward_inputs(self,inputs):
+        return self.budget.forward(self.model,**inputs)
 
     def encode(self, image, question, options):
         if len(options) != 4 or len(set(options)) != 4:
@@ -110,6 +125,10 @@ class ChoiceModel:
         messages = [{"role":"user", "content":content}]
         text = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
         inputs = self.processor(text=[text], images=[image] if image is not None else None, return_tensors="pt")
+        self.last_preprocess={"native_input_size":list(image.size) if image is not None else None,
+                              "tensor_shapes":{k:list(v.shape) for k,v in inputs.items()},
+                              "image_token_count":int(sum((inputs['input_ids']==self.processor.tokenizer.convert_tokens_to_ids(token)).sum().item()
+                                  for token in (["<|image_pad|>"] if self.family=='qwen' else ["<image>"]))) if image is not None else 0}
         inputs = {k: v.to(device="cuda", dtype=torch.bfloat16 if v.is_floating_point() else v.dtype) for k,v in inputs.items()}
         # Check each literal label appended to the exact official rendered template.
         tokenizer = self.processor.tokenizer
@@ -137,7 +156,7 @@ class ChoiceModel:
             row["cache_hit"] = True
             return row
         start = time.perf_counter()
-        logits = self.budget.forward(self.model, **inputs).logits[0,-1,:].float()
+        logits = self.forward_inputs(inputs).logits[0,-1,:].float()
         scores = logits[label_ids].cpu().numpy()
         probabilities = choice_probabilities(scores)
         row = {"run_key":key, "status":"OK", "model_id":self.model_id, "model_revision":self.revision,
@@ -145,13 +164,14 @@ class ChoiceModel:
                "label_ids":label_ids, "choice_logits":scores.tolist(), "probabilities":probabilities.tolist(),
                "prediction":"ABCD"[int(probabilities.argmax())], "input_tokens":inputs["input_ids"].numel(),
                "wall_seconds":time.perf_counter()-start, "cache_hit":False, "retry_count":0,
-               "processor_config":self.processor_config, "edit_params":None, "exception":None}
+               "processor_config":json.loads(json.dumps(self.processor_config)), "edit_params":None, "exception":None}
+        row["preprocessing"]=dict(self.last_preprocess)
         if verify:
             # Independent full-vocabulary log-softmax then restrict/normalize choices.
             full = torch.log_softmax(logits.double(),dim=-1)[label_ids].cpu().numpy()
             reference = np.exp(full-full.max()); reference /= reference.sum()
             row["manual_probability_max_abs_error"] = float(np.max(np.abs(reference-probabilities)))
-            repeat = self.budget.forward(self.model, **inputs).logits[0,-1,label_ids].float().cpu().numpy()
+            repeat = self.forward_inputs(inputs).logits[0,-1,label_ids].float().cpu().numpy()
             row["repeat_logits_max_abs_error"] = float(np.max(np.abs(repeat-scores)))
         checkpoint(path, key, row)
         return row

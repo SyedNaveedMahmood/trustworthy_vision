@@ -1,0 +1,137 @@
+{
+  "count": 20,
+  "eligible_questions": 2702,
+  "eligible_unique_images": 2306,
+  "exclusion_counts": {
+    "answer_not_confirmed_by_scene_attribute": 18,
+    "literal_answer_in_question": 1,
+    "not_closed_basic_color_query": 125017,
+    "not_single_explicit_program_reference": 2701,
+    "prior_partition_identity": 79,
+    "target_visibility_or_area": 1544
+  },
+  "items": [
+    {
+      "image_id": "2403045",
+      "image_sha256": "e66c6bf394656530d92c76bacb69bf27f821534a9c8aa27d12005a9a3a2f9019",
+      "item_id": "05276748",
+      "seed": 20268
+    },
+    {
+      "image_id": "1159758",
+      "image_sha256": "d9da9d4b0964819428c05ba63935c691a7970b19fb585835465f1c54aff8d751",
+      "item_id": "1652426",
+      "seed": 20268
+    },
+    {
+      "image_id": "2352791",
+      "image_sha256": "0708fc304c0b1082326cd4f40802a6ca69b25f58a6cfae88678651d412147d39",
+      "item_id": "16773901",
+      "seed": 20268
+    },
+    {
+      "image_id": "1593212",
+      "image_sha256": "6ef5e187915326aee79cfc48f26118a8de46d4cce46021a786204a325a887d17",
+      "item_id": "00974643",
+      "seed": 20268
+    },
+    {
+      "image_id": "2346628",
+      "image_sha256": "a6704194fc3176a765f379783f7efa718b77c83a56fb47846c746c256499b196",
+      "item_id": "12555802",
+      "seed": 20268
+    },
+    {
+      "image_id": "2373289",
+      "image_sha256": "0d34fe4fdbe7cbdb5c14b3235833fb612183e2fc4774d4ba736ae79a906d7cea",
+      "item_id": "07379298",
+      "seed": 20268
+    },
+    {
+      "image_id": "2367174",
+      "image_sha256": "9b87df0fc7f8ad9ea651fe15ebe5bd08b912ee07bec3073fc1c488af41737734",
+      "item_id": "11386374",
+      "seed": 20268
+    },
+    {
+      "image_id": "2340236",
+      "image_sha256": "b721c7d67a6f2c0cd7723227abc9f0d691ce8c40de6949beeb19067b12b5bfa2",
+      "item_id": "19321644",
+      "seed": 20268
+    },
+    {
+      "image_id": "2408571",
+      "image_sha256": "88ddd462f6940d13338cb3bbd8a6d8f48b172f840aeb46388882a1bdb5f55349",
+      "item_id": "05753791",
+      "seed": 20268
+    },
+    {
+      "image_id": "2400139",
+      "image_sha256": "c3b456a2bafd3392e3943894093faf62a051d293e84cf0322654f700e24f690a",
+      "item_id": "06937161",
+      "seed": 20268
+    },
+    {
+      "image_id": "2395818",
+      "image_sha256": "f9df2c776495ee16daa71b6118611ae4a64c6275382143aac6752541b6a2e615",
+      "item_id": "18333235",
+      "seed": 20268
+    },
+    {
+      "image_id": "2370398",
+      "image_sha256": "84026dbea4d2d26c8edfb1868131e72ff424e60dc1de9f870c1b30045858612c",
+      "item_id": "08495165",
+      "seed": 20268
+    },
+    {
+      "image_id": "2359534",
+      "image_sha256": "6927b19ce649f30fa82292cd9ad64087aa834cc8b4ddc0972c192637133221dd",
+      "item_id": "14645551",
+      "seed": 20268
+    },
+    {
+      "image_id": "2410072",
+      "image_sha256": "935902446b3ba926cfd0813874b17ccdf6a53284e0d5bfe705eee3a10055ebcd",
+      "item_id": "08700704",
+      "seed": 20268
+    },
+    {
+      "image_id": "2447",
+      "image_sha256": "b6782c5ebd4ca25a21658acddac43a081409a4f1c4a51f23f7eb550e2237e204",
+      "item_id": "1330560",
+      "seed": 20268
+    },
+    {
+      "image_id": "2386490",
+      "image_sha256": "d6cfa5314a789b067b10d465148a7046f602c41c1274557d6146543dee3868b3",
+      "item_id": "09811334",
+      "seed": 20268
+    },
+    {
+      "image_id": "2399078",
+      "image_sha256": "4501f27a17ba31fd551e4edbbb6c71c83fe1f3abf227150455ef59b42b0612ec",
+      "item_id": "00817427",
+      "seed": 20268
+    },
+    {
+      "image_id": "2330750",
+      "image_sha256": "187fc4b55cadfc7bde3d7c8de91db2479a1c242fda8008a2a3c99d551b16991c",
+      "item_id": "0929909",
+      "seed": 20268
+    },
+    {
+      "image_id": "2320419",
+      "image_sha256": "198f1917668094ca083ea914cd76533094253430ceee98031e09ca008c5366aa",
+      "item_id": "04293454",
+      "seed": 20268
+    },
+    {
+      "image_id": "2376280",
+      "image_sha256": "408e27871bc80a00c2d576d3863d1753e69fa08393d9b1b4497b8ef89ca4c569",
+      "item_id": "16161462",
+      "seed": 20268
+    }
+  ],
+  "manifest_sha256": "9d1cb2646bf1f885a22ba1a5413bcb08ca73521bd62a4cfaa9e379e0f4a30c74",
+  "rule": "single reference, basic color query, answer in scene attributes, no literal answer leak, plausible same-type image-present-preferred distractors"
+}

@@ -1,0 +1,145 @@
+{
+  "count": 20,
+  "items": [
+    {
+      "dataset": "refcocog",
+      "image_id": "430691",
+      "image_sha256": "39548f9dfe7d0b1c21f8bf24355cbe91a15f6110f172266923b243fd7e09f21e",
+      "item_id": "22236",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "477836",
+      "image_sha256": "4425c4c9152a2da0578b66e72ca66be51ed22d9bfa8136e13a239a92f4c3a228",
+      "item_id": "37738",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "143501",
+      "image_sha256": "27d8bb2584c93366c0dba99be0119b631132801374dee42cb344f0133e7f5729",
+      "item_id": "20108",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "545549",
+      "image_sha256": "23dcb65f42229925d6f89da56b4e135841d858bdbe825f7522d206bc88891e57",
+      "item_id": "9917",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "105859",
+      "image_sha256": "15d5aebc2f122489772e2fe835a1d694a53d664bc1ab1a29a98115f595dc3793",
+      "item_id": "38161",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "298360",
+      "image_sha256": "3aff7df4c7434a1760ba8784a3480c1889e4c832e60a7dbedc1b95837a1fe4b9",
+      "item_id": "16785",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "490647",
+      "image_sha256": "265f65fbb3c9b5f8faaa3369df29396dad3fd7138d02cf2582d74f3fb4c67bcb",
+      "item_id": "27702",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "337146",
+      "image_sha256": "fa6f911937515ad631ae0929bdacecd32376c93de7e55b90b9a26f7804086e42",
+      "item_id": "8142",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "437277",
+      "image_sha256": "edefbb8edc6236a6c6d67085c3177a07136571a8a3dace685d4bbf13264cedb8",
+      "item_id": "14051",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "146841",
+      "image_sha256": "4b211c4789e4f4d13db980f415eeeac8097507a5740b6ce76ed881cbcfb5a97d",
+      "item_id": "14309",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "554950",
+      "image_sha256": "75a659c98695d0ad40d258d2d16d2eda65d42e09979aa07b1af41caf8906820e",
+      "item_id": "38250",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "379308",
+      "image_sha256": "6d8d6fc073fa2b7406b71f3edb19fa4626fb339347e0654ae8e197e230046cdb",
+      "item_id": "47027",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "419085",
+      "image_sha256": "0a07eb485c3af8d554146ba9a51491954c551b487da9749c073e740a8610c010",
+      "item_id": "24880",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "105590",
+      "image_sha256": "9a65c427260aee26674bbb7ed506f24fef184e7891564d98cee0db7af76a2feb",
+      "item_id": "40659",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "232329",
+      "image_sha256": "fbbaea3ef21128fd613d398e6385d21a95bdb886c33805719b00505f54d78129",
+      "item_id": "28510",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "62203",
+      "image_sha256": "7b400c1e360b20727202c5d433efe6a8c4d279e076c248b82ffc56ad56fb5036",
+      "item_id": "29769",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "415839",
+      "image_sha256": "9a441a2eaac7a619dfcc7423e151e9076fd45b6e94e79c39c851ddc167060b17",
+      "item_id": "40944",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "184806",
+      "image_sha256": "93e12f88b3dfd85c8cd911a97ffd439b8f033a680cf05be2abb6c3e65512583f",
+      "item_id": "26542",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "496517",
+      "image_sha256": "0f0a7f391d6e2ba9ad5ac1134277a3d5fe7e74faaab28a3d6040ef57ef518ced",
+      "item_id": "39396",
+      "seed": 20265
+    },
+    {
+      "dataset": "refcocog",
+      "image_id": "575761",
+      "image_sha256": "f57cea0b95e5bbb0be363358f2b5f79e5a082976e66a825691a0df0828389ce9",
+      "item_id": "10384",
+      "seed": 20265
+    }
+  ]
+}

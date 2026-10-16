@@ -1,0 +1,11 @@
+{
+  "ref_duplicate_expression_other_target": 0,
+  "ref_mapping_errors": 0,
+  "ref_overlay_altered_target_fraction_max": 0.19807219807219809,
+  "ref_overlay_altered_target_fraction_mean": 0.09227161654681675,
+  "ref_target_distractor_iou_gt_half": 1,
+  "ref_target_fraction_range": [
+    0.05186657786885246,
+    0.8075394190305485
+  ]
+}

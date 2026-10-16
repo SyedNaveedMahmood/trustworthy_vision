@@ -1,0 +1,12 @@
+{
+  "csgr": {
+    "pages": 14,
+    "pdf_sha256": "0aedcbec6dcf13457b9368fb76904526d2cdc386cd16f58afb0e8d6b01cdafbb",
+    "text_characters": 47891
+  },
+  "evict": {
+    "pages": 9,
+    "pdf_sha256": "3993fb36a05583ad61205f5889af8fff617a4e9a3aeff82d836032555a459799",
+    "text_characters": 42639
+  }
+}

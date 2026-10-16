@@ -23,7 +23,14 @@ def atomic_json(path, value):
             json.dump(value, f, indent=2, sort_keys=True, allow_nan=False)
             f.flush()
             os.fsync(f.fileno())
-        os.replace(temp, path)
+        for attempt in range(3):
+            try:
+                os.replace(temp, path)
+                break
+            except PermissionError:
+                if attempt==2: raise
+                # Windows readers/antivirus can briefly hold a destination handle.
+                time.sleep(.05*(2**attempt))
     finally:
         if os.path.exists(temp):
             os.unlink(temp)

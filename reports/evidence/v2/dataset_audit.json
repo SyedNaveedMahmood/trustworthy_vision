@@ -1,0 +1,722 @@
+{
+  "gqa_legacy": {
+    "answer_group_counts": {
+      "None": 18,
+      "animal": 2,
+      "baked good": 1,
+      "color": 1,
+      "device": 1,
+      "furniture": 4,
+      "object": 2,
+      "pastry": 1,
+      "person": 5,
+      "thing": 4,
+      "vehicle": 1
+    },
+    "answer_letter_counts": {
+      "A": 5,
+      "B": 11,
+      "C": 11,
+      "D": 13
+    },
+    "binary_reference_in_four_choices_count": 12,
+    "items": [
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "thing",
+        "image_id": "2318090",
+        "item_id": "02996733",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "furniture",
+        "image_id": "2337945",
+        "item_id": "10877162",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "animal",
+        "image_id": "2339632",
+        "item_id": "02693762",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2332837",
+        "item_id": "08492746",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "verify"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "thing",
+        "image_id": "2417896",
+        "item_id": "041019603",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "color",
+        "image_id": "2358440",
+        "item_id": "15442780",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2401269",
+        "item_id": "02326913",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "logical"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "vehicle",
+        "image_id": "2350119",
+        "item_id": "05483995",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2347520",
+        "item_id": "05149177",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "verify"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "person",
+        "image_id": "2319740",
+        "item_id": "0347287",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "object",
+        "image_id": "2416222",
+        "item_id": "00902688",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "device",
+        "image_id": "2400080",
+        "item_id": "17829767",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2397728",
+        "item_id": "01890279",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "verify"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "object",
+        "image_id": "2351843",
+        "item_id": "19845305",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": null,
+        "image_id": "2348133",
+        "item_id": "01839542",
+        "literal_answer_in_question": true,
+        "mixed_null_answer_pool": true,
+        "structural_type": "choose"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "thing",
+        "image_id": "2351458",
+        "item_id": "04782084",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "pastry",
+        "image_id": "2341708",
+        "item_id": "12441126",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "furniture",
+        "image_id": "2349334",
+        "item_id": "161064804",
+        "literal_answer_in_question": true,
+        "mixed_null_answer_pool": false,
+        "structural_type": "choose"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2397532",
+        "item_id": "19457691",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "verify"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "furniture",
+        "image_id": "2317372",
+        "item_id": "11810568",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2409623",
+        "item_id": "13708878",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "logical"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "person",
+        "image_id": "2379412",
+        "item_id": "026796",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "person",
+        "image_id": "2409189",
+        "item_id": "11680766",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "person",
+        "image_id": "2393949",
+        "item_id": "17667815",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "animal",
+        "image_id": "2380622",
+        "item_id": "03996945",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "4891",
+        "item_id": "03520000",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "logical"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "baked good",
+        "image_id": "2367770",
+        "item_id": "00364710",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "thing",
+        "image_id": "2399938",
+        "item_id": "13803495",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2383990",
+        "item_id": "07679937",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "logical"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": null,
+        "image_id": "2339108",
+        "item_id": "05241907",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2384592",
+        "item_id": "15556256",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "logical"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "furniture",
+        "image_id": "2348442",
+        "item_id": "061022203",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": null,
+        "image_id": "2415822",
+        "item_id": "11245392",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": null,
+        "image_id": "2358152",
+        "item_id": "05867793",
+        "literal_answer_in_question": true,
+        "mixed_null_answer_pool": true,
+        "structural_type": "choose"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "4559",
+        "item_id": "00577538",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "verify"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": "person",
+        "image_id": "2341067",
+        "item_id": "04618474",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": false,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2382787",
+        "item_id": "12664472",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "logical"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": null,
+        "image_id": "2360505",
+        "item_id": "03309301",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "query"
+      },
+      {
+        "binary_reference_in_four_choices": true,
+        "global_group": null,
+        "image_id": "2352184",
+        "item_id": "18724594",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "verify"
+      },
+      {
+        "binary_reference_in_four_choices": false,
+        "global_group": null,
+        "image_id": "2382557",
+        "item_id": "17599770",
+        "literal_answer_in_question": false,
+        "mixed_null_answer_pool": true,
+        "structural_type": "query"
+      }
+    ],
+    "literal_answer_in_question_count": 3,
+    "mixed_null_answer_pool_count": 18,
+    "n": 40
+  },
+  "refcocog": {
+    "items": [
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "420608",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.06585115085362432,
+        "target_fraction": 0.0816511517857143,
+        "target_pixels_changed_by_overlay_fraction": 0.09956328210296464
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "466207",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.48065035814497514,
+        "target_fraction": 0.06373317108433736,
+        "target_pixels_changed_by_overlay_fraction": 0.19807219807219809
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "160628",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.2828121351698691,
+        "target_fraction": 0.0518902830788804,
+        "target_pixels_changed_by_overlay_fraction": 0.12576312576312576
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "192745",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.15432033485220206,
+        "target_fraction": 0.05616852734375002,
+        "target_pixels_changed_by_overlay_fraction": 0.10096433135819681
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "565476",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.45653323430783516,
+        "target_fraction": 0.21429898960244648,
+        "target_pixels_changed_by_overlay_fraction": 0.12512820512820513
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "48737",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.10095082211066968,
+        "target_fraction": 0.35629613729508197,
+        "target_pixels_changed_by_overlay_fraction": 0.052996335196445754
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "485788",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.10777026367187503,
+        "target_pixels_changed_by_overlay_fraction": 0.05597377367654201
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "92269",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.16737444928278689,
+        "target_pixels_changed_by_overlay_fraction": 0.048203521142086134
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "555654",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.1326651090531452,
+        "target_fraction": 0.14227737890625003,
+        "target_pixels_changed_by_overlay_fraction": 0.07648899956592264
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "203054",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.42714000629159443,
+        "target_fraction": 0.07930085685483869,
+        "target_pixels_changed_by_overlay_fraction": 0.09014298266634715
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "220471",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.05610109375,
+        "target_pixels_changed_by_overlay_fraction": 0.08097829650514721
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "288317",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.2505063036532688,
+        "target_fraction": 0.8075394190305485,
+        "target_pixels_changed_by_overlay_fraction": 0.05263360653369418
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "208295",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.31026184652378563,
+        "target_fraction": 0.30085630859374995,
+        "target_pixels_changed_by_overlay_fraction": 0.08401612693458187
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "216716",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.5727059298871572,
+        "target_fraction": 0.10061834016927083,
+        "target_pixels_changed_by_overlay_fraction": 0.05683298593017196
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "218603",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.08861666811680519,
+        "target_fraction": 0.0555752403846154,
+        "target_pixels_changed_by_overlay_fraction": 0.0981369719233797
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "236963",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.4098723635998152,
+        "target_fraction": 0.11617065231321289,
+        "target_pixels_changed_by_overlay_fraction": 0.10433482810164424
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "76245",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.24529352371543536,
+        "target_fraction": 0.2113229411764706,
+        "target_pixels_changed_by_overlay_fraction": 0.08213441757019739
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "385401",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.11749200586666668,
+        "target_pixels_changed_by_overlay_fraction": 0.06633348477964561
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "571653",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0562470587691829,
+        "target_fraction": 0.2815877330729167,
+        "target_pixels_changed_by_overlay_fraction": 0.06120870963751082
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "191806",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.22974207473741176,
+        "target_fraction": 0.17508902681660896,
+        "target_pixels_changed_by_overlay_fraction": 0.0885370136471458
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "112253",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.2658018505552986,
+        "target_fraction": 0.299229328125,
+        "target_pixels_changed_by_overlay_fraction": 0.069205017282233
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "486262",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.297829352293822,
+        "target_fraction": 0.3715817526041667,
+        "target_pixels_changed_by_overlay_fraction": 0.08098702942106928
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "224790",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.06516825489457832,
+        "target_pixels_changed_by_overlay_fraction": 0.06891566265060241
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "275625",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.0770505632267442,
+        "target_pixels_changed_by_overlay_fraction": 0.07544378698224852
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "213642",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.26838585615748173,
+        "target_fraction": 0.052002545230263195,
+        "target_pixels_changed_by_overlay_fraction": 0.1225031681853841
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "470062",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.14552680453832195,
+        "target_fraction": 0.21698881111111115,
+        "target_pixels_changed_by_overlay_fraction": 0.07298474945533769
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "411430",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.25635006122855575,
+        "target_fraction": 0.2122112608,
+        "target_pixels_changed_by_overlay_fraction": 0.08924242424242425
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "15117",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.12514474933333333,
+        "target_pixels_changed_by_overlay_fraction": 0.07684448039507855
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "446688",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.09786195520428478,
+        "target_fraction": 0.1165908984375,
+        "target_pixels_changed_by_overlay_fraction": 0.07636678393924164
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "565211",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.07173353942421402,
+        "target_fraction": 0.20815631119791667,
+        "target_pixels_changed_by_overlay_fraction": 0.10551020408163266
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "360617",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.15108274750478673,
+        "target_fraction": 0.081371818647541,
+        "target_pixels_changed_by_overlay_fraction": 0.08946608946608947
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "213753",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.0,
+        "target_fraction": 0.05186657786885246,
+        "target_pixels_changed_by_overlay_fraction": 0.08410754504504504
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "247351",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.11366145856809966,
+        "target_fraction": 0.06150160546875001,
+        "target_pixels_changed_by_overlay_fraction": 0.15860101437024515
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "98413",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.08130810263664535,
+        "target_fraction": 0.07915158901762402,
+        "target_pixels_changed_by_overlay_fraction": 0.10797855891145243
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "297665",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.18286942127420064,
+        "target_fraction": 0.0536346435546875,
+        "target_pixels_changed_by_overlay_fraction": 0.12199987908832598
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "46852",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.07401898975976426,
+        "target_fraction": 0.058414322379603416,
+        "target_pixels_changed_by_overlay_fraction": 0.14567006269592475
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "387421",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.2041328111467532,
+        "target_fraction": 0.09826759643043932,
+        "target_pixels_changed_by_overlay_fraction": 0.07809428619023821
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "419996",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.15168884093399349,
+        "target_fraction": 0.06357287425149698,
+        "target_pixels_changed_by_overlay_fraction": 0.16018306636155608
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "562296",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.208285687335066,
+        "target_fraction": 0.152739691749477,
+        "target_pixels_changed_by_overlay_fraction": 0.07509583494852909
+      },
+      {
+        "duplicate_expression_other_referent": false,
+        "image_id": "572016",
+        "mapping_correct": true,
+        "max_target_distractor_iou": 0.48207113004147817,
+        "target_fraction": 0.7614598828124999,
+        "target_pixels_changed_by_overlay_fraction": 0.08322182192485847
+      }
+    ],
+    "n": 40
+  },
+  "split_integrity": {
+    "gqa_null_coco_mappings": 47,
+    "hard_duplicates": [],
+    "interpretation": "Near matches require inspection; null identities and pHash cannot prove complete photographic disjointness.",
+    "n": 164,
+    "perceptual_near_duplicates": [],
+    "phash_threshold": 4
+  }
+}

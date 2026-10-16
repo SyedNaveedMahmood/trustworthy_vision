@@ -1,0 +1,66 @@
+{
+  "card_data": {
+    "base_model": [
+      "OpenGVLab/InternViT-300M-448px-V2_5",
+      "internlm/internlm2_5-1_8b-chat"
+    ],
+    "base_model_relation": "merge",
+    "datasets": [
+      "HuggingFaceFV/finevideo"
+    ],
+    "language": [
+      "multilingual"
+    ],
+    "library_name": "transformers",
+    "license": "mit",
+    "pipeline_tag": "image-text-to-text",
+    "tags": [
+      "internvl",
+      "custom_code"
+    ]
+  },
+  "download_wall_seconds": 53.526443699985975,
+  "files": [
+    ".gitattributes",
+    "README.md",
+    "added_tokens.json",
+    "config.json",
+    "configuration_intern_vit.py",
+    "configuration_internlm2.py",
+    "configuration_internvl_chat.py",
+    "conversation.py",
+    "eval_llm_benchmark.log",
+    "examples/image1.jpg",
+    "examples/image2.jpg",
+    "examples/red-panda.mp4",
+    "generation_config.json",
+    "model.safetensors",
+    "modeling_intern_vit.py",
+    "modeling_internlm2.py",
+    "modeling_internvl_chat.py",
+    "preprocessor_config.json",
+    "runs/Nov21_17-13-40_HOST-10-140-60-15/events.out.tfevents.1732180755.HOST-10-140-60-15.42974.0",
+    "special_tokens_map.json",
+    "tokenization_internlm2.py",
+    "tokenization_internlm2_fast.py",
+    "tokenizer.model",
+    "tokenizer_config.json"
+  ],
+  "gated": false,
+  "model_id": "OpenGVLab/InternVL2_5-2B",
+  "revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+  "source_checksums": {
+    "configuration_intern_vit.py": "22dd687a5f142985407675fc6b1dc688c2ded93e54192543ecf28ef495a6efa8",
+    "configuration_internlm2.py": "9f9e14d64be7b81068e8421fd27e1c466b3fb6aeb67725ca328e56083c3f7a60",
+    "configuration_internvl_chat.py": "20bd8ddcf5c51f9fded0e3191db2bc00a7012fd3f7912dea4277fa24f17b6e32",
+    "conversation.py": "b1b9f280e9cb9211e519e2b8071002b57cc742aadb2f49b05fa674ee3c7d83ee",
+    "modeling_intern_vit.py": "1978e330ea5533dda4d1379096aded271fc741347fc48cb4924846b56a2a6a4b",
+    "modeling_internlm2.py": "c014d933c6afdf7414791c1859c692ca4b49c925688bcc00fbd1658ef75fb0ba",
+    "modeling_internvl_chat.py": "1915c32d984aed6750e911884ad59f92504f73b799c7443121c67b9cb21fe347",
+    "tokenization_internlm2.py": "e548dc777a1def2f5339cfe12de8da2d12500d664e3dafa5c585c407e4b806fa",
+    "tokenization_internlm2_fast.py": "b6dc75cb1a276a897190a003b97a65b13b68b948d64646df67e7f18392dfbb34"
+  },
+  "weight_checksums": {
+    "model.safetensors": "2135909ed23cb6c934a57a9f7e194c6ab128042a76f8934cdedfa0194181f50d"
+  }
+}

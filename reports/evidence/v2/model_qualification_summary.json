@@ -1,0 +1,681 @@
+{
+  "color_diagnostic": {
+    "internvl": {
+      "metrics": {
+        "image": 15,
+        "n": 20,
+        "screen_passed": true,
+        "shuffled": 5,
+        "text_only": 7
+      },
+      "telemetry": {
+        "nvml_peak_device_used_bytes": 7727271936,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 5298868224,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 70,
+        "torch_peak_allocated_bytes": 5611374080,
+        "torch_peak_reserved_bytes": 6528434176,
+        "wall_seconds": 7.707822700001998
+      }
+    },
+    "qwen": {
+      "metrics": {
+        "image": 16,
+        "n": 20,
+        "screen_passed": true,
+        "shuffled": 4,
+        "text_only": 6
+      },
+      "telemetry": {
+        "nvml_peak_device_used_bytes": 9417576448,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 4638412800,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 93,
+        "torch_peak_allocated_bytes": 8131575808,
+        "torch_peak_reserved_bytes": 8220835840,
+        "wall_seconds": 10.310112200008007
+      }
+    },
+    "smol": {
+      "metrics": {
+        "image": 15,
+        "n": 20,
+        "screen_passed": true,
+        "shuffled": 8,
+        "text_only": 7
+      },
+      "telemetry": {
+        "nvml_peak_device_used_bytes": 6694686720,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 5338284032,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 168,
+        "torch_peak_allocated_bytes": 4910959616,
+        "torch_peak_reserved_bytes": 5498732544,
+        "wall_seconds": 18.108165999990888
+      }
+    }
+  },
+  "development": {
+    "qwen": {
+      "cells": {
+        "legacy_1024_image": {
+          "correct": 30,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            99,
+            176,
+            216,
+            234,
+            276,
+            299,
+            322,
+            345,
+            368,
+            391,
+            414,
+            483,
+            484
+          ],
+          "mean_image_tokens": 336.875,
+          "mean_score_seconds": 0.14252186750090914,
+          "n": 40,
+          "predictions": {
+            "A": 12,
+            "B": 8,
+            "C": 8,
+            "D": 12
+          }
+        },
+        "legacy_512_image": {
+          "correct": 28,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            99,
+            176,
+            180,
+            198,
+            216,
+            234,
+            252,
+            288,
+            324
+          ],
+          "mean_image_tokens": 230.075,
+          "mean_score_seconds": 0.11352254500161507,
+          "n": 40,
+          "predictions": {
+            "A": 11,
+            "B": 7,
+            "C": 11,
+            "D": 11
+          }
+        },
+        "legacy_768_image": {
+          "correct": 30,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            99,
+            176,
+            216,
+            234,
+            276,
+            299,
+            322,
+            345,
+            368,
+            391,
+            414,
+            483,
+            484
+          ],
+          "mean_image_tokens": 336.875,
+          "mean_score_seconds": 0.15621710999985225,
+          "n": 40,
+          "predictions": {
+            "A": 12,
+            "B": 8,
+            "C": 8,
+            "D": 12
+          }
+        },
+        "numbered_768_image": {
+          "correct": 31,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            99,
+            176,
+            216,
+            234,
+            276,
+            299,
+            322,
+            345,
+            368,
+            391,
+            414,
+            483,
+            484
+          ],
+          "mean_image_tokens": 336.875,
+          "mean_score_seconds": 0.15032811499913806,
+          "n": 40,
+          "predictions": {
+            "A": 13,
+            "B": 4,
+            "C": 11,
+            "D": 12
+          }
+        },
+        "numbered_768_text_only": {
+          "correct": 5,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            0
+          ],
+          "mean_image_tokens": 0.0,
+          "mean_score_seconds": 0.03116213250250439,
+          "n": 40,
+          "predictions": {
+            "A": 30,
+            "B": 10
+          }
+        },
+        "outer_rotation_768_image": {
+          "correct": 26,
+          "gold_letters": {
+            "A": 11,
+            "B": 12,
+            "C": 5,
+            "D": 12
+          },
+          "image_token_counts": [
+            99,
+            176,
+            216,
+            234,
+            276,
+            299,
+            322,
+            345,
+            368,
+            391,
+            414,
+            483,
+            484
+          ],
+          "mean_image_tokens": 336.875,
+          "mean_score_seconds": 0.1351059250002436,
+          "n": 40,
+          "predictions": {
+            "A": 15,
+            "B": 13,
+            "C": 6,
+            "D": 6
+          }
+        },
+        "visual_rotation_768_image": {
+          "correct": 30,
+          "gold_letters": {
+            "A": 11,
+            "B": 12,
+            "C": 5,
+            "D": 12
+          },
+          "image_token_counts": [
+            99,
+            176,
+            216,
+            234,
+            276,
+            299,
+            322,
+            345,
+            368,
+            391,
+            414,
+            483,
+            484
+          ],
+          "mean_image_tokens": 336.875,
+          "mean_score_seconds": 0.14300576749737956,
+          "n": 40,
+          "predictions": {
+            "A": 14,
+            "B": 8,
+            "C": 8,
+            "D": 10
+          }
+        }
+      },
+      "last_process_telemetry": {
+        "nvml_peak_device_used_bytes": 9418854400,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 4686381056,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 456,
+        "torch_peak_allocated_bytes": 8131575808,
+        "torch_peak_reserved_bytes": 8220835840,
+        "wall_seconds": 48.24332940002205
+      },
+      "paired_vs_512_legacy": {
+        "legacy_1024_image": {
+          "changed_predictions": 4,
+          "ci95": [
+            -0.05,
+            0.15
+          ],
+          "effect": 0.05,
+          "n": 40,
+          "seed": 20269
+        },
+        "legacy_512_image": {
+          "changed_predictions": 0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "effect": 0.0,
+          "n": 40,
+          "seed": 20269
+        },
+        "legacy_768_image": {
+          "changed_predictions": 4,
+          "ci95": [
+            -0.05,
+            0.15
+          ],
+          "effect": 0.05,
+          "n": 40,
+          "seed": 20269
+        },
+        "numbered_768_image": {
+          "changed_predictions": 9,
+          "ci95": [
+            -0.05,
+            0.2
+          ],
+          "effect": 0.075,
+          "n": 40,
+          "seed": 20269
+        },
+        "numbered_768_text_only": {
+          "changed_predictions": 35,
+          "ci95": [
+            -0.75,
+            -0.375
+          ],
+          "effect": -0.575,
+          "n": 40,
+          "seed": 20269
+        },
+        "outer_rotation_768_image": {
+          "changed_predictions": 38,
+          "ci95": [
+            -0.175,
+            0.075
+          ],
+          "effect": -0.05,
+          "n": 40,
+          "seed": 20269
+        },
+        "visual_rotation_768_image": {
+          "changed_predictions": 36,
+          "ci95": [
+            -0.05,
+            0.15
+          ],
+          "effect": 0.05,
+          "n": 40,
+          "seed": 20269
+        }
+      },
+      "telemetry_limitation": "Resume telemetry can cover only the final resumed process. Per-row wall times belong to original forward/cache computation; no condition-specific peak attribution."
+    },
+    "smol": {
+      "cells": {
+        "legacy_1024_image": {
+          "correct": 18,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            1053,
+            1377
+          ],
+          "mean_image_tokens": 1093.5,
+          "mean_score_seconds": 0.204644702502992,
+          "n": 40,
+          "predictions": {
+            "A": 3,
+            "B": 21,
+            "C": 8,
+            "D": 8
+          }
+        },
+        "legacy_512_image": {
+          "correct": 15,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            1053,
+            1377
+          ],
+          "mean_image_tokens": 1093.5,
+          "mean_score_seconds": 0.21113881000055698,
+          "n": 40,
+          "predictions": {
+            "A": 3,
+            "B": 20,
+            "C": 9,
+            "D": 8
+          }
+        },
+        "legacy_768_image": {
+          "correct": 18,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            1053,
+            1377
+          ],
+          "mean_image_tokens": 1093.5,
+          "mean_score_seconds": 0.20407496500192793,
+          "n": 40,
+          "predictions": {
+            "A": 3,
+            "B": 21,
+            "C": 8,
+            "D": 8
+          }
+        },
+        "numbered_768_image": {
+          "correct": 16,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            1053,
+            1377
+          ],
+          "mean_image_tokens": 1093.5,
+          "mean_score_seconds": 0.20330806499623577,
+          "n": 40,
+          "predictions": {
+            "A": 3,
+            "B": 21,
+            "C": 6,
+            "D": 10
+          }
+        },
+        "numbered_768_text_only": {
+          "correct": 11,
+          "gold_letters": {
+            "A": 12,
+            "B": 5,
+            "C": 12,
+            "D": 11
+          },
+          "image_token_counts": [
+            0
+          ],
+          "mean_image_tokens": 0.0,
+          "mean_score_seconds": 0.026557884995418134,
+          "n": 40,
+          "predictions": {
+            "B": 13,
+            "D": 27
+          }
+        },
+        "outer_rotation_768_image": {
+          "correct": 13,
+          "gold_letters": {
+            "A": 11,
+            "B": 12,
+            "C": 5,
+            "D": 12
+          },
+          "image_token_counts": [
+            1053,
+            1377
+          ],
+          "mean_image_tokens": 1093.5,
+          "mean_score_seconds": 0.20287382999886178,
+          "n": 40,
+          "predictions": {
+            "A": 1,
+            "B": 10,
+            "C": 14,
+            "D": 15
+          }
+        },
+        "visual_rotation_768_image": {
+          "correct": 15,
+          "gold_letters": {
+            "A": 11,
+            "B": 12,
+            "C": 5,
+            "D": 12
+          },
+          "image_token_counts": [
+            1053,
+            1377
+          ],
+          "mean_image_tokens": 1093.5,
+          "mean_score_seconds": 0.20410364999843295,
+          "n": 40,
+          "predictions": {
+            "A": 3,
+            "B": 25,
+            "C": 6,
+            "D": 6
+          }
+        }
+      },
+      "last_process_telemetry": {
+        "nvml_peak_device_used_bytes": 5830496256,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 5601890304,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 50,
+        "torch_peak_allocated_bytes": 4531499520,
+        "torch_peak_reserved_bytes": 4634705920,
+        "wall_seconds": 5.779865899996366
+      },
+      "paired_vs_512_legacy": {
+        "legacy_1024_image": {
+          "changed_predictions": 5,
+          "ci95": [
+            0.0,
+            0.175
+          ],
+          "effect": 0.075,
+          "n": 40,
+          "seed": 20269
+        },
+        "legacy_512_image": {
+          "changed_predictions": 0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "effect": 0.0,
+          "n": 40,
+          "seed": 20269
+        },
+        "legacy_768_image": {
+          "changed_predictions": 5,
+          "ci95": [
+            0.0,
+            0.175
+          ],
+          "effect": 0.075,
+          "n": 40,
+          "seed": 20269
+        },
+        "numbered_768_image": {
+          "changed_predictions": 13,
+          "ci95": [
+            -0.1,
+            0.15
+          ],
+          "effect": 0.025,
+          "n": 40,
+          "seed": 20269
+        },
+        "numbered_768_text_only": {
+          "changed_predictions": 31,
+          "ci95": [
+            -0.3,
+            0.1
+          ],
+          "effect": -0.1,
+          "n": 40,
+          "seed": 20269
+        },
+        "outer_rotation_768_image": {
+          "changed_predictions": 32,
+          "ci95": [
+            -0.2,
+            0.1
+          ],
+          "effect": -0.05,
+          "n": 40,
+          "seed": 20269
+        },
+        "visual_rotation_768_image": {
+          "changed_predictions": 25,
+          "ci95": [
+            -0.2,
+            0.175
+          ],
+          "effect": 0.0,
+          "n": 40,
+          "seed": 20269
+        }
+      },
+      "telemetry_limitation": "Resume telemetry can cover only the final resumed process. Per-row wall times belong to original forward/cache computation; no condition-specific peak attribution."
+    }
+  },
+  "qualification": {
+    "internvl": {
+      "metrics": {
+        "gqa": {
+          "image": 15,
+          "n": 20,
+          "passed": false,
+          "text_only": 16
+        },
+        "refcocog": {
+          "image": 12,
+          "n": 20,
+          "passed": true,
+          "text_only": 7
+        }
+      },
+      "telemetry": {
+        "nvml_peak_device_used_bytes": 8632258560,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 5402300416,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 82,
+        "torch_peak_allocated_bytes": 5615949312,
+        "torch_peak_reserved_bytes": 7436500992,
+        "wall_seconds": 8.788961499987636
+      }
+    },
+    "qwen": {
+      "metrics": {
+        "gqa": {
+          "image": 20,
+          "n": 20,
+          "passed": true,
+          "text_only": 16
+        },
+        "refcocog": {
+          "image": 11,
+          "n": 20,
+          "passed": true,
+          "text_only": 7
+        }
+      },
+      "telemetry": {
+        "nvml_peak_device_used_bytes": 9418592256,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 4572884992,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 110,
+        "torch_peak_allocated_bytes": 8131575808,
+        "torch_peak_reserved_bytes": 8220835840,
+        "wall_seconds": 12.047930399974575
+      }
+    },
+    "smol": {
+      "metrics": {
+        "gqa": {
+          "image": 18,
+          "n": 20,
+          "passed": true,
+          "text_only": 16
+        },
+        "refcocog": {
+          "image": 7,
+          "n": 20,
+          "passed": false,
+          "text_only": 5
+        }
+      },
+      "telemetry": {
+        "nvml_peak_device_used_bytes": 6702845952,
+        "nvml_scope": "whole device including Windows desktop",
+        "peak_process_rss_bytes": 5739307008,
+        "sample_interval_seconds": 0.1,
+        "telemetry_samples": 179,
+        "torch_peak_allocated_bytes": 4910685184,
+        "torch_peak_reserved_bytes": 5505024000,
+        "wall_seconds": 19.05570619998616
+      }
+    }
+  }
+}

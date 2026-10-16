@@ -1,0 +1,63 @@
+{
+  "completed_ratings": 0,
+  "geometry": {
+    "by_operator": {
+      "blur": {
+        "identity_removals": 0,
+        "identity_shams": 0,
+        "mean_core_fraction": 0.07830244663504626,
+        "mean_expanded_fraction": 0.09679000898369414,
+        "mean_inside_absolute_change": 31.732176024055228,
+        "n": 124,
+        "outside_mask_max_change": 0,
+        "raw_lama_outside_max_change": 0,
+        "sham_core_max_change": 0
+      },
+      "lama": {
+        "identity_removals": 0,
+        "identity_shams": 0,
+        "mean_core_fraction": 0.07830244663504626,
+        "mean_expanded_fraction": 0.09679000898369414,
+        "mean_inside_absolute_change": 34.27873509540106,
+        "n": 124,
+        "outside_mask_max_change": 0,
+        "raw_lama_outside_max_change": 0,
+        "sham_core_max_change": 0
+      },
+      "occlusion": {
+        "identity_removals": 0,
+        "identity_shams": 0,
+        "mean_core_fraction": 0.07830244663504626,
+        "mean_expanded_fraction": 0.09679000898369414,
+        "mean_inside_absolute_change": 53.23432974449354,
+        "n": 124,
+        "outside_mask_max_change": 0,
+        "raw_lama_outside_max_change": 0,
+        "sham_core_max_change": 0
+      }
+    },
+    "edit_requests": 372,
+    "rendered_images": 744
+  },
+  "independent_reviewers": 0,
+  "limitation": "Automated geometry and exact pixel restoration do not establish semantic intervention validity.",
+  "local_directory": "outputs/v2/human_review",
+  "per_operator_role_condition": {
+    "blur/candidate/removal": 30,
+    "blur/candidate/sham": 30,
+    "blur/independent_control/removal": 30,
+    "blur/independent_control/sham": 30,
+    "lama/candidate/removal": 30,
+    "lama/candidate/sham": 30,
+    "lama/independent_control/removal": 30,
+    "lama/independent_control/sham": 30,
+    "occlusion/candidate/removal": 30,
+    "occlusion/candidate/sham": 30,
+    "occlusion/independent_control/removal": 30,
+    "occlusion/independent_control/sham": 30
+  },
+  "private_key_sha256": "11cec89041cce5ff8202f68d558538da831feb31bc28b48d887c43579f2078f2",
+  "review_packet_count": 360,
+  "seed": 20270,
+  "status": "HUMAN_AUDIT_PENDING"
+}

@@ -1,0 +1,5759 @@
+{
+  "cumulative_budget": {
+    "failed_calls": 0,
+    "forward_calls": 1576,
+    "forward_wall_seconds": 196.65061209995474
+  },
+  "edge": 768,
+  "metrics": {
+    "gqa": {
+      "image": 15,
+      "n": 20,
+      "passed": false,
+      "text_only": 16
+    },
+    "refcocog": {
+      "image": 12,
+      "n": 20,
+      "passed": true,
+      "text_only": 7
+    }
+  },
+  "model": "internvl",
+  "partition": "qualification",
+  "presentation": "legacy",
+  "rows": [
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.375,
+        19.375,
+        19.375,
+        18.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384063",
+      "image_sha256": "799bea0adbd34493033e57919a9e54600b96c49776aed7e59837a0277f5023ea",
+      "input_tokens": 853,
+      "item_id": "02717992",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          500,
+          281
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            853
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            853
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.9939089443536859,
+        0.0024636539592248615,
+        0.0024636539592248615,
+        0.0011637477278658003
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "ce014a1417fd3a1d11c693ed75b12475edb7fd75a49b03c70a6db80a52496797",
+      "retry_count": 0,
+      "run_key": "c588499a7ec50d674a765c023f2c63f9d251a74a7575970f99efd5e4fa3f9891",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.335567500005709
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        21.875,
+        25.125,
+        19.375,
+        20.25
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384063",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 82,
+      "item_id": "02717992",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            82
+          ],
+          "input_ids": [
+            1,
+            82
+          ]
+        }
+      },
+      "probabilities": [
+        0.03694216873906319,
+        0.9527510890587431,
+        0.0030323978701098393,
+        0.0072743443320849414
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "0dc8e1a576cb0d3b4b81d1cf00e1481f45929b46a6b6fe70ecdaf977a5c53509",
+      "retry_count": 0,
+      "run_key": "1cab509fddc0f2fbab1de6a45862cdb9444f8c8155ddf51cac1749815fdaa519",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.03706930001499131
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        18.5,
+        19.5,
+        18.375,
+        27.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2364217",
+      "image_sha256": "1e410fbd73194672a337184463609ea29526f58f2689162693d3a921acb68013",
+      "input_tokens": 345,
+      "item_id": "12337009",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            345
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            345
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.00010885422679537446,
+        0.00029589646664882605,
+        9.606351798015903e-05,
+        0.9994991857885772
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "54423ca6aa8682856fbec794b6ad9cf7f4dd87c11eab852af5bb251ce21479e6",
+      "retry_count": 0,
+      "run_key": "99b1df2de8513e041179a8fb610442ef9ec8d6f66bbfb013432e40743e9ceac0",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.042079599981661886
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.375,
+        18.875,
+        19.5,
+        27.125
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2364217",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 86,
+      "item_id": "12337009",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            86
+          ],
+          "input_ids": [
+            1,
+            86
+          ]
+        }
+      },
+      "probabilities": [
+        0.00043023482203625936,
+        0.00026095061044099986,
+        0.00048751992304586864,
+        0.998821294644477
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "601f9428232e010f29c72744862142855184d2254de99f4867f12f30c2b59587",
+      "retry_count": 0,
+      "run_key": "cb2fec8a16c23e8ce0cab1bc18203cf889fed885dfc72b04449ca20c72b7db16",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.02060019999044016
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        14.4375,
+        24.875,
+        14.5,
+        13.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2390580",
+      "image_sha256": "3042794aeacd9e3fa9a28cdbd731f528db0fbe8f9636a03a49ab6235e029149f",
+      "input_tokens": 856,
+      "item_id": "15973508",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          331,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            856
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            856
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        2.931013451090445e-05,
+        0.9999227889784756,
+        3.1200475776994915e-05,
+        1.670041123486645e-05
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "dafd1cd7272bab0f70d09165cc675d556d9808c5fb72de173136c15a81859f20",
+      "retry_count": 0,
+      "run_key": "2e420800ba1e18c3c23939a3e3440569d7e23b94ce3c76ef3c7c4e5a2b2858bd",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.09950229999958538
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.625,
+        24.25,
+        21.75,
+        20.125
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2390580",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 85,
+      "item_id": "15973508",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            85
+          ],
+          "input_ids": [
+            1,
+            85
+          ]
+        }
+      },
+      "probabilities": [
+        0.15203654343769743,
+        0.772105276541059,
+        0.06337826056237782,
+        0.012479919458865722
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "e513c90878afa0f0bcc0ef11dd715e2655292766c86fbf693b0603f97cde794d",
+      "retry_count": 0,
+      "run_key": "b3ba43858cf551ef95c8c182432ed24a65e5ec9aa26832ec9cae4e72b244f3f1",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.025048700015759096
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.125,
+        18.0,
+        27.625,
+        19.25
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "712955",
+      "image_sha256": "4d81707417d93f550cad54bb7a7d74b4cb1e702516dec103c7b79fdc37a61ecc",
+      "input_tokens": 859,
+      "item_id": "06207086",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          768,
+          416
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            859
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            859
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.00020336666844218996,
+        6.602349068820441e-05,
+        0.9995001652151205,
+        0.0002304446257506217
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "37d0e1e5a29be7639d82d418eef4f1729ca7f56e09cfa524c01408452a5a71b2",
+      "retry_count": 0,
+      "run_key": "90f6dd08ac3b45abb91a0cdec2f8b72aaafa968a8c5375b3f3dc410e2784f1c4",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.10054350001155399
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.75,
+        18.25,
+        25.5,
+        22.125
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "712955",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 88,
+      "item_id": "06207086",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            88
+          ],
+          "input_ids": [
+            1,
+            88
+          ]
+        }
+      },
+      "probabilities": [
+        0.008290399685126558,
+        0.0006805174467451845,
+        0.9582399160497751,
+        0.03278916681835214
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "62818cba313f52b9fcedb42f61438a2be0c182aaeef721a20c5401dc5ec8a7b0",
+      "retry_count": 0,
+      "run_key": "cedbe63df4056531f562a2fff8f1ed6e40e6a7e5dbdfbbd2f1d15c874fa394eb",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.020433300000149757
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.125,
+        21.75,
+        18.5,
+        18.125
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2331158",
+      "image_sha256": "62d52e7ba24e9baf0a929893909121d23e307d2840101410dcc7125ebc368d9f",
+      "input_tokens": 863,
+      "item_id": "09562081",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          500,
+          317
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            863
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            863
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.5772825413198587,
+        0.3967601014823453,
+        0.015384058634211573,
+        0.0105732985635853
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "52bde307b5f22998a738a841dc74d72418e2f726ec620a702be9cb8a93508867",
+      "retry_count": 0,
+      "run_key": "2366b7bcc8040557cae198089963fb875e0624224cb7ee2213f51855b61be4d7",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.10006100000464357
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.875,
+        25.0,
+        18.125,
+        18.125
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2331158",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 92,
+      "item_id": "09562081",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            92
+          ],
+          "input_ids": [
+            1,
+            92
+          ]
+        }
+      },
+      "probabilities": [
+        0.005898950173991969,
+        0.9920508821581039,
+        0.001025083833952274,
+        0.001025083833952274
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "1c7b2c355ebde620eb0607b4b79adfcf4969a4cfb4e9c439a61bbd03545ee9df",
+      "retry_count": 0,
+      "run_key": "daecd628646fb00105b45dee90b9862528be35a713bf774596921979fef5c172",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.024246699991635978
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.625,
+        20.75,
+        21.375,
+        28.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2369861",
+      "image_sha256": "0e5f32a57ee78a3c62eb46286eef25ce7ba1357a201c0e063adbbfbc1c5413c3",
+      "input_tokens": 345,
+      "item_id": "17456891",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            345
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            345
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.00029567270459038996,
+        0.0003350410678206851,
+        0.00062593912052977,
+        0.9987433471070606
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "ed9d94eb5b5fe83ef0859e403c1924cb4a98bdad985a018e07bd8535e4d219f1",
+      "retry_count": 0,
+      "run_key": "8071e405186caae07698c4fa36b723e656def92fd48b3bb1c9bc666a716b26ec",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.041197000013198704
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.125,
+        21.375,
+        21.875,
+        26.125
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2369861",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 86,
+      "item_id": "17456891",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            86
+          ],
+          "input_ids": [
+            1,
+            86
+          ]
+        }
+      },
+      "probabilities": [
+        0.04641272419749441,
+        0.0080653221100765,
+        0.013297468117931165,
+        0.9322244855744997
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "75ba9ddfd67fe23579583152987d437bbd1704444d037f6e1798d9dfcbf69cf8",
+      "retry_count": 0,
+      "run_key": "3d8e99e40e70b2d671e0afef5fb15ff415f9e5b9a65e5a15dc6437ee368d8e52",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.019962699996540323
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        15.875,
+        16.125,
+        26.5,
+        16.5
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2386352",
+      "image_sha256": "bc59c6f3cbb630cd3abf444ac4cd1b252f4942cf24d5194974742bef55690531",
+      "input_tokens": 346,
+      "item_id": "12478362",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            346
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            346
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        2.429837946424946e-05,
+        3.119973681641978e-05,
+        0.9998991065345116,
+        4.539534920623819e-05
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "4b909edd371b0c6e8f3bfd891d03b11e9552263b4de2ffd199d9093d68e7e479",
+      "retry_count": 0,
+      "run_key": "b6e45bf47a683d0121ddcde31591d2322220c501c499299aed1f0c7d0760f61d",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.040916900004958734
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        17.625,
+        18.125,
+        25.375,
+        20.0
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2386352",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 87,
+      "item_id": "12478362",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            87
+          ],
+          "input_ids": [
+            1,
+            87
+          ]
+        }
+      },
+      "probabilities": [
+        0.0004282706328635317,
+        0.00070609890201831,
+        0.9942612872439947,
+        0.004604343221125095
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "501c3fd82a92531d4cc266db6a572de78c57197ce28e8c898c2ea12fca997c2a",
+      "retry_count": 0,
+      "run_key": "4dd9af1a4d922659fdabce743bea29940f5671e59864af3c7e8831b432aa58f6",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.021097199991345406
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        16.375,
+        18.25,
+        26.625,
+        19.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2378471",
+      "image_sha256": "cbee6bb533ce92da296dbdcfb5a4cc1b34a45cb6164853b893ebd3d7f9cf21f8",
+      "input_tokens": 347,
+      "item_id": "16922034",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            347
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            347
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        3.531162345928689e-05,
+        0.0002302607094232153,
+        0.9987024707623655,
+        0.001031956904750313
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "0300dd3aec603aa1f802eaa39da1a69aeccbb822c3a4f56e51813c159753917f",
+      "retry_count": 0,
+      "run_key": "0fbf9c3c2beea251cee27214e4df4ea02bc43474d8b9506035884e0c877d1de8",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.04188489998341538
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        18.0,
+        22.375,
+        24.125,
+        17.5
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2378471",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 88,
+      "item_id": "16922034",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            88
+          ],
+          "input_ids": [
+            1,
+            88
+          ]
+        }
+      },
+      "probabilities": [
+        0.001858076119604683,
+        0.14760526881728436,
+        0.8494096749284898,
+        0.0011269801346201185
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "8aeaa10747bd1967ee9e7ed701c826fe87b85de85a6ceba4fecb1a7456eeed01",
+      "retry_count": 0,
+      "run_key": "984f376906f27e1c1d79f43d968123751881aecfcff55a34c7b1c694ba43782b",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.019904199987649918
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        21.375,
+        27.25,
+        19.625,
+        17.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2399821",
+      "image_sha256": "4a9c87b980e5278eca45cc7ba837b3c06f07e680544c456bb45d8265c5c464c1",
+      "input_tokens": 341,
+      "item_id": "15315623",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            341
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            341
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.0027993276866076413,
+        0.9966296897308026,
+        0.00048645021111182163,
+        8.453237147720278e-05
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "5c1675fb2a7faf85068b33e641c37c59b681e3dc561a41a8f9c72206052c2be5",
+      "retry_count": 0,
+      "run_key": "96957541f8a8c82e3ae0c768e77abbe4436fd7b12ee7d47fb91b319f1a577f4f",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.040423400001600385
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.125,
+        20.0,
+        21.75,
+        18.625
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2399821",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 82,
+      "item_id": "15315623",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            82
+          ],
+          "input_ids": [
+            1,
+            82
+          ]
+        }
+      },
+      "probabilities": [
+        0.764592909812272,
+        0.03359386792734973,
+        0.19331936227210983,
+        0.008493859988269141
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "bfec4820be955c5ed85ea217ed06ac37796922aa62c6493a57d136d0474cc15c",
+      "retry_count": 0,
+      "run_key": "a68ce1e8d3772f1476b7dae8956b49a306cba574386af77184592a7bf0ad3216",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.023385100008454174
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.125,
+        23.875,
+        24.625,
+        22.5
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2390896",
+      "image_sha256": "7210a6470ff35886353875386c435eac2ca5c0e83cdc1cbafa3a10d213b96e34",
+      "input_tokens": 345,
+      "item_id": "13729186",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          500,
+          360
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            345
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            345
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.5087828088988116,
+        0.1457687153095109,
+        0.30859237273184287,
+        0.036856103059833896
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "b6ee7bcecb55fb2d66fc5a15d1d6495ad24e4b5f3a175a8daceef96160229f37",
+      "retry_count": 0,
+      "run_key": "748502d9649c9e76a26e472cd4d812cae4a22a25ec920d91aabd8fc9cf75e479",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.04122749998350628
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.375,
+        18.25,
+        23.125,
+        18.25
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2390896",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 86,
+      "item_id": "13729186",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            86
+          ],
+          "input_ids": [
+            1,
+            86
+          ]
+        }
+      },
+      "probabilities": [
+        0.903335275059275,
+        0.0007269437150501959,
+        0.09521083751062602,
+        0.0007269437150501959
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "d0075f79efd380714ab78c2d36fb27667dd9dc592e8bd3ace669acdcc5983f68",
+      "retry_count": 0,
+      "run_key": "38e4c9d9b58a771607541a8e319caca647374d948f8cc3ccbdc6c5f24720d1ff",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.019843399990350008
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        16.875,
+        16.5,
+        24.625,
+        16.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2359816",
+      "image_sha256": "ee21eb9ab8cb90f027ba0041055f78e8295dff8df4c5637f7546ab04a23a0f58",
+      "input_tokens": 857,
+      "item_id": "1234805",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          500,
+          333
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            857
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            857
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.00043026627185679283,
+        0.0002957173956725355,
+        0.9988943076802719,
+        0.00037970865220024116
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "674b595abc2ef77e3a3c2daed21f5fc04ba6105d66e681abdad8b7a851eff59e",
+      "retry_count": 0,
+      "run_key": "ee39322d7be130a739a9f583d3386cdc55a6ee012ad444885deb13f835ed3eaf",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.10073020000709221
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        18.75,
+        20.125,
+        23.75,
+        18.875
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2359816",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 86,
+      "item_id": "1234805",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            86
+          ],
+          "input_ids": [
+            1,
+            86
+          ]
+        }
+      },
+      "probabilities": [
+        0.006472433918113068,
+        0.025598972730170623,
+        0.9605943648698281,
+        0.0073342284818870805
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "8f4c7d7504ac0598eafbcafa5aa695e51cfbb8737360fd7a25d93fa685f5a779",
+      "retry_count": 0,
+      "run_key": "fc622b125b8267b7218ad6b6f943dd97a3e2058c930f5d71e669525260445406",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.020169499999610707
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        18.0,
+        17.625,
+        25.75,
+        17.625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2325614",
+      "image_sha256": "7e4335bf4ef12c13b1ec82bad9b777cebefbd575412f3d6e00c4a618bf06f30b",
+      "input_tokens": 859,
+      "item_id": "06399702",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          500,
+          333
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            859
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            859
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.0004303024134971884,
+        0.0002957422354344973,
+        0.9989782131156331,
+        0.0002957422354344973
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "fff257290052011eb531013667ca0f61e9bb95e1b2186b8521d9e14e4ab50f53",
+      "retry_count": 0,
+      "run_key": "3a5971ee3aa763d9251187e53df4ccdc0470420d9bbfa531f9956c7db8425e21",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.10048839999944903
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        21.875,
+        19.125,
+        26.0,
+        21.0
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2325614",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 88,
+      "item_id": "06399702",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            88
+          ],
+          "input_ids": [
+            1,
+            88
+          ]
+        }
+      },
+      "probabilities": [
+        0.015785668723756332,
+        0.0010091440392273594,
+        0.9766247414908549,
+        0.006580445746160926
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "a55af121e30472168cc3186e953c6df74f2461d6e1d1fa4f8832e35f836a57be",
+      "retry_count": 0,
+      "run_key": "2504f0b4f142b3be8ac3d0560cbe0074a8b5a1bc21a5b8511fcf51e3ffa97552",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.02081340001313947
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.625,
+        20.5,
+        18.625,
+        26.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "3769",
+      "image_sha256": "821ac0977dfaf3645c1cf930b329859ba1dd0d70ec2579be6d0e55743aa4f51e",
+      "input_tokens": 1374,
+      "item_id": "17940262",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1280,
+        "native_input_size": [
+          768,
+          577
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1374
+          ],
+          "image_flags": [
+            5,
+            1
+          ],
+          "input_ids": [
+            1,
+            1374
+          ],
+          "pixel_values": [
+            5,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.002177877986562806,
+        0.0019219705773488517,
+        0.0002947437341662612,
+        0.9956054077019229
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "7f305def61f028899d14b3863e72031bbc3dee62d96db2a5c9c85de015d159d3",
+      "retry_count": 0,
+      "run_key": "20f65af9c85b85792b357a53b04bbe2155c3945fcf6219187ffa0b62cce6b8e1",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.1816757999768015
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        18.625,
+        19.875,
+        17.625,
+        25.625
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "3769",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 91,
+      "item_id": "17940262",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            91
+          ],
+          "input_ids": [
+            1,
+            91
+          ]
+        }
+      },
+      "probabilities": [
+        0.0009078600317772054,
+        0.0031687428682746523,
+        0.0003339830411520862,
+        0.9955894140587974
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "945050db5bf07bc86d600c43dc35d5b28c17b1d2c7c01ecf29e2d31fc8b855e0",
+      "retry_count": 0,
+      "run_key": "2077ba93960bc6a7df54f968ad838efc460200294338652a353acbd2dad16333",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.021218400012003258
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.375,
+        22.5,
+        15.25,
+        14.0625
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384504",
+      "image_sha256": "0709e671523533fc1d6ef3df7d3a000804422b1be12baa7ed8b91ad1c9b1cb06",
+      "input_tokens": 856,
+      "item_id": "12782401",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          500,
+          331
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            856
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            856
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.042050397259458146,
+        0.9570626302663913,
+        0.000679681368533477,
+        0.00020729110561666165
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "4e9894d04b7ac54838210f365a1dc918f426c9087da1be7759cb14f1af8d8450",
+      "retry_count": 0,
+      "run_key": "f15b005d6ce5db2214178ff8153297e5c3af06bdc35fc2e6ea60abb41e78bc2c",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.10041119999368675
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.25,
+        18.375,
+        17.0,
+        15.1875
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384504",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 85,
+      "item_id": "12782401",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            85
+          ],
+          "input_ids": [
+            1,
+            85
+          ]
+        }
+      },
+      "probabilities": [
+        0.9986645802475943,
+        0.0010319177525708728,
+        0.00026090966746376186,
+        4.259233236931368e-05
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "04b4b16ddd51b1fb3b049830060a9223e015c1fc5abdc755b33ab1f84617d86c",
+      "retry_count": 0,
+      "run_key": "9417247070a0c331a8786af2450fc8189e0a4f8564b6f32cf59c31ee90ae1aa2",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.021786000026622787
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        17.5,
+        25.5,
+        16.125,
+        22.0
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "497937",
+      "image_sha256": "b0db4aa86589c2be2d9c790379adc72fac27919f9070084b3a422065310e4840",
+      "input_tokens": 858,
+      "item_id": "00650025",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          768,
+          512
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            858
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            858
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.0003254966798333408,
+        0.9702919275047616,
+        8.229844896484886e-05,
+        0.02930027736644175
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "a47a87e01573941f35a7ea89ebd04d22759af67b30e146c122c68f889aaa4030",
+      "retry_count": 0,
+      "run_key": "7dcfc0b070c8c7a17aae78d56f3764da7cbb8ac50601c14bd244c46e342aa7b3",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.09889970000949688
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        21.25,
+        22.5,
+        16.125,
+        23.25
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "497937",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 87,
+      "item_id": "00650025",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            87
+          ],
+          "input_ids": [
+            1,
+            87
+          ]
+        }
+      },
+      "probabilities": [
+        0.08413722756617681,
+        0.2936677796959695,
+        0.0005002982428794428,
+        0.6216946944949747
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "ae73fd0fafd887db69609c22ed8c35838f08afd7c4d0288d50a06f223030b6ba",
+      "retry_count": 0,
+      "run_key": "e57e35dae486ee73aceb7cabaf4252df35f264ee71394c5e9c3b10a1f2063c45",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.020639099995605648
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.5,
+        25.5,
+        22.25,
+        23.25
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2396355",
+      "image_sha256": "02fe2c4e84f27d687d18c3c211a81b6f9f1e949090202a56a48a1d6c64b18947",
+      "input_tokens": 347,
+      "item_id": "14960120",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          500,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            347
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            347
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.04169909166686183,
+        0.8375486453381404,
+        0.03247528524351829,
+        0.08827697775147994
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "3c8b04159a1208789a475e1b01f8b5fb501fce6cef80af4134ffaf79138d3b40",
+      "retry_count": 0,
+      "run_key": "df4c19fe29ab3e0bba019cf61883ab985459114c1a9677c63287e7454de135f5",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.04161220000241883
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.125,
+        23.375,
+        19.5,
+        22.875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2396355",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 88,
+      "item_id": "14960120",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            88
+          ],
+          "input_ids": [
+            1,
+            88
+          ]
+        }
+      },
+      "probabilities": [
+        0.023273007169029483,
+        0.6002187657845414,
+        0.012457143063227422,
+        0.36405108398320046
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "857b37d4a9efd25638fa9dcf5c723657a56c043559316f901fb0ad4da59f5ff8",
+      "retry_count": 0,
+      "run_key": "7c6012c5c8785f115af50ac5db87185f5d458e79c5ef62dfb59108d36d9c4c2b",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.019703300000401214
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.5,
+        27.125,
+        18.0,
+        17.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2391360",
+      "image_sha256": "3bcb4fc249fccd8d4aa9649d525f5c0fb2f7ccc1bfb53cde6fc7d6322fd3dd76",
+      "input_tokens": 345,
+      "item_id": "00947223",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            345
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            345
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.0004877571713869963,
+        0.9993073644111378,
+        0.00010883333576512562,
+        9.604508171067262e-05
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "c9e22f5a88f02b7a2353da4326464b7a5329ba121f1ff06e855d440b788c4883",
+      "retry_count": 0,
+      "run_key": "e6e8a2dc7d016b3cd1aec1d2781155e1062870e1e24ec6eee0f2c32703f9b02f",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.040565600007539615
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        18.75,
+        25.375,
+        17.375,
+        18.375
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2391360",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 86,
+      "item_id": "00947223",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            86
+          ],
+          "input_ids": [
+            1,
+            86
+          ]
+        }
+      },
+      "probabilities": [
+        0.0013233739011512893,
+        0.9974324840824903,
+        0.0003346013222656425,
+        0.000909540694093065
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "cf560b79453c9f65cc5f648d81a30f2de3e4d30ad58c587e1df40919f83e825f",
+      "retry_count": 0,
+      "run_key": "759d820e3028f57178cffef2429cfe27a416bd3c5eac382a023bb1a28670ceb8",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.020554000017000362
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        16.75,
+        25.125,
+        16.25,
+        17.0
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2364377",
+      "image_sha256": "e5b089ec5f45a4cc59923caa4c2ae9b643463fb01700393000fa1f5a2a50b026",
+      "input_tokens": 344,
+      "item_id": "14735014",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          500,
+          371
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            344
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            344
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.00023040631417385805,
+        0.9993339976285248,
+        0.0001397484937378264,
+        0.00029584756356457474
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "f556a396c4da1053355f4db1280f27e3d64d49f0ffd2e3ebd1364bcd427a8e09",
+      "retry_count": 0,
+      "run_key": "05e81928be1d3857ad3adf1bc2152b979f8bb95e3b9c04cf7b53c41bc56a0574",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.04056290001608431
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        15.5625,
+        23.875,
+        16.625,
+        14.9375
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2364377",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 85,
+      "item_id": "14735014",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            85
+          ],
+          "input_ids": [
+            1,
+            85
+          ]
+        }
+      },
+      "probabilities": [
+        0.000245163215669912,
+        0.9989142070847673,
+        0.0007094032865225641,
+        0.0001312264130397864
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "0b0de49a23fd2b1ed4ccde4c530968ba9b4931cf8228f1d64cfdcf94f292ff71",
+      "retry_count": 0,
+      "run_key": "6c3625d57b87aa802ba05bd2b1f21a8c33fbe81e30e3b56990310f04a61979d1",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.02035139998770319
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        16.75,
+        16.375,
+        27.375,
+        15.5625
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2412909",
+      "image_sha256": "0847135ce5c9424ccf372f71189cce9f2751e4f67c12a209eeed9ce4c2ad066c",
+      "input_tokens": 862,
+      "item_id": "14752509",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          253,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            862
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            862
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        2.429965481907662e-05,
+        1.670089223547274e-05,
+        0.9999515884769418,
+        7.410976005445022e-06
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "0af9cbba1a1e96696a4e359ff9bfd4ba6ee2a4f85d5f90a58007844a6888bf15",
+      "retry_count": 0,
+      "run_key": "b2cd0647b73b8db2d2d684bd2f75b5d8e1db6bafbfbbb715b274d9b4bd6698b4",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.09927380000590347
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.125,
+        17.5,
+        26.75,
+        18.0
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2412909",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 91,
+      "item_id": "14752509",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            91
+          ],
+          "input_ids": [
+            1,
+            91
+          ]
+        }
+      },
+      "probabilities": [
+        0.0004877330197094899,
+        9.604032596339585e-05,
+        0.9992578829260652,
+        0.00015834372826082453
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "51e6017ca5cef1db4767eae7bc0f2f3ab2e617cad36c5b56436ce01feb252242",
+      "retry_count": 0,
+      "run_key": "6d64fb86a0f6d092dcda87f6d1ea2e9aaa9372cd59e978682ab155fc9bd7d193",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.021107700013089925
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        14.4375,
+        15.25,
+        15.25,
+        25.125
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2393683",
+      "image_sha256": "6e6555553fdee0f2eb3f63f4cc832f3c03472e5a4f98e86d1c6ef39db8b746dd",
+      "input_tokens": 855,
+      "item_id": "16806749",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          333,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            855
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            855
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        2.2825648721886047e-05,
+        5.1438393435478916e-05,
+        5.1438393435478916e-05,
+        0.9998742975644065
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "8c2da976ef1bf2465c14e72dad6f5560fc396c03815fcf50fc7ba15aa8779aa2",
+      "retry_count": 0,
+      "run_key": "867f744739d3c67ad396611a44254cb2232e03ef95eb54c0f11f27a13281e7cc",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.10103740001795813
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.875,
+        22.625,
+        22.0,
+        23.625
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2393683",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 84,
+      "item_id": "16806749",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            84
+          ],
+          "input_ids": [
+            1,
+            84
+          ]
+        }
+      },
+      "probabilities": [
+        0.014806783752982148,
+        0.23161706763667794,
+        0.12397568249258782,
+        0.6296004661177512
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "886d422063ca0f1c80efefbc9b578b663a3245547c1510191a5d0f79be0c9c35",
+      "retry_count": 0,
+      "run_key": "3f09a4e40b7429b882ae3c461e67a0b451f813bfa69c2bb8eb0f550b82b73454",
+      "status": "OK",
+      "task": "gqa",
+      "wall_seconds": 0.02042690000962466
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.0,
+        24.625,
+        19.25,
+        22.25
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "430691",
+      "image_sha256": "888fe2bb9698f2efe727d8a0344ed8e19e46052dabdce5b26f1c76ef387e8694",
+      "input_tokens": 1383,
+      "item_id": "22236",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 1280,
+        "native_input_size": [
+          640,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1383
+          ],
+          "image_flags": [
+            5,
+            1
+          ],
+          "input_ids": [
+            1,
+            1383
+          ],
+          "pixel_values": [
+            5,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.003274966338973333,
+        0.9080573985435005,
+        0.0042051400180385615,
+        0.08446249509948758
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "c7e1a2414893c04051eb50214bed58f29c681cb806a760a33c20a49c4b4b00f8",
+      "retry_count": 0,
+      "run_key": "9d2b4624d09d57c7ec5d5786b71d6d759c01e6ea58040bd51dcea6350114efe0",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.1849499000236392
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.125,
+        22.25,
+        20.375,
+        20.75
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "430691",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 100,
+      "item_id": "22236",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            100
+          ],
+          "input_ids": [
+            1,
+            100
+          ]
+        }
+      },
+      "probabilities": [
+        0.3906613204663128,
+        0.44267727095944603,
+        0.06788675821098926,
+        0.09877465036325106
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "0cec71d124bf4f2494cc55dd32aa1dcc8b6301d245ed10324bfc6d4ed5cbbdd0",
+      "retry_count": 0,
+      "run_key": "09cfe984774bafa61607e90f5327345dcd03206d5a01051ea48a595b2a27f283",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.030146600009175017
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        18.875,
+        18.625,
+        21.75,
+        25.5
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "477836",
+      "image_sha256": "20681cca91ddddf29a644a51273d5290d3e495efa7be7c4151baf0f3d3142c57",
+      "input_tokens": 360,
+      "item_id": "37738",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            360
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            360
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.0012933123224653177,
+        0.0010072326494918868,
+        0.02292450943721032,
+        0.974774945590833
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "d6fc145b044de341ce848997b76b3a043864caeb1ad16ad28f337a74f46cbfe0",
+      "retry_count": 0,
+      "run_key": "60aba99da5f5216abb4eb9f4abe00b272230e96375a12a5b57e94dd1b1344c1f",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04659469999023713
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.875,
+        21.875,
+        21.125,
+        21.75
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "477836",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 101,
+      "item_id": "37738",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            101
+          ],
+          "input_ids": [
+            1,
+            101
+          ]
+        }
+      },
+      "probabilities": [
+        0.5358178558669543,
+        0.1971163733860156,
+        0.09311118178516288,
+        0.17395458896186733
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "b8903114034fe9f8829c2f739ef54850f5c14e412785fa632a2d0c62fa479afd",
+      "retry_count": 0,
+      "run_key": "5d07868d9a4607bf2f3c0e4195f915c6f7189a5194bf1b7cfd78f2ebc4abd7a2",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.021733200002927333
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.125,
+        23.5,
+        25.875,
+        20.875
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "143501",
+      "image_sha256": "6d84886bad62535d702127901b7ed52db82d235747b1bbd43a704db992490d67",
+      "input_tokens": 357,
+      "item_id": "20108",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "C",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            357
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            357
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.1364509964032406,
+        0.07303695525763816,
+        0.7852212690457366,
+        0.005290779293384803
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "1433fcb02a7994cd921aebdd79bc02243b5f3ee538fe022570c09b183869fc67",
+      "retry_count": 0,
+      "run_key": "4944933836c5529875d6f5f9011be0bf5a16c83598b0033106591dfff9abf481",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04474730000947602
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.25,
+        19.25,
+        18.75,
+        18.25
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "143501",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 98,
+      "item_id": "20108",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            98
+          ],
+          "input_ids": [
+            1,
+            98
+          ]
+        }
+      },
+      "probabilities": [
+        0.9951297619668961,
+        0.002466680063540919,
+        0.001496117086239474,
+        0.000907440883324171
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "7ddb4d15c8cdf74afc991e7c26452ec4acb0d2cef13c607a91f681e17fdef588",
+      "retry_count": 0,
+      "run_key": "3d213f761902cd017aa2a6b0c081f73e830226eaedfad8b065265f8112888fbe",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.021160600008442998
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.625,
+        22.125,
+        20.0,
+        20.25
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "545549",
+      "image_sha256": "a85dae8dd7568b1b443fe40fee8a1b184f9e4f8c65f9035f8a806abae69cb8f3",
+      "input_tokens": 358,
+      "item_id": "9917",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            358
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            358
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.9860577384034451,
+        0.01095411200243091,
+        0.0013082821111764233,
+        0.001679867482948425
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "5dcd12d491bcf15a58d17e9cf27d02bbbf4897a5976166803969ef851c1dc08d",
+      "retry_count": 0,
+      "run_key": "83fa43188605893565c1fce533e7f79ebf11e704404716f11e7fb536fb0e40f7",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04059140000026673
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.75,
+        23.375,
+        20.75,
+        19.625
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "545549",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 99,
+      "item_id": "9917",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            99
+          ],
+          "input_ids": [
+            1,
+            99
+          ]
+        }
+      },
+      "probabilities": [
+        0.570372618844641,
+        0.3920109858478514,
+        0.028397180569575745,
+        0.009219214737933351
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "31af264697a84c31be627fd83ba71ea5ca7fcd7e4f0577afc1dd77b148163bc5",
+      "retry_count": 0,
+      "run_key": "793de23025129836776c7dfe1a363cd8de69db26c7b037cb1d756a99a484512d",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.0234006000100635
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.0,
+        23.375,
+        20.5,
+        19.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "105859",
+      "image_sha256": "09ab735f292b1aa7468823984c8716ce086e00cb1894c7d95d8d444bc78f4847",
+      "input_tokens": 352,
+      "item_id": "38161",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          582
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            352
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            352
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.6322622005719436,
+        0.3384255686766989,
+        0.019092664094109826,
+        0.010219566657246458
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "a6b19427c3ee2aa482486113ab180e571c85763f5becfbcaaa1853b1c96bf448",
+      "retry_count": 0,
+      "run_key": "457d406d6a32c18f362b34105398f1251e47a813c1eb82c67034a440a936bf4c",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04283299998496659
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.125,
+        20.75,
+        16.75,
+        16.875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "105859",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 93,
+      "item_id": "38161",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            93
+          ],
+          "input_ids": [
+            1,
+            93
+          ]
+        }
+      },
+      "probabilities": [
+        0.3399928545688309,
+        0.6351902761040598,
+        0.01163391572275732,
+        0.013182953604352284
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "cbb32f9963aaff80b0c52b10ad257d1bf0db090aae7ec9af634583aafe4a309d",
+      "retry_count": 0,
+      "run_key": "2f2234f3e9aa84915f9b752779711e911eede7930132f44f704d7e0240dfa810",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.02655909999157302
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.25,
+        22.75,
+        21.75,
+        25.125
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "298360",
+      "image_sha256": "a9d144e76729c4e5b5792cea1af2578dd7abae1d1b0c3b2345bd8ed523a556b2",
+      "input_tokens": 1383,
+      "item_id": "16785",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 1280,
+        "native_input_size": [
+          640,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1383
+          ],
+          "image_flags": [
+            5,
+            1
+          ],
+          "input_ids": [
+            1,
+            1383
+          ],
+          "pixel_values": [
+            5,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.11975359586063557,
+        0.07263422750031137,
+        0.026720639022733954,
+        0.7808915376163174
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "fbb3be2096dad97039b2335d3c9943bc2e3df91227c0e6c7e3f0c2cd77bdb6ef",
+      "retry_count": 0,
+      "run_key": "d6f4e39ef342c5545a309c0b46aa2674b42898d2da2a38189e21624d88572460",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.18462759998510592
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.625,
+        25.5,
+        24.625,
+        23.875
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "298360",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 100,
+      "item_id": "16785",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            100
+          ],
+          "input_ids": [
+            1,
+            100
+          ]
+        }
+      },
+      "probabilities": [
+        0.41251567828839947,
+        0.364043808357096,
+        0.1517560372031949,
+        0.07168447615131035
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "998add61f4f65329e2ceb7a2d386c9c617598c7c4eb6fc825c060999344b95c0",
+      "retry_count": 0,
+      "run_key": "a590e38ffc2d58b5081425656f0a247fc135fa466f17f52fed00b44beb887c2f",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.020983199996408075
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.5,
+        26.5,
+        20.25,
+        18.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "490647",
+      "image_sha256": "f85c55dfe9ec7f279a1ab216d1f36a6e035438d157060b12fb0e3281cc8d1e58",
+      "input_tokens": 354,
+      "item_id": "27702",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            354
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            354
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.0024668129282624895,
+        0.995183363421217,
+        0.0019211558402214921,
+        0.0004286678102987128
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "dc77c15e9baf4ab1b16f63675d221289a17b6685e9a65790652404d894e7169d",
+      "retry_count": 0,
+      "run_key": "7422df328183be18d9f93e56fce1a4ff8de572bc553c9f77560c716b39eeb367",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04061769999680109
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.25,
+        21.25,
+        18.5,
+        19.5
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "490647",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 95,
+      "item_id": "27702",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            95
+          ],
+          "input_ids": [
+            1,
+            95
+          ]
+        }
+      },
+      "probabilities": [
+        0.8565275833065388,
+        0.1159184030867618,
+        0.007410415583833691,
+        0.020143598022864848
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "520eb8b5887e27bdcb73dac6e562c8e742e26e784954d8d7218ec9d78d1a103c",
+      "retry_count": 0,
+      "run_key": "26e7892aff4072311185cb1168e870f7771359f5f062fc00aaf4b1293c749db3",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.021150999993551522
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.625,
+        23.0,
+        22.25,
+        22.25
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "337146",
+      "image_sha256": "23e5d1c011656d8f3b3161bce06c0f23812b5aa3f5965e2bd6cec2c1d7337403",
+      "input_tokens": 364,
+      "item_id": "8142",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          612,
+          612
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            364
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            364
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.7230968280369792,
+        0.14238620774360058,
+        0.06725848210971058,
+        0.06725848210971058
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "a46163b7f200fc44ed19c504274d801603b4c7997a2e967135ea5e69ce5ac117",
+      "retry_count": 0,
+      "run_key": "107918b59d91ad38b18e6d3072489083a9cecf5ffcfafd07361a14f49e3c9d81",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.0425556999980472
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.875,
+        23.75,
+        21.25,
+        22.0
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "337146",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 105,
+      "item_id": "8142",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            105
+          ],
+          "input_ids": [
+            1,
+            105
+          ]
+        }
+      },
+      "probabilities": [
+        0.47431768330707397,
+        0.4185838863595938,
+        0.03435945773581347,
+        0.0727389725975196
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "c6149b027a5974d74ebe512e5af499e991df867ec26325b6c2181111c22066f9",
+      "retry_count": 0,
+      "run_key": "365949a2e4889d35a575b83467546defe36f63e2451e1c4fa013c44c53014740",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.022812900017015636
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.875,
+        25.875,
+        23.375,
+        21.5
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "437277",
+      "image_sha256": "cd2b86b333b4150e0ae40ea6133382d9c9cc6aa97af51b4e4ff6958fdecb36ad",
+      "input_tokens": 355,
+      "item_id": "14051",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            355
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            355
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.04350266437063674,
+        0.8737743714734648,
+        0.07172376807999739,
+        0.01099919607590134
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "e069b0b1b3a6b4b37f83bb8d9ea14ece13e162bc0d0e814974c21665f1b403ba",
+      "retry_count": 0,
+      "run_key": "2c1dcffcfc958aaa34b5c20e41855da78d99deb38b1c090e043d3d9f0795651a",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.041304799990030006
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.625,
+        23.75,
+        21.25,
+        21.625
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "437277",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 96,
+      "item_id": "14051",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            96
+          ],
+          "input_ids": [
+            1,
+            96
+          ]
+        }
+      },
+      "probabilities": [
+        0.21272359893284903,
+        0.6552348135954433,
+        0.05378494877231255,
+        0.07825663869939453
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "a3fa92f8532a769d4701b1abaa522ada7c58f5252baff353196d2a8f8b0ff363",
+      "retry_count": 0,
+      "run_key": "b6532a2b4491b8b79574744edd31bce6e9f6e1818f22bf47081a5b6f856e3c51",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.02143439999781549
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.125,
+        27.375,
+        16.875,
+        22.75
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "146841",
+      "image_sha256": "7f7168a82cc5aff643e7f3bb9a2f6da1e2ac29125544681a8b0b91f1d8e7502d",
+      "input_tokens": 351,
+      "item_id": "14309",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            351
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            351
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.0007027662724408343,
+        0.9895685953786807,
+        2.724920550474548e-05,
+        0.009701389143375337
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "7f6eb728597720f0bda430f1fc83c35d92bc146f7546370d6e14d7ceeeef7664",
+      "retry_count": 0,
+      "run_key": "f1696c11c8b3793ee2b1b255cc07abd17329907fb736c3dce2a1a81b377cd1cc",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04119309998350218
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.5,
+        21.5,
+        19.625,
+        19.0
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "146841",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 92,
+      "item_id": "14309",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            92
+          ],
+          "input_ids": [
+            1,
+            92
+          ]
+        }
+      },
+      "probabilities": [
+        0.6875248108336272,
+        0.25292624320097634,
+        0.03878749564029804,
+        0.020761450325100034
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "64898e9c9f8ecf340b0e9262fa14bb94763c0f8c38c2285a665a5b3a23c3623a",
+      "retry_count": 0,
+      "run_key": "1541ace8d20f2034b312c94999ad77bfcb9e3eeee16ba86d7db85829f6dd5929",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.021036099991761148
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.625,
+        23.0,
+        19.625,
+        19.375
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "554950",
+      "image_sha256": "3413d733f0f2c57f2591be91711e5b6e464ff869b79271474cd2cd0c82dc90bc",
+      "input_tokens": 867,
+      "item_id": "38250",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          424,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            867
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            867
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.6378196563390491,
+        0.34140026038953086,
+        0.011682074501642558,
+        0.009098008769777717
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "670e8da49da83803c2ce0567e6b07b09f6222e4cd3e5905af4af427e2ac1ad9e",
+      "retry_count": 0,
+      "run_key": "0a441d46ef6a1c8883f1075a8a31779a80578d58064f6cce27cacddf1861b4bd",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.10182589999749325
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.625,
+        22.0,
+        19.25,
+        19.25
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "554950",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 96,
+      "item_id": "38250",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            96
+          ],
+          "input_ids": [
+            1,
+            96
+          ]
+        }
+      },
+      "probabilities": [
+        0.6235589299253946,
+        0.3337670435976397,
+        0.021337013238483027,
+        0.021337013238483027
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "34ce966ae1c917df0a70c28f7ab381d4300c0b026ecd2dec5772447e2f112c8b",
+      "retry_count": 0,
+      "run_key": "e21f3df6272843edcf6429b16ceb54683fd56fb9c8cabfea21447e7d357d5aed",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.020529600005829707
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.5,
+        20.375,
+        19.875,
+        19.375
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "379308",
+      "image_sha256": "ac52ae688d1cce551d41d0fa3fb53649e69a4227706f25786571096be100d185",
+      "input_tokens": 870,
+      "item_id": "47027",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          427,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            870
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            870
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.99841364752888,
+        0.0008034564199254102,
+        0.0004873209524277097,
+        0.0002955750987677676
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "ed0d4e4000927b6dd1c8532349cc79d45e09e2d1e075b2c0b0ba16da1847dbb8",
+      "retry_count": 0,
+      "run_key": "83f3b5995ee5bd14e5c11d54759eb474aa73bed743d22725c0f9ed034b84696f",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.09945750000770204
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.875,
+        21.75,
+        20.125,
+        20.875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "379308",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 99,
+      "item_id": "47027",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            99
+          ],
+          "input_ids": [
+            1,
+            99
+          ]
+        }
+      },
+      "probabilities": [
+        0.6562043148949279,
+        0.21303834992183382,
+        0.04194973836584558,
+        0.08880759681739245
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "e113e3c943a19a5dda15aba004bf2ee14c4d376c6f1b6380f32832d92d9ff80e",
+      "retry_count": 0,
+      "run_key": "7fed10194645aaa14a782f61661781e79bb5da58770476660cb8ad2877f852b1",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.02039260001038201
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        20.375,
+        22.0,
+        21.125,
+        24.75
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "419085",
+      "image_sha256": "65e1b3493bd9e5c5dcc4d0587fdb5548b8b68c712ed945177f4a9cc9a9396e7d",
+      "input_tokens": 875,
+      "item_id": "24880",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          427,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            875
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            875
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.011410932265234605,
+        0.05794949564773985,
+        0.024156943795067765,
+        0.906482628291959
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "f731162b6278255746bad4f9dae9571e6ec0a216065578eafcc11a69d571eb93",
+      "retry_count": 0,
+      "run_key": "c331ab6d8cf1a8c49cbff191b154cb51929304cdfa6856349c894ce882e49f09",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.1012048999837134
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        21.375,
+        24.125,
+        20.75,
+        20.875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "419085",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 104,
+      "item_id": "24880",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            104
+          ],
+          "input_ids": [
+            1,
+            104
+          ]
+        }
+      },
+      "probabilities": [
+        0.05622897888347728,
+        0.8795692178980252,
+        0.030097203561334187,
+        0.03410459965716321
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "cd65e9957c1ef83713b473db5705fa320a068797bc83a5462d0cd9f59a74d2ee",
+      "retry_count": 0,
+      "run_key": "6f06cc794ade20a74744691c9b2ca89f4e13da957f47c1216276619badd203c9",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.021442600002046674
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.0,
+        26.5,
+        23.375,
+        20.125
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "105590",
+      "image_sha256": "42935292cb35511dc38dec8a4c807c36cde1422b888b8580da5b9a23ceb4f399",
+      "input_tokens": 868,
+      "item_id": "40659",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          427,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            868
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            868
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.010512421357254994,
+        0.9462980136024325,
+        0.04157743301161237,
+        0.0016121320287017574
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "73003e406fc34695fd133129c6f15c817966aa6398038e8972ea05d6fb993736",
+      "retry_count": 0,
+      "run_key": "78c92d2cfdd3df207fd512fce960c48a69100bd49f330d316e286ca77974797a",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.09939479999593459
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.5,
+        22.875,
+        20.125,
+        20.75
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "105590",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 97,
+      "item_id": "40659",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            97
+          ],
+          "input_ids": [
+            1,
+            97
+          ]
+        }
+      },
+      "probabilities": [
+        0.3674066442220154,
+        0.5345735130167164,
+        0.03417414134491473,
+        0.06384570141635432
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "749c5c990f5d3a6dfa7aa00443fc4770a3ca36d7e61e3e7f334ea9375918b10c",
+      "retry_count": 0,
+      "run_key": "abdbbfa5439018b3e952eacf02056baabf861c417cf4d303bdc112d34ac9ab79",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.021642899984726682
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        19.875,
+        26.75,
+        23.125,
+        20.5
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "232329",
+      "image_sha256": "147be947810d1c8478d8062d85ef7919d3cc789c0109c90cc1aefa7fd51bcccd",
+      "input_tokens": 869,
+      "item_id": "28510",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 768,
+        "native_input_size": [
+          640,
+          424
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            869
+          ],
+          "image_flags": [
+            3,
+            1
+          ],
+          "input_ids": [
+            1,
+            869
+          ],
+          "pixel_values": [
+            3,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.001003578810753562,
+        0.9712388504700633,
+        0.02588263866302673,
+        0.0018749320561549795
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "ab206966e00371c8ea3e042cf79ee46c9e66273f379572f494906307c931e62f",
+      "retry_count": 0,
+      "run_key": "90a1ed52aa26f07f80ce0e2d79bd6090bd1fb46c382349acc22967238155253e",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.10044479998759925
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.75,
+        22.875,
+        20.625,
+        21.5
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "232329",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 98,
+      "item_id": "28510",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            98
+          ],
+          "input_ids": [
+            1,
+            98
+          ]
+        }
+      },
+      "probabilities": [
+        0.928827142645159,
+        0.05240084165436419,
+        0.005523008076759026,
+        0.013249007623717965
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "93fe5f93b93ab8f3a61200c195b6d0a3ce333e7dd458bcc4334932b6da9c727f",
+      "retry_count": 0,
+      "run_key": "f31e29dc1ed3d75106c03f72a67304d437a39bcbd213996b490a107adb77880f",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.02938170000561513
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.25,
+        20.875,
+        19.25,
+        19.0
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "62203",
+      "image_sha256": "54321caa7da2f0a9f3ef9233a840b836ede9771a39162d2d8cf5fdae5dd9443a",
+      "input_tokens": 355,
+      "item_id": "29769",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          375,
+          500
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            355
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            355
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.9832867326748954,
+        0.012377753256009757,
+        0.002437324128905049,
+        0.0018981899401900816
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "52ce53b8f3efab323d80014cc261107b4bb8f397226f81dde160c75915e2250e",
+      "retry_count": 0,
+      "run_key": "0ee0a215ff3444bfbeee69a9153988fd8bcb737bfd4414f6e119d64931353552",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04795629999716766
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.625,
+        22.25,
+        18.5,
+        18.875
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "62203",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 96,
+      "item_id": "29769",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            96
+          ],
+          "input_ids": [
+            1,
+            96
+          ]
+        }
+      },
+      "probabilities": [
+        0.7889935349084999,
+        0.19948880645882322,
+        0.0046915270514171934,
+        0.006826131581261061
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "eb02446c79b26fd3a1cae30dd118bf91fef44c608c10ddd98ddbce4bd34854df",
+      "retry_count": 0,
+      "run_key": "c0dc73deffd2eaed4258317eab0e263f4e9558960bea260c0259f6dd0aedc4a5",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.020242400001734495
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        21.875,
+        29.25,
+        20.0,
+        19.125
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "415839",
+      "image_sha256": "3b157cf213d20ea3e65abc7ca5ce0e2181aa91e01064f012dd9d2a1333f03bd4",
+      "input_tokens": 361,
+      "item_id": "40944",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          545
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            361
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            361
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.000626248930854613,
+        0.9992376779303843,
+        9.603838402788107e-05,
+        4.0034754732522705e-05
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "4a5b342a800878d26baffb9ffa9e466d5e6e482a47530be45f9196f4172c0920",
+      "retry_count": 0,
+      "run_key": "c6ddd7772c5984811bca0ed2cf5fb33a370cdaf5dc658e41c18b305372846179",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.041513900010613725
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.375,
+        22.875,
+        21.125,
+        21.125
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "415839",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 102,
+      "item_id": "40944",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            102
+          ],
+          "input_ids": [
+            1,
+            102
+          ]
+        }
+      },
+      "probabilities": [
+        0.7688294545605225,
+        0.17154903932291934,
+        0.029810753058279172,
+        0.029810753058279172
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "26a3f89c9902230899905c58c22855960f2e330fe40a88a78f766895bc2d5ee3",
+      "retry_count": 0,
+      "run_key": "f4df12ce83e9395adaf1b39d3977921944dc14682d4f547327350af61c2235b9",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.020562099991366267
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        21.625,
+        21.5,
+        24.75,
+        24.875
+      ],
+      "condition": "image",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "184806",
+      "image_sha256": "cadd5bed5f7dc645bca9849f5805e3d23216beb8ff7b3ef3fadfc5ec1e272015",
+      "input_tokens": 356,
+      "item_id": "26542",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "D",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          428
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            356
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            356
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.019828392436067786,
+        0.017498494908061643,
+        0.4512921317181817,
+        0.511380980937688
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "b0b6943e33f80fa600c5d4877148fdb5dcf4b4e7d60cdf19e95c6106bcf5f548",
+      "retry_count": 0,
+      "run_key": "07bc35d245767883f1e3eaa99bd19c90836b5f418c44344b421f6d24e6ce6d6a",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.040916700003435835
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        23.5,
+        23.125,
+        20.625,
+        21.0
+      ],
+      "condition": "text_only",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "184806",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 97,
+      "item_id": "26542",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            97
+          ],
+          "input_ids": [
+            1,
+            97
+          ]
+        }
+      },
+      "probabilities": [
+        0.5477079903221758,
+        0.37643382965658095,
+        0.0308995703893494,
+        0.04495860963189417
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "53592df97f000155178977738ef1a675f96a253d77c90c2daaf67ad529f1c1a6",
+      "retry_count": 0,
+      "run_key": "bb4f27b37b24705f663748ed6ddf24410a3a25356bb709344f15837cedf238ed",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.02044900000328198
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.0,
+        22.375,
+        22.375,
+        21.25
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "496517",
+      "image_sha256": "27108d3f8f8ae7a40c607b27cf47f5a3608fa00cb84dab78019f2b5143f154dd",
+      "input_tokens": 355,
+      "item_id": "39396",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            355
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            355
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        0.9777177242215874,
+        0.009585207290677222,
+        0.009585207290677222,
+        0.003111861197059603
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "7efa3e04c707aade99693a824c17f5ef17b8eb595e5955792367eaefc866e0a2",
+      "retry_count": 0,
+      "run_key": "6fa6cf0ef16fdb006e91703f21138cf098f1c3098774e5d08132118ddc17b7ff",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04079870000714436
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        22.5,
+        23.25,
+        19.875,
+        19.875
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "496517",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 96,
+      "item_id": "39396",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            96
+          ],
+          "input_ids": [
+            1,
+            96
+          ]
+        }
+      },
+      "probabilities": [
+        0.3065717144345822,
+        0.6490123245509867,
+        0.022207980507215057,
+        0.022207980507215057
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "695ef55c2517ee00c8534516b061935b8f673645835076282b8684dcebb89dd2",
+      "retry_count": 0,
+      "run_key": "085a39375f4c453cbd79347aab5f2b3b38082260d970a9fad6eb6e6cf9ab8643",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.019953899987740442
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        16.75,
+        26.625,
+        17.25,
+        16.875
+      ],
+      "condition": "image",
+      "correct": true,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "575761",
+      "image_sha256": "0b6d3e839ac554618690dad4cadb8d03cea6593fd1f0b7528b2cb773c3a9db7c",
+      "input_tokens": 351,
+      "item_id": "10384",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "B",
+      "preprocessing": {
+        "image_token_count": 256,
+        "native_input_size": [
+          640,
+          438
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            351
+          ],
+          "image_flags": [
+            1,
+            1
+          ],
+          "input_ids": [
+            1,
+            351
+          ],
+          "pixel_values": [
+            1,
+            3,
+            448,
+            448
+          ]
+        }
+      },
+      "probabilities": [
+        5.1434853129934653e-05,
+        0.9998054800861997,
+        8.480173641066033e-05,
+        5.828332425790487e-05
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "5dafef8c70e5df2571cd9f52e7c840d70b37a299bb84225694ebb6349ec27254",
+      "retry_count": 0,
+      "run_key": "10796f83ee0f089317d9b8490a158fbad932c64290a1f45d2f95ebf630b1781b",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.04104469998856075
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.0,
+        19.625,
+        18.375,
+        18.5
+      ],
+      "condition": "text_only",
+      "correct": false,
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "575761",
+      "image_sha256": "9686eb269deaa327895a4f97931082be42c07c477e928bdf207b25db778e7b72",
+      "input_tokens": 92,
+      "item_id": "10384",
+      "label_ids": [
+        290,
+        309,
+        289,
+        302
+      ],
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "model_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prediction": "A",
+      "preprocessing": {
+        "image_token_count": 0,
+        "native_input_size": null,
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            92
+          ],
+          "input_ids": [
+            1,
+            92
+          ]
+        }
+      },
+      "probabilities": [
+        0.992594117953075,
+        0.004596622695623803,
+        0.0013169544516526371,
+        0.0014923048996496563
+      ],
+      "processor_config": {
+        "adapter_sha256": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+        "attention": "eager_official_fallback",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 768,
+        "max_dynamic_tiles": 4,
+        "official_code_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+        "thumbnail": true,
+        "tile_size": 448
+      },
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "prompt_sha256": "b36cd7ae3c625a40e037b0b0a2688891c558abaecc10ff1597dac869fa505770",
+      "retry_count": 0,
+      "run_key": "4cf3012edad052e8bc6c06362f9eb637d5e80576ba3bfce0e014ad1405c3248b",
+      "status": "OK",
+      "task": "refcocog",
+      "wall_seconds": 0.021772699983557686
+    }
+  ],
+  "selection_rule": "smallest development resolution meeting fixed 40pct screen, no presentation change",
+  "status": "COMPLETE",
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 8632258560,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 5402300416,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 82,
+    "torch_peak_allocated_bytes": 5615949312,
+    "torch_peak_reserved_bytes": 7436500992,
+    "wall_seconds": 8.788961499987636
+  }
+}

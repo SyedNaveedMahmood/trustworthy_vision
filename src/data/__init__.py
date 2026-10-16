@@ -8,7 +8,7 @@ def validate_manifest(rows, dataset_root=None):
     for r in rows:
         if len(r["options"]) != 4 or len(set(r["options"])) != 4 or r["gold"] not in "ABCD" or len(r["gold"]) != 1:
             raise ValueError("Invalid four-choice mapping")
-        if r["partition"] not in ("debug", "development", "confirmatory"):
+        if r["partition"] not in ("debug", "development", "qualification", "development_hard", "confirmatory"):
             raise ValueError("Unknown partition")
         key = (r["dataset"], str(r["image_id"]))
         if key in identities:

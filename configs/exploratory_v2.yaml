@@ -1,0 +1,33 @@
+protocol: controlled_evidence_v2_exploratory
+status: NOT_CONFIRMATORY_LOCKED
+started_utc: '2026-10-16T07:18:11+00:00'
+deadline_utc: '2026-10-16T09:18:11+00:00'
+base_commit: ef7c3e84211cfc3e424a5b9ec27adac109dfe31d
+authorization: user_explicit_exploratory_E2_E4_despite_qualification_pending
+qualification:
+  development_resolutions: [512,768,1024]
+  source_images_upscaled: false
+  official_preprocessing_retained: true
+  representations: [legacy,numbered,outer_rotation,visual_rotation]
+  resolution_comparison_representation: legacy
+  representation_comparison_resolution: 768
+  independent_qualification_seed: 20265
+  independent_qualification_per_task: 20
+estimators:
+  coefficient: 0.5
+  tune_coefficient: false
+  independent_control: candidate_geometry_and_fixed_seed_only
+  anchors: [fixed_gold,fixed_original_prediction]
+intervention_pilot:
+  target_per_task: 16
+  sample_seed: 20266
+  inference_long_edge: 768
+  edit_long_edge: 768
+  human_audit: HUMAN_AUDIT_PENDING
+  large_effect_threshold_log_odds: 1.0
+  no_oracle_grid_items_per_task: 8
+limits:
+  cumulative_forwards: 12000
+  cumulative_gpu_process_hours: 24
+confirmatory:
+  authorized_in_this_session: false
