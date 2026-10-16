@@ -102,12 +102,14 @@ class ChoiceModel:
     def encode(self, image, question, options):
         if len(options) != 4 or len(set(options)) != 4:
             raise ValueError("Four unique options required")
-        image = image.convert("RGB").copy()
-        image.thumbnail((self.long_edge, self.long_edge))
+        if image is not None:
+            image = image.convert("RGB").copy()
+            image.thumbnail((self.long_edge, self.long_edge))
         prompt = question + "\n" + "\n".join(f"{a}. {b}" for a,b in zip("ABCD", options)) + "\nAnswer with only the letter A, B, C, or D."
-        messages = [{"role":"user", "content":[{"type":"image"}, {"type":"text", "text":prompt}]}]
+        content=([{"type":"image"}] if image is not None else []) + [{"type":"text", "text":prompt}]
+        messages = [{"role":"user", "content":content}]
         text = self.processor.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
-        inputs = self.processor(text=[text], images=[image], return_tensors="pt")
+        inputs = self.processor(text=[text], images=[image] if image is not None else None, return_tensors="pt")
         inputs = {k: v.to(device="cuda", dtype=torch.bfloat16 if v.is_floating_point() else v.dtype) for k,v in inputs.items()}
         # Check each literal label appended to the exact official rendered template.
         tokenizer = self.processor.tokenizer
@@ -125,7 +127,7 @@ class ChoiceModel:
     @torch.inference_mode()
     def score(self, image, question, options, verify=False, use_cache=True):
         prompt, inputs, label_ids = self.encode(image, question, options)
-        image_hash = digest(image.convert("RGB").tobytes()+str(image.size).encode())
+        image_hash = digest(image.convert("RGB").tobytes()+str(image.size).encode()) if image is not None else digest({"mode":"text_only"})
         key = cache_key(model_id=self.model_id, revision=self.revision, processor_revision=self.revision,
                         image_sha256=image_hash, prompt=prompt, options=options,
                         processor_config=self.processor_config, code_sha256=digest(Path(__file__).read_bytes()))

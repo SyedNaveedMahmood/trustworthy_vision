@@ -1,0 +1,108 @@
+{
+  "gqa_no_coco_identity_in_official_metadata": [
+    {
+      "dataset": "gqa",
+      "image_id": "713860"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2384711"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2354914"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2315504"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2341441"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2321166"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2318090"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2332837"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2417896"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2401269"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2347520"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2416222"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2348133"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2341708"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2397532"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2409623"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2379412"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "4891"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2383990"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2348442"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2358152"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "4559"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2341067"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2360505"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2352184"
+    }
+  ],
+  "manifest_items": 104,
+  "mapped_items": 79,
+  "overlaps": [],
+  "status": "NO_KNOWN_OVERLAP; null mappings are not proof of photographic uniqueness"
+}

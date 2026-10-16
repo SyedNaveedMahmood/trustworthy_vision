@@ -1,7 +1,7 @@
 """Geometry and explicitly unvalidated occlusion/blur operators."""
 import math
 import numpy as np
-from PIL import Image, ImageFilter, ImageDraw
+from PIL import Image, ImageFilter, ImageDraw, ImageFont
 
 
 def xywh_to_xyxy(box, width, height):
@@ -53,7 +53,11 @@ def overlay_boxes(image, boxes):
         raise ValueError("Four candidate boxes required")
     image = image.copy()
     draw = ImageDraw.Draw(image)
+    font = ImageFont.load_default(size=max(20,round(max(image.size)*0.04)))
     for label, box in zip("ABCD", boxes):
-        draw.rectangle(box, outline="white", width=2)
-        draw.text((box[0]+3,box[1]+3), label, fill="black", stroke_width=2, stroke_fill="white")
+        draw.rectangle(box, outline="white", width=3)
+        x, y = box[0], max(0,box[1]-font.size-6)
+        text_box = draw.textbbox((x+2,y),label,font=font)
+        draw.rectangle((x,y,text_box[2]+3,text_box[3]+2),fill="black",outline="white",width=1)
+        draw.text((x+2,y),label,font=font,fill="white")
     return image

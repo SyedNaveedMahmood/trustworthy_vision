@@ -1,0 +1,21 @@
+{
+  "bf16_matmul_correct": true,
+  "bf16_supported": true,
+  "capability": [
+    8,
+    9
+  ],
+  "cuda_available": true,
+  "cuda_probe_seconds": 0.17528170000878163,
+  "cuda_runtime": "12.8",
+  "disk_free_bytes": 867149938688,
+  "gpu_name": "NVIDIA GeForce RTX 4080 SUPER",
+  "nvidia_smi": "NVIDIA GeForce RTX 4080 SUPER, 610.88, 16376 MiB, 534 MiB",
+  "os": "Windows-10-10.0.26300-SP0",
+  "peak_allocated_bytes": 13764096,
+  "peak_reserved_bytes": 23068672,
+  "python": "3.11.17",
+  "ram_total_bytes": 68470386688,
+  "timestamp_utc": "2026-10-16T06:07:24.833895+00:00",
+  "torch": "2.7.1+cu128"
+}

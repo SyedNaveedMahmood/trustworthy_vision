@@ -1,0 +1,2053 @@
+{
+  "cumulative_budget": {
+    "failed_calls": 0,
+    "forward_calls": 94,
+    "forward_wall_seconds": 14.879337900085375
+  },
+  "dataset": "SYNTHETIC_INFRASTRUCTURE_ONLY",
+  "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "real_dataset_items": 24,
+  "real_rows": [
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.1875,
+        9.125,
+        4.5,
+        6.875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "713860",
+      "image_sha256": "f6163f697663a78ce56183d5f33522da2d1634f5f152f8a32d8931cd9a3c5dd8",
+      "input_tokens": 1136,
+      "item_id": "0623391",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "manual_probability_max_abs_error": 7.771561172376096e-16,
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.11440283266025261,
+        0.794113056504328,
+        0.007785210465410519,
+        0.08369890037000813
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "1855826a9e72c27f70cf36cee4f19281317bda1a96dd1e1e8cfdb05547ddce8c",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "edb74aca0f64ef82b1f6b431ebf8cea5a9093e971a35cd7b5096f0f5f7bc7b21",
+      "source_image_sha256": "0396c6ec9a1b6d201de6782a19ee7a4281d30f09661ead6107c81ec956f7191a",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.198518499993952
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.5625,
+        7.40625,
+        5.5625,
+        7.3125
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "713860",
+      "image_sha256": "7ffd48b256539ff3dc59b92b8b836acd3d20824308d79ca69b0f351cab494cb8",
+      "input_tokens": 1136,
+      "item_id": "0623391",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.361078432339472,
+        0.3088467498930567,
+        0.04886665191129454,
+        0.2812081658561761
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "1855826a9e72c27f70cf36cee4f19281317bda1a96dd1e1e8cfdb05547ddce8c",
+      "retry_count": 0,
+      "run_key": "a2fc150de1baa9402d4eaf19255b03cf65c07fa0584625845c83261ac014e1b3",
+      "source_image_sha256": "0396c6ec9a1b6d201de6782a19ee7a4281d30f09661ead6107c81ec956f7191a",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.20081860000209417
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.375,
+        5.3125,
+        5.28125,
+        5.65625
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2380076",
+      "image_sha256": "6e298ff47e4a703dce6c32aee1cec7e05edb70db62cf569685eb707b30d4a18c",
+      "input_tokens": 1131,
+      "item_id": "09172246",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.945048448684169,
+        0.016260456758087564,
+        0.01576017509770394,
+        0.022930919460038803
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "f66949999a8db2e6aef7f72843258c0cac9fda7001edf1ade19747d51c7527fd",
+      "retry_count": 0,
+      "run_key": "fccbdf32103b5b789eb78945bd64fa78b28ea78162e3ace4036c00c4dea4ffdb",
+      "source_image_sha256": "715b67d3abe0acfb6ad9547f233852adb21abfdf82e1e740526480c847939ac1",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19881819999136496
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.3125,
+        8.875,
+        8.3125,
+        7.5
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2380076",
+      "image_sha256": "bf08025cc888c34cd0a5ce50f5c8a77a134f01b7453533b129feada57f80c475",
+      "input_tokens": 1131,
+      "item_id": "09172246",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.45939552698681235,
+        0.2966080450466003,
+        0.16900216974456878,
+        0.07499425822201845
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "f66949999a8db2e6aef7f72843258c0cac9fda7001edf1ade19747d51c7527fd",
+      "retry_count": 0,
+      "run_key": "893e626ce69e558b222c5c01fb054185abaab40499ecc31d4800621d26b7dd37",
+      "source_image_sha256": "715b67d3abe0acfb6ad9547f233852adb21abfdf82e1e740526480c847939ac1",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19795109999540728
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.125,
+        5.71875,
+        4.9375,
+        6.15625
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384711",
+      "image_sha256": "df327d3f3e0c96edecd4383041f854277bc728a6f1c61f76b3b502c56fa4230c",
+      "input_tokens": 1130,
+      "item_id": "03268508",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.9093248411621423,
+        0.030158065244192192,
+        0.01380736839527619,
+        0.04670972519838987
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "e2ef54e79ec8aba66bfd1edc4241a52754362796aa5f6a711272f6fe85874ed4",
+      "retry_count": 0,
+      "run_key": "931ddf41434c8211992e1c048b258cc617829e34672efa3462d10e5d00aa8d7f",
+      "source_image_sha256": "c8d7025d78356350ea79b4dc267e644b92e4cf86dce6c7ecf47234e271a3ea59",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19872520001081284
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.5,
+        8.125,
+        7.3125,
+        8.25
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384711",
+      "image_sha256": "dca5ae8cafae8e3d0dbb14abdd26ac4b27d2cf74a0684099905d81fca53a7bcb",
+      "input_tokens": 1130,
+      "item_id": "03268508",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.17199048619787105,
+        0.32132053055597504,
+        0.14258512110803934,
+        0.364103862138115
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "e2ef54e79ec8aba66bfd1edc4241a52754362796aa5f6a711272f6fe85874ed4",
+      "retry_count": 0,
+      "run_key": "8be0ecc8ddfd815c1b14c2cbb2afaa26eaf4bdea7a2e211dc9186d228fd29998",
+      "source_image_sha256": "c8d7025d78356350ea79b4dc267e644b92e4cf86dce6c7ecf47234e271a3ea59",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19808139999804553
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.03125,
+        5.8125,
+        6.21875,
+        5.28125
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2405722",
+      "image_sha256": "92ded59d1d91f284ad3385af347e5777b5aea2f418c09d5f4746b861d441d6aa",
+      "input_tokens": 1133,
+      "item_id": "05515781",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.28718142374300204,
+        0.23075675672166573,
+        0.34640692039059373,
+        0.13565489914473847
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "3428492686b778b9245952883b155812e7869142b96903cb66d6b14e000485f8",
+      "retry_count": 0,
+      "run_key": "5464244399513f6bb283aba9d7a56a9e8160393f86b914c5fbc9be5d94dc7dbc",
+      "source_image_sha256": "6f95b503a26b8ac7a99ef3f42ea0533b47533114955679bd45d610540d666426",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19837360001110937
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.09375,
+        6.21875,
+        6.6875,
+        5.53125
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2405722",
+      "image_sha256": "1bb105b4fcff2a8a5531a02a7a769dd4505dd3d9d5d43b5be6e1242f7df6ca95",
+      "input_tokens": 1133,
+      "item_id": "05515781",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.22154786253410594,
+        0.251046617710784,
+        0.4011713528273289,
+        0.1262341669277811
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "3428492686b778b9245952883b155812e7869142b96903cb66d6b14e000485f8",
+      "retry_count": 0,
+      "run_key": "8ffccc1183f830732efe329ba8a24a92bbcefd5c0bd7ceb00152844918f15b08",
+      "source_image_sha256": "6f95b503a26b8ac7a99ef3f42ea0533b47533114955679bd45d610540d666426",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19974710000678897
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.53125,
+        9.125,
+        4.28125,
+        6.0
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2391999",
+      "image_sha256": "eb3538f4e3308d724197689dcf167f23f969fa524e1cebfa4b83af40803aba26",
+      "input_tokens": 1133,
+      "item_id": "15667805",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.06634326101993251,
+        0.8876630195440026,
+        0.006992528266406248,
+        0.03900119116965824
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "13b5564b4d0ca1545f0f555d552a702cb71ef3ffbd0ddc4275e429870c1bc66a",
+      "retry_count": 0,
+      "run_key": "3e4107c36891069548934da8a81ed8ceca68f0b58ce766860e7adc43bd1ed535",
+      "source_image_sha256": "8d5633333500ae384bef9d737f44f6253bd16e9bb6754e1f8a8c48d269908b88",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.1994676000031177
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.8125,
+        5.15625,
+        5.125,
+        11.125
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2354914",
+      "image_sha256": "e5db9bfbef49e2e4e95b188616305531b18fccd1205ecc6ad2682c09d5da433e",
+      "input_tokens": 1131,
+      "item_id": "10561334",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.01315743462083879,
+        0.0025111403414334672,
+        0.002433880675351591,
+        0.9818975443623755
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "278a6e962098e9494fd5d06418f2d84fdd7fbddf9a9be08a9ce7943a347a412f",
+      "retry_count": 0,
+      "run_key": "3dbd3c449c75525880d5fa332c062b9d731f196b967e22ea41c205276b56ff2e",
+      "source_image_sha256": "982c1ce6a513ffa3094e4955d180f506f61c913633b7aa0fb4f2e2915814b261",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19674990000203252
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.65625,
+        7.1875,
+        7.40625,
+        5.875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2393295",
+      "image_sha256": "cc8fba484978af9cff9b9504539bda0da9c84aa807d2ba9a9afc95840dee1858",
+      "input_tokens": 1131,
+      "item_id": "081033326",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.1895414557672176,
+        0.3224208773358011,
+        0.40125926500799014,
+        0.08677840188899096
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "9343f64d87d93e6a6ba4f03f22421999ee035285b9b11a83c9956fef1e169020",
+      "retry_count": 0,
+      "run_key": "690448ab8c2d4d79547822515a4877abe8109ff97080b91a8f1104bcf21f3ddf",
+      "source_image_sha256": "7f8459f6cc5cd55b6c750c3c4ef40ae88021f32b3ca688c3c3ee5280f2a31c89",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19803159999719355
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.375,
+        6.875,
+        5.1875,
+        12.4375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2315504",
+      "image_sha256": "d20e5827a7c9ddff5d5d132445d79b3a7f63ada8d584f3681c420648e1a859c0",
+      "input_tokens": 1135,
+      "item_id": "15143682",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.002312665859571694,
+        0.0038129413946978476,
+        0.0007053232369557171,
+        0.9931690695087746
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "85c8007d8c83f322ca5bd94b684e48c30b37a6db4f53014af197be8bce2508bf",
+      "retry_count": 0,
+      "run_key": "b7bd6c4c3a54ebd6afa2293d210a0c66080f0baff1a93271fcb9e57b3a7d05ba",
+      "source_image_sha256": "dfbc6ff14eeaf2d106441d9cc270daa9fb4773f9dac51517028f09c8d0c9c7a3",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19690819999959785
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.84375,
+        7.65625,
+        8.3125,
+        6.59375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2347445",
+      "image_sha256": "b414487e3ca1e03981703085253d8806aa725b504745b9811b0a4af7d044a178",
+      "input_tokens": 1132,
+      "item_id": "14549415",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.2692856045322703,
+        0.2232456072640641,
+        0.4303171707797736,
+        0.0771516174238916
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "db23542e8f35c39a5a5149b3a7b9aa2691c7d6833dab5bc1ff0fd9c86db0e1ca",
+      "retry_count": 0,
+      "run_key": "d83408378e134256832faf2768beca7dca615f3e100d3be276f1106047491b59",
+      "source_image_sha256": "6e5518ee319c80fcd5de266210b4e7081f41783185fefa71320c98276fefef70",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.20009139999456238
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.3125,
+        5.9375,
+        4.3125,
+        5.65625
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384518",
+      "image_sha256": "ecbb5439c3881967c52f50c5a2acbe00e18aff7a8c3f330aae9358373d4f02e5",
+      "input_tokens": 1465,
+      "item_id": "08858512",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.9373957825767335,
+        0.03207591979306744,
+        0.006316123100168275,
+        0.02421217453003035
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "af28d788002b5e2249558f0092ef22e83f4ddbf08efc6e59d029a1b1a882064c",
+      "retry_count": 0,
+      "run_key": "568b2f136b194adc08598dc2a024143fb61ed0357ffa5de5627579a80cd0db2e",
+      "source_image_sha256": "b4df9f515ecef7ef60487ab4496e829ba27ecf90efd21bd83ce6feebfd6dd111",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.24659799999790266
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        5.625,
+        5.65625,
+        8.25,
+        6.0
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2341441",
+      "image_sha256": "f81fe46cdbf4a1a180d43a630eb56d659eacd81a7529920bde28df4aed67d985",
+      "input_tokens": 1469,
+      "item_id": "13694313",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.05783252150121636,
+        0.059668322797930086,
+        0.7983533334308616,
+        0.08414582226999233
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "fd504045a3d9ad1af37dbb3b8849d5eaf04b2316f0d546c52963ea7015165cdd",
+      "retry_count": 0,
+      "run_key": "163e2caee8e84ea2d1a3f7d62237a6b73e1f0dbde49ef6bcd98d35f54bc200cb",
+      "source_image_sha256": "78290a7c2db1ddc38b48d4dabb7a780d3b17bb4bbd220135069ae876ce97d3ee",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.25158890000602696
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.5,
+        7.96875,
+        8.8125,
+        9.9375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2321166",
+      "image_sha256": "1eb5ee369fac8d0d279f52f47375e68b4866a726c62f11ba80930bf8173697d4",
+      "input_tokens": 1134,
+      "item_id": "067791",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.056313154720836055,
+        0.08998816501626204,
+        0.20922875226332188,
+        0.6444699279995807
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "234efb5500754809a7a7ca7bf010db34321ca1bfd8740e45076bd2d78f9a4a8f",
+      "retry_count": 0,
+      "run_key": "6cb88bd8d9ccba0ec820a107c357bd390ad843550b8f324f694e46a548a739f3",
+      "source_image_sha256": "a26d9c84f510760f0aa7c696c4b258b0ec677d3c583bf2f0d7b58135f1985b49",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.19839450001018122
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.5625,
+        8.5,
+        7.3125,
+        8.875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "197212",
+      "image_sha256": "7079ddb0c9d8738acc341ef4d9a6c7d52e15ebd53ebda46dd5f13507855f2571",
+      "input_tokens": 1479,
+      "item_id": "6952",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "manual_probability_max_abs_error": 2.220446049250313e-16,
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.0496080515882225,
+        0.34434812983118285,
+        0.10502024603638944,
+        0.5010235725442047
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b3f51d8a26ea9af5bf74573db829838f75c6cb561a984fd19071ce29751481b4",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "c467b73bbfbd9dcb09c6887e3630e26a0359999fce8b2fe07762f43b57d03746",
+      "source_image_sha256": "bc824d5b0a71e019bcf19b2548ff43dd91d066031053f519b1b93c4e290ef8b0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.24884580000070855
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.21875,
+        8.4375,
+        7.625,
+        8.1875
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "197212",
+      "image_sha256": "459644343f1b7f25a17a5f0abdc93c8db96070eb32cb9892b862c3626b7b498c",
+      "input_tokens": 1479,
+      "item_id": "6952",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.046645768183826104,
+        0.4289465027791265,
+        0.19034385677692384,
+        0.33406387226012424
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b3f51d8a26ea9af5bf74573db829838f75c6cb561a984fd19071ce29751481b4",
+      "retry_count": 0,
+      "run_key": "663ae80c3f2e00ececf91262b2b94bb245cfcdda50685ad0d35d6d11083bc5aa",
+      "source_image_sha256": "bc824d5b0a71e019bcf19b2548ff43dd91d066031053f519b1b93c4e290ef8b0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.25152130000060424
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.0,
+        9.5625,
+        6.34375,
+        8.375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "186056",
+      "image_sha256": "2ff4f0317c3d55fa102d7e8a2d76afca82e960f75196608d6fe9e95981e5c160",
+      "input_tokens": 1145,
+      "item_id": "37303",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.13483307376644946,
+        0.6432526190442859,
+        0.02573334245249861,
+        0.19618096473676658
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8361a8eb96edb9f25c46808f36a6a42a4086bcea1b35af3f8b4bb2a6156cbc55",
+      "retry_count": 0,
+      "run_key": "297a34ab2333c3b702afc1938b8c0756f077d7830d73f5bab02d40657e3ff355",
+      "source_image_sha256": "eaaf3358ed84dbf6e02f38b68d40646c82f34e2011c40959e394b123aebbff75",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19818050001049414
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.5625,
+        8.25,
+        7.25,
+        7.59375
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "186056",
+      "image_sha256": "4c567ab30b3d2cc86ea28b412c5b0c339a688502bee4aad242027dc6b4f10e43",
+      "input_tokens": 1145,
+      "item_id": "37303",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.08929164778777544,
+        0.48270608738240833,
+        0.17757764567629378,
+        0.25042461915352254
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8361a8eb96edb9f25c46808f36a6a42a4086bcea1b35af3f8b4bb2a6156cbc55",
+      "retry_count": 0,
+      "run_key": "c843c035c6d841b01bfc52dd3bd283705a7a646648656e1af5fcbb34b4c8d71e",
+      "source_image_sha256": "eaaf3358ed84dbf6e02f38b68d40646c82f34e2011c40959e394b123aebbff75",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19773970000096597
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.625,
+        10.1875,
+        8.625,
+        10.1875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "114392",
+      "image_sha256": "516db221a208b9162092f2d0b827cf14027c167c0c3f475f3956930e1b9a93fb",
+      "input_tokens": 1148,
+      "item_id": "32081",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.08664410296466324,
+        0.41335589703533643,
+        0.08664410296466324,
+        0.41335589703533643
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8b0739e3dc03c711b5a819676c90cd38b5190bf9ff4d73e2fe4d951fff4fdfc6",
+      "retry_count": 0,
+      "run_key": "df5c0655ff4ec5c80faab25dcf1795425cbdb8e71079303380d9f753b9b92a07",
+      "source_image_sha256": "4897e72bfd69cfcc43f3ca3966728e03e2d4fa4ccd34f1b15784d855285d3ef0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.1983848000090802
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.8125,
+        10.3125,
+        8.25,
+        8.9375
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "114392",
+      "image_sha256": "4bb4bb0941ce1fa2afa34d9c5af11aef645acf6772989d560ee142e55770abb5",
+      "input_tokens": 1148,
+      "item_id": "32081",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.13918619934586646,
+        0.6237892683502648,
+        0.07930590582684914,
+        0.1577186264770195
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "8b0739e3dc03c711b5a819676c90cd38b5190bf9ff4d73e2fe4d951fff4fdfc6",
+      "retry_count": 0,
+      "run_key": "e626db78d6de030c7d9edf9f08d340848bf7ea2c7807dd4ad9df8dea175d5472",
+      "source_image_sha256": "4897e72bfd69cfcc43f3ca3966728e03e2d4fa4ccd34f1b15784d855285d3ef0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19783899998583365
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.71875,
+        8.875,
+        8.0625,
+        9.0
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "438375",
+      "image_sha256": "7e0451b83c02c8d1bce22bb1cf7bad848ebefa17eb27eec6bc4baff8f27d7e71",
+      "input_tokens": 1143,
+      "item_id": "7942",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.10882153267962559,
+        0.34583411563055305,
+        0.15346295854532704,
+        0.3918813931444951
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "3ec2d9d17a9873558ae91270030607fbe1e1044c8edaa728f70f976a7e14fb9b",
+      "retry_count": 0,
+      "run_key": "ba5cfeccc3f3cf6928304ecf82bfe1d2da2909423f072b83335f2c6425192c29",
+      "source_image_sha256": "422bb002d425fd2447d91827be53063e56d790d64f95d3aba117d725cc198dfd",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19631709999521263
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.875,
+        8.4375,
+        7.59375,
+        8.0
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "438375",
+      "image_sha256": "8cbd2040177d1276700dca8ba01c60092939872b8c760d05ce852d7bae92b622",
+      "input_tokens": 1143,
+      "item_id": "7942",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.09171941691241244,
+        0.4375688656947665,
+        0.18819602404627028,
+        0.2825156933465502
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "3ec2d9d17a9873558ae91270030607fbe1e1044c8edaa728f70f976a7e14fb9b",
+      "retry_count": 0,
+      "run_key": "b388c2258b6925630fe1e7380e08826a8730fe01569d1b4064b1031d16ec0341",
+      "source_image_sha256": "422bb002d425fd2447d91827be53063e56d790d64f95d3aba117d725cc198dfd",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19807710000895895
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.125,
+        10.125,
+        7.71875,
+        9.3125
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "111943",
+      "image_sha256": "5b4e15eabd4bdd821b6ede7a90ba0aa0bfbee7bd5389c835316e69f32e4d9cca",
+      "input_tokens": 1143,
+      "item_id": "6724",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.08107621555995359,
+        0.5990767050614911,
+        0.05400840297528178,
+        0.26583867640327313
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "7c5e076f8005c697a84d5758369b29a9a9dacd9a179fcd621ca2d599e70883ca",
+      "retry_count": 0,
+      "run_key": "ffbebe9c43c734f6620c2fdcaeee465ed3332b015f96a3bcc90d693c2efa909a",
+      "source_image_sha256": "190d0ab5f292186c317aa81204800512a4b8424c0c5cfdaae8063a7b79cd7b52",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.1968600999971386
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.3125,
+        9.0625,
+        8.3125,
+        9.5
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "581198",
+      "image_sha256": "15ded338e676a08318d9f9462e22db4234ee4b1e88ab8a73087d48bae9e60a15",
+      "input_tokens": 1142,
+      "item_id": "16920",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.05438983784511589,
+        0.31299190641102165,
+        0.1478469078672126,
+        0.48477134787664933
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "c626e3425eed9972992ad023b9ba11c44f7b1e34ba52c58de853ebf5120aabcd",
+      "retry_count": 0,
+      "run_key": "85aaebba2a5b536a68987765137d24f9ef991263b697d143381372be4ead3790",
+      "source_image_sha256": "431c023f0afed2f6fa681ca98c1b94a4a15e950f277ceb2b6ed0e0fe4718ce40",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19768240000121295
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.8125,
+        8.9375,
+        8.375,
+        8.1875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "367048",
+      "image_sha256": "e288f04bff81672feaf112727b6f8eb448be4f13d98370ca79236d0f661622bf",
+      "input_tokens": 1139,
+      "item_id": "42540",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.13716926411371347,
+        0.4225110784767477,
+        0.24073955577458997,
+        0.19958010163494963
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "9ed03191b937e9911d51422e252f3b5073fe82d6a78d3d354ad8baa223dfadf8",
+      "retry_count": 0,
+      "run_key": "08ae1c6a72b23276bb04d81143e57b786ce682b794174c50d869dd5f25286181",
+      "source_image_sha256": "578a9c2bbd6b52f651c42ccc7339877ee1a4c82b45e5f7a66e50fc4d8f1022e5",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19729709999228362
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.9375,
+        10.6875,
+        6.0625,
+        8.9375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "359249",
+      "image_sha256": "2d9e337f7948a9c74c33972b97782b70c08551305f37f2a55fa6067f1c54d7ee",
+      "input_tokens": 1138,
+      "item_id": "35142",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.12802427232852215,
+        0.7367288201353999,
+        0.007222635207555487,
+        0.12802427232852215
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "fa329663046d07ea0c9a890548c6e744a6fe35ad2c55fe58cc0cc22c36cd14fb",
+      "retry_count": 0,
+      "run_key": "3a9ad4f3448230375be60886cb004351754eba27ad2f0f888698ba3d09635b6d",
+      "source_image_sha256": "2b32063827f06add77e79929635ef8770597c81996f809a514b98f50fabf1a5e",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19724199999473058
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        8.625,
+        9.3125,
+        5.6875,
+        8.8125
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "90146",
+      "image_sha256": "63b2f04142e25e8d35096302f379a2a7bf788944cb80c9bc38a72a7795e460ee",
+      "input_tokens": 1143,
+      "item_id": "5213",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.23540679289805796,
+        0.4681623096305664,
+        0.01247610295855796,
+        0.2839547945128176
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "ca901e19796a0c4251a1d003d11fbb26eebbdaf52d44ccca2f689f7b0452b5cc",
+      "retry_count": 0,
+      "run_key": "304b3887af7e1475366aa36c0b501d760978541acc59545fdf67b3589bbfb300",
+      "source_image_sha256": "aa50c150941bbef4b31b84eb3d8e90d5106ef3788faadcf61e17c5b8edd3c54d",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.1973246000125073
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.3125,
+        10.4375,
+        7.4375,
+        10.25
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "821",
+      "image_sha256": "d929feff8dd40a1252690be65420a3acf17ac9a64504867186e51aeae45512e9",
+      "input_tokens": 1471,
+      "item_id": "9339",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.14733700285808973,
+        0.45382991867257216,
+        0.02259486118833348,
+        0.3762382172810053
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "b2aac2688555e1a319d790a76a42a617743ca32d60479b16e627742d0afa85b5",
+      "retry_count": 0,
+      "run_key": "9b8eca6a0e990bb7dc563c63c67b9e518de490902fb19ff3516ccecf80842591",
+      "source_image_sha256": "d371300b3eb4fc710e02b8cd3efeeb0e84a915391e2ac80fd9e11473e3a9fd94",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.24851119999948423
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.125,
+        8.875,
+        7.96875,
+        8.6875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "451337",
+      "image_sha256": "caef1db1ab8eeeb0551be9bb9192556752a8c467fa7826500798e4cf8cdba36a",
+      "input_tokens": 1146,
+      "item_id": "35796",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.36508165279743127,
+        0.2843258770836422,
+        0.1148780389644055,
+        0.2357144311545208
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "dcf2aef03be2984113f15502317546b10f9991c8a7cff7627d8d6795f823dbeb",
+      "retry_count": 0,
+      "run_key": "913eb8479dd2935f30a3ed40cfbd8f1b4e4f5a886acb410965ee46559970ce7e",
+      "source_image_sha256": "991ec9e9635403d4ede434cacd3f6340e66bbdaa5ba0f49ba8883a2108e99330",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.19942150000133552
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        7.875,
+        10.0,
+        6.75,
+        8.375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "192464",
+      "image_sha256": "d6b07b0848ee539e9937052e90379a5d4514256b319027ec9308f711458cb8ea",
+      "input_tokens": 1142,
+      "item_id": "29263",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.08813468143544184,
+        0.7379426528077077,
+        0.028613141787858332,
+        0.14530952396899266
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "264e4293b3a137677e8d5b50016039c0e5d21754bf1600ea84130ce185991936",
+      "retry_count": 0,
+      "run_key": "d0f948022d5f3ddd51fe4af58b1a1da457ed68758f8015932f46d30bc044a4e1",
+      "source_image_sha256": "e3d5da64e91d180b734122772e790f53351abffe3b455ae06dd9db9fea2b77cf",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.199726599996211
+    }
+  ],
+  "rows": [
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.6875,
+        5.8125,
+        1.546875,
+        4.0
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_sha256": "c5f4db8a63c06baa5bae1a3bc4fb38caea1caae2753eabf4a508cbd8bc68129f",
+      "input_tokens": 1128,
+      "item_id": "synthetic-0",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "manual_probability_max_abs_error": 7.771561172376096e-16,
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.9761489280272013,
+        0.020259324667326346,
+        0.0002845034681842348,
+        0.00330724383728881
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "ad7e58e90d436ebd46eb1dd27abc46a3524b8b5ba55eeced62d3c7cdac7ae810",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.496237100000144
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        3.5,
+        11.3125,
+        4.09375,
+        2.390625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_sha256": "bc0b3f955cc11e62ba23dedae71877653dd7a89f921678906f778b6e3db0db99",
+      "input_tokens": 1128,
+      "item_id": "synthetic-1",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.000404131598596813,
+        0.9987308121574598,
+        0.0007317877874104799,
+        0.00013326845653298058
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "4250578d4c47e38299bed06099fe8ed3f454cfd301c2d35e6199245284215ab9",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19978739999351092
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        2.515625,
+        3.9375,
+        10.75,
+        4.59375
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_sha256": "ddccabfac2a95c5028e4a76387674b122313406e8c01c78bacaccb436fe2a546",
+      "input_tokens": 1128,
+      "item_id": "synthetic-2",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.0002644510364479677,
+        0.0010961190860527394,
+        0.9965266050397419,
+        0.0021128248377581954
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "c836e9c246286c870feae1b9a4e405986ac39feaf8ba24ac12ce741e985bbcea",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19866989999718498
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.5625,
+        3.71875,
+        3.953125,
+        12.0625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_sha256": "121586e6d05a41522d6ca6e0304607214cb9e692e0c681f1097a94dfb8f15bcc",
+      "input_tokens": 1128,
+      "item_id": "synthetic-3",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.004067955691869028,
+        0.00023678341563644503,
+        0.0002993222838281068,
+        0.9953959386086659
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "e3f85a513d36c733e74ace7bb1de5286293219285d6fced47b444869051ef81e",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19868679999490269
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.625,
+        5.71875,
+        1.4765625,
+        3.78125
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_sha256": "09d3202369197342d5ab1f9b227db131941e8d279458193c78b2eb7b7a95b9ca",
+      "input_tokens": 1128,
+      "item_id": "synthetic-4",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.9772277250788437,
+        0.019657711634906594,
+        0.0002826014185629636,
+        0.0028319618676858555
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "e2142a281c93b389ab267acf3dd6dc9a659cbefa969c088565fa2ff09ec8f077",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19705350000003818
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        3.53125,
+        11.25,
+        4.0,
+        2.484375
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_sha256": "d9893498ab614611529f16549b8afbf806d8130aa00bfd6e099765948f32b175",
+      "input_tokens": 1128,
+      "item_id": "synthetic-5",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.0004438340899289791,
+        0.9986911206350665,
+        0.0007092448562394887,
+        0.0001558004187647759
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "8d34d4d30ac48b07339571a356ff9b954859389bb066d8131f836f6154b1a126",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19636529999843333
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        2.5625,
+        3.984375,
+        10.5625,
+        4.6875
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_sha256": "6bc8e2d1d72a1b6d8d47f3135f7a2cfbb983c74fd1357cb8a3e0945172f17dfa",
+      "input_tokens": 1128,
+      "item_id": "synthetic-6",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.00033394826908811966,
+        0.0013841771105094001,
+        0.9954857599969906,
+        0.002796114623412365
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "c1fac783d2f535f48d8e4a8ce900e3905c0edbf8e8e5d2bd2d66035721065e88",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19705489999614656
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.75,
+        3.6875,
+        4.0,
+        12.0
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_sha256": "a95f90e255d93e0d0805e2013685ee4f173f2d10ec5a3d669a1c01a553258e2b",
+      "input_tokens": 1128,
+      "item_id": "synthetic-7",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.005217110933842363,
+        0.0002440075254219648,
+        0.00033351874367867115,
+        0.9942053627970576
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "b94a207ffb1e84955fa49cd5d091441c8f935cbc22ec45f8fd472d8b0d51c141",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.1969762999942759
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        9.5625,
+        5.78125,
+        1.546875,
+        3.90625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_sha256": "da89a7881c499c4d7908fe5e0e8082d7110ccbe4183b6b20d8e0eceb64c9a260",
+      "input_tokens": 1128,
+      "item_id": "synthetic-8",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "A",
+      "probabilities": [
+        0.9740702086738339,
+        0.02220313252984939,
+        0.0003216981433489355,
+        0.003404960652968606
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "ffe8177272abcfad9e0ce18cee40f9767cc7373a38d0023f27f8bf37a2f97c61",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19816749999881722
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        3.59375,
+        11.375,
+        4.03125,
+        2.46875
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_sha256": "90778e3926e293c1d305a96e68e46e81777e5909ec523844ed060d5e90006b46",
+      "input_tokens": 1128,
+      "item_id": "synthetic-9",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "B",
+      "probabilities": [
+        0.0004169897439659374,
+        0.9988017871571191,
+        0.0006458463496741334,
+        0.0001353767492416681
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "158993b15d16f55e291babbfc26c26044a1908e6c81c290b66f42a823f2b27e4",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19888909999281168
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        2.40625,
+        3.96875,
+        10.6875,
+        4.5625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_sha256": "7500f5ffb73c880b1327f47ce1b62098cf6a220ebef508a3bd9c30fe5de7471b",
+      "input_tokens": 1128,
+      "item_id": "synthetic-10",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "C",
+      "probabilities": [
+        0.00025229989503447686,
+        0.0012036554810479219,
+        0.9963645061163156,
+        0.002179538507602117
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "4f20a35f418673befb44e43941ceb60e046688ff31d528ef1e50630357e75279",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19749929998943117
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        6.84375,
+        3.734375,
+        4.03125,
+        12.0625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_sha256": "2680b5720c72d0b17a30ec9ba2a90274e3cbf9fdf911f9767cf7dca81c984a59",
+      "input_tokens": 1128,
+      "item_id": "synthetic-11",
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prediction": "D",
+      "probabilities": [
+        0.005381904106043955,
+        0.0002401881353619343,
+        0.00032320846373286386,
+        0.9940546992948606
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "prompt_sha256": "5c0b131a571e460d17f0cd09c23f76e7d5e7a9123a4037f875abe326fbf3a322",
+      "retry_count": 0,
+      "run_key": "ceb6f710db0160f1303bf308f38ac66ad49b00fa81afdcc8f11ae258cc22a494",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.19794759999786038
+    }
+  ],
+  "status": "COMPUTATIONAL_SMOKE_COMPLETE_NOT_FULL_E0_PASS",
+  "synthetic_accuracy": 1.0,
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 6838276096,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 5673955328,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 187,
+    "torch_peak_allocated_bytes": 4910959616,
+    "torch_peak_reserved_bytes": 5643436032,
+    "wall_seconds": 19.920479699998396
+  },
+  "timestamp_utc": "2026-10-16T06:08:43.946581+00:00"
+}

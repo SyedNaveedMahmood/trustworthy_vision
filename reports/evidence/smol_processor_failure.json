@@ -1,0 +1,25 @@
+{
+  "cumulative_budget": {
+    "failed_calls": 0,
+    "forward_calls": 47,
+    "forward_wall_seconds": 5.229045100088115
+  },
+  "dataset": "SYNTHETIC_INFRASTRUCTURE_ONLY",
+  "detail": "Package `num2words` is required to run SmolVLM processor. Install it with `pip install num2words`.",
+  "exception": "ImportError",
+  "model_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "real_dataset_items": 0,
+  "rows": [],
+  "status": "FAILED",
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 899723264,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 649986048,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 9,
+    "torch_peak_allocated_bytes": 0,
+    "torch_peak_reserved_bytes": 0,
+    "wall_seconds": 0.9034647999942536
+  },
+  "timestamp_utc": "2026-10-16T06:08:15.135587+00:00"
+}

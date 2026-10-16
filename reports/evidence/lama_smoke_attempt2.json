@@ -1,0 +1,11 @@
+{
+  "device": "cpu",
+  "error_tail": "Traceback (most recent call last):\n  File \"<workspace>\\third_party\\repos\\lama\\bin\\predict.py\", line 15, in <module>\n    from saicinpainting.evaluation.refinement import refine_predict\n  File \"<workspace>\\third_party\\repos\\lama\\saicinpainting\\evaluation\\refinement.py\", line 9, in <module>\n    import cv2\n  File \"<workspace>\\.venv-lama\\lib\\site-packages\\cv2\\__init__.py\", line 190, in <module>\n    bootstrap()\n  File \"<workspace>\\.venv-lama\\lib\\site-packages\\cv2\\__init__.py\", line 184, in bootstrap\n    if __load_extra_py_code_for_module(\"cv2\", submodule, DEBUG):\n  File \"<workspace>\\.venv-lama\\lib\\site-packages\\cv2\\__init__.py\", line 37, in __load_extra_py_code_for_module\n    py_module = importlib.import_module(module_name)\n  File \"<python-runtime>\\cpython-3.8-windows-x86_64-none\\lib\\importlib\\__init__.py\", line 127, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<workspace>\\.venv-lama\\lib\\site-packages\\cv2\\typing\\__init__.py\", line 151, in <module>\n    LayerId = cv2.dnn.DictValue\nAttributeError: module 'cv2.dnn' has no attribute 'DictValue'\n",
+  "input_sha256": "f333569a95f5424d36d5e391542abc4aba603f60005b93c4d96abca38914c480",
+  "mask_sha256": "e4ec17f7eb6a2d1958e0d068d80950bb5e204d282366c4f9541e127c7bd8410a",
+  "returncode": 1,
+  "semantic_validity": "NOT_AUDITED",
+  "source_commit": "786f5936b27fb3dacd2b1ad799e4de968ea697e7",
+  "status": "FAILED",
+  "wall_seconds": 4.622011100000236
+}

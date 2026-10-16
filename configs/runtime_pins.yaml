@@ -1,0 +1,46 @@
+protocol: controlled_evidence_v1
+status: stopped_at_competence_gate_not_confirmatory_locked
+base_main_commit: 853f02959495f2056fd3ffea56ecf9b7e8bf3d27
+execution:
+  python: 3.11.17
+  torch: 2.7.1+cu128
+  torchvision: 0.22.1+cu128
+  transformers: 4.51.3
+  dtype: bfloat16
+  quantization: none
+  batch_size: 1
+  image_long_edge: 512
+  attention: sdpa
+  sequential_model_processes: true
+  gradients: disabled
+  sampling_seeds: {debug: 20261, development: 20262}
+models:
+  qwen:
+    model_id: Qwen/Qwen2.5-VL-3B-Instruct
+    revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+    processor_revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+  smol:
+    model_id: HuggingFaceTB/SmolVLM2-2.2B-Instruct
+    revision: 482adb537c021c86670beed01cd58990d01e72e4
+    processor_revision: 482adb537c021c86670beed01cd58990d01e72e4
+editor:
+  repo: advimman/lama
+  commit: 786f5936b27fb3dacd2b1ad799e4de968ea697e7
+  weight_source: smartywu/big-lama
+  weight_revision: 05cb2be7f8dbe6ca7c6e78f4fc827a4b2baaa4a9
+  python: 3.8.20
+  torch: 1.8.0+cpu
+  device: cpu
+  human_validity: HUMAN_AUDIT_PENDING
+fallback_access_probe:
+  model_id: google/paligemma2-3b-mix-448
+  revision: 1406c92ec87d32cc6b983239278901b904ba7a51
+  status: manual_access_required_http_401
+  model_loaded: false
+confirmatory:
+  sampled_images: 0
+  scoring_forwards: 0
+  selected_comparator: null
+  selected_lambda: null
+  lock_created: false
+protocol_config_sha256: 070a8bf73043407b870948b1565b49779180cee3d815cb1ac125802ddf47b466

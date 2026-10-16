@@ -1,0 +1,11 @@
+{
+  "device": "cpu",
+  "input_sha256": "f333569a95f5424d36d5e391542abc4aba603f60005b93c4d96abca38914c480",
+  "mask_sha256": "e4ec17f7eb6a2d1958e0d068d80950bb5e204d282366c4f9541e127c7bd8410a",
+  "output_sha256": "3ff4827d3fff5f34e6fb84d8c1e6903f53bb8ce41c71368048b845c4dd45d99b",
+  "returncode": 0,
+  "semantic_validity": "NOT_AUDITED",
+  "source_commit": "786f5936b27fb3dacd2b1ad799e4de968ea697e7",
+  "status": "EXECUTED_NOT_SEMANTICALLY_VALIDATED",
+  "wall_seconds": 2.9355630000063684
+}

@@ -1,0 +1,79 @@
+{
+  "count": 12,
+  "items": [
+    {
+      "dataset": "gqa",
+      "image_id": "713860",
+      "image_sha256": "0396c6ec9a1b6d201de6782a19ee7a4281d30f09661ead6107c81ec956f7191a",
+      "item_id": "0623391"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2380076",
+      "image_sha256": "715b67d3abe0acfb6ad9547f233852adb21abfdf82e1e740526480c847939ac1",
+      "item_id": "09172246"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2384711",
+      "image_sha256": "c8d7025d78356350ea79b4dc267e644b92e4cf86dce6c7ecf47234e271a3ea59",
+      "item_id": "03268508"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2405722",
+      "image_sha256": "6f95b503a26b8ac7a99ef3f42ea0533b47533114955679bd45d610540d666426",
+      "item_id": "05515781"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2391999",
+      "image_sha256": "8d5633333500ae384bef9d737f44f6253bd16e9bb6754e1f8a8c48d269908b88",
+      "item_id": "15667805"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2354914",
+      "image_sha256": "982c1ce6a513ffa3094e4955d180f506f61c913633b7aa0fb4f2e2915814b261",
+      "item_id": "10561334"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2393295",
+      "image_sha256": "7f8459f6cc5cd55b6c750c3c4ef40ae88021f32b3ca688c3c3ee5280f2a31c89",
+      "item_id": "081033326"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2315504",
+      "image_sha256": "dfbc6ff14eeaf2d106441d9cc270daa9fb4773f9dac51517028f09c8d0c9c7a3",
+      "item_id": "15143682"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2347445",
+      "image_sha256": "6e5518ee319c80fcd5de266210b4e7081f41783185fefa71320c98276fefef70",
+      "item_id": "14549415"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2384518",
+      "image_sha256": "b4df9f515ecef7ef60487ab4496e829ba27ecf90efd21bd83ce6feebfd6dd111",
+      "item_id": "08858512"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2341441",
+      "image_sha256": "78290a7c2db1ddc38b48d4dabb7a780d3b17bb4bbd220135069ae876ce97d3ee",
+      "item_id": "13694313"
+    },
+    {
+      "dataset": "gqa",
+      "image_id": "2321166",
+      "image_sha256": "a26d9c84f510760f0aa7c696c4b258b0ec677d3c583bf2f0d7b58135f1985b49",
+      "item_id": "067791"
+    }
+  ],
+  "sha256": "4427206ddfe0254a0125052434ca034bbe5ad878790ff443273c4c4d9fd93669",
+  "status": "INPUTS_PREPARED_NOT_E0_PASS"
+}

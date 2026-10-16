@@ -46,15 +46,16 @@ choices:
   fixed_under_edit: true
   require_scoring_unit_tests: true
 operators:
-  - id: occlusion
-    treatment: neutral_mean_fill
-    sham: contour_only_target_preserved
-  - id: blur
-    treatment: strong_gaussian_blur
-    sham: mild_or_boundary_blur_target_preserved
-  - id: lama
-    treatment: official_lama_inpaint
-    sham: inpaint_then_restore_foreground
+  panel:
+    - id: occlusion
+      treatment: neutral_mean_fill
+      sham: contour_only_target_preserved
+    - id: blur
+      treatment: strong_gaussian_blur
+      sham: mild_or_boundary_blur_target_preserved
+    - id: lama
+      treatment: official_lama_inpaint
+      sham: inpaint_then_restore_foreground
   match_offtarget_area_tolerance: 0.15
   require_semantic_operator_audit: true
   operator_removal_success_min: 0.90

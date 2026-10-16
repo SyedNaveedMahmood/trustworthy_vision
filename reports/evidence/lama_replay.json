@@ -1,0 +1,7 @@
+{
+  "device": "cpu",
+  "first_success_observed_output_sha256": "3ff4827d3fff5f34e6fb84d8c1e6903f53bb8ce41c71368048b845c4dd45d99b",
+  "identical": true,
+  "replay_output_sha256": "3ff4827d3fff5f34e6fb84d8c1e6903f53bb8ce41c71368048b845c4dd45d99b",
+  "semantic_validity": "NOT_AUDITED"
+}

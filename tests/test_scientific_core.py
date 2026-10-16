@@ -139,6 +139,18 @@ def test_manifest_checks_exact_image_bytes(tmp_path):
     with pytest.raises(ValueError): validate_manifest([a],tmp_path)
 
 
+def test_no_human_validation_without_two_raters():
+    row=manifest_row(); row["audit_status"]="HUMAN_VALIDATED"
+    with pytest.raises(ValueError): validate_manifest([row])
+    row["human_rater_ids"]=["same","same"]
+    with pytest.raises(ValueError): validate_manifest([row])
+
+
+def test_no_unknown_semantic_validity_flag():
+    row=manifest_row(); row["audit_status"]="AUTO_PASSED_AS_HUMAN"
+    with pytest.raises(ValueError): validate_manifest([row])
+
+
 def test_checkpoint_tampering_rejected(tmp_path):
     path = tmp_path/"result.json"
     checkpoint(path,"abc",{"value":[1,2]})
@@ -183,3 +195,14 @@ def test_confirmatory_lock_refused_before_prerequisites():
         sys.argv=["cli","lock"]
         assert main()==2
     finally: sys.argv=old
+
+
+def test_protocol_yaml_is_parseable_and_preserves_scientific_values():
+    from pathlib import Path
+    import yaml
+    config=yaml.safe_load(Path('configs/pilot_v1.yaml').read_text(encoding='utf-8'))
+    assert [o['id'] for o in config['operators']['panel']]==['occlusion','blur','lama']
+    assert config['sample_plan_per_task']['development']==40
+    assert config['sample_plan_per_task']['confirmatory']==120
+    assert config['run_budget']['total_forward_calls_max']==12000
+    assert config['run_budget']['gpu_hours_max']==24

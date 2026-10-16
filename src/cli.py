@@ -80,6 +80,11 @@ def main():
     parser.add_argument("--split", default="debug", choices=["debug","development","confirmatory"])
     parser.add_argument("--stage", choices=[f"E{i}" for i in range(7)])
     args = parser.parse_args()
+    import yaml
+    config=yaml.safe_load(Path(args.config).read_text(encoding="utf-8"))
+    pins=yaml.safe_load(Path("configs/runtime_pins.yaml").read_text(encoding="utf-8"))
+    if pins.get("protocol_config_sha256") and digest(config)!=pins["protocol_config_sha256"]:
+        parser.error("This implementation was run only with the hashed pilot_v1 protocol. Record and implement amendments before using changed config.")
     if args.command == "audit-sources":
         from .audit import source_audit
         source_audit()
@@ -90,15 +95,31 @@ def main():
         if not args.model:
             parser.error("--model required")
         smoke(args.model)
-    elif args.command in ("prepare-data","validate-images"):
-        from .data import input_inventory
-        inventory = input_inventory()
-        atomic_json("reports/evidence/data_inventory.json",inventory)
-        print(json.dumps(inventory,indent=2))
-        print("BLOCKED: raw inputs and validated, image-disjoint manifests required. No synthetic substitution.")
+    elif args.command == "prepare-data" and args.split in ("debug","development"):
+        import subprocess
+        return subprocess.run([sys.executable,"-m","scripts.prepare_debug" if args.split=="debug" else "scripts.prepare_development"]).returncode
+    elif args.command == "validate-images":
+        from .data import validate_manifest
+        rows=[]
+        for task in ("gqa","refcocog"):
+            p=Path(f"outputs/manifests/{task}_{args.split}.json")
+            if not p.exists():
+                print(f"BLOCKED: no {task} {args.split} manifest")
+                return 2
+            rows+=json.loads(p.read_text(encoding="utf-8"))
+        print(json.dumps(validate_manifest(rows,Path("datasets")),indent=2))
+    elif args.command == "prepare-data":
+        print("BLOCKED: confirmatory sampling requires passed prerequisites and a genuine protocol lock")
         return 2
+    elif args.command == "run" and args.stage == "E1":
+        import subprocess
+        for model in ([args.model] if args.model else ["qwen","smol"]):
+            result=subprocess.run([sys.executable,"-m","scripts.run_competence","--model",model])
+            if result.returncode: return result.returncode
     elif args.command in ("run","lock"):
-        print("BLOCKED: E0 not passed; independent off-target control design unresolved. See reports/DEVIATIONS.md.")
+        print("BLOCKED: the two-model competence prerequisite failed (SmolVLM2 RefCOCOg 15/40 < 40%). "
+              "Fallback requires manual access. Operator human audit pending; control design unresolved. "
+              "Later experiment orchestration is unfinished; see reports/STATUS.md.")
         return 2
     elif args.command == "report":
         print(Path("reports/STATUS.md").read_text(encoding="utf-8"))

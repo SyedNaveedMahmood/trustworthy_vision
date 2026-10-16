@@ -1,6 +1,6 @@
 # Trustworthy Vision: Controlled Visual Evidence Pilot
 
-Status: DESIGN ONLY. No models have been run, datasets downloaded, or experimental claims verified.
+Status: PARTIAL PILOT EXECUTED (2026-10-16). Both frozen models ran on the RTX 4080 SUPER; 40 development images/task were scored. SmolVLM2 RefCOCOg failed the 40% competence gate (15/40). E2–E5 were not executed. Verdict: INCONCLUSIVE. See [final report](reports/FINAL_VERDICT.md), [status](reports/STATUS.md), and [reproducibility](REPRODUCIBILITY.md).
 
 Objective: test whether a controlled, artifact-aware, operator-stable intervention score is a better measure of frozen vision-language model (VLM) reliance on task-relevant visual evidence than raw answer sensitivity to a single masked image.
 
@@ -26,7 +26,7 @@ The project is falsification-first: show the confound empirically, measure the c
 
 ## Scope and status
 
-This is an executable *design*, not a completed experiment. Ground-truth evidence masks are used only for controlled diagnostic evaluation. A general-purpose localization claim would require a separate no-oracle region-proposal experiment. Paper acceptance, code availability and licenses must be freshly audited before execution.
+The protocol below remains the original design; execution is partial and there is no confirmatory method result. Ground-truth evidence masks are intended only for controlled diagnostic evaluation. A general-purpose localization claim requires a separate no-oracle region-proposal experiment. Source and access audit findings are in `third_party/SOURCE_AUDIT.md`.
 
 Output policy: commit code, small configs, unit tests, experiment manifests and summaries; do not commit dataset images, medical images, model weights, token credentials or multi-GB artifacts. Reuse repositories as pinned third-party references rather than silently vendoring them.
 

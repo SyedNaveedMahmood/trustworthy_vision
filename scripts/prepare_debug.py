@@ -20,13 +20,15 @@ from src.edits import xywh_to_xyxy
 from src.data import validate_manifest
 
 ROOT = Path("datasets")
+OPEN_ZIPS = {}
 
 
 def get_zip_member(url, name, path):
     path=Path(path)
     if path.exists(): return path.read_bytes()
-    with RemoteZip(url, timeout=30) as z:
-        data=z.read(name)  # zipfile verifies decompressed size and member CRC
+    if url not in OPEN_ZIPS:
+        OPEN_ZIPS[url]=RemoteZip(url,timeout=30)
+    data=OPEN_ZIPS[url].read(name)  # zipfile verifies decompressed size and member CRC
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_bytes(data)
     return data
@@ -43,7 +45,15 @@ def get_image(url,path):
     return digest(path.read_bytes())
 
 
-def prepare_ref():
+def excluded_images(dataset, partition):
+    result=set()
+    for p in Path("outputs/manifests").glob(f"{dataset}_*.json"):
+        if p.stem != f"{dataset}_{partition}":
+            result.update(str(r["image_id"]) for r in json.loads(p.read_text(encoding="utf-8")))
+    return result
+
+
+def prepare_ref(partition="debug", count=12, seed=20261):
     data=json.loads((ROOT/"refcocog/instances.json").read_text())
     refs=pickle.loads((ROOT/"refcocog/refs(umd).p").read_bytes(),encoding="latin1")
     by_image=collections.defaultdict(list)
@@ -54,18 +64,19 @@ def prepare_ref():
         if a.get("iscrowd",0)==0 and a["bbox"][2]>=24 and a["bbox"][3]>=24:
             by_image[a["image_id"]].append(a)
     eligible=[r for r in refs if r["split"]=="train" and len(by_image[r["image_id"]])>=4 and r["ann_id"] in annotations]
-    random.Random(20261).shuffle(eligible)
+    random.Random(seed).shuffle(eligible)
+    excluded=excluded_images("refcocog",partition)
     rows=[]; seen=set()
     for ref in eligible:
         iid=ref["image_id"]
-        if iid in seen: continue
+        if iid in seen or str(iid) in excluded: continue
         seen.add(iid)
         info=images[iid]; target=annotations[ref["ann_id"]]
         candidates=[a for a in by_image[iid] if a["id"]!=target["id"]]
         if len(candidates)<3: continue
         candidates.sort(key=lambda a:(a["category_id"]!=target["category_id"],abs(a["area"]-target["area"]),a["id"]))
         candidates=[target]+candidates[:3]
-        random.Random(20261+iid).shuffle(candidates)
+        random.Random(seed+iid).shuffle(candidates)
         gold="ABCD"[[a["id"] for a in candidates].index(target["id"])]
         image_path=f"coco/train2014/{info['file_name']}"
         # Official COCO distribution URL is HTTP. Its HTTPS virtual host currently
@@ -73,21 +84,21 @@ def prepare_ref():
         url=f"http://images.cocodataset.org/train2014/{info['file_name']}"
         sha=get_image(url,ROOT/image_path)
         rows.append({"dataset":"refcocog","dataset_version":"archived-official-UMD","image_id":str(iid),"image_sha256":sha,
-                     "image_path":image_path,"item_id":str(ref["ref_id"]),"partition":"debug","seed":20261,
+                     "image_path":image_path,"item_id":str(ref["ref_id"]),"partition":partition,"seed":seed,
                      "question":"Select the box matching this description: "+ref["sentences"][0]["sent"],
                      "options":["box A","box B","box C","box D"],"gold":gold,
                      "boxes":[xywh_to_xyxy(a["bbox"],info["width"],info["height"]) for a in candidates],
                      "annotation_ids":[str(a["id"]) for a in candidates],"task_subtype":"referring_expression",
                      "source_url":url,"source_license":licenses.get(info["license"],{}),"audit_status":"HUMAN_AUDIT_PENDING",
                      "diagnostic_only":True})
-        print("refcocog debug",len(rows),iid,flush=True)
-        atomic_json("outputs/manifests/refcocog_debug.json",rows)
-        if len(rows)==12: break
-    if len(rows)!=12: raise RuntimeError("Insufficient debug inputs")
+        print("refcocog",partition,len(rows),iid,flush=True)
+        atomic_json(f"outputs/manifests/refcocog_{partition}.json",rows)
+        if len(rows)==count: break
+    if len(rows)!=count: raise RuntimeError("Insufficient inputs")
     return rows
 
 
-def prepare_gqa():
+def prepare_gqa(partition="debug", count=12, seed=20261):
     questions=json.loads(get_zip_member("https://downloads.cs.stanford.edu/nlp/data/gqa/questions1.2.zip",
                                       "val_balanced_questions.json",ROOT/"gqa/val_balanced_questions.json"))
     with zipfile.ZipFile("outputs/sceneGraphs.zip") as z:
@@ -107,29 +118,30 @@ def prepare_gqa():
         obj=objects[next(iter(ids))]
         if obj["w"]<24 or obj["h"]<24: continue
         eligible.append((qid,q,ids))
-    random.Random(20261).shuffle(eligible)
+    random.Random(seed).shuffle(eligible)
+    excluded=excluded_images("gqa",partition)
     rows=[]; seen=set()
     for qid,q,ids in eligible:
         iid=str(q["imageId"])
-        if iid in seen: continue
+        if iid in seen or iid in excluded: continue
         seen.add(iid)
         distractors=sorted(pools[q["groups"]["global"]]-{q["answer"]})
-        rng=random.Random(20261+int(qid)); options=[q["answer"]]+rng.sample(distractors,3); rng.shuffle(options)
+        rng=random.Random(seed+int(qid)); options=[q["answer"]]+rng.sample(distractors,3); rng.shuffle(options)
         image_path=f"gqa/images/{iid}.jpg"
         get_zip_member("https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip",f"images/{iid}.jpg",ROOT/image_path)
         obj=graphs[iid]["objects"][next(iter(ids))]
         box=xywh_to_xyxy([obj["x"],obj["y"],obj["w"],obj["h"]],graphs[iid]["width"],graphs[iid]["height"])
         rows.append({"dataset":"gqa","dataset_version":"questions1.2-sceneGraphs1.1","image_id":iid,
                      "image_sha256":digest((ROOT/image_path).read_bytes()),"image_path":image_path,"item_id":qid,
-                     "partition":"debug","seed":20261,"question":q["question"],"options":options,
+                     "partition":partition,"seed":seed,"question":q["question"],"options":options,
                      "gold":"ABCD"[options.index(q["answer"])],"boxes":[box],"annotation_ids":sorted(ids),
                      "task_subtype":q["types"]["semantic"],"source_url":"https://cs.stanford.edu/people/dorarad/gqa/download.html",
                      "source_license":"Official GQA site CC BY 4.0; underlying image rights retained by original owners",
                      "audit_status":"HUMAN_AUDIT_PENDING","diagnostic_only":True})
-        print("gqa debug",len(rows),iid,flush=True)
-        atomic_json("outputs/manifests/gqa_debug.json",rows)
-        if len(rows)==12: break
-    if len(rows)!=12: raise RuntimeError("Insufficient debug inputs")
+        print("gqa",partition,len(rows),iid,flush=True)
+        atomic_json(f"outputs/manifests/gqa_{partition}.json",rows)
+        if len(rows)==count: break
+    if len(rows)!=count: raise RuntimeError("Insufficient inputs")
     return rows
 
 

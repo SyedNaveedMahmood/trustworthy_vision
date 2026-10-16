@@ -7,13 +7,15 @@ Machine records: [source_inventory.json](../reports/evidence/source_inventory.js
 | Qwen/Qwen2.5-VL-3B-Instruct | `66285546d2b821cf421d4f5eb2576359d3770cd3` | Public, ungated. **Qwen Research License, noncommercial research/evaluation**, not Apache. Weight download/smoke tracked separately. |
 | HuggingFaceTB/SmolVLM2-2.2B-Instruct | `482adb537c021c86670beed01cd58990d01e72e4` | Public, ungated, Apache-2.0 model card. Weight download/smoke tracked separately. |
 | Transformers | upstream HEAD `683b721971417b3b2c64fba9001f525607547e5a` | OFFICIAL_CODE, Apache-2.0. Execution uses pinned released **4.51.3**, not untested HEAD. Actual installed wheel lock is separate. |
-| LaMa | `786f5936b27fb3dacd2b1ad799e4de968ea697e7` | OFFICIAL_CODE, Apache-2.0. Cloned locally at exact SHA. README supplies inference, dependencies and author-endorsed weight URL. Not yet reproduced. |
+| LaMa | `786f5936b27fb3dacd2b1ad799e4de968ea697e7` | OFFICIAL_CODE, Apache-2.0. Unmodified official CPU inference and identical-hash synthetic replay executed after dependency repairs. Natural-image semantic validity not audited. |
 | REFER | `e3bbaa30d2ca41cf0e5c0d3819d7e4ed9fd38fff` | OFFICIAL_CODE, Apache-2.0 API. Its code license does not license every source photograph. Official schema used for debug input preparation. |
 | TensorFlow Datasets | `848b71a1d322f476c3b6db103fcd0afe3ce8c9ce` | OFFICIAL_CODE, Apache-2.0. RefCOCO docs require manual preparation; UMD partitions images. |
 | SAM (optional) | `dca509fe793f601edb92606367a655c15ac00fdf` | OFFICIAL_CODE, Apache-2.0. Not installed, loaded or evaluated. |
 | CoEV | `39203e33a974c853aa0a8e77b6f7e7450a4e373b` | **UNAVAILABLE runnable code**: no Python files, only six-byte README. No source license found. No claimed replication. |
 
 The runtime model wrappers use the official processors, chat templates and architecture implementations from Transformers. No custom VLM implementation or remote executable model code is used. Both primaries are frozen BF16 and must be loaded in separate processes. SHA-256 checksums of downloaded model files must be recorded after completion.
+
+Executed Transformers release `v4.51.3` resolves to commit `5f4ecf2d9f867a1255131d2461d75793c0cf1db2`; see `reports/evidence/transformers_release_pin.json`. This differs from the separately audited upstream HEAD. Both primary weight snapshots and LaMa checkpoint checksums have now been recorded in `weight_checksums.json` and `lama_checkpoint.json`. A source hash or synthetic smoke does not reproduce a paper's benchmark performance.
 
 ## Data access
 

@@ -1,0 +1,2053 @@
+{
+  "cumulative_budget": {
+    "failed_calls": 0,
+    "forward_calls": 47,
+    "forward_wall_seconds": 5.229045100088115
+  },
+  "dataset": "SYNTHETIC_INFRASTRUCTURE_ONLY",
+  "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+  "real_dataset_items": 24,
+  "real_rows": [
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.125,
+        31.375,
+        24.25,
+        24.25
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "713860",
+      "image_sha256": "f6163f697663a78ce56183d5f33522da2d1634f5f152f8a32d8931cd9a3c5dd8",
+      "input_tokens": 280,
+      "item_id": "0623391",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "manual_probability_max_abs_error": 1.3322676295501878e-15,
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.0007085308520470515,
+        0.9976857278700572,
+        0.0008028706389472368,
+        0.0008028706389472368
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6380bff1509ad1b713c94e0c18f697abf2258c64c14e6d4ba525ec9f132a137e",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "5b8744586813a1152bf8875b7c0bbf2387f6a13d3f4c28ed4b5665279d5b9344",
+      "source_image_sha256": "0396c6ec9a1b6d201de6782a19ee7a4281d30f09661ead6107c81ec956f7191a",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.09774019999895245
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.875,
+        26.0,
+        24.25,
+        25.5
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "713860",
+      "image_sha256": "7ffd48b256539ff3dc59b92b8b836acd3d20824308d79ca69b0f351cab494cb8",
+      "input_tokens": 280,
+      "item_id": "0623391",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.33141670555605457,
+        0.3755443272213471,
+        0.06525981868169783,
+        0.22777914854090073
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6380bff1509ad1b713c94e0c18f697abf2258c64c14e6d4ba525ec9f132a137e",
+      "retry_count": 0,
+      "run_key": "80132fe730e4146f9af88fb75ffbc3c9f4c9acd86ebdaeef5e2d4a89880f0b63",
+      "source_image_sha256": "0396c6ec9a1b6d201de6782a19ee7a4281d30f09661ead6107c81ec956f7191a",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.10039700000197627
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        29.125,
+        24.5,
+        23.625,
+        24.75
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2380076",
+      "image_sha256": "6e298ff47e4a703dce6c32aee1cec7e05edb70db62cf569685eb707b30d4a18c",
+      "input_tokens": 293,
+      "item_id": "09172246",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9742044602550024,
+        0.00955076446269904,
+        0.003981350963394446,
+        0.012263424318903609
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f5973c3a2c87063a9acb34db1ae93adc15b0e7c8bdcbbd60e0c930fad389bd5a",
+      "retry_count": 0,
+      "run_key": "d1309d60394f17b27611054ea3454aee5b287a3bfac27ca345442d4536b60977",
+      "source_image_sha256": "715b67d3abe0acfb6ad9547f233852adb21abfdf82e1e740526480c847939ac1",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.12658809999993537
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.875,
+        26.625,
+        24.375,
+        24.625
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2380076",
+      "image_sha256": "bf08025cc888c34cd0a5ce50f5c8a77a134f01b7453533b129feada57f80c475",
+      "input_tokens": 293,
+      "item_id": "09172246",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.7377480041472534,
+        0.21136834206221952,
+        0.022278059350284832,
+        0.028605594440243715
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f5973c3a2c87063a9acb34db1ae93adc15b0e7c8bdcbbd60e0c930fad389bd5a",
+      "retry_count": 0,
+      "run_key": "5e85e7b433d34e37d3b9e46d4995a504135e5993f8d927ff6f569e0dee59e1c5",
+      "source_image_sha256": "715b67d3abe0acfb6ad9547f233852adb21abfdf82e1e740526480c847939ac1",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.12278639999567531
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        30.375,
+        25.0,
+        24.25,
+        23.875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384711",
+      "image_sha256": "df327d3f3e0c96edecd4383041f854277bc728a6f1c61f76b3b502c56fa4230c",
+      "input_tokens": 275,
+      "item_id": "03268508",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9917468325688076,
+        0.004592698985865151,
+        0.0021694373877302756,
+        0.0014910310575953119
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "d907e4f407a6c96b448ecadc7f623c698d59b1a49a31a653e1885e97d9a6e6a0",
+      "retry_count": 0,
+      "run_key": "51a3d4d2ab32821361cf8c2d83834dcc0ff60d6871e05342d101f3de14ae35dc",
+      "source_image_sha256": "c8d7025d78356350ea79b4dc267e644b92e4cf86dce6c7ecf47234e271a3ea59",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.09272390000114683
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.25,
+        28.375,
+        25.125,
+        24.875
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384711",
+      "image_sha256": "dca5ae8cafae8e3d0dbb14abdd26ac4b27d2cf74a0684099905d81fca53a7bcb",
+      "input_tokens": 275,
+      "item_id": "03268508",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.10049857795470134,
+        0.8414642909172809,
+        0.03262711129899924,
+        0.02541001982901849
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "d907e4f407a6c96b448ecadc7f623c698d59b1a49a31a653e1885e97d9a6e6a0",
+      "retry_count": 0,
+      "run_key": "1a0985ee04e84879d5384182adc084291bfc3d5c7e354afd3273084249fda900",
+      "source_image_sha256": "c8d7025d78356350ea79b4dc267e644b92e4cf86dce6c7ecf47234e271a3ea59",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.10610420000739396
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.75,
+        26.625,
+        26.625,
+        24.375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2405722",
+      "image_sha256": "92ded59d1d91f284ad3385af347e5777b5aea2f418c09d5f4746b861d441d6aa",
+      "input_tokens": 297,
+      "item_id": "05515781",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.16527313363372642,
+        0.3964696370304689,
+        0.3964696370304689,
+        0.041787592305335235
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "698e3544b3f523b46371216f83ec99776086a5c9233c177b0ec6a0f9bd9f5241",
+      "retry_count": 0,
+      "run_key": "bfe7f50c4af774715a7bef326aa13f3b40f3ac4f663f78dfd9fd2d7e5d0c190d",
+      "source_image_sha256": "6f95b503a26b8ac7a99ef3f42ea0533b47533114955679bd45d610540d666426",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.12335120000352617
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.0,
+        26.5,
+        27.0,
+        24.5
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2405722",
+      "image_sha256": "1bb105b4fcff2a8a5531a02a7a769dd4505dd3d9d5d43b5be6e1242f7df6ca95",
+      "input_tokens": 297,
+      "item_id": "05515781",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "probabilities": [
+        0.1788866121098266,
+        0.29493416242895426,
+        0.4862642270527434,
+        0.039914998408475656
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "698e3544b3f523b46371216f83ec99776086a5c9233c177b0ec6a0f9bd9f5241",
+      "retry_count": 0,
+      "run_key": "72b84e5f3ec3c96694120e954753477a07dac93797e04df2e8f471738a62e94b",
+      "source_image_sha256": "6f95b503a26b8ac7a99ef3f42ea0533b47533114955679bd45d610540d666426",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.10926819998712745
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.75,
+        30.0,
+        26.125,
+        26.0
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "2391999",
+      "image_sha256": "eb3538f4e3308d724197689dcf167f23f969fa524e1cebfa4b83af40803aba26",
+      "input_tokens": 294,
+      "item_id": "15667805",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.005024830497902649,
+        0.9575631976224276,
+        0.01987359013887618,
+        0.017538381740793987
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "5b7dc1d5d0a3d8c6e9d88353583b7a952bc32671c374688dd2f72470ee4091bd",
+      "retry_count": 0,
+      "run_key": "da0199cf729b50838cc8d92650e62eeb1316c7568d5c765e64c97c1948ad22b2",
+      "source_image_sha256": "8d5633333500ae384bef9d737f44f6253bd16e9bb6754e1f8a8c48d269908b88",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.13213580001320224
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.125,
+        25.25,
+        23.375,
+        28.375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2354914",
+      "image_sha256": "e5db9bfbef49e2e4e95b188616305531b18fccd1205ecc6ad2682c09d5da433e",
+      "input_tokens": 294,
+      "item_id": "10561334",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.013394412614165874,
+        0.04125769541551394,
+        0.006327072512544297,
+        0.9390208194577759
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "2bae8a6def22b27f21bcc95528742390a8019e05b090544e52c61a50c4760851",
+      "retry_count": 0,
+      "run_key": "19e9e42a4e17cce24b7c1871b3ce0baf1de78e88b64ee4ff08b0dd6aec2ec9bf",
+      "source_image_sha256": "982c1ce6a513ffa3094e4955d180f506f61c913633b7aa0fb4f2e2915814b261",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.12720770000305492
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        30.625,
+        24.25,
+        24.125,
+        23.5
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2393295",
+      "image_sha256": "cc8fba484978af9cff9b9504539bda0da9c84aa807d2ba9a9afc95840dee1858",
+      "input_tokens": 274,
+      "item_id": "081033326",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9960042381664488,
+        0.0016968125368436236,
+        0.0014974318080312075,
+        0.0008015174886765585
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "b6f818a7efdadc02998566a1b98e6753f857ce0ad7a923182e67491b88afcaa8",
+      "retry_count": 0,
+      "run_key": "2cde60d5a6d460cd15dae4346c9604d404576ad1d8d258912467bc9807ddcb75",
+      "source_image_sha256": "7f8459f6cc5cd55b6c750c3c4ef40ae88021f32b3ca688c3c3ee5280f2a31c89",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.10259759999462403
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.25,
+        25.625,
+        23.5,
+        30.375
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2315504",
+      "image_sha256": "d20e5827a7c9ddff5d5d132445d79b3a7f63ada8d584f3681c420648e1a859c0",
+      "input_tokens": 280,
+      "item_id": "15143682",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.005854701289960805,
+        0.00851854011204708,
+        0.001017394530880897,
+        0.9846093640671106
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "9a42c273cdf0f23abca530d1d08e518f47115f14e3159f844558c1c882ddda6b",
+      "retry_count": 0,
+      "run_key": "b7395ab3f04860dec80f2a55f8e328c544395f84ad8697d4f665a38fed5a90b7",
+      "source_image_sha256": "dfbc6ff14eeaf2d106441d9cc270daa9fb4773f9dac51517028f09c8d0c9c7a3",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.1217493000003742
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        28.5,
+        24.25,
+        24.75,
+        24.25
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2347445",
+      "image_sha256": "b414487e3ca1e03981703085253d8806aa725b504745b9811b0a4af7d044a178",
+      "input_tokens": 277,
+      "item_id": "14549415",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9505285861043606,
+        0.013558562089382938,
+        0.022354289716874025,
+        0.013558562089382938
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "22f048153c27fe702d7a9d1d645b4d61ff5e187483b55a7a480254d84591ecc8",
+      "retry_count": 0,
+      "run_key": "ae8527f69eeaa9c6890d0fd1a187b457a887d631a300215965296af0b6805467",
+      "source_image_sha256": "6e5518ee319c80fcd5de266210b4e7081f41783185fefa71320c98276fefef70",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.12029600000823848
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        30.125,
+        25.25,
+        22.875,
+        24.5
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "2384518",
+      "image_sha256": "ecbb5439c3881967c52f50c5a2acbe00e18aff7a8c3f330aae9358373d4f02e5",
+      "input_tokens": 332,
+      "item_id": "08858512",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9881893274276479,
+        0.007544918620981948,
+        0.0007017867516666594,
+        0.003563967199704733
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "ca4c5bfe5c9f9f96e054e1b382a4af1d7daf6ffadee5cecbf0ab5207cc3b44c8",
+      "retry_count": 0,
+      "run_key": "0cdf0ba2f686ac3160c0384cba1152efb9b5ca8433f9477c6915acba7ec70db1",
+      "source_image_sha256": "b4df9f515ecef7ef60487ab4496e829ba27ecf90efd21bd83ce6feebfd6dd111",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.14319580000301357
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.0,
+        25.125,
+        29.0,
+        25.25
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "2341441",
+      "image_sha256": "f81fe46cdbf4a1a180d43a630eb56d659eacd81a7529920bde28df4aed67d985",
+      "input_tokens": 316,
+      "item_id": "13694313",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "probabilities": [
+        0.017236825251096037,
+        0.019531881869062684,
+        0.9410987711544305,
+        0.02213252172541237
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "e8946868f83f6ebe30621fc78559d815bed331dd6074f0de10e7c999a1d3e9f7",
+      "retry_count": 0,
+      "run_key": "e3ace5f3d09863492bb8b8231ababb67f9efe42c73da4c3053b8df8624ea202e",
+      "source_image_sha256": "78290a7c2db1ddc38b48d4dabb7a780d3b17bb4bbd220135069ae876ce97d3ee",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.1426426999969408
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.125,
+        25.125,
+        25.5,
+        28.625
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "2321166",
+      "image_sha256": "1eb5ee369fac8d0d279f52f47375e68b4866a726c62f11ba80930bf8173697d4",
+      "input_tokens": 297,
+      "item_id": "067791",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.027344486633427277,
+        0.027344486633427277,
+        0.039785993288778854,
+        0.9055250334443652
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "85aa0d766d2b507a8c5881e1cf68a1ec5cafbfe37f44a741a5e470cb8b1aa782",
+      "retry_count": 0,
+      "run_key": "2927655985c205038d9015ebe6478501259c0b4147f1c46ab4d62737a811bd05",
+      "source_image_sha256": "a26d9c84f510760f0aa7c696c4b258b0ec677d3c583bf2f0d7b58135f1985b49",
+      "status": "OK",
+      "synthetic": false,
+      "task": "gqa",
+      "wall_seconds": 0.14211479999357834
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.625,
+        25.25,
+        27.25,
+        26.0
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "197212",
+      "image_sha256": "7079ddb0c9d8738acc341ef4d9a6c7d52e15ebd53ebda46dd5f13507855f2571",
+      "input_tokens": 329,
+      "item_id": "6952",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "manual_probability_max_abs_error": 1.1102230246251565e-16,
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.5057617789888461,
+        0.047043173534924,
+        0.3476046483212831,
+        0.09959039915494704
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "b8cd9fd03f66a160759d9b4701aa28d48fc90ad6c3e8665b6519f5f6eb7946b0",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "7639cbd6f9855841856ceabde9995e83a01842689bd330c281c6970651f60e16",
+      "source_image_sha256": "bc824d5b0a71e019bcf19b2548ff43dd91d066031053f519b1b93c4e290ef8b0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.14160260000790004
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.125,
+        26.25,
+        26.5,
+        26.875
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "197212",
+      "image_sha256": "459644343f1b7f25a17a5f0abdc93c8db96070eb32cb9892b862c3626b7b498c",
+      "input_tokens": 329,
+      "item_id": "6952",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.17528054005341895,
+        0.19861887281424956,
+        0.25503168092736633,
+        0.37106890620496646
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "b8cd9fd03f66a160759d9b4701aa28d48fc90ad6c3e8665b6519f5f6eb7946b0",
+      "retry_count": 0,
+      "run_key": "6c7ec7975d5fa5edfb855e4ab801d5d92ad8ce183d5e31302cd80f0906f11901",
+      "source_image_sha256": "bc824d5b0a71e019bcf19b2548ff43dd91d066031053f519b1b93c4e290ef8b0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.14063750000786968
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        28.875,
+        26.75,
+        26.25,
+        24.75
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "186056",
+      "image_sha256": "2ff4f0317c3d55fa102d7e8a2d76afca82e960f75196608d6fe9e95981e5c160",
+      "input_tokens": 326,
+      "item_id": "37303",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.8277897496250328,
+        0.09886538689848233,
+        0.05996488833828123,
+        0.013379975138203402
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "fd091ab3c749d7bb184513625f7b16e189098e803482eb2400bd81e72467ab53",
+      "retry_count": 0,
+      "run_key": "483e38d23e5141c84469b86b8bd07981bc7b53f204585aa6d00bcc5c8540ddf5",
+      "source_image_sha256": "eaaf3358ed84dbf6e02f38b68d40646c82f34e2011c40959e394b123aebbff75",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.127582800007076
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.375,
+        26.5,
+        26.375,
+        25.25
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "186056",
+      "image_sha256": "4c567ab30b3d2cc86ea28b412c5b0c339a688502bee4aad242027dc6b4f10e43",
+      "input_tokens": 326,
+      "item_id": "37303",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.28920114923129725,
+        0.3277078348765929,
+        0.28920114923129725,
+        0.09388986666081096
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "fd091ab3c749d7bb184513625f7b16e189098e803482eb2400bd81e72467ab53",
+      "retry_count": 0,
+      "run_key": "b9af7a891e2a51d88bef50609c725d93d900d874b9a9bd58381b43a4c062fe96",
+      "source_image_sha256": "eaaf3358ed84dbf6e02f38b68d40646c82f34e2011c40959e394b123aebbff75",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.10784129999228753
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.5,
+        25.875,
+        26.625,
+        29.625
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "114392",
+      "image_sha256": "516db221a208b9162092f2d0b827cf14027c167c0c3f475f3956930e1b9a93fb",
+      "input_tokens": 330,
+      "item_id": "32081",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.014836131035138256,
+        0.02158644328227681,
+        0.04569850078718857,
+        0.9178789248953967
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "98d3996d63acd5690d548da8caee90956d038ffbf525197c5ab5510c695cc9ef",
+      "retry_count": 0,
+      "run_key": "3f0a6dba42ab01c5012c26697355b2504c0abcdc2ef9e207e264d55f0b03f9d6",
+      "source_image_sha256": "4897e72bfd69cfcc43f3ca3966728e03e2d4fa4ccd34f1b15784d855285d3ef0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.10613159999775235
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.125,
+        26.625,
+        26.0,
+        24.375
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "114392",
+      "image_sha256": "4bb4bb0941ce1fa2afa34d9c5af11aef645acf6772989d560ee142e55770abb5",
+      "input_tokens": 330,
+      "item_id": "32081",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.5012252480566337,
+        0.3040084803684184,
+        0.16272401348388701,
+        0.03204225809106206
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "98d3996d63acd5690d548da8caee90956d038ffbf525197c5ab5510c695cc9ef",
+      "retry_count": 0,
+      "run_key": "7ba3cd10fabe00254c6d50f4738df3e5cb260ea2d04adbe62c123589d08fdbe7",
+      "source_image_sha256": "4897e72bfd69cfcc43f3ca3966728e03e2d4fa4ccd34f1b15784d855285d3ef0",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.12660079999477603
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.625,
+        24.5,
+        24.875,
+        27.625
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "438375",
+      "image_sha256": "7e0451b83c02c8d1bce22bb1cf7bad848ebefa17eb27eec6bc4baff8f27d7e71",
+      "input_tokens": 324,
+      "item_id": "7942",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.47441373016555094,
+        0.02084428457231693,
+        0.03032825509657976,
+        0.47441373016555094
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f16ee8aebbbd65c590338dd82571f8cfa55ac3523fca6cf867579c54b19954ec",
+      "retry_count": 0,
+      "run_key": "32b976c5fb0eddffd06679306df0d13430a6b90d4f4514c32526dfe36fda1af5",
+      "source_image_sha256": "422bb002d425fd2447d91827be53063e56d790d64f95d3aba117d725cc198dfd",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.10072460000810679
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.875,
+        25.25,
+        26.125,
+        27.125
+      ],
+      "condition": "occlusion",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "438375",
+      "image_sha256": "8cbd2040177d1276700dca8ba01c60092939872b8c760d05ce852d7bae92b622",
+      "input_tokens": 324,
+      "item_id": "7942",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.338603855318875,
+        0.06667505238143823,
+        0.1599451358817943,
+        0.43477595641789424
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "f16ee8aebbbd65c590338dd82571f8cfa55ac3523fca6cf867579c54b19954ec",
+      "retry_count": 0,
+      "run_key": "32f6c6a9337d2118ce2449cf3291f6898c005123d579c85377fcd31620ef9ee3",
+      "source_image_sha256": "422bb002d425fd2447d91827be53063e56d790d64f95d3aba117d725cc198dfd",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.12605880000046454
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.75,
+        28.625,
+        25.25,
+        25.25
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "111943",
+      "image_sha256": "5b4e15eabd4bdd821b6ede7a90ba0aa0bfbee7bd5389c835316e69f32e4d9cca",
+      "input_tokens": 325,
+      "item_id": "6724",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.12551650921172483,
+        0.818470453184906,
+        0.02800651880168403,
+        0.02800651880168403
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "c39f7381d4483ce6eb0fe4c8882a5d7ab9dc7b5e5de11eba47bed5c93c91192e",
+      "retry_count": 0,
+      "run_key": "c2ad0313e3b90d3fbbf3a791df0638f9da1c70dbe553d6125d535897bff191d5",
+      "source_image_sha256": "190d0ab5f292186c317aa81204800512a4b8424c0c5cfdaae8063a7b79cd7b52",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.11484059999929741
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.875,
+        25.625,
+        26.875,
+        25.625
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "581198",
+      "image_sha256": "15ded338e676a08318d9f9462e22db4234ee4b1e88ab8a73087d48bae9e60a15",
+      "input_tokens": 288,
+      "item_id": "16920",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.3886499305873459,
+        0.11135006941265453,
+        0.3886499305873459,
+        0.11135006941265453
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "db516c10b301cddd36a16fa0356b3bdf65f76e5c891a966add17d6a30aaabd00",
+      "retry_count": 0,
+      "run_key": "a8c636a66494ae651536070a3c7d67ec5b36059a940dd654051e11b78d17de20",
+      "source_image_sha256": "431c023f0afed2f6fa681ca98c1b94a4a15e950f277ceb2b6ed0e0fe4718ce40",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.11949599999934435
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.5,
+        25.5,
+        26.625,
+        25.75
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "367048",
+      "image_sha256": "e288f04bff81672feaf112727b6f8eb448be4f13d98370ca79236d0f661622bf",
+      "input_tokens": 285,
+      "item_id": "42540",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.5793839278062893,
+        0.07841108797240533,
+        0.24152315431459687,
+        0.1006818299067069
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "eed7b86bbc17a7688821c14cc8b3281b3fd4988049041d6a07917e1c1a9f4016",
+      "retry_count": 0,
+      "run_key": "c0c4586f37959818f70bb576b9138128c0b60b07baa835f1a78e344f4eb86875",
+      "source_image_sha256": "578a9c2bbd6b52f651c42ccc7339877ee1a4c82b45e5f7a66e50fc4d8f1022e5",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.12051639999845065
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        30.625,
+        25.625,
+        26.75,
+        25.5
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_id": "359249",
+      "image_sha256": "2d9e337f7948a9c74c33972b97782b70c08551305f37f2a55fa6067f1c54d7ee",
+      "input_tokens": 320,
+      "item_id": "35142",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9676434522643316,
+        0.006519930295369155,
+        0.020082799149567187,
+        0.005753818290730745
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "c31c5551c9a00d97f739cd4cf3cda99ec5e635735a16162dc1e79851930dfc1d",
+      "retry_count": 0,
+      "run_key": "d17731632ef14752c04cdcf8914b90b6f62b14e1f8afc92e823526aad69ba833",
+      "source_image_sha256": "2b32063827f06add77e79929635ef8770597c81996f809a514b98f50fabf1a5e",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.12438399999518879
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        25.5,
+        26.5,
+        26.375,
+        25.875
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "90146",
+      "image_sha256": "63b2f04142e25e8d35096302f379a2a7bf788944cb80c9bc38a72a7795e460ee",
+      "input_tokens": 326,
+      "item_id": "5213",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.13206291386226984,
+        0.3589842189651603,
+        0.31680246131350415,
+        0.19215040585906568
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "7d938fed2d12d3a5ed5becc5059f4acc5863ee3fcf824236269fac18818a3ac6",
+      "retry_count": 0,
+      "run_key": "aca709b82fa5986173911743d43a473baac7aa5db8e18dc8192828ef75d9cf2e",
+      "source_image_sha256": "aa50c150941bbef4b31b84eb3d8e90d5106ef3788faadcf61e17c5b8edd3c54d",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.09852309999405406
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.0,
+        29.875,
+        25.375,
+        25.75
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_id": "821",
+      "image_sha256": "d929feff8dd40a1252690be65420a3acf17ac9a64504867186e51aeae45512e9",
+      "input_tokens": 337,
+      "item_id": "9339",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.05205936272577695,
+        0.9227742838074079,
+        0.010251096324395517,
+        0.014915257142419678
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "8332c0c006c0496d7dded3880f176420a7165149a47da7c2203fad0db600853e",
+      "retry_count": 0,
+      "run_key": "d1866d24718f126396730d44c88c46f12d49bbdf4d8efa2ac41f7148b6dc845b",
+      "source_image_sha256": "d371300b3eb4fc710e02b8cd3efeeb0e84a915391e2ac80fd9e11473e3a9fd94",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.1212665999919409
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        27.0,
+        27.0,
+        25.125,
+        25.5
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_id": "451337",
+      "image_sha256": "caef1db1ab8eeeb0551be9bb9192556752a8c467fa7826500798e4cf8cdba36a",
+      "input_tokens": 293,
+      "item_id": "35796",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.420789504904313,
+        0.420789504904313,
+        0.06453016057329478,
+        0.09389082961807785
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "7b15fc2121d9e74b14a759327fbe76cf862947e34333c4dbfe20181c98226a94",
+      "retry_count": 0,
+      "run_key": "8ac355605e73ddae3e157906e2200bb7965c3a9b8e045fb4217a5f3127b03a77",
+      "source_image_sha256": "991ec9e9635403d4ede434cacd3f6340e66bbdaa5ba0f49ba8883a2108e99330",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.11941189999924973
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        26.375,
+        26.75,
+        26.0,
+        26.125
+      ],
+      "condition": "clean",
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_id": "192464",
+      "image_sha256": "d6b07b0848ee539e9937052e90379a5d4514256b319027ec9308f711458cb8ea",
+      "input_tokens": 322,
+      "item_id": "29263",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.25503168092736633,
+        0.37106890620496646,
+        0.17528054005341895,
+        0.19861887281424956
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "35cf31bef90b1c7980610c4fe6a3ae8b2ec6a99a99aed80df956b82382b4b282",
+      "retry_count": 0,
+      "run_key": "257f9d29d9005c72b7f672f0c9a5b66bb2f79508de110f0c44c29488fe976e81",
+      "source_image_sha256": "e3d5da64e91d180b734122772e790f53351abffe3b455ae06dd9db9fea2b77cf",
+      "status": "OK",
+      "synthetic": false,
+      "task": "refcocog",
+      "wall_seconds": 0.12809670000569895
+    }
+  ],
+  "rows": [
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        31.875,
+        25.0,
+        23.0,
+        23.375
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_sha256": "c5f4db8a63c06baa5bae1a3bc4fb38caea1caae2753eabf4a508cbd8bc68129f",
+      "input_tokens": 183,
+      "item_id": "synthetic-0",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "manual_probability_max_abs_error": 6.661338147750939e-16,
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9986252848071805,
+        0.0010318771486850836,
+        0.0001396493861826841,
+        0.00020318865795250705
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "repeat_logits_max_abs_error": 0.0,
+      "retry_count": 0,
+      "run_key": "4d1ca3a05d3b2138538216e2d3d28db5b269b97369899214df37059876b10b31",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.4180040000064764
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.25,
+        32.25,
+        23.875,
+        23.75
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_sha256": "bc0b3f955cc11e62ba23dedae71877653dd7a89f921678906f778b6e3db0db99",
+      "input_tokens": 183,
+      "item_id": "synthetic-1",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.0003352046909550836,
+        0.9992311007964106,
+        0.00023038259029387013,
+        0.00020331192234375627
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "28ead88abd09c2c241a03f438d9ae56e723fe38541e23eaa249f4d076e3975e6",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.07494469999801368
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.25,
+        23.875,
+        31.75,
+        24.5
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_sha256": "ddccabfac2a95c5028e4a76387674b122313406e8c01c78bacaccb436fe2a546",
+      "input_tokens": 183,
+      "item_id": "synthetic-2",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "probabilities": [
+        0.0005521769293645819,
+        0.000379505283547997,
+        0.9983593085752736,
+        0.0007090092118127147
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "9f67aec54fd4c0565214d0a5e505388bc4f59001d741a97fc054fc11fc25e3ec",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.08452560000296216
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.75,
+        24.5,
+        22.875,
+        31.625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_sha256": "121586e6d05a41522d6ca6e0304607214cb9e692e0c681f1097a94dfb8f15bcc",
+      "input_tokens": 183,
+      "item_id": "synthetic-3",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.0010312387787027942,
+        0.0008031295683873353,
+        0.00015814558871717153,
+        0.9980074860641921
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "1252577a54b724df5f2905b31b7a8c3332593ca8efd38c9c9e4bf38a75347479",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.07454770000185817
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        31.875,
+        24.875,
+        23.0,
+        23.5
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_sha256": "09d3202369197342d5ab1f9b227db131941e8d279458193c78b2eb7b7a95b9ca",
+      "input_tokens": 183,
+      "item_id": "synthetic-4",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9987193586834383,
+        0.0009107141718335996,
+        0.00013966254162674815,
+        0.00023026460310006174
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "64ef629ba78a8cd31dec0741db67f285f61d914c98d119b514ed65b0b50da979",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.08063070000207517
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.25,
+        32.25,
+        24.0,
+        23.625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_sha256": "d9893498ab614611529f16549b8afbf806d8130aa00bfd6e099765948f32b175",
+      "input_tokens": 183,
+      "item_id": "synthetic-5",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.00033520241650448573,
+        0.9992243207547348,
+        0.0002610559044611207,
+        0.00017942092430120858
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "204a12a72d2d72eeb74214411f9d71b5f6470a9cd99b6423b33acf6de754ad69",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.07628249999834225
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.125,
+        23.875,
+        31.625,
+        24.5
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_sha256": "6bc8e2d1d72a1b6d8d47f3135f7a2cfbb983c74fd1357cb8a3e0945172f17dfa",
+      "input_tokens": 183,
+      "item_id": "synthetic-6",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "probabilities": [
+        0.0005520969117390733,
+        0.00042997350719369465,
+        0.9982146333144503,
+        0.0008032962666175746
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "054a64898c685fa061bbeae8aaf9108aab4d5adc1cc0b6fae8eaeb96f5b2ec3a",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.08591320000414271
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.875,
+        24.375,
+        22.75,
+        31.5
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_sha256": "a95f90e255d93e0d0805e2013685ee4f173f2d10ec5a3d669a1c01a553258e2b",
+      "input_tokens": 183,
+      "item_id": "synthetic-7",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.0013237490790391218,
+        0.0008028944022035895,
+        0.00015809928174997877,
+        0.997715257237007
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "f0de18e61304237e0dd236c5aedaf99f958d87c7648b4fc8fbe026e2ef451e06",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.06671410000126343
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        32.0,
+        25.125,
+        23.125,
+        23.625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "A",
+      "image_sha256": "da89a7881c499c4d7908fe5e0e8082d7110ccbe4183b6b20d8e0eceb64c9a260",
+      "input_tokens": 183,
+      "item_id": "synthetic-8",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "A",
+      "probabilities": [
+        0.9985982684744985,
+        0.0010318492327723184,
+        0.0001396456081747232,
+        0.00023023668455752184
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "5ae97b3c940eed9399b1b3ad72b037b2c2f6c554add6e1a5c4451cb7b5dfffa0",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.08090090000769123
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.375,
+        32.25,
+        24.0,
+        23.75
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "B",
+      "image_sha256": "90778e3926e293c1d305a96e68e46e81777e5909ec523844ed060d5e90006b46",
+      "input_tokens": 183,
+      "item_id": "synthetic-9",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "B",
+      "probabilities": [
+        0.0003798080747826237,
+        0.9991558572947496,
+        0.0002610380177963371,
+        0.00020329661267119465
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "461f32baed4979c4f4177d5bdde5fa9d0f3c96497eb61934634afbf578709e9e",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.11564930000167806
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.0,
+        23.75,
+        31.625,
+        24.375
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "C",
+      "image_sha256": "7500f5ffb73c880b1327f47ce1b62098cf6a220ebef508a3bd9c30fe5de7471b",
+      "input_tokens": 183,
+      "item_id": "synthetic-10",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "C",
+      "probabilities": [
+        0.00048732604877504385,
+        0.00037952990839709775,
+        0.9984240888257411,
+        0.0007090552170874996
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "25c6a5864cafdb95dc142f8fb70769a15b6a072450c4aabf310e94e364258625",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.08737519998976495
+    },
+    {
+      "cache_hit": false,
+      "choice_logits": [
+        24.875,
+        24.5,
+        23.0,
+        31.625
+      ],
+      "edit_params": null,
+      "exception": null,
+      "gold": "D",
+      "image_sha256": "2680b5720c72d0b17a30ec9ba2a90274e3cbf9fdf911f9767cf7dca81c984a59",
+      "input_tokens": 183,
+      "item_id": "synthetic-11",
+      "label_ids": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prediction": "D",
+      "probabilities": [
+        0.001168361599608675,
+        0.0008030024011621128,
+        0.00017917405437087593,
+        0.9978494619448599
+      ],
+      "processor_config": {
+        "attention": "sdpa",
+        "batch_size": 1,
+        "dtype": "bfloat16",
+        "long_edge": 512
+      },
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "prompt_sha256": "6790a4f40f25f7332002c9f340f512eea5c0392720ba39b52735e5883399faee",
+      "retry_count": 0,
+      "run_key": "f4bb1945670b9d41c14354302fe0c76a0962af640ad25191c6f0ef6dea153906",
+      "status": "OK",
+      "synthetic": true,
+      "wall_seconds": 0.07357389999378938
+    }
+  ],
+  "status": "COMPUTATIONAL_SMOKE_COMPLETE_NOT_FULL_E0_PASS",
+  "synthetic_accuracy": 1.0,
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 9419345920,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 4482936832,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 128,
+    "torch_peak_allocated_bytes": 8131575808,
+    "torch_peak_reserved_bytes": 8220835840,
+    "wall_seconds": 14.112936600009562
+  },
+  "timestamp_utc": "2026-10-16T06:07:35.746255+00:00"
+}

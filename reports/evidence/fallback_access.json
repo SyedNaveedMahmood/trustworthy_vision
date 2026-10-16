@@ -1,0 +1,9 @@
+{
+  "config_http_status": 401,
+  "fit": "NOT_MEASURED",
+  "gated": "manual",
+  "model_id": "google/paligemma2-3b-mix-448",
+  "reason": "Official checkpoint requires access approval and authenticated Hugging Face account. No access bypass attempted.",
+  "revision": "1406c92ec87d32cc6b983239278901b904ba7a51",
+  "status": "MANUAL_ACCESS_REQUIRED_NOT_RUN"
+}

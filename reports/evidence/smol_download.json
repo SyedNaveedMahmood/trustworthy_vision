@@ -1,0 +1,9 @@
+{
+  "attempts": [],
+  "file_count": 14,
+  "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "revision": "482adb537c021c86670beed01cd58990d01e72e4",
+  "status": "DOWNLOADED",
+  "total_bytes": 8992142354,
+  "wall_seconds": 86.34048700000858
+}

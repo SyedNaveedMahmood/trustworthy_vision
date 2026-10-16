@@ -1,6 +1,9 @@
 {
   "attempts": [],
+  "file_count": 11,
   "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
   "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
-  "status": "DOWNLOADING"
+  "status": "DOWNLOADED",
+  "total_bytes": 7520892432,
+  "wall_seconds": 75.08181029999105
 }

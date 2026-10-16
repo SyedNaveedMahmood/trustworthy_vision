@@ -12,3 +12,4 @@ jsonschema==4.23.0
 nvidia-ml-py==12.575.51
 truststore==0.10.1
 remotezip==0.12.3
+num2words==0.5.14
