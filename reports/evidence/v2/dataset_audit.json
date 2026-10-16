@@ -712,10 +712,10 @@
     "n": 40
   },
   "split_integrity": {
-    "gqa_null_coco_mappings": 47,
+    "gqa_null_coco_mappings": 80,
     "hard_duplicates": [],
     "interpretation": "Near matches require inspection; null identities and pHash cannot prove complete photographic disjointness.",
-    "n": 164,
+    "n": 304,
     "perceptual_near_duplicates": [],
     "phash_threshold": 4
   }

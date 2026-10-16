@@ -11,6 +11,7 @@ from src.session import update,check_window
 
 
 def run(key):
+    if key=='smol':raise RuntimeError('Historical bare-token Smol runner requires archived33720e1; use scripts.qualification_corrected_smol with current code. Do not mix scoring versions.')
     pins=json.loads(Path('reports/evidence/source_inventory.json').read_text())['models'][key]
     out=Path(f'reports/evidence/v2/qualification_{key}.json')
     record=json.loads(out.read_text()) if out.exists() else {'model':key,'status':'RUNNING','rows':[],'experiment':'development_resolution_presentation_diagnostics','selected_on_development':True}

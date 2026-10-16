@@ -1,8 +1,4 @@
-"""Implemented E0 entrypoints and fail-closed gate reporting.
-
-Later stages deliberately refuse to run until E0 inputs and methodology are valid.
-They are not claimed as implemented experiments.
-"""
+"""Preserved v1 stages and explicitly amended exploratory E2–E4 commands."""
 import argparse
 from datetime import datetime, timezone
 import json
@@ -76,14 +72,37 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=["audit-sources","environment","synthetic-smoke","prepare-data","validate-images","run","lock","report"])
     parser.add_argument("--config", default="configs/pilot_v1.yaml")
-    parser.add_argument("--model", choices=["qwen","smol"])
+    parser.add_argument("--model", choices=["qwen","smol","internvl"])
+    parser.add_argument("--mode", choices=["pairs","grid"],default="pairs")
     parser.add_argument("--split", default="debug", choices=["debug","development","confirmatory"])
     parser.add_argument("--stage", choices=[f"E{i}" for i in range(7)])
     args = parser.parse_args()
     import yaml
     config=yaml.safe_load(Path(args.config).read_text(encoding="utf-8"))
     pins=yaml.safe_load(Path("configs/runtime_pins.yaml").read_text(encoding="utf-8"))
-    if pins.get("protocol_config_sha256") and digest(config)!=pins["protocol_config_sha256"]:
+    exploratory=config.get('protocol')=='controlled_evidence_v2_exploratory'
+    if exploratory:
+        amended_pins=yaml.safe_load(Path('configs/runtime_v2.yaml').read_text(encoding='utf-8'))
+        if digest(config)!=amended_pins['protocol_config_sha256']:parser.error('Amended exploratory config differs from recorded hash')
+        if args.command in ('run','lock','prepare-data'):
+            if args.command!='run' or args.stage not in ('E2','E3','E4'):
+                print('BLOCKED: E5/lock requires independent human validity evidence, genuine amendment lock and feasible cumulative budget; exploratory authorization is insufficient.')
+                return 2
+            if args.stage=='E2':
+                from scripts.prepare_intervention_v2 import prepare
+                from scripts.score_interventions_v2 import run
+                prepare(args.mode,'corrected')
+                for model in ([args.model] if args.model else ['qwen','smol']):run(model,args.mode,'corrected')
+            elif args.stage=='E3':
+                from scripts.analyze_interventions_v2 import run
+                run()
+            else:
+                from scripts.run_ablations_v2 import run
+                for model in ([args.model] if args.model else ['qwen','internvl']):
+                    if model=='smol':parser.error('E4 fixed exploratory backbones are qwen and internvl')
+                    run(model)
+            return 0
+    elif pins.get("protocol_config_sha256") and digest(config)!=pins["protocol_config_sha256"]:
         parser.error("This implementation was run only with the hashed pilot_v1 protocol. Record and implement amendments before using changed config.")
     if args.command == "audit-sources":
         from .audit import source_audit
@@ -117,9 +136,9 @@ def main():
             result=subprocess.run([sys.executable,"-m","scripts.run_competence","--model",model])
             if result.returncode: return result.returncode
     elif args.command in ("run","lock"):
-        print("BLOCKED: the two-model competence prerequisite failed (SmolVLM2 RefCOCOg 15/40 < 40%). "
-              "Fallback requires manual access. Operator human audit pending; control design unresolved. "
-              "Later experiment orchestration is unfinished; see reports/STATUS.md.")
+        print("BLOCKED: v1 is not confirmatory locked. Smol's historical bare-label screen was invalidated by amendment10; "
+              "corrected qualification and exploratory E2–E4 use configs/exploratory_v2.yaml. "
+              "Human semantic audit and amended confirmatory budget/lock remain unresolved; see reports/STATUS.md.")
         return 2
     elif args.command == "report":
         print(Path("reports/STATUS.md").read_text(encoding="utf-8"))

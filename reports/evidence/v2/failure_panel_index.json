@@ -1,0 +1,65 @@
+[
+  {
+    "image_id": "1593212",
+    "model": "internvl",
+    "path": "outputs/v2/failure_panels/gqa_1593212_internvl.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "gqa"
+  },
+  {
+    "image_id": "2346628",
+    "model": "internvl",
+    "path": "outputs/v2/failure_panels/gqa_2346628_internvl.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "gqa"
+  },
+  {
+    "image_id": "2373289",
+    "model": "internvl",
+    "path": "outputs/v2/failure_panels/gqa_2373289_internvl.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "gqa"
+  },
+  {
+    "image_id": "191806",
+    "model": "internvl",
+    "path": "outputs/v2/failure_panels/refcocog_191806_internvl.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "refcocog"
+  },
+  {
+    "image_id": "216716",
+    "model": "internvl",
+    "path": "outputs/v2/failure_panels/refcocog_216716_internvl.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "refcocog"
+  },
+  {
+    "image_id": "1593212",
+    "model": "qwen",
+    "path": "outputs/v2/failure_panels/gqa_1593212_qwen.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "gqa"
+  },
+  {
+    "image_id": "2346628",
+    "model": "qwen",
+    "path": "outputs/v2/failure_panels/gqa_2346628_qwen.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "gqa"
+  },
+  {
+    "image_id": "160628",
+    "model": "qwen",
+    "path": "outputs/v2/failure_panels/refcocog_160628_qwen.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "refcocog"
+  },
+  {
+    "image_id": "216716",
+    "model": "qwen",
+    "path": "outputs/v2/failure_panels/refcocog_216716_qwen.jpg",
+    "selection": "all_initial_pilot_robust_errors_or_raw_robust_rank_disagreements",
+    "task": "refcocog"
+  }
+]

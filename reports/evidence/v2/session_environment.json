@@ -1,0 +1,13 @@
+{
+  "current_commit": "33720e1f2672dc610214a53379ee1a22920869a6",
+  "free_disk_bytes_now": 860889448448,
+  "gpu_now": "NVIDIA GeForce RTX 4080 SUPER, 610.88, 16376 MiB, 6115 MiB",
+  "initial_branch": "pilot/controlled-evidence-v1",
+  "initial_commit": "ef7c3e84211cfc3e424a5b9ec27adac109dfe31d",
+  "initial_free_disk_approx_gb": 866,
+  "initial_gpu": "NVIDIA RTX 4080 SUPER 16376 MiB driver 610.88",
+  "initial_worktree_clean": true,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "safe_update": "fetch origin; pull --ff-only; no remote changes at session start",
+  "timestamp_utc": "2026-10-16T08:18:50.617960+00:00"
+}

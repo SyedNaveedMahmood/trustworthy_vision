@@ -33,6 +33,8 @@ class InternChoiceModel(ChoiceModel):
         meta=json.loads(Path('reports/evidence/v2/internvl_source_probe.json').read_text())
         self.model_id=meta['model_id']; self.revision=meta['revision']; self.family='internvl'; self.long_edge=long_edge
         self.process_lock=FileLock('outputs/primary_model.lock',timeout=0); self.process_lock.acquire()
+        from ..resources import admit_model
+        admit_model(self.family)
         self.model=AutoModel.from_pretrained(self.model_id,revision=self.revision,code_revision=self.revision,
                   trust_remote_code=True,torch_dtype=torch.bfloat16,low_cpu_mem_usage=True,use_flash_attn=False).eval().cuda()
         self.model.requires_grad_(False)

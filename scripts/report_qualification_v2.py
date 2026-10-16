@@ -59,6 +59,41 @@ Full-process peaks and times are in the machine-readable summary; image-token co
 
 **Gate assessment:** two distinct backbones meet the provisional corrected-task engineering screen. This does not clear semantic intervention validation, independent human audit, amended confirmatory lock, or full E0/E1 scientific gates. E5 remains blocked.
 '''
+    corrected=Path('reports/evidence/v2/qualification_corrected_smol.json')
+    if corrected.exists():
+        new=json.loads(corrected.read_text());counts={c:sum(r['correct'] for r in new['rows'] if r['condition']==c) for c in sorted({r['condition'] for r in new['rows']})}
+        add='''# Corrected answer-token qualification — amendment10
+
+**The historical bare-label Smol results below do not support model competence conclusions.** A full-vocabulary audit found that the official `Assistant:` slot expects space-prefixed ` A/B/C/D`; the wrapper scored distinct bare tokens. Bare tokens had mean total probability about4.5e-6; corrected continuations capture about.9998. All labels were single tokens, so the earlier token-length/manual-softmax tests missed the surface-form error. The interface correction is selected from the tokenizer/template and vocabulary mass, not by optimizing accuracy. Qwen coverage is ~.9995; an independent InternVL preflight gives.999935. The original scores/checkpoints remain archived, and amendment10 records the change.
+
+Corrected Smol development (same40 images, no outcome filtering): '''+json.dumps(counts)+'''. 1024 was not repeated: source COCO images are <=640px, so768 already retains native detail. Default768/legacy is fixed before fresh qualification; numbered/rotation results remain diagnostics.
+
+'''
+        fresh=[]
+        for m in ['qwen','smol','internvl']:
+            p=Path(f'reports/evidence/v2/fresh_qualification_{m}.json')
+            if p.exists():
+                f=json.loads(p.read_text())
+                if f['status']=='COMPLETE':fresh.append((m,f))
+        if len(fresh)==3:
+            add+='Fresh qualification uses20 new images/task, disjoint from all previous debug/development/qualification and extension-source images. GQA is the predefined color task. The same fixed40% accuracy and positive image-versus-text gain screen applies.\n\n| Model | Task | Image /20 | Text /20 | Image gain (paired95%CI) | Screen |\n|---|---|---:|---:|---|---|\n'
+            corrected_metrics={}
+            for m,f in fresh:
+                corrected_metrics[m]={}
+                for task,metrics in f['metrics'].items():
+                    a=sorted([r for r in f['rows'] if r['task']==task and r['condition']=='image'],key=lambda r:r['image_id']);b=sorted([r for r in f['rows'] if r['task']==task and r['condition']=='text_only'],key=lambda r:r['image_id'])
+                    assert [r['image_id'] for r in a]==[r['image_id'] for r in b]
+                    paired=paired_difference([int(r['correct']) for r in a],[int(r['correct']) for r in b]);lo,hi=paired['ci95']
+                    corrected_metrics[m][task]={'metrics':metrics,'paired_image_gain':paired,'mean_image_label_mass':float(np.mean([r['answer_step_total_label_mass'] for r in a]))}
+                    add+=f"| {m} | {task} | {metrics['image']} | {metrics['text_only']} | {paired['effect']:.3f} [{lo:.3f},{hi:.3f}] | {metrics['passed']} |\n"
+            smol_pass=all(corrected_metrics['smol'][t]['metrics']['passed'] for t in ['gqa','refcocog'])
+            qwen_pass=all(corrected_metrics['qwen'][t]['metrics']['passed'] for t in ['gqa','refcocog'])
+            intern_pass=all(corrected_metrics['internvl'][t]['metrics']['passed'] for t in ['gqa','refcocog'])
+            choice='Qwen + corrected Smol, the originally specified pair; InternVL retained as a third-family fallback comparison' if smol_pass and qwen_pass else 'Qwen + InternVL, retaining the fallback because corrected Smol has not met both fresh screens' if qwen_pass and intern_pass else 'NO FULL FRESH TWO-MODEL PASS; retain provisional diagnostics and investigate without changing thresholds'
+            add+='\n**Backbone decision:** '+choice+'. These engineering screens are small-sample diagnostics, not proof of population competence or semantic operator validity. E5 remains blocked.\n\n'
+            atomic_json('reports/evidence/v2/corrected_qualification_summary.json',{'models':corrected_metrics,'choice':choice,'two_model_fresh_screen':qwen_pass and (smol_pass or intern_pass),'human_audit':'HUMAN_AUDIT_PENDING'})
+        else:add+='Fresh qualification is in progress; no corrected Smol qualification pass is claimed.\n\n'
+        text=add+'---\n\n## Historical diagnostic report (bare-label Smol invalid; preserved for provenance)\n\n'+text
     Path('reports/MODEL_QUALIFICATION_V2.md').write_text(text,encoding='utf-8')
 
 

@@ -1,5 +1,7 @@
 # Execution status
 
+**Current milestone08:20UTC:** the Smol continuation bug is fixed and all three backbones pass the fresh engineering screen. Intended pair restored: **Qwen + corrected Smol**; InternVL retained. Fresh20/task image/text scores: Qwen color13/9, Ref15/4; Smol color12/7, Ref13/4; InternVL color13/7, Ref12/5. Historical bare-token Smol outcomes below are not valid capability estimates. 67 tests pass. E2 initial Smol scoring is active; extension edits (25 new pairs/task) are complete and sequential three-model scoring is queued. **E5 BLOCKED; HUMAN_AUDIT_PENDING; scientific verdict INCONCLUSIVE.**
+
 ## Active amended development session — 2026-10-16 07:18–09:18 UTC
 
 Branch safely fetched/pulled at `ef7c3e84211cfc3e424a5b9ec27adac109dfe31d`; original evidence below is archival. New records: `reports/evidence/v2/`, atomic checkpoints: ignored `outputs/v2/`.
@@ -10,7 +12,11 @@ Branch safely fetched/pulled at `ef7c3e84211cfc3e424a5b9ec27adac109dfe31d`; orig
 - 52 tests passed. Official LaMa CPU edits and Qwen/InternVL paired scoring finished for corrected pilot (15 GQA, 16 RefCOCOg; 775 score rows/model). E3 robust-independent versus raw mean: 0.0 percentage points, paired 95% CI [-5.0,+5.0]; versus sham-median: identical oracle pair rankings. No demonstrated added value from controls/dispersion. Annotation-free grid preparation and E4 image ablations are running. 360 blinded review packets prepared, zero human judgments: **HUMAN_AUDIT_PENDING**.
 - E2–E4 are explicitly exploratory. E5 remains blocked; no confirmatory sampling or inference. Current verdict: **INCONCLUSIVE**.
 
+08:08 UTC milestone: 63 tests passed; both models completed 775 paired and784 grid score rows each, plus900 E4 rows and240 fill/halo-factorial rows/model. Six-image ablations include both-task answer-position rotation. 360 blinded packets and structural/perimeter diagnostics are complete, zero human ratings. One GQA source “locomotive” box visibly covers only the lower coupler; retained as a potential annotation error, not silently corrected. No-oracle max-sensitivity AURC is worse than confidence in3/4 tiny n=8 cells. Fixed extension (25 new pairs/task; same estimator) is selected without model outcomes; official CPU LaMa200 edits are running. Additional12/task grid diagnostic is planned within the existing cumulative cap. E5 infrastructure refuses sampling/locking and projects the unchanged120/task factorial above budget even before these additions.
+
 Live counts, errors, checkpoints and resource usage: `reports/evidence/v2/execution_ledger.json` and per-run evidence. No process continuity is promised beyond the active session.
+
+08:15UTC correction: full-vocabulary audit exposed Smol bare-label versus space-prefixed-label mismatch (4.5e-6 versus~.9998 total vocabulary mass). Earlier Smol gate conclusions are invalid as model capability claims. Amendment10 fixes the continuation and preserves all prior outputs. Corrected dev scores512/768:19/40 and18/40. Fresh image-disjoint40-image qualification for all three backbones is running. The extra extension grid allocation is cancelled before inference; budget is reserved for corrected qualification and, if qualified, identical Smol intervention comparisons. Qwen/InternVL historical intervention scores are unaffected by this model-specific label fix.
 
 ## Previous session (preserved)
 

@@ -1,3 +1,26 @@
+# Corrected answer-token qualification — amendment10
+
+**The historical bare-label Smol results below do not support model competence conclusions.** A full-vocabulary audit found that the official `Assistant:` slot expects space-prefixed ` A/B/C/D`; the wrapper scored distinct bare tokens. Bare tokens had mean total probability about4.5e-6; corrected continuations capture about.9998. All labels were single tokens, so the earlier token-length/manual-softmax tests missed the surface-form error. The interface correction is selected from the tokenizer/template and vocabulary mass, not by optimizing accuracy. Qwen coverage is ~.9995; an independent InternVL preflight gives.999935. The original scores/checkpoints remain archived, and amendment10 records the change.
+
+Corrected Smol development (same40 images, no outcome filtering): {"legacy_512_image": 19, "legacy_768_image": 18, "numbered_768_image": 19, "outer_rotation_768_image": 15, "visual_rotation_768_image": 18}. 1024 was not repeated: source COCO images are <=640px, so768 already retains native detail. Default768/legacy is fixed before fresh qualification; numbered/rotation results remain diagnostics.
+
+Fresh qualification uses20 new images/task, disjoint from all previous debug/development/qualification and extension-source images. GQA is the predefined color task. The same fixed40% accuracy and positive image-versus-text gain screen applies.
+
+| Model | Task | Image /20 | Text /20 | Image gain (paired95%CI) | Screen |
+|---|---|---:|---:|---|---|
+| qwen | gqa | 13 | 9 | 0.200 [-0.050,0.450] | True |
+| qwen | refcocog | 15 | 4 | 0.550 [0.250,0.800] | True |
+| smol | gqa | 12 | 7 | 0.250 [0.000,0.500] | True |
+| smol | refcocog | 13 | 4 | 0.450 [0.200,0.700] | True |
+| internvl | gqa | 13 | 7 | 0.300 [0.050,0.550] | True |
+| internvl | refcocog | 12 | 5 | 0.350 [0.100,0.600] | True |
+
+**Backbone decision:** Qwen + corrected Smol, the originally specified pair; InternVL retained as a third-family fallback comparison. These engineering screens are small-sample diagnostics, not proof of population competence or semantic operator validity. E5 remains blocked.
+
+---
+
+## Historical diagnostic report (bare-label Smol invalid; preserved for provenance)
+
 # Model qualification V2
 
 **Provisional choice: Qwen2.5-VL-3B + InternVL2.5-2B.** The unchanged engineering screen is 40% image accuracy and positive image-versus-text gain. This is a small-sample feasibility screen, not a statistical proof of visual reasoning. SmolVLM2 remains unqualified on independent grounding; it was not discarded solely because of its original one-example deficit.

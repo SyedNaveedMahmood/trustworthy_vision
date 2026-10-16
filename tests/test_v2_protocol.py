@@ -96,6 +96,12 @@ def test_fixed_grid_needs_only_image_dimensions():
     assert all(0<=b[0]<b[2]<=640 and 0<=b[1]<b[3]<=480 for b in boxes)
 
 
+def test_gqa_answer_rotation_keeps_image_and_semantic_target():
+    im=Image.new('RGB',(64,64),'red');item={'dataset':'gqa','question':'Which color?','options':['red','blue','green','yellow'],'gold':'A'}
+    rendered,q,options,gold=present(im,item,'outer_rotation')
+    assert rendered.tobytes()==im.tobytes() and options['ABCD'.index(gold)]=='red' and gold=='B'
+
+
 def test_budget_enforces_count_and_persists_restart(tmp_path):
     p=tmp_path/'budget.json';b=BudgetState(p,max_calls=1,clock=lambda:100,start_epoch=100,prior_gpu_seconds=0)
     b.reserve();b.finish(.3,failed=True)

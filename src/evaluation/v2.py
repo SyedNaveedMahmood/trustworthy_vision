@@ -22,7 +22,11 @@ def paired_summary(positive,negative,replicates=2000,seed=20269):
     means=credit[indices].mean(axis=1)
     bp=p[indices];bn=n[indices]
     aucs=((bp[:,:,None]>bn[:,None,:])+.5*(bp[:,:,None]==bn[:,None,:])).mean(axis=(1,2))
+    # Wilson bound is supplementary only for genuinely binary, tie-free pair outcomes.
+    center=(credit.mean()+1.96**2/(2*len(p)))/(1+1.96**2/len(p))
+    half=1.96*np.sqrt(credit.mean()*(1-credit.mean())/len(p)+1.96**2/(4*len(p)**2))/(1+1.96**2/len(p))
     return {'n':len(p),'ranking_accuracy':float(credit.mean()),'ranking_ci95':np.quantile(means,[.025,.975]).tolist(),
+            'tie_count':int(np.sum(credit==.5)),'supplementary_wilson_ci95_tie_free':[max(0,float(center-half)),min(1,float(center+half))] if not np.any(credit==.5) else None,
             'pairwise_auroc':float(credit.mean()),'pooled_region_auroc':auc(p,n),
             'pooled_region_auroc_ci95':np.quantile(aucs,[.025,.975]).tolist(),
             'negative_score_gt_1_rate':float(np.mean(n>1)),

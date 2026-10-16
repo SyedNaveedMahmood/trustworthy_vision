@@ -1,0 +1,22 @@
+{
+  "internvl": {
+    "nvml_peak_device_used_bytes": 7623299072,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 5299863552,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 890,
+    "torch_peak_allocated_bytes": 5611240960,
+    "torch_peak_reserved_bytes": 6360662016,
+    "wall_seconds": 93.6912716999941
+  },
+  "qwen": {
+    "nvml_peak_device_used_bytes": 9477181440,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 4516392960,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 1269,
+    "torch_peak_allocated_bytes": 8131575808,
+    "torch_peak_reserved_bytes": 8214544384,
+    "wall_seconds": 133.42217500001425
+  }
+}

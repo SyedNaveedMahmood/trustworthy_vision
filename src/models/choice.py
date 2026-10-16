@@ -11,6 +11,8 @@ from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration, Auto
 from ..storage import atomic_json, cache_key, checkpoint, digest, read_checkpoint
 from ..scoring import choice_probabilities
 
+MODULE_SOURCE_SHA256=digest(Path(__file__).read_bytes())
+
 
 class Budget:
     """Single process ledger, persisted BEFORE each real forward, including failures."""
@@ -23,6 +25,8 @@ class Budget:
     def value(self): return self.state.value
 
     def forward(self, model, **inputs):
+        from ..resources import guard_forward
+        guard_forward('before')
         self.state.reserve()
         start = time.perf_counter()
         begin=torch.cuda.Event(enable_timing=True);end=torch.cuda.Event(enable_timing=True)
@@ -32,6 +36,7 @@ class Budget:
             end.record()
             torch.cuda.synchronize()
             device_seconds=begin.elapsed_time(end)/1000
+            guard_forward('after')
             return result
         except Exception:
             failed=True
@@ -86,8 +91,11 @@ class ChoiceModel:
         Path("outputs").mkdir(exist_ok=True)
         self.process_lock=FileLock("outputs/primary_model.lock",timeout=0)
         self.process_lock.acquire()
+        from ..resources import admit_model
+        admit_model(family)
         self.long_edge = long_edge
         self.processor_config = {"long_edge": long_edge, "dtype": "bfloat16", "attention": "sdpa", "batch_size": 1}
+        self.processor_config['label_continuation_separator']=' ' if family=='smol' else ''
         self.processor = AutoProcessor.from_pretrained(model_id, revision=revision, trust_remote_code=False)
         if family == "qwen":
             self.processor.image_processor.max_pixels = long_edge*long_edge
@@ -135,7 +143,7 @@ class ChoiceModel:
         prefix = tokenizer.encode(text, add_special_tokens=False)
         labels = []
         for label in "ABCD":
-            combined = tokenizer.encode(text+label, add_special_tokens=False)
+            combined = tokenizer.encode(text+self.processor_config['label_continuation_separator']+label, add_special_tokens=False)
             if combined[:len(prefix)] != prefix or len(combined) != len(prefix)+1:
                 raise RuntimeError("Multi-token/retokenized label: exact sequence adapter needed; cannot silently score first token")
             labels.append(combined[-1])
@@ -149,7 +157,7 @@ class ChoiceModel:
         image_hash = digest(image.convert("RGB").tobytes()+str(image.size).encode()) if image is not None else digest({"mode":"text_only"})
         key = cache_key(model_id=self.model_id, revision=self.revision, processor_revision=self.revision,
                         image_sha256=image_hash, prompt=prompt, options=options,
-                        processor_config=self.processor_config, code_sha256=digest(Path(__file__).read_bytes()))
+                        processor_config=self.processor_config, code_sha256=MODULE_SOURCE_SHA256)
         path = Path("outputs/cache") / f"{key}.json"
         if path.exists() and use_cache and not verify:
             row = dict(read_checkpoint(path,key))
@@ -166,6 +174,10 @@ class ChoiceModel:
                "wall_seconds":time.perf_counter()-start, "cache_hit":False, "retry_count":0,
                "processor_config":json.loads(json.dumps(self.processor_config)), "edit_params":None, "exception":None}
         row["preprocessing"]=dict(self.last_preprocess)
+        row['answer_step_total_label_mass']=float(torch.exp(torch.logsumexp(logits[label_ids].double(),dim=0)-torch.logsumexp(logits.double(),dim=0)).cpu())
+        row['unrestricted_argmax_in_label_set']=int(logits.argmax().cpu()) in label_ids
+        decoder=getattr(self,'tokenizer',None) or self.processor.tokenizer
+        row['answer_step_argmax_token']=decoder.convert_ids_to_tokens(int(logits.argmax().cpu()))
         if verify:
             # Independent full-vocabulary log-softmax then restrict/normalize choices.
             full = torch.log_softmax(logits.double(),dim=-1)[label_ids].cpu().numpy()

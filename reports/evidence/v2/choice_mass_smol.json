@@ -1,0 +1,5732 @@
+{
+  "cumulative_budget": {
+    "cuda_stream_seconds": 462.8306070365908,
+    "failed_calls": 0,
+    "forward_calls": 6701,
+    "forward_wall_seconds": 677.3227129998704,
+    "gpu_time_bound_scope": "prior measured model-process wall + entire current autonomous-session wall; conservative, not active kernel time",
+    "gpu_time_conservative_upper_bound_seconds": 3204.3896745823295
+  },
+  "manifest_sha256": "c18547bafe8bef5a3314a42db6ecc9f6244fee59490ffe19b89ff65026405bac",
+  "model": "smol",
+  "rows": [
+    {
+      "choice_logits": [
+        8.875,
+        10.25,
+        9.125,
+        9.0
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 8.648145199112852e-06,
+      "gold": "A",
+      "image_id": "420608",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          364
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.13564379513263702,
+        0.5364816188812256,
+        0.17417006194591522,
+        0.15370455384254456
+      ],
+      "top5_probabilities": [
+        0.5189806293245971,
+        0.21634331331427487,
+        0.1486904397790173,
+        0.11580023093513024,
+        5.3097074808457494e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120A",
+        "\u0120C",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.0625,
+        8.875,
+        8.5625,
+        8.3125
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 4.209679900551339e-06,
+      "gold": "A",
+      "image_id": "466207",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1616479903459549,
+        0.3642793893814087,
+        0.2665124535560608,
+        0.20756013691425323
+      ],
+      "top5_probabilities": [
+        0.28281618328941593,
+        0.28281618328941593,
+        0.28281618328941593,
+        0.15138059427578135,
+        3.7153294066147384e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        8.375,
+        10.875,
+        9.25,
+        8.125
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 2.8341752125886614e-06,
+      "gold": "C",
+      "image_id": "160628",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          314
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.061124060302972794,
+        0.7446434497833252,
+        0.1466289758682251,
+        0.04760346561670303
+      ],
+      "top5_probabilities": [
+        0.8239797554176237,
+        0.09841034798121245,
+        0.052675263441474704,
+        0.024882032606574206,
+        1.214480176446339e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.1875,
+        10.0,
+        9.8125,
+        9.0
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 5.111707538545552e-06,
+      "gold": "C",
+      "image_id": "192745",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          384
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.06916731595993042,
+        0.42370113730430603,
+        0.35126057267189026,
+        0.1558709293603897
+      ],
+      "top5_probabilities": [
+        0.39943511005527443,
+        0.3525002474073166,
+        0.1469439650713879,
+        0.1009930117766,
+        4.350198647304305e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        8.75,
+        8.875,
+        7.90625
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 3.3546683143567193e-06,
+      "gold": "C",
+      "image_id": "565476",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1142
+          ],
+          "input_ids": [
+            1,
+            1142
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.19134825468063354,
+        0.31547993421554565,
+        0.3574856221675873,
+        0.1356862336397171
+      ],
+      "top5_probabilities": [
+        0.36464978845198515,
+        0.3218023088370049,
+        0.22117127675385478,
+        0.09219790512248623,
+        5.7782888681279976e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        8.1875,
+        9.0625,
+        8.6875
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 3.824422534365689e-06,
+      "gold": "C",
+      "image_id": "48737",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          342
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1143
+          ],
+          "input_ids": [
+            1,
+            1143
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.17416207492351532,
+        0.16361013054847717,
+        0.3924803137779236,
+        0.2697475254535675
+      ],
+      "top5_probabilities": [
+        0.4287539713819906,
+        0.2600524291167303,
+        0.2025290354357306,
+        0.10840598082390235,
+        0.00013511665820191882
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        4.59375,
+        10.3125,
+        5.9375,
+        7.125
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 7.15015052562357e-07,
+      "gold": "B",
+      "image_id": "485788",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          384
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1140
+          ],
+          "input_ids": [
+            1,
+            1140
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.003106297692283988,
+        0.9459423422813416,
+        0.011907655745744705,
+        0.03904370591044426
+      ],
+      "top5_probabilities": [
+        0.9811441356230219,
+        0.012350781939552557,
+        0.005148571903930724,
+        0.0013017628391615182,
+        1.2762033813591539e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120Box"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        9.125,
+        8.5,
+        7.4375,
+        8.0
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 1.5115163736613024e-06,
+      "gold": "A",
+      "image_id": "92269",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          342
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "A",
+      "probabilities": [
+        0.4890226125717163,
+        0.26175493001937866,
+        0.09046008437871933,
+        0.1587623804807663
+      ],
+      "top5_probabilities": [
+        0.7844724870225969,
+        0.09369187764868442,
+        0.08268279182229889,
+        0.039056585344102286,
+        3.5614995811427704e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        8.0625,
+        8.625,
+        8.4375,
+        8.25
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 5.119119255558151e-06,
+      "gold": "A",
+      "image_id": "555654",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          384
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1153
+          ],
+          "input_ids": [
+            1,
+            1153
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1846287101507187,
+        0.3240334689617157,
+        0.2686331570148468,
+        0.2227047234773636
+      ],
+      "top5_probabilities": [
+        0.305918452450939,
+        0.2699720867314265,
+        0.23824953032478363,
+        0.1855489207833359,
+        0.00010262420798306164
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        6.53125,
+        9.0625,
+        8.5625,
+        8.1875
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 2.2868486566688165e-06,
+      "gold": "C",
+      "image_id": "203054",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          512,
+          397
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1475
+          ],
+          "input_ids": [
+            1,
+            1475
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.037832293659448624,
+        0.475521981716156,
+        0.28841865062713623,
+        0.19822704792022705
+      ],
+      "top5_probabilities": [
+        0.35198103524834284,
+        0.35198103524834284,
+        0.24191279186393333,
+        0.05397803999055323,
+        4.623941514303748e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.75,
+        10.0625,
+        9.5,
+        10.4375
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 3.630398233103469e-06,
+      "gold": "A",
+      "image_id": "220471",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          341
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1137
+          ],
+          "input_ids": [
+            1,
+            1137
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.08171001821756363,
+        0.3035895824432373,
+        0.17298011481761932,
+        0.44172021746635437
+      ],
+      "top5_probabilities": [
+        0.40423991307607055,
+        0.3567404711906983,
+        0.14871155332161723,
+        0.09019811654305096,
+        5.310461441458532e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        7.46875,
+        8.375,
+        8.9375,
+        8.25
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 3.6408673044034047e-06,
+      "gold": "D",
+      "image_id": "288317",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          321
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1141
+          ],
+          "input_ids": [
+            1,
+            1141
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.09996974468231201,
+        0.24742752313613892,
+        0.43424880504608154,
+        0.2183540016412735
+      ],
+      "top5_probabilities": [
+        0.4516145001211854,
+        0.21332758459010093,
+        0.18826093263661733,
+        0.14661776175915056,
+        6.72276229633364e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.0625,
+        9.75,
+        10.0,
+        10.0
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 9.703391727833976e-06,
+      "gold": "C",
+      "image_id": "208295",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          384
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1158
+          ],
+          "input_ids": [
+            1,
+            1158
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.04928852245211601,
+        0.2664512097835541,
+        0.3421301245689392,
+        0.3421301245689392
+      ],
+      "top5_probabilities": [
+        0.42079934265289093,
+        0.28921087672762064,
+        0.2252376572682385,
+        0.06453166924090178,
+        6.668042144461412e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.375,
+        9.5625,
+        7.0625,
+        7.78125
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 2.512810268952016e-06,
+      "gold": "A",
+      "image_id": "216716",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          384
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.08233368396759033,
+        0.7338321805000305,
+        0.0602366179227829,
+        0.12359750270843506
+      ],
+      "top5_probabilities": [
+        0.7663749760210482,
+        0.10371757444526082,
+        0.08077532819623585,
+        0.04899271309936741,
+        3.942605348662553e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        7.96875,
+        9.0625,
+        8.25,
+        8.5
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 7.97086132461473e-06,
+      "gold": "C",
+      "image_id": "218603",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          343
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.14262709021568298,
+        0.42580580711364746,
+        0.18895018100738525,
+        0.24261686205863953
+      ],
+      "top5_probabilities": [
+        0.3147458495418079,
+        0.27776223732200256,
+        0.21632144793404098,
+        0.190903007764406,
+        8.223004656798045e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120A",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        8.875,
+        9.0,
+        9.3125
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 8.915158141531759e-06,
+      "gold": "C",
+      "image_id": "236963",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          512,
+          512
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1476
+          ],
+          "input_ids": [
+            1,
+            1476
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.12692220509052277,
+        0.23712190985679626,
+        0.26869428157806396,
+        0.3672615885734558
+      ],
+      "top5_probabilities": [
+        0.3440602483581481,
+        0.3036321034785523,
+        0.20868308941756003,
+        0.1434256500216668,
+        7.000537757482952e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        7.0625,
+        9.3125,
+        6.78125,
+        7.59375
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 6.156691251411437e-06,
+      "gold": "C",
+      "image_id": "76245",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          340,
+          512
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1145
+          ],
+          "input_ids": [
+            1,
+            1145
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.07725806534290314,
+        0.7330041527748108,
+        0.05831744894385338,
+        0.13142040371894836
+      ],
+      "top5_probabilities": [
+        0.6899921583429316,
+        0.15395806079221908,
+        0.1058137245659409,
+        0.04998286430590073,
+        4.281701249402785e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120A",
+        "\u0120D",
+        "\u0120C",
+        "\u0120None"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        7.46875,
+        9.375,
+        9.625,
+        8.625
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 2.8450116039364874e-06,
+      "gold": "C",
+      "image_id": "385401",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.051165323704481125,
+        0.34423068165779114,
+        0.44200095534324646,
+        0.16260305047035217
+      ],
+      "top5_probabilities": [
+        0.49096291604473974,
+        0.29778406136305424,
+        0.15939232207537504,
+        0.05174711063974727,
+        3.2431295805495856e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.78125,
+        9.625,
+        9.8125,
+        9.6875
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 3.897384443255039e-06,
+      "gold": "A",
+      "image_id": "571653",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          512,
+          288
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.0461433082818985,
+        0.2916346490383148,
+        0.3517785668373108,
+        0.3104434907436371
+      ],
+      "top5_probabilities": [
+        0.39162195620990314,
+        0.3456051633393596,
+        0.20962012772031421,
+        0.05300026836534358,
+        8.482177207557981e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        6.9375,
+        9.5,
+        7.59375,
+        9.0
+      ],
+      "condition": "legacy_512_image",
+      "four_label_vocabulary_mass": 5.075418478711107e-06,
+      "gold": "A",
+      "image_id": "191806",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          512,
+          462
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1472
+          ],
+          "input_ids": [
+            1,
+            1472
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.04208514094352722,
+        0.5457683801651001,
+        0.08112122863531113,
+        0.33102527260780334
+      ],
+      "top5_probabilities": [
+        0.5788787796131061,
+        0.27344297358076847,
+        0.0783427235986044,
+        0.06913721091580947,
+        2.9780337878192943e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.8125,
+        10.3125,
+        9.1875,
+        9.0625
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 7.259167889786744e-06,
+      "gold": "A",
+      "image_id": "420608",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          455
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.12164405733346939,
+        0.5451708436012268,
+        0.1769910454750061,
+        0.1561940610408783
+      ],
+      "top5_probabilities": [
+        0.5339775762623709,
+        0.17335713764761007,
+        0.17335713764761007,
+        0.11914650210709322,
+        4.2546990545918884e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.0625,
+        8.875,
+        8.5625,
+        8.3125
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 4.209679900551339e-06,
+      "gold": "A",
+      "image_id": "466207",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1616479903459549,
+        0.3642793893814087,
+        0.2665124535560608,
+        0.20756013691425323
+      ],
+      "top5_probabilities": [
+        0.28281618328941593,
+        0.28281618328941593,
+        0.28281618328941593,
+        0.15138059427578135,
+        3.7153294066147384e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        8.4375,
+        10.875,
+        9.4375,
+        8.375
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 3.644035743781377e-06,
+      "gold": "C",
+      "image_id": "160628",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          393
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.062103744596242905,
+        0.7107397317886353,
+        0.1688154935836792,
+        0.058341074734926224
+      ],
+      "top5_probabilities": [
+        0.7875190045337884,
+        0.1207699508300302,
+        0.05704768534828321,
+        0.034601170229372945,
+        1.4904195971491942e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        10.0625,
+        10.125,
+        8.875
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 4.20711095239442e-06,
+      "gold": "C",
+      "image_id": "192745",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.06445455551147461,
+        0.39483198523521423,
+        0.42029646039009094,
+        0.12041694670915604
+      ],
+      "top5_probabilities": [
+        0.47448309604310457,
+        0.32610714487797293,
+        0.10587148920782073,
+        0.09343126129792022,
+        4.0244818860657046e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        8.75,
+        8.875,
+        7.90625
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 3.3546683143567193e-06,
+      "gold": "C",
+      "image_id": "565476",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1142
+          ],
+          "input_ids": [
+            1,
+            1142
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.19134825468063354,
+        0.31547993421554565,
+        0.3574856221675873,
+        0.1356862336397171
+      ],
+      "top5_probabilities": [
+        0.36464978845198515,
+        0.3218023088370049,
+        0.22117127675385478,
+        0.09219790512248623,
+        5.7782888681279976e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.8125,
+        8.125,
+        8.875,
+        8.5
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 4.099650103947547e-06,
+      "gold": "C",
+      "image_id": "48737",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1143
+          ],
+          "input_ids": [
+            1,
+            1143
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.13794679939746857,
+        0.1885509192943573,
+        0.39916229248046875,
+        0.2743399739265442
+      ],
+      "top5_probabilities": [
+        0.4391140543035896,
+        0.2350408159893048,
+        0.18304997154621255,
+        0.1425594611813887,
+        0.00010777163127261935
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        4.4375,
+        10.25,
+        5.90625,
+        6.75
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 7.557442877301414e-07,
+      "gold": "B",
+      "image_id": "485788",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1140
+          ],
+          "input_ids": [
+            1,
+            1140
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.0028579786885529757,
+        0.9558629989624023,
+        0.012414492666721344,
+        0.028864562511444092
+      ],
+      "top5_probabilities": [
+        0.9844191800025001,
+        0.008516894697487577,
+        0.005853570414174892,
+        0.0011526363561808859,
+        1.3630461186388781e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120Box"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        9.0625,
+        8.3125,
+        6.96875,
+        7.78125
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 1.3710043947037018e-06,
+      "gold": "A",
+      "image_id": "92269",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "A",
+      "probabilities": [
+        0.5338228344917297,
+        0.25216004252433777,
+        0.06577987223863602,
+        0.14823725819587708
+      ],
+      "top5_probabilities": [
+        0.8268282934020496,
+        0.07690701137571625,
+        0.06787019932610783,
+        0.02829250836706425,
+        3.7537946446088266e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        7.8125,
+        8.5,
+        8.4375,
+        8.125
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 5.384704267805863e-06,
+      "gold": "A",
+      "image_id": "555654",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1153
+          ],
+          "input_ids": [
+            1,
+            1153
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.16067299246788025,
+        0.319536417722702,
+        0.3001766800880432,
+        0.2196139544248581
+      ],
+      "top5_probabilities": [
+        0.28003736098782117,
+        0.28003736098782117,
+        0.24713210367971641,
+        0.19246667586784677,
+        0.00010000081193943472
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        6.125,
+        8.6875,
+        8.25,
+        7.96875
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 2.248787831322192e-06,
+      "gold": "C",
+      "image_id": "203054",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          640,
+          496
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1475
+          ],
+          "input_ids": [
+            1,
+            1475
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.03489026427268982,
+        0.452463835477829,
+        0.2921326160430908,
+        0.2205132693052292
+      ],
+      "top5_probabilities": [
+        0.32933933713104036,
+        0.32933933713104036,
+        0.29064094491740694,
+        0.05050582312646141,
+        5.218754777452777e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.625,
+        9.9375,
+        9.0625,
+        10.5
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 3.7335696462785607e-06,
+      "gold": "A",
+      "image_id": "220471",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          426
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1137
+          ],
+          "input_ids": [
+            1,
+            1137
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.07821604609489441,
+        0.29060786962509155,
+        0.1211433857679367,
+        0.5100326538085938
+      ],
+      "top5_probabilities": [
+        0.5109792915840992,
+        0.3099246068239977,
+        0.10061778830047731,
+        0.07836121231932457,
+        5.5650126067837556e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        7.375,
+        8.4375,
+        8.875,
+        8.3125
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 3.1714670080242334e-06,
+      "gold": "D",
+      "image_id": "288317",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          401
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1141
+          ],
+          "input_ids": [
+            1,
+            1141
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.09150072932243347,
+        0.2647661566734314,
+        0.410077840089798,
+        0.23365531861782074
+      ],
+      "top5_probabilities": [
+        0.44810637996476643,
+        0.211670465965212,
+        0.211670465965212,
+        0.12838462736356054,
+        6.266392595768003e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.90625,
+        9.5625,
+        9.875,
+        9.75
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 9.730011702281817e-06,
+      "gold": "C",
+      "image_id": "208295",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1158
+          ],
+          "input_ids": [
+            1,
+            1158
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.050705984234809875,
+        0.26568034291267395,
+        0.3631420135498047,
+        0.32047170400619507
+      ],
+      "top5_probabilities": [
+        0.4478679550559654,
+        0.27164564624424276,
+        0.21155784201295408,
+        0.06868277539851349,
+        8.041926201349687e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.25,
+        9.3125,
+        7.03125,
+        7.625
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 2.5151569343824963e-06,
+      "gold": "A",
+      "image_id": "216716",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.08989473432302475,
+        0.7070767879486084,
+        0.0722324401140213,
+        0.13079604506492615
+      ],
+      "top5_probabilities": [
+        0.7391226723359282,
+        0.10002937620718494,
+        0.10002937620718494,
+        0.06067088354158708,
+        4.586577443434928e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        7.84375,
+        8.875,
+        7.875,
+        8.3125
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 7.353346677282516e-06,
+      "gold": "C",
+      "image_id": "218603",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          429
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1554168462753296,
+        0.43587735295295715,
+        0.16035030782222748,
+        0.2483554482460022
+      ],
+      "top5_probabilities": [
+        0.31639958658939377,
+        0.31639958658939377,
+        0.2174580436767862,
+        0.1494565820059141,
+        9.366843020195765e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        8.0,
+        8.75,
+        8.9375,
+        9.1875
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 1.0380931106366297e-05,
+      "gold": "C",
+      "image_id": "236963",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          612,
+          612
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1476
+          ],
+          "input_ids": [
+            1,
+            1476
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.11173854768276215,
+        0.23655050992965698,
+        0.28533434867858887,
+        0.3663765788078308
+      ],
+      "top5_probabilities": [
+        0.35270137618751857,
+        0.3112578720228093,
+        0.18878744245874496,
+        0.14702780802091836,
+        7.639192662039129e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        7.125,
+        9.375,
+        6.75,
+        7.5
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 4.940806425469421e-06,
+      "gold": "C",
+      "image_id": "76245",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          425,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1145
+          ],
+          "input_ids": [
+            1,
+            1145
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.07917644828557968,
+        0.7512052655220032,
+        0.05441712960600853,
+        0.11520106345415115
+      ],
+      "top5_probabilities": [
+        0.6845057450714452,
+        0.17307015590989105,
+        0.09263777888633265,
+        0.04958542986152477,
+        2.742492624347099e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120A",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        7.46875,
+        9.375,
+        9.625,
+        8.625
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 2.8450116039364874e-06,
+      "gold": "C",
+      "image_id": "385401",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.051165323704481125,
+        0.34423068165779114,
+        0.44200095534324646,
+        0.16260305047035217
+      ],
+      "top5_probabilities": [
+        0.49096291604473974,
+        0.29778406136305424,
+        0.15939232207537504,
+        0.05174711063974727,
+        3.2431295805495856e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.09375,
+        8.8125,
+        9.5625,
+        9.625
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 3.23687724233734e-06,
+      "gold": "A",
+      "image_id": "571653",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          360
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.03230554237961769,
+        0.18018586933612823,
+        0.3814534842967987,
+        0.4060550928115845
+      ],
+      "top5_probabilities": [
+        0.4528619757933378,
+        0.39964929093596063,
+        0.1145014389149264,
+        0.03280521149652045,
+        0.00011114577954010725
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120C",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        6.96875,
+        9.5625,
+        7.4375,
+        9.125
+      ],
+      "condition": "legacy_768_image",
+      "four_label_vocabulary_mass": 5.281209157800539e-06,
+      "gold": "A",
+      "image_id": "191806",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          640,
+          578
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1472
+          ],
+          "input_ids": [
+            1,
+            1472
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.04062311351299286,
+        0.5435312390327454,
+        0.06491555273532867,
+        0.3509301543235779
+      ],
+      "top5_probabilities": [
+        0.5635362483945888,
+        0.3016392173379202,
+        0.06730480687165716,
+        0.06730480687165716,
+        3.496987363783406e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.5625,
+        9.8125,
+        8.25,
+        8.75
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 6.36723380389688e-06,
+      "gold": "A",
+      "image_id": "420608",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          455
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1142
+          ],
+          "input_ids": [
+            1,
+            1142
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1555648148059845,
+        0.542974591255188,
+        0.11381365358829498,
+        0.1876469850540161
+      ],
+      "top5_probabilities": [
+        0.41166792540930075,
+        0.28293495155593407,
+        0.17160872282298267,
+        0.13364900771642255,
+        3.081409752295959e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120A",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.5625,
+        9.875,
+        9.125,
+        8.8125
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 7.493658588983665e-06,
+      "gold": "A",
+      "image_id": "466207",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1142
+          ],
+          "input_ids": [
+            1,
+            1142
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1289568692445755,
+        0.47913289070129395,
+        0.2263263463973999,
+        0.16558389365673065
+      ],
+      "top5_probabilities": [
+        0.3127876635282487,
+        0.2760341442303521,
+        0.24359927729087522,
+        0.16742317160324766,
+        4.109061903093403e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        7.875,
+        10.4375,
+        9.375,
+        6.78125
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 3.2663523144600115e-06,
+      "gold": "C",
+      "image_id": "160628",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          393
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1140
+          ],
+          "input_ids": [
+            1,
+            1140
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.05323440581560135,
+        0.6903542876243591,
+        0.23858004808425903,
+        0.017831292003393173
+      ],
+      "top5_probabilities": [
+        0.6441091412475617,
+        0.26850463751384823,
+        0.07692786662692408,
+        0.010411054618743136,
+        7.393664351072298e-06
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.375,
+        9.8125,
+        9.4375,
+        6.5625
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 3.086887632183637e-06,
+      "gold": "C",
+      "image_id": "192745",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1140
+          ],
+          "input_ids": [
+            1,
+            1140
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.12096288055181503,
+        0.5092727541923523,
+        0.3500176966190338,
+        0.019746646285057068
+      ],
+      "top5_probabilities": [
+        0.3962861435280549,
+        0.34972129420070286,
+        0.24035969606904647,
+        0.013560166144516843,
+        2.617727882161749e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.375,
+        8.5625,
+        9.4375,
+        7.375
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 3.5720023994876248e-06,
+      "gold": "C",
+      "image_id": "565476",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1146
+          ],
+          "input_ids": [
+            1,
+            1146
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.1828920692205429,
+        0.22060994803905487,
+        0.5292157530784607,
+        0.06728223711252213
+      ],
+      "top5_probabilities": [
+        0.6118651851463595,
+        0.25506335685107584,
+        0.09383256518168594,
+        0.03911523263325289,
+        3.56684752167328e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        7.8125,
+        8.625,
+        6.625
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 2.241598680492366e-06,
+      "gold": "C",
+      "image_id": "48737",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1147
+          ],
+          "input_ids": [
+            1,
+            1147
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.3032552897930145,
+        0.19579632580280304,
+        0.4412338435649872,
+        0.059714507311582565
+      ],
+      "top5_probabilities": [
+        0.4958402361687363,
+        0.3861607642065221,
+        0.08616411316044134,
+        0.031698005798496076,
+        3.486589215965417e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        5.84375,
+        10.6875,
+        6.1875,
+        6.21875
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 1.1520983413402794e-06,
+      "gold": "B",
+      "image_id": "485788",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.007644691504538059,
+        0.9704515933990479,
+        0.010780743323266506,
+        0.011122961528599262
+      ],
+      "top5_probabilities": [
+        0.9837146845412224,
+        0.005849381331035485,
+        0.005849381331035485,
+        0.004555502761093693,
+        5.010777933823067e-06
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        9.375,
+        7.84375,
+        6.03125,
+        7.0
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 9.24209994849929e-07,
+      "gold": "A",
+      "image_id": "92269",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1148
+          ],
+          "input_ids": [
+            1,
+            1148
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "A",
+      "probabilities": [
+        0.7437244653701782,
+        0.1608416885137558,
+        0.026256686076521873,
+        0.06917715072631836
+      ],
+      "top5_probabilities": [
+        0.9366822427530775,
+        0.0320515038029615,
+        0.02202865493290351,
+        0.009182909586131093,
+        1.2969486183510764e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        8.5625,
+        8.875,
+        9.875,
+        8.75
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 5.286486971863316e-06,
+      "gold": "A",
+      "image_id": "555654",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1157
+          ],
+          "input_ids": [
+            1,
+            1157
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.13720208406448364,
+        0.18753300607204437,
+        0.5097675919532776,
+        0.165497288107872
+      ],
+      "top5_probabilities": [
+        0.5631794392810525,
+        0.23476811850010945,
+        0.12566231847908418,
+        0.07621804892813798,
+        4.776788616691488e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        9.375,
+        8.625,
+        8.4375
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 3.971700926693728e-06,
+      "gold": "C",
+      "image_id": "203054",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          640,
+          496
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1479
+          ],
+          "input_ids": [
+            1,
+            1479
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1483362764120102,
+        0.4569079577922821,
+        0.2158280313014984,
+        0.1789277195930481
+      ],
+      "top5_probabilities": [
+        0.29535140109788444,
+        0.29535140109788444,
+        0.230019902456269,
+        0.17913968015495046,
+        4.6801774392764514e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120C",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        9.125,
+        10.0625,
+        9.3125,
+        9.0625
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 4.82765760647732e-06,
+      "gold": "A",
+      "image_id": "220471",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          426
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1141
+          ],
+          "input_ids": [
+            1,
+            1141
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.17546221613883972,
+        0.44805845618247986,
+        0.21164782345294952,
+        0.1648314893245697
+      ],
+      "top5_probabilities": [
+        0.3307208080929361,
+        0.3307208080929361,
+        0.20059230991330376,
+        0.13786494401132973,
+        2.986029938493488e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120C",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        8.6875,
+        9.1875,
+        7.71875,
+        8.25
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 2.3870112962009514e-06,
+      "gold": "D",
+      "image_id": "288317",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          401
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1145
+          ],
+          "input_ids": [
+            1,
+            1145
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.27218833565711975,
+        0.4487626850605011,
+        0.10331103205680847,
+        0.17573799192905426
+      ],
+      "top5_probabilities": [
+        0.5716492977366013,
+        0.23829888080228062,
+        0.11256442084661525,
+        0.07736431962119367,
+        4.5548649133591563e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        8.4375,
+        9.3125,
+        9.0625,
+        10.3125
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 9.662897070707565e-06,
+      "gold": "C",
+      "image_id": "208295",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1162
+          ],
+          "input_ids": [
+            1,
+            1162
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.08483246713876724,
+        0.20350249111652374,
+        0.15848790109157562,
+        0.5531771779060364
+      ],
+      "top5_probabilities": [
+        0.636485235667328,
+        0.14201905256656197,
+        0.11060454934989745,
+        0.11060454934989745,
+        9.474759874559253e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120C",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        9.0,
+        10.625,
+        8.375,
+        7.25
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 3.023779937969185e-06,
+      "gold": "A",
+      "image_id": "216716",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1148
+          ],
+          "input_ids": [
+            1,
+            1148
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.1473306268453598,
+        0.7482067346572876,
+        0.07886040955781937,
+        0.025602228939533234
+      ],
+      "top5_probabilities": [
+        0.6879226721585263,
+        0.22333579286801467,
+        0.07250651620403427,
+        0.01617839057241089,
+        1.6717092775591367e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120A",
+        "\u0120C",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.375,
+        9.0,
+        7.78125,
+        7.8125
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 5.147883211243419e-06,
+      "gold": "C",
+      "image_id": "218603",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          429
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1148
+          ],
+          "input_ids": [
+            1,
+            1148
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.2506088614463806,
+        0.4681990444660187,
+        0.1383993774652481,
+        0.14279264211654663
+      ],
+      "top5_probabilities": [
+        0.5036938341422794,
+        0.2696078811992038,
+        0.12735374543387695,
+        0.09918319667097972,
+        5.153307788542516e-05
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120B",
+        "\u0120C",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        7.9375,
+        8.375,
+        8.625,
+        8.75
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 6.579112335315653e-06,
+      "gold": "C",
+      "image_id": "236963",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          612,
+          612
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1480
+          ],
+          "input_ids": [
+            1,
+            1480
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.14725148677825928,
+        0.2280675768852234,
+        0.2928445637226105,
+        0.3318363428115845
+      ],
+      "top5_probabilities": [
+        0.35532442526096275,
+        0.3135727047054512,
+        0.21551515806554405,
+        0.11535695137365912,
+        7.696005531471675e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        6.375,
+        8.8125,
+        7.5625,
+        7.21875
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 6.382208013825839e-06,
+      "gold": "C",
+      "image_id": "76245",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          425,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1149
+          ],
+          "input_ids": [
+            1,
+            1149
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.05540676787495613,
+        0.6340969204902649,
+        0.18167178332805634,
+        0.1288246065378189
+      ],
+      "top5_probabilities": [
+        0.48188489228954906,
+        0.25793439582862376,
+        0.13806233317541183,
+        0.12183958139090337,
+        3.839627892237657e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120None"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.3125,
+        10.0,
+        9.125,
+        8.5625
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 5.080516532118446e-06,
+      "gold": "C",
+      "image_id": "385401",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1140
+          ],
+          "input_ids": [
+            1,
+            1140
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.10056811571121216,
+        0.5436661243438721,
+        0.22663375735282898,
+        0.12913203239440918
+      ],
+      "top5_probabilities": [
+        0.3967227474346869,
+        0.3089679863643734,
+        0.16537864574803038,
+        0.1287970188118545,
+        3.3649323319540814e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        7.59375,
+        8.5,
+        10.125,
+        8.375
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 2.66997726205326e-06,
+      "gold": "A",
+      "image_id": "571653",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          360
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1148
+          ],
+          "input_ids": [
+            1,
+            1148
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.05485934764146805,
+        0.13577818870544434,
+        0.6895385980606079,
+        0.11982384324073792
+      ],
+      "top5_probabilities": [
+        0.8145062340126525,
+        0.085848325465738,
+        0.05900263369475973,
+        0.04055187755883933,
+        3.4738110194459804e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.0,
+        7.78125,
+        9.0,
+        7.5
+      ],
+      "condition": "numbered_768_image",
+      "four_label_vocabulary_mass": 3.393228395551952e-06,
+      "gold": "A",
+      "image_id": "191806",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          640,
+          578
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1476
+          ],
+          "input_ids": [
+            1,
+            1476
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.0818198174238205,
+        0.1787109225988388,
+        0.6045712232589722,
+        0.13489806652069092
+      ],
+      "top5_probabilities": [
+        0.7068303624165536,
+        0.1228286994276318,
+        0.09565908729788186,
+        0.07449937209548628,
+        4.3861896244487776e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.3125,
+        8.6875,
+        9.6875,
+        9.6875
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 6.223242350997261e-06,
+      "gold": "B",
+      "image_id": "420608",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          455
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.09647718816995621,
+        0.14037346839904785,
+        0.38157469034194946,
+        0.38157469034194946
+      ],
+      "top5_probabilities": [
+        0.4114086688292426,
+        0.3630668759382582,
+        0.13356483942802783,
+        0.09179768216232126,
+        6.519236282678906e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        8.0625,
+        8.125,
+        8.125,
+        10.0
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 3.999595395645534e-06,
+      "gold": "B",
+      "image_id": "466207",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          332
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1138
+          ],
+          "input_ids": [
+            1,
+            1138
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.09930127114057541,
+        0.10570565611124039,
+        0.10570565611124039,
+        0.6892874240875244
+      ],
+      "top5_probabilities": [
+        0.7397712372086783,
+        0.1285529651409667,
+        0.0779713147549657,
+        0.053588848684324265,
+        4.886670467006512e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120A",
+        "\u0120C",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        7.625,
+        9.4375,
+        10.0,
+        9.5625
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 3.586906343989493e-06,
+      "gold": "D",
+      "image_id": "160628",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          393
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.040293123573064804,
+        0.24682529270648956,
+        0.43319186568260193,
+        0.2796896994113922
+      ],
+      "top5_probabilities": [
+        0.47246341135763414,
+        0.2865635445808271,
+        0.19695205188274129,
+        0.04394594287815792,
+        2.587340446866306e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.59375,
+        8.875,
+        10.1875,
+        9.625
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 3.3385976462189917e-06,
+      "gold": "D",
+      "image_id": "192745",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.0390554778277874,
+        0.14064419269561768,
+        0.5225565433502197,
+        0.2977437674999237
+      ],
+      "top5_probabilities": [
+        0.5646880965437967,
+        0.30225575722370207,
+        0.08659772432319973,
+        0.046352421627729595,
+        5.098486460267858e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.46875,
+        9.3125,
+        7.90625,
+        8.9375
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 4.039447116806419e-06,
+      "gold": "D",
+      "image_id": "565476",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          327
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1142
+          ],
+          "input_ids": [
+            1,
+            1142
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.07568402588367462,
+        0.4783377945423126,
+        0.11722171306610107,
+        0.3287564516067505
+      ],
+      "top5_probabilities": [
+        0.4870732189814822,
+        0.29542484083719434,
+        0.10868072535534935,
+        0.10868072535534935,
+        3.217435600020762e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        6.90625,
+        8.625,
+        8.125,
+        8.8125
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 3.433692240786761e-06,
+      "gold": "D",
+      "image_id": "48737",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1143
+          ],
+          "input_ids": [
+            1,
+            1143
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.059922147542238235,
+        0.3342188894748688,
+        0.2027140110731125,
+        0.4031449556350708
+      ],
+      "top5_probabilities": [
+        0.39540942336196266,
+        0.34894759136969294,
+        0.18677818623480272,
+        0.0687118547750748,
+        5.194456134661569e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        4.90625,
+        7.40625,
+        10.4375,
+        8.125
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 1.0691380725215943e-06,
+      "gold": "C",
+      "image_id": "485788",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1140
+          ],
+          "input_ids": [
+            1,
+            1140
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.0034406986087560654,
+        0.041916292160749435,
+        0.8686363697052002,
+        0.08600664883852005
+      ],
+      "top5_probabilities": [
+        0.9259005288012877,
+        0.05223573339947466,
+        0.019216452412179185,
+        0.002600664030005158,
+        2.2500152513324003e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.875,
+        9.8125,
+        6.8125,
+        8.375
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 2.3606316662101703e-06,
+      "gold": "B",
+      "image_id": "92269",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          427
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.10064728558063507,
+        0.6986306309700012,
+        0.0347827672958374,
+        0.1659393161535263
+      ],
+      "top5_probabilities": [
+        0.6854262114972217,
+        0.15293926034130662,
+        0.13496842353478217,
+        0.026576858377903124,
+        2.5797978349720106e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120A",
+        "\u0120D",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        7.21875,
+        8.5625,
+        7.90625,
+        8.8125
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 4.5791721350936255e-06,
+      "gold": "B",
+      "image_id": "555654",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1153
+          ],
+          "input_ids": [
+            1,
+            1153
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.0851476788520813,
+        0.3264043629169464,
+        0.16933636367321014,
+        0.41911154985427856
+      ],
+      "top5_probabilities": [
+        0.4269405506477744,
+        0.2934316631413294,
+        0.15706265118573112,
+        0.12232051573471832,
+        7.20168454957153e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120B",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        6.125,
+        7.21875,
+        7.90625,
+        7.53125
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 1.581466503316749e-06,
+      "gold": "D",
+      "image_id": "203054",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          640,
+          496
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1475
+          ],
+          "input_ids": [
+            1,
+            1475
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.07141149789094925,
+        0.21319535374641418,
+        0.42398959398269653,
+        0.29140350222587585
+      ],
+      "top5_probabilities": [
+        0.41834271354093955,
+        0.3258056328979001,
+        0.13581599415245332,
+        0.11985719416098758,
+        6.629114074021642e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        8.625,
+        8.4375,
+        9.875,
+        8.875
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 3.14731418809114e-06,
+      "gold": "B",
+      "image_id": "220471",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          426
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1137
+          ],
+          "input_ids": [
+            1,
+            1137
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.1514371782541275,
+        0.12554584443569183,
+        0.5285677313804626,
+        0.19444920122623444
+      ],
+      "top5_probabilities": [
+        0.5731857775648577,
+        0.2108632635379785,
+        0.12789503434284896,
+        0.0879008859144433,
+        8.01552326216458e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        6.90625,
+        9.0,
+        7.71875,
+        8.875
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 2.7746421155127832e-06,
+      "gold": "A",
+      "image_id": "288317",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          401
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1141
+          ],
+          "input_ids": [
+            1,
+            1141
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.05396495386958122,
+        0.437941312789917,
+        0.12161191552877426,
+        0.3864818513393402
+      ],
+      "top5_probabilities": [
+        0.41867547304170255,
+        0.41867547304170255,
+        0.1058577373772251,
+        0.05666156372832162,
+        4.283482206550249e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.5,
+        8.8125,
+        9.5,
+        9.5625
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 8.929804853862433e-06,
+      "gold": "D",
+      "image_id": "208295",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1158
+          ],
+          "input_ids": [
+            1,
+            1158
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.12533344328403473,
+        0.17131051421165466,
+        0.34069162607192993,
+        0.3626643717288971
+      ],
+      "top5_probabilities": [
+        0.3403116455714004,
+        0.30032397313022746,
+        0.23389254544893673,
+        0.12519365799694068,
+        0.0001377054634459391
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        6.40625,
+        8.4375,
+        8.5625,
+        7.28125
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 1.8395619147223627e-06,
+      "gold": "B",
+      "image_id": "216716",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          480
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.05086167901754379,
+        0.3877496123313904,
+        0.43937790393829346,
+        0.12201084196567535
+      ],
+      "top5_probabilities": [
+        0.48876250789382303,
+        0.3359212315504124,
+        0.10905765666089691,
+        0.06614681244124768,
+        4.412965394587427e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120B",
+        "\u0120D",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.3125,
+        9.1875,
+        8.25,
+        8.25
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 6.36843256131838e-06,
+      "gold": "D",
+      "image_id": "218603",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          429
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "B",
+      "probabilities": [
+        0.07918912172317505,
+        0.5163779258728027,
+        0.2022164911031723,
+        0.2022164911031723
+      ],
+      "top5_probabilities": [
+        0.5027945711343812,
+        0.18496778585295118,
+        0.18496778585295118,
+        0.1271263761384378,
+        3.535489864857451e-05
+      ],
+      "top5_tokens": [
+        "\u0120B",
+        "\u0120D",
+        "\u0120C",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120B"
+    },
+    {
+      "choice_logits": [
+        8.25,
+        8.4375,
+        7.96875,
+        9.5625
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 7.855400902934919e-06,
+      "gold": "D",
+      "image_id": "236963",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          612,
+          612
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1476
+          ],
+          "input_ids": [
+            1,
+            1476
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.14977861940860748,
+        0.18066748976707458,
+        0.11305883526802063,
+        0.5564950704574585
+      ],
+      "top5_probabilities": [
+        0.5898386632352612,
+        0.21698951781229847,
+        0.10249859050993045,
+        0.09045468864430041,
+        9.949469501822435e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120A",
+        "\u0120B",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        6.75,
+        7.65625,
+        9.25,
+        7.40625
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 2.828559177247808e-06,
+      "gold": "D",
+      "image_id": "76245",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          425,
+          640
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1145
+          ],
+          "input_ids": [
+            1,
+            1145
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.05686643347144127,
+        0.14074577391147614,
+        0.6927749514579773,
+        0.10961291193962097
+      ],
+      "top5_probabilities": [
+        0.7650659469264737,
+        0.09137409696121733,
+        0.08063735754473879,
+        0.06280043720065143,
+        2.8795447859812825e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120A",
+        "\u0120D",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    },
+    {
+      "choice_logits": [
+        7.3125,
+        8.5625,
+        9.625,
+        9.625
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 2.124932858583112e-06,
+      "gold": "D",
+      "image_id": "385401",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          500,
+          375
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1136
+          ],
+          "input_ids": [
+            1,
+            1136
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.04050283879041672,
+        0.1413687914609909,
+        0.4090641736984253,
+        0.4090641736984253
+      ],
+      "top5_probabilities": [
+        0.49378574793714713,
+        0.3845607271629495,
+        0.08580709663866556,
+        0.03576971960754308,
+        3.26177622230603e-05
+      ],
+      "top5_tokens": [
+        "\u0120D",
+        "\u0120C",
+        "\u0120B",
+        "\u0120A",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120D"
+    },
+    {
+      "choice_logits": [
+        8.3125,
+        8.25,
+        7.84375,
+        8.875
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 2.296692665383504e-06,
+      "gold": "B",
+      "image_id": "571653",
+      "input_preprocessing": {
+        "image_token_count": 1053,
+        "native_input_size": [
+          640,
+          360
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1144
+          ],
+          "input_ids": [
+            1,
+            1144
+          ],
+          "pixel_attention_mask": [
+            1,
+            13,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            13,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "D",
+      "probabilities": [
+        0.23146802186965942,
+        0.2174440622329712,
+        0.14484895765781403,
+        0.40623900294303894
+      ],
+      "top5_probabilities": [
+        0.41277438741823863,
+        0.36427211836284934,
+        0.11826184201635187,
+        0.10436570927337928,
+        0.00022829906207837456
+      ],
+      "top5_tokens": [
+        "\u0120A",
+        "\u0120D",
+        "\u0120B",
+        "\u0120C",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120A"
+    },
+    {
+      "choice_logits": [
+        6.9375,
+        7.875,
+        9.3125,
+        7.90625
+      ],
+      "condition": "outer_rotation_768_image",
+      "four_label_vocabulary_mass": 3.0116843585388287e-06,
+      "gold": "B",
+      "image_id": "191806",
+      "input_preprocessing": {
+        "image_token_count": 1377,
+        "native_input_size": [
+          640,
+          578
+        ],
+        "tensor_shapes": {
+          "attention_mask": [
+            1,
+            1472
+          ],
+          "input_ids": [
+            1,
+            1472
+          ],
+          "pixel_attention_mask": [
+            1,
+            17,
+            384,
+            384
+          ],
+          "pixel_values": [
+            1,
+            17,
+            3,
+            384,
+            384
+          ]
+        }
+      },
+      "label_ids": [
+        49,
+        50,
+        51,
+        52
+      ],
+      "prediction": "C",
+      "probabilities": [
+        0.05903448909521103,
+        0.15074984729290009,
+        0.6346805095672607,
+        0.15553514659404755
+      ],
+      "top5_probabilities": [
+        0.7010720855366982,
+        0.10751288643338519,
+        0.10751288643338519,
+        0.0837311201445874,
+        5.946369707578438e-05
+      ],
+      "top5_tokens": [
+        "\u0120C",
+        "\u0120D",
+        "\u0120A",
+        "\u0120B",
+        "\u0120E"
+      ],
+      "unrestricted_argmax_is_label": false,
+      "unrestricted_argmax_token": "\u0120C"
+    }
+  ],
+  "selection": "first20_original_development_images_no_outcome_filter",
+  "status": "COMPLETE_DIAGNOSTIC",
+  "summary": {
+    "legacy_512_image": {
+      "greedy_label_fraction": 0.0,
+      "mean_label_mass": 4.598164540786243e-06,
+      "min_label_mass": 7.15015052562357e-07,
+      "n": 20
+    },
+    "legacy_768_image": {
+      "greedy_label_fraction": 0.0,
+      "mean_label_mass": 4.486147059526987e-06,
+      "min_label_mass": 7.557442877301414e-07,
+      "n": 20
+    },
+    "numbered_768_image": {
+      "greedy_label_fraction": 0.0,
+      "mean_label_mass": 4.325825065785752e-06,
+      "min_label_mass": 9.24209994849929e-07,
+      "n": 20
+    },
+    "outer_rotation_768_image": {
+      "greedy_label_fraction": 0.0,
+      "mean_label_mass": 3.7694457533890936e-06,
+      "min_label_mass": 1.0691380725215943e-06,
+      "n": 20
+    }
+  },
+  "telemetry": {
+    "nvml_peak_device_used_bytes": 6703665152,
+    "nvml_scope": "whole device including Windows desktop",
+    "peak_process_rss_bytes": 5653696512,
+    "sample_interval_seconds": 0.1,
+    "telemetry_samples": 300,
+    "torch_peak_allocated_bytes": 4911277568,
+    "torch_peak_reserved_bytes": 5507121152,
+    "wall_seconds": 31.658232999994652
+  }
+}

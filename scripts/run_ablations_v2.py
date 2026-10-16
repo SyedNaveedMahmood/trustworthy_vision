@@ -22,6 +22,8 @@ def run(key):
     edits=json.loads(Path('outputs/v2/edits_pairs_corrected.json').read_text())
     out=Path(f'reports/evidence/v2/E4_{key}.json');record=json.loads(out.read_text()) if out.exists() else {'rows':[],'status':'RUNNING','model':key,'selection':'first_six_per_task_before_E2_outcomes','manifest_sha256':digest(items),'human_audit':'HUMAN_AUDIT_PENDING'}
     if record['manifest_sha256']!=digest(items): raise ValueError('Ablation manifest changed')
+    if 'telemetry' in record:record.setdefault('previous_process_telemetry',[]).append(record['telemetry'])
+    record['status']='RUNNING'
     done={(r['task'],r['image_id'],r['factor'],r['variant']) for r in record['rows']};tm=Telemetry()
     with tm:
         if key=='internvl':
@@ -43,9 +45,8 @@ def run(key):
                     im,q,options,gold=present(im,item);row=model.score(im,q,options)
                     row.update(task=task,image_id=iid,factor=factor,variant=variant,gold=gold,correct=row['prediction']==gold,operator=operator,operator_params=params,mask_linear_scale=scale)
                     record['rows'].append(row);done.add(cell);atomic_json(out,record)
-            # Full matched factorial at reduced resolution; letter rotation only on RefCOCOg.
+            # Full matched factorial for resolution and answer position on both tasks.
             for factor,edge,style in [('resolution512',512,'legacy'),('outer_rotation',768,'outer_rotation')]:
-                if factor=='outer_rotation' and task!='refcocog':continue
                 model.set_long_edge(edge)
                 variants=[('clean',item['canonical_path'])]
                 for edit in edits:

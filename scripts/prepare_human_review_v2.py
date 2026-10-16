@@ -11,6 +11,10 @@ def run():
     edits=json.loads(Path('outputs/v2/edits_pairs_corrected.json').read_text())
     manifest=json.loads(Path('outputs/v2/pilot_manifest_corrected.json').read_text())['items']
     root=Path('outputs/v2/human_review');root.mkdir(parents=True,exist_ok=True)
+    if (root/'review_form.csv').exists():
+        with (root/'review_form.csv').open(newline='',encoding='utf-8') as stream:
+            if any(any(v for k,v in r.items() if k!='review_id') for r in csv.DictReader(stream)):
+                raise ValueError('Human ratings present: never overwrite reviewer work')
     groups=collections.defaultdict(list)
     for edit in edits:
         role='candidate' if edit['region_index']<2 else 'independent_control'
@@ -24,9 +28,11 @@ def run():
         review_id=f'V2_{index+1:04d}';item=next(x for x in manifest if x['dataset']==edit['task'] and x['image_id']==edit['image_id'])
         original=Image.open(item['canonical_path']).convert('RGB');modified=Image.open(edit[condition+'_path']).convert('RGB')
         panel=Image.new('RGB',(700,300),'white');d=ImageDraw.Draw(panel)
-        for j,im in enumerate([original,modified]):
+        # Neutral pointer reveals intended region geometry, never operator/role/gold.
+        for j,im in enumerate([original.copy(),modified.copy()]):
+            ImageDraw.Draw(im).rectangle(edit['expanded_box'],outline='#00ffff',width=2)
             thumb=ImageOps.contain(im,(340,250));panel.paste(thumb,(j*350,25))
-        d.text((4,4),review_id+'  original | edited',fill='black')
+        d.text((4,4),review_id+'  original | edited; cyan = intended edit extent',fill='black')
         d.text((4,278),item['question'][:100],fill='black')
         panel.save(root/f'{review_id}.jpg',quality=90);panels.append(panel)
         private.append({'review_id':review_id,'task':edit['task'],'image_id':edit['image_id'],'operator':edit['operator'],'condition':condition,'region_index':edit['region_index'],'edit_cache_key':edit['key'],'region_box':edit['box']})

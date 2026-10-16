@@ -16,7 +16,12 @@ def numbered_boxes(image, boxes, symbols="1234"):
 
 
 def present(image, item, style="legacy"):
-    if item['dataset']=='gqa': return image,item['question'],item['options'],item['gold']
+    if item['dataset']=='gqa':
+        options=item['options'].copy();gold=item['gold']
+        if style=='outer_rotation':
+            options=options[-1:]+options[:-1];gold='ABCD'[('ABCD'.index(gold)+1)%4]
+        elif style!='legacy':raise ValueError('Visual region relabeling is undefined for GQA color choices')
+        return image,item['question'],options,gold
     boxes=item['boxes']; question=item['question']; options=item['options'].copy(); gold=item['gold']
     if style=='legacy': image=overlay_boxes(image,boxes)
     elif style=='numbered':

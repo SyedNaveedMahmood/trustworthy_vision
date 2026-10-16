@@ -1,0 +1,82 @@
+{
+  "budget_projection": {
+    "blockers": [
+      "amended_protocol_locked",
+      "task_scope_qualified",
+      "independent_controls_validated",
+      "operator_human_audit_passed",
+      "two_independent_raters",
+      "frozen_single_comparator",
+      "image_disjointness_verified",
+      "cumulative_forward_budget_infeasible"
+    ],
+    "cap": 12000,
+    "current_calls": 6634,
+    "maximum_per_task_with_current_factorial": 53,
+    "note": "Maximum is a projection, never authorization to change the frozen sample plan.",
+    "projected_additional_calls": 12000,
+    "projected_total_calls": 18634,
+    "ready": false
+  },
+  "confirmatory_manifest_generated": false,
+  "confirmatory_model_forwards": 0,
+  "model_pins": {
+    "internvl": {
+      "attention": "eager",
+      "dynamic_tiles_max": 4,
+      "model_id": "OpenGVLab/InternVL2_5-2B",
+      "processor_revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "revision": "573169ee54df216786bb9a189e9a32a060a008cf",
+      "thumbnail": true,
+      "tile_edge": 448
+    },
+    "qwen": {
+      "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3"
+    },
+    "smol": {
+      "model_id": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "processor_revision": "482adb537c021c86670beed01cd58990d01e72e4",
+      "revision": "482adb537c021c86670beed01cd58990d01e72e4"
+    }
+  },
+  "parameter_coefficient": 0.5,
+  "planned_original_samples_per_task": 120,
+  "primary_comparator": null,
+  "required_work": [
+    "independent two-rater semantic audit with operator/control thresholds",
+    "resolve narrowed task scope and qualification",
+    "select one comparator using development only",
+    "resolve 25-image-factorial cumulative budget conflict",
+    "freeze and validate hashes/splits"
+  ],
+  "source_sha256": {
+    "configs/exploratory_v2.yaml": "80dc9f274a011320eaa0f062cb8478fc50f0d37bf9c75091c7399f460dc8644c",
+    "configs/runtime_v2.yaml": "ecf83df0e3b71dfdac94ec4d1b1dc7e41225ff5b58ad265815c6e4448c75e56f",
+    "docs/08_ESTIMATOR_AMENDMENT.md": "da7b9b64fde8d4d163284c472910eb146331ffbb5847af274494d2b31c82a701",
+    "docs/09_DEVELOPMENT_EXTENSION.md": "ea725c4a4219030d7c7c19ea03e9f829ee98a6a3d994fff38652471bc8498ae8",
+    "src/__init__.py": "f7b1b5f03075e9d60b97a87456b29cdc6cc550af1a60884107c730bd4d31e436",
+    "src/audit.py": "911b79fda4a26f27dc0ced39105de947a158f707befa570817218b6a97096321",
+    "src/budget.py": "dd02d1c3e1d01ff797ce234f8f4019092ee6186c43234044d194d677e2cbfe6b",
+    "src/cli.py": "46a2dd3f0cea53e8c1de78eeeb138767524635baeffb10e71d042aa7453302c7",
+    "src/data/__init__.py": "962f774e670efa8795ba30bfd5ac7b471fb2e41b54b6c3fae4d6864df8fc7955",
+    "src/edits/__init__.py": "ac83174daeabf18312f9c018990486fc1f00eecc954fda920509d2d6640570ad",
+    "src/edits/pilot.py": "38179a0f5f3165647fb57eecd7f173cd77c71b87bfbc982aa7bb4c8e281e2559",
+    "src/evaluation/__init__.py": "b6beaf2895f0b02e822b2c47d46d359724f467c2864aa6f9607faaf31179196b",
+    "src/evaluation/confirmatory.py": "a3682157dd3b239c27c6f33af66719039cf8ee6f7f7c14f4acaa579213cab4e5",
+    "src/evaluation/v2.py": "b4c7b41af947fcf751cd774cd0becfcf41a45a14d47e90713d85c6374cf0047a",
+    "src/execution.py": "036afb281a81bab75f81125e67e96f21ea5e7c6a13a4771fff8ae8a0e4308ce2",
+    "src/models/__init__.py": "04bb3aac14faee892f871db49b5e32be3a101c05731307d69369c86d4db530e8",
+    "src/models/choice.py": "f1029bda040f96339f22fb78210899115d0505d79ac58558d024e0f545b4ccbe",
+    "src/models/internvl.py": "264f5e029edbf02dee43ba2616feb52eca19bea62599c22e60e8da62e6822e0b",
+    "src/presentation.py": "6c08125139b624488be0ec4d74171cc5835abd1bb9971d8ccd9714bafe95b7a5",
+    "src/scoring/__init__.py": "dee6ac3f34da63f53499e0e15dd3c32b5ab15263d67e817afd1d38ddf6cb60f2",
+    "src/scoring/paper_baselines.py": "c8500c598b1260d50d5973f6b95156d5afd68fa07c6ca66a55b7dfb70eacfed8",
+    "src/scoring/v2.py": "3c959c7e54bc18711f6f1d8bede3c0f36497ba8d3cd9883a5b589d8fad446598",
+    "src/session.py": "4fd2e23506291fe56430e5345452ce017e1deae09ff999050093f4d79e6b064d",
+    "src/storage.py": "34dbfa672083172699bced944c5625805583d408470408e5f73ac7329a266951",
+    "src/synthetic.py": "387c6654a754f7862ee87d5374a1f959c6fb9e88715463c7db201862e48930ce"
+  },
+  "status": "NOT_LOCKED_DO_NOT_RUN_E5"
+}

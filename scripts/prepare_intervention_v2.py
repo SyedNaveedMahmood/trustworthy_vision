@@ -16,11 +16,12 @@ def select(cohort='legacy'):
     graphs=json.loads(zipfile.ZipFile('outputs/sceneGraphs.zip').read('val_sceneGraphs.json'))
     items=[]; excluded=[]
     for task in ['gqa','refcocog']:
-        source_path=Path('outputs/v2/gqa_hard_manifest.json') if task=='gqa' and cohort=='corrected' else Path(f'outputs/manifests/{task}_development.json')
+        if cohort=='extension':source_path=Path('outputs/manifests/gqa_development_extension.json') if task=='gqa' else Path('outputs/v2/ref_extension_source.json')
+        else:source_path=Path('outputs/v2/gqa_hard_manifest.json') if task=='gqa' and cohort=='corrected' else Path(f'outputs/manifests/{task}_development.json')
         source=json.loads(source_path.read_text()); random.Random(20266).shuffle(source)
         chosen=0
         for item in source:
-            if chosen>=16: break
+            if chosen>=(25 if cohort=='extension' else 16): break
             image=Image.open(Path('datasets')/item['image_path']).convert('RGB'); oldsize=image.size
             image.thumbnail((768,768)); scale=lambda b:resize_box(b,oldsize,image.size)
             positive=item['boxes']['ABCD'.index(item['gold'])] if task=='refcocog' else item['boxes'][0]
@@ -74,7 +75,7 @@ def prepare(mode='pairs',cohort='legacy'):
         if mode=='grid':
             # First eight preselected IDs per task; geometry uses no annotations.
             preceding=sum(r['dataset']==item['dataset'] for r in manifest['items'][:index])
-            if preceding>=8: continue
+            if preceding>=(12 if cohort=='extension' else 8): continue
             boxes=grid_candidates(image.size)
             regions=boxes+[independent_control(image.size,b,20267+int(item['image_id'])) for b in boxes]
         else: regions=item['regions']
@@ -88,7 +89,7 @@ def prepare(mode='pairs',cohort='legacy'):
         env.update(PYTHONPATH=str(repo),TORCH_HOME=str(root/'third_party_weights'),OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1')
         # Official predictor walks all input masks. Completed raw outputs are moved to
         # a separate batch input directory via links/copies so restart avoids repeats.
-        batch=root/f'outputs/v2/lama/batch_{mode}_{cohort}'; batch.mkdir(parents=True,exist_ok=True)
+        batch=root/f'outputs/v2/lama/batch_{mode}_{cohort}_{digest(sorted(e["key"] for e in pending))[:12]}'; batch.mkdir(parents=True,exist_ok=True)
         import shutil
         for e in pending:
             for suffix in ['.png','_mask001.png']:
@@ -110,4 +111,4 @@ def prepare(mode='pairs',cohort='legacy'):
     return entries
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(); p.add_argument('--mode',choices=['pairs','grid'],default='pairs'); p.add_argument('--cohort',choices=['legacy','corrected'],default='corrected'); args=p.parse_args(); prepare(args.mode,args.cohort)
+    p=argparse.ArgumentParser(); p.add_argument('--mode',choices=['pairs','grid'],default='pairs'); p.add_argument('--cohort',choices=['legacy','corrected','extension'],default='corrected'); args=p.parse_args(); prepare(args.mode,args.cohort)

@@ -16,9 +16,13 @@ def run(key,mode='pairs',cohort='corrected'):
     edits_path=Path(f'outputs/v2/edits_{mode}_{cohort}.json')
     if cohort=='legacy' and not edits_path.exists(): edits_path=Path(f'outputs/v2/edits_{mode}.json')
     edits=json.loads(edits_path.read_text()); mh=digest(manifest['items'])
+    from src.evaluation.integrity import validate_scoring_inputs
+    integrity=validate_scoring_inputs(manifest['items'],edits,mode)
     out=Path(f'reports/evidence/v2/E2_{mode}_{cohort}_{key}.json')
     result=json.loads(out.read_text()) if out.exists() else {'stage':'E2_EXPLORATORY','cohort':cohort,'mode':mode,'model':key,'manifest_sha256':mh,'status':'RUNNING','human_audit':'HUMAN_AUDIT_PENDING','rows':[]}
     if result['manifest_sha256']!=mh: raise ValueError('Pilot manifest changed; no checkpoint mixing')
+    if result.get('edit_manifest_sha256',integrity['edit_manifest_sha256'])!=integrity['edit_manifest_sha256']:raise ValueError('Edited image manifest changed; no checkpoint mixing')
+    result['edit_manifest_sha256']=integrity['edit_manifest_sha256'];result['status']='RUNNING'
     done={(r['task'],r['image_id'],r['variant']) for r in result['rows']}
     selected={(e['task'],e['image_id']) for e in edits}
     tm=Telemetry();update('D E2 computational scoring',model=key,mode=mode,cohort=cohort,completed=len(done))
@@ -49,6 +53,7 @@ def run(key,mode='pairs',cohort='corrected'):
                                canonical_image_sha256=item['canonical_sha256'],cohort=cohort,mode=mode)
                     result['rows'].append(row);done.add((task,iid,variant));atomic_json(out,result)
                 update('D E2 computational scoring',model=key,mode=mode,completed=len(done),last_image_id=iid)
+            if len(result['rows'])!=integrity['expected_score_rows']:raise ValueError('Incomplete score factorial')
             result['status']='COMPLETE_COMPUTATIONAL_ONLY'
     except Exception as e:
         result.update(status='ERROR',error=type(e).__name__,detail=str(e));raise
@@ -59,4 +64,4 @@ def run(key,mode='pairs',cohort='corrected'):
     update('D E2 computational scoring',status='COMPLETE_COMPUTATIONAL_ONLY',model=key,mode=mode,score_rows=len(result['rows']))
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--model',required=True,choices=['qwen','smol','internvl']);p.add_argument('--mode',choices=['pairs','grid'],default='pairs');p.add_argument('--cohort',choices=['corrected','legacy'],default='corrected');a=p.parse_args();run(a.model,a.mode,a.cohort)
+    p=argparse.ArgumentParser();p.add_argument('--model',required=True,choices=['qwen','smol','internvl']);p.add_argument('--mode',choices=['pairs','grid'],default='pairs');p.add_argument('--cohort',choices=['corrected','legacy','extension'],default='corrected');a=p.parse_args();run(a.model,a.mode,a.cohort)

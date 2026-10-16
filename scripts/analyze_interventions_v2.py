@@ -85,7 +85,7 @@ def run():
         ax.set_xticks(range(len(methods)),methods,rotation=30,ha='right');ax.set_title(task);ax.axhline(.5,color='gray',linestyle='--');ax.set_ylim(0,1);ax.legend()
     axes[0].set_ylabel('Oracle-region pair ranking accuracy');fig.suptitle('Exploratory development; human edit validity pending');fig.tight_layout();fig.savefig('reports/evidence/v2/E3_ranking.png',dpi=150);plt.close(fig)
     update('E E3 cached-score analysis',status='COMPLETE_EXPLORATORY',paired_images_per_model=31)
-    print(json.dumps(result['paired_effects'],indent=2))
+    print(json.dumps({k:v for k,v in result['paired_effects'].items() if k.startswith('joint/')},indent=2))
 
 
 if __name__=='__main__': run()

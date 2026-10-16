@@ -1,19 +1,20 @@
 {
   "budget": {
-    "cuda_stream_seconds": 194.09330491256696,
+    "cuda_stream_seconds": 676.7845839538576,
     "failed_calls": 0,
-    "forward_calls": 3771,
-    "forward_wall_seconds": 408.24908919974405,
+    "forward_calls": 7987,
+    "forward_wall_seconds": 891.4940912000748,
     "gpu_time_bound_scope": "prior measured model-process wall + entire current autonomous-session wall; conservative, not active kernel time",
-    "gpu_time_conservative_upper_bound_seconds": 2095.281286635247
+    "gpu_time_conservative_upper_bound_seconds": 3972.8225306652457
   },
   "current": {
-    "completed": 525,
-    "last_image": "220471",
-    "model": "qwen",
+    "completed": 700,
+    "last_image_id": "92269",
+    "mode": "pairs",
+    "model": "smol",
     "status": "RUNNING",
-    "task": "F E4 real-image ablations",
-    "timestamp_utc": "2026-10-16T07:50:06.666866+00:00"
+    "task": "D E2 computational scoring",
+    "timestamp_utc": "2026-10-16T08:21:24.304353+00:00"
   },
   "deadline_utc": "2026-10-16T09:18:11+00:00",
   "events": [
@@ -1119,8 +1120,1637 @@
       "status": "RUNNING",
       "task": "F E4 real-image ablations",
       "timestamp_utc": "2026-10-16T07:50:06.666866+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image": "218603",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:50:21.211097+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image": "275625",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:50:34.339226+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image": "565476",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:50:47.062012+00:00"
+    },
+    {
+      "model": "qwen",
+      "score_rows": 750,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:50:47.143185+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image": "1159758",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:00.498101+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image": "2346628",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:03.859158+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image": "2370398",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:10.425507+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image": "2403045",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:13.954517+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image": "2330750",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:17.609053+00:00"
+    },
+    {
+      "completed": 300,
+      "last_image": "2408571",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:21.472422+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image": "160628",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:32.874406+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image": "385401",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:39.453837+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image": "220471",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:51.640202+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image": "218603",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:51:59.275957+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image": "275625",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:52:11.938854+00:00"
+    },
+    {
+      "completed": 750,
+      "last_image": "565476",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:52:24.689380+00:00"
+    },
+    {
+      "model": "internvl",
+      "score_rows": 750,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T07:52:24.757496+00:00"
+    },
+    {
+      "completed": 20,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:00.253709+00:00"
+    },
+    {
+      "completed": 40,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:01.861676+00:00"
+    },
+    {
+      "completed": 60,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:03.190438+00:00"
+    },
+    {
+      "completed": 80,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:04.620167+00:00"
+    },
+    {
+      "completed": 100,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:06.078274+00:00"
+    },
+    {
+      "completed": 120,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:07.553960+00:00"
+    },
+    {
+      "completed": 140,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:09.355993+00:00"
+    },
+    {
+      "completed": 160,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:10.969180+00:00"
+    },
+    {
+      "completed": 180,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:12.853107+00:00"
+    },
+    {
+      "completed": 200,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:14.819749+00:00"
+    },
+    {
+      "completed": 220,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:16.518352+00:00"
+    },
+    {
+      "completed": 240,
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:18.016026+00:00"
+    },
+    {
+      "completed": 20,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:26.635186+00:00"
+    },
+    {
+      "completed": 40,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:27.373325+00:00"
+    },
+    {
+      "completed": 60,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:28.685722+00:00"
+    },
+    {
+      "completed": 80,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:29.419009+00:00"
+    },
+    {
+      "completed": 100,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:30.185647+00:00"
+    },
+    {
+      "completed": 120,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:30.969418+00:00"
+    },
+    {
+      "completed": 140,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:32.436034+00:00"
+    },
+    {
+      "completed": 160,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:33.286140+00:00"
+    },
+    {
+      "completed": 180,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:34.835472+00:00"
+    },
+    {
+      "completed": 200,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:35.804674+00:00"
+    },
+    {
+      "completed": 220,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:37.368049+00:00"
+    },
+    {
+      "completed": 240,
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 fill-halo factorial",
+      "timestamp_utc": "2026-10-16T07:53:38.901941+00:00"
+    },
+    {
+      "packets": 360,
+      "ratings": 0,
+      "status": "HUMAN_AUDIT_PENDING",
+      "task": "D blinded human review preparation",
+      "timestamp_utc": "2026-10-16T07:53:57.218021+00:00"
+    },
+    {
+      "failure_cases": 9,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "F E4 analysis",
+      "timestamp_utc": "2026-10-16T07:54:29.666451+00:00"
+    },
+    {
+      "edit_requests": 384,
+      "mode": "grid",
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T07:54:59.781718+00:00"
+    },
+    {
+      "cohort": "corrected",
+      "completed": 0,
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:55:16.701615+00:00"
+    },
+    {
+      "completed": 49,
+      "last_image_id": "1159758",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:55:34.310736+00:00"
+    },
+    {
+      "completed": 98,
+      "last_image_id": "2346628",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:55:42.424676+00:00"
+    },
+    {
+      "completed": 147,
+      "last_image_id": "2370398",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:55:49.445757+00:00"
+    },
+    {
+      "completed": 196,
+      "last_image_id": "2403045",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:55:57.171101+00:00"
+    },
+    {
+      "completed": 245,
+      "last_image_id": "2330750",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:56:04.736498+00:00"
+    },
+    {
+      "completed": 294,
+      "last_image_id": "2408571",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:56:13.048863+00:00"
+    },
+    {
+      "completed": 343,
+      "last_image_id": "2376280",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:56:20.011051+00:00"
+    },
+    {
+      "completed": 392,
+      "last_image_id": "2410072",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:56:27.077327+00:00"
+    },
+    {
+      "completed": 441,
+      "last_image_id": "160628",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:56:36.200687+00:00"
+    },
+    {
+      "completed": 490,
+      "last_image_id": "385401",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:56:44.142581+00:00"
+    },
+    {
+      "completed": 539,
+      "last_image_id": "220471",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:56:55.120124+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "task": "C fixed development extension preparation",
+      "timestamp_utc": "2026-10-16T07:57:00.590663+00:00"
+    },
+    {
+      "completed": 588,
+      "last_image_id": "218603",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:57:06.275543+00:00"
+    },
+    {
+      "completed": 637,
+      "last_image_id": "275625",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:57:16.206561+00:00"
+    },
+    {
+      "completed": 686,
+      "last_image_id": "565476",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:57:24.945676+00:00"
+    },
+    {
+      "completed": 735,
+      "last_image_id": "387421",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:57:37.007462+00:00"
+    },
+    {
+      "completed": 784,
+      "last_image_id": "360617",
+      "mode": "grid",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:57:48.240369+00:00"
+    },
+    {
+      "mode": "grid",
+      "model": "qwen",
+      "score_rows": 784,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:57:48.340342+00:00"
+    },
+    {
+      "cohort": "corrected",
+      "completed": 0,
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:57:52.073631+00:00"
+    },
+    {
+      "completed": 49,
+      "last_image_id": "1159758",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:06.572913+00:00"
+    },
+    {
+      "blockers": [
+        "amended_protocol_locked",
+        "task_scope_qualified",
+        "independent_controls_validated",
+        "operator_human_audit_passed",
+        "two_independent_raters",
+        "frozen_single_comparator",
+        "image_disjointness_verified",
+        "cumulative_forward_budget_infeasible"
+      ],
+      "cap": 12000,
+      "current_calls": 5630,
+      "maximum_per_task_with_current_factorial": 63,
+      "note": "Maximum is a projection, never authorization to change the frozen sample plan.",
+      "projected_additional_calls": 12000,
+      "projected_total_calls": 17630,
+      "ready": false,
+      "status": "BLOCKED",
+      "task": "H E5 readiness preparation",
+      "timestamp_utc": "2026-10-16T07:58:08.797556+00:00"
+    },
+    {
+      "completed": 98,
+      "last_image_id": "2346628",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:10.167467+00:00"
+    },
+    {
+      "completed": 147,
+      "last_image_id": "2370398",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:17.218304+00:00"
+    },
+    {
+      "completed": 196,
+      "last_image_id": "2403045",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:20.931878+00:00"
+    },
+    {
+      "completed": 245,
+      "last_image_id": "2330750",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:24.820418+00:00"
+    },
+    {
+      "completed": 294,
+      "last_image_id": "2408571",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:28.852445+00:00"
+    },
+    {
+      "completed": 343,
+      "last_image_id": "2376280",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:36.505118+00:00"
+    },
+    {
+      "completed": 392,
+      "last_image_id": "2410072",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:40.847346+00:00"
+    },
+    {
+      "completed": 441,
+      "last_image_id": "160628",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:48.959022+00:00"
+    },
+    {
+      "completed": 490,
+      "last_image_id": "385401",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:58:53.958551+00:00"
+    },
+    {
+      "completed": 539,
+      "last_image_id": "220471",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:59:02.520208+00:00"
+    },
+    {
+      "completed": 588,
+      "last_image_id": "218603",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:59:08.029443+00:00"
+    },
+    {
+      "completed": 637,
+      "last_image_id": "275625",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:59:16.776044+00:00"
+    },
+    {
+      "completed": 686,
+      "last_image_id": "565476",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:59:25.557819+00:00"
+    },
+    {
+      "completed": 735,
+      "last_image_id": "387421",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:59:31.387865+00:00"
+    },
+    {
+      "completed": 784,
+      "last_image_id": "360617",
+      "mode": "grid",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:59:37.336424+00:00"
+    },
+    {
+      "mode": "grid",
+      "model": "internvl",
+      "score_rows": 784,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T07:59:37.402746+00:00"
+    },
+    {
+      "gqa": 40,
+      "ref_safe": 60,
+      "status": "COMPLETE",
+      "task": "C fixed development extension preparation",
+      "timestamp_utc": "2026-10-16T08:00:26.438170+00:00"
+    },
+    {
+      "mode": "pairs",
+      "n": 50,
+      "status": "RUNNING",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T08:00:30.777460+00:00"
+    },
+    {
+      "mode": "pairs",
+      "pending": 200,
+      "status": "RUNNING",
+      "task": "D official LaMa CPU batch",
+      "timestamp_utc": "2026-10-16T08:01:02.019305+00:00"
+    },
+    {
+      "images_per_model": 16,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "E annotation-free grid analysis",
+      "timestamp_utc": "2026-10-16T08:01:03.675719+00:00"
+    },
+    {
+      "completed": 2,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:10.772864+00:00"
+    },
+    {
+      "completed": 26,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:14.311429+00:00"
+    },
+    {
+      "completed": 50,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:15.993775+00:00"
+    },
+    {
+      "completed": 74,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:17.240160+00:00"
+    },
+    {
+      "completed": 98,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:18.548084+00:00"
+    },
+    {
+      "completed": 122,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:19.882207+00:00"
+    },
+    {
+      "completed": 146,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:21.178659+00:00"
+    },
+    {
+      "completed": 170,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:22.378067+00:00"
+    },
+    {
+      "completed": 194,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:23.639977+00:00"
+    },
+    {
+      "completed": 218,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:25.137808+00:00"
+    },
+    {
+      "completed": 242,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:26.626686+00:00"
+    },
+    {
+      "completed": 266,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:29.732543+00:00"
+    },
+    {
+      "completed": 290,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:33.110560+00:00"
+    },
+    {
+      "completed": 314,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:34.314058+00:00"
+    },
+    {
+      "completed": 338,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:35.576656+00:00"
+    },
+    {
+      "completed": 362,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:36.977052+00:00"
+    },
+    {
+      "completed": 386,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:38.895839+00:00"
+    },
+    {
+      "completed": 410,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:40.309981+00:00"
+    },
+    {
+      "completed": 434,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:42.477473+00:00"
+    },
+    {
+      "completed": 458,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:44.609998+00:00"
+    },
+    {
+      "completed": 482,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:46.335540+00:00"
+    },
+    {
+      "completed": 506,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:47.643230+00:00"
+    },
+    {
+      "completed": 530,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:50.031381+00:00"
+    },
+    {
+      "completed": 554,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:52.209655+00:00"
+    },
+    {
+      "completed": 578,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:54.576223+00:00"
+    },
+    {
+      "completed": 602,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:56.002943+00:00"
+    },
+    {
+      "completed": 626,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:02:58.434145+00:00"
+    },
+    {
+      "completed": 650,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:03:00.932077+00:00"
+    },
+    {
+      "completed": 674,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:03:03.101664+00:00"
+    },
+    {
+      "completed": 698,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:03:05.975691+00:00"
+    },
+    {
+      "completed": 722,
+      "status": "RUNNING",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:03:07.264104+00:00"
+    },
+    {
+      "completed": 744,
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D structural edit diagnostics",
+      "timestamp_utc": "2026-10-16T08:03:09.520696+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image": "1159758",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:12.267839+00:00"
+    },
+    {
+      "completed": 800,
+      "last_image": "2346628",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:17.656048+00:00"
+    },
+    {
+      "completed": 825,
+      "last_image": "2370398",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:22.749515+00:00"
+    },
+    {
+      "completed": 850,
+      "last_image": "2403045",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:27.953835+00:00"
+    },
+    {
+      "completed": 875,
+      "last_image": "2330750",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:33.227399+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "2408571",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:38.561202+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "160628",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:38.669553+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "385401",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:38.787719+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "220471",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:38.941216+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "218603",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:39.097497+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "275625",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:39.205856+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "565476",
+      "model": "qwen",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:39.292554+00:00"
+    },
+    {
+      "model": "qwen",
+      "score_rows": 900,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:39.393458+00:00"
+    },
+    {
+      "attempt": 1,
+      "category": "SUCCESS",
+      "log": "outputs/v2/supervision/E4_corrected_pairs_qwen/attempt_1.log",
+      "model": "qwen",
+      "returncode": 0,
+      "stage": "E4",
+      "status": "RUNNING",
+      "task": "G stage supervision",
+      "timestamp_utc": "2026-10-16T08:06:39.929637+00:00"
+    },
+    {
+      "completed": 775,
+      "last_image": "1159758",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:53.435501+00:00"
+    },
+    {
+      "completed": 800,
+      "last_image": "2346628",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:06:56.493978+00:00"
+    },
+    {
+      "completed": 825,
+      "last_image": "2370398",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:01.194155+00:00"
+    },
+    {
+      "completed": 850,
+      "last_image": "2403045",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:04.189697+00:00"
+    },
+    {
+      "completed": 875,
+      "last_image": "2330750",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:07.347466+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "2408571",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:10.523661+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "160628",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:10.632706+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "385401",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:10.745661+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "220471",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:10.897329+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "218603",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:11.056689+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "275625",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:11.171054+00:00"
+    },
+    {
+      "completed": 900,
+      "last_image": "565476",
+      "model": "internvl",
+      "status": "RUNNING",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:11.254873+00:00"
+    },
+    {
+      "model": "internvl",
+      "score_rows": 900,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "F E4 real-image ablations",
+      "timestamp_utc": "2026-10-16T08:07:11.333685+00:00"
+    },
+    {
+      "attempt": 1,
+      "category": "SUCCESS",
+      "log": "outputs/v2/supervision/E4_corrected_pairs_internvl/attempt_1.log",
+      "model": "internvl",
+      "returncode": 0,
+      "stage": "E4",
+      "status": "RUNNING",
+      "task": "G stage supervision",
+      "timestamp_utc": "2026-10-16T08:07:11.897244+00:00"
+    },
+    {
+      "failure_cases": 9,
+      "status": "COMPLETE_EXPLORATORY",
+      "task": "F E4 analysis",
+      "timestamp_utc": "2026-10-16T08:08:12.007548+00:00"
+    },
+    {
+      "blockers": [
+        "amended_protocol_locked",
+        "task_scope_qualified",
+        "independent_controls_validated",
+        "operator_human_audit_passed",
+        "two_independent_raters",
+        "frozen_single_comparator",
+        "image_disjointness_verified",
+        "cumulative_forward_budget_infeasible"
+      ],
+      "cap": 12000,
+      "current_calls": 6634,
+      "maximum_per_task_with_current_factorial": 53,
+      "note": "Maximum is a projection, never authorization to change the frozen sample plan.",
+      "projected_additional_calls": 12000,
+      "projected_total_calls": 18634,
+      "ready": false,
+      "status": "BLOCKED",
+      "task": "H E5 readiness preparation",
+      "timestamp_utc": "2026-10-16T08:08:13.072144+00:00"
+    },
+    {
+      "model": "smol",
+      "status": "COMPLETE",
+      "summary": {
+        "legacy_512_image": {
+          "greedy_label_fraction": 0.0,
+          "mean_label_mass": 4.598164540786243e-06,
+          "min_label_mass": 7.15015052562357e-07,
+          "n": 20
+        },
+        "legacy_768_image": {
+          "greedy_label_fraction": 0.0,
+          "mean_label_mass": 4.486147059526987e-06,
+          "min_label_mass": 7.557442877301414e-07,
+          "n": 20
+        },
+        "numbered_768_image": {
+          "greedy_label_fraction": 0.0,
+          "mean_label_mass": 4.325825065785752e-06,
+          "min_label_mass": 9.24209994849929e-07,
+          "n": 20
+        },
+        "outer_rotation_768_image": {
+          "greedy_label_fraction": 0.0,
+          "mean_label_mass": 3.7694457533890936e-06,
+          "min_label_mass": 1.0691380725215943e-06,
+          "n": 20
+        }
+      },
+      "task": "A full-vocabulary choice audit",
+      "timestamp_utc": "2026-10-16T08:08:35.864195+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "task": "C dataset, distractor and split audit",
+      "timestamp_utc": "2026-10-16T08:08:51.772381+00:00"
+    },
+    {
+      "model": "qwen",
+      "status": "COMPLETE",
+      "summary": {
+        "legacy_512_image": {
+          "greedy_label_fraction": 1.0,
+          "mean_label_mass": 0.9995366106983876,
+          "min_label_mass": 0.9991575096354748,
+          "n": 20
+        },
+        "legacy_768_image": {
+          "greedy_label_fraction": 1.0,
+          "mean_label_mass": 0.9995251913128392,
+          "min_label_mass": 0.999277892390242,
+          "n": 20
+        },
+        "numbered_768_image": {
+          "greedy_label_fraction": 1.0,
+          "mean_label_mass": 0.9994549058724809,
+          "min_label_mass": 0.9989848585162929,
+          "n": 20
+        },
+        "outer_rotation_768_image": {
+          "greedy_label_fraction": 1.0,
+          "mean_label_mass": 0.9995522718414346,
+          "min_label_mass": 0.9993224024919105,
+          "n": 20
+        }
+      },
+      "task": "A full-vocabulary choice audit",
+      "timestamp_utc": "2026-10-16T08:08:56.563217+00:00"
+    },
+    {
+      "hard_duplicate_count": 0,
+      "legacy_null_group": 18,
+      "near_duplicate_count": 0,
+      "status": "COMPLETE",
+      "task": "C dataset, distractor and split audit",
+      "timestamp_utc": "2026-10-16T08:08:57.142292+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "task": "C fixed development extension preparation",
+      "timestamp_utc": "2026-10-16T08:12:57.724969+00:00"
+    },
+    {
+      "condition": "legacy_512_image",
+      "correct": 19,
+      "status": "RUNNING",
+      "task": "A corrected Smol development",
+      "timestamp_utc": "2026-10-16T08:13:29.535731+00:00"
+    },
+    {
+      "condition": "legacy_768_image",
+      "correct": 18,
+      "status": "RUNNING",
+      "task": "A corrected Smol development",
+      "timestamp_utc": "2026-10-16T08:13:43.279639+00:00"
+    },
+    {
+      "condition": "numbered_768_image",
+      "correct": 19,
+      "status": "RUNNING",
+      "task": "A corrected Smol development",
+      "timestamp_utc": "2026-10-16T08:13:57.097069+00:00"
+    },
+    {
+      "condition": "outer_rotation_768_image",
+      "correct": 15,
+      "status": "RUNNING",
+      "task": "A corrected Smol development",
+      "timestamp_utc": "2026-10-16T08:14:11.077628+00:00"
+    },
+    {
+      "condition": "visual_rotation_768_image",
+      "correct": 18,
+      "status": "RUNNING",
+      "task": "A corrected Smol development",
+      "timestamp_utc": "2026-10-16T08:14:25.099783+00:00"
+    },
+    {
+      "gqa": 20,
+      "ref_safe": 20,
+      "status": "COMPLETE",
+      "task": "C fixed development extension preparation",
+      "timestamp_utc": "2026-10-16T08:15:01.468877+00:00"
+    },
+    {
+      "metrics": {
+        "gqa": {
+          "image": 12,
+          "n": 20,
+          "passed": true,
+          "shuffled": 6,
+          "text_only": 7
+        },
+        "refcocog": {
+          "image": 13,
+          "n": 20,
+          "passed": true,
+          "text_only": 4
+        }
+      },
+      "model": "smol",
+      "status": "COMPLETE",
+      "task": "A fresh corrected qualification",
+      "timestamp_utc": "2026-10-16T08:15:42.901201+00:00"
+    },
+    {
+      "metrics": {
+        "gqa": {
+          "image": 13,
+          "n": 20,
+          "passed": true,
+          "shuffled": 8,
+          "text_only": 9
+        },
+        "refcocog": {
+          "image": 15,
+          "n": 20,
+          "passed": true,
+          "text_only": 4
+        }
+      },
+      "model": "qwen",
+      "status": "COMPLETE",
+      "task": "A fresh corrected qualification",
+      "timestamp_utc": "2026-10-16T08:16:01.705853+00:00"
+    },
+    {
+      "metrics": {
+        "gqa": {
+          "image": 13,
+          "n": 20,
+          "passed": true,
+          "shuffled": 8,
+          "text_only": 7
+        },
+        "refcocog": {
+          "image": 12,
+          "n": 20,
+          "passed": true,
+          "text_only": 5
+        }
+      },
+      "model": "internvl",
+      "status": "COMPLETE",
+      "task": "A fresh corrected qualification",
+      "timestamp_utc": "2026-10-16T08:16:15.901691+00:00"
+    },
+    {
+      "status": "RUNNING",
+      "task": "C dataset, distractor and split audit",
+      "timestamp_utc": "2026-10-16T08:16:40.054357+00:00"
+    },
+    {
+      "hard_duplicate_count": 0,
+      "legacy_null_group": 18,
+      "near_duplicate_count": 0,
+      "status": "COMPLETE",
+      "task": "C dataset, distractor and split audit",
+      "timestamp_utc": "2026-10-16T08:16:44.987280+00:00"
+    },
+    {
+      "cohort": "corrected",
+      "completed": 0,
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:17:01.120056+00:00"
+    },
+    {
+      "error_resolved": "E2 supervisor argument parser lacked Smol; added dispatch option, zero model calls in failed invocation",
+      "final_preferred_pair": [
+        "qwen",
+        "smol"
+      ],
+      "qualification_backbones": [
+        "qwen",
+        "smol",
+        "internvl"
+      ],
+      "status": "COMPLETE",
+      "task": "A corrected qualification and dispatch repair",
+      "timestamp_utc": "2026-10-16T08:17:07.929210+00:00"
+    },
+    {
+      "completed": 25,
+      "last_image_id": "1159758",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:17:14.352551+00:00"
+    },
+    {
+      "completed": 50,
+      "last_image_id": "2346628",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:17:24.796221+00:00"
+    },
+    {
+      "completed": 75,
+      "last_image_id": "2370398",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:17:33.147177+00:00"
+    },
+    {
+      "edit_requests": 600,
+      "mode": "pairs",
+      "status": "COMPLETE_COMPUTATIONAL_ONLY",
+      "task": "D E2 edit preparation",
+      "timestamp_utc": "2026-10-16T08:17:39.612452+00:00"
+    },
+    {
+      "completed": 100,
+      "last_image_id": "2403045",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:17:41.342220+00:00"
+    },
+    {
+      "completed": 125,
+      "last_image_id": "2330750",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:17:49.617514+00:00"
+    },
+    {
+      "completed": 150,
+      "last_image_id": "2408571",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:17:57.973353+00:00"
+    },
+    {
+      "completed": 175,
+      "last_image_id": "2376280",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:18:06.531763+00:00"
+    },
+    {
+      "completed": 200,
+      "last_image_id": "2410072",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:18:15.151294+00:00"
+    },
+    {
+      "completed": 225,
+      "last_image_id": "2373289",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:18:25.971380+00:00"
+    },
+    {
+      "completed": 250,
+      "last_image_id": "2367174",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:18:34.499436+00:00"
+    },
+    {
+      "completed": 275,
+      "last_image_id": "2447",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:18:43.420842+00:00"
+    },
+    {
+      "completed": 300,
+      "last_image_id": "1593212",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:18:52.464753+00:00"
+    },
+    {
+      "completed": 325,
+      "last_image_id": "2359534",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:19:01.437162+00:00"
+    },
+    {
+      "completed": 350,
+      "last_image_id": "2386490",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:19:10.500878+00:00"
+    },
+    {
+      "completed": 375,
+      "last_image_id": "2395818",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:19:19.479327+00:00"
+    },
+    {
+      "completed": 400,
+      "last_image_id": "160628",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:19:28.607967+00:00"
+    },
+    {
+      "completed": 425,
+      "last_image_id": "385401",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:19:37.641060+00:00"
+    },
+    {
+      "completed": 450,
+      "last_image_id": "220471",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:19:47.000733+00:00"
+    },
+    {
+      "completed": 475,
+      "last_image_id": "218603",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:19:56.461164+00:00"
+    },
+    {
+      "completed": 500,
+      "last_image_id": "275625",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:20:05.811394+00:00"
+    },
+    {
+      "completed": 525,
+      "last_image_id": "565476",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:20:15.351144+00:00"
+    },
+    {
+      "completed": 550,
+      "last_image_id": "387421",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:20:25.118247+00:00"
+    },
+    {
+      "completed": 575,
+      "last_image_id": "360617",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:20:34.870911+00:00"
+    },
+    {
+      "completed": 600,
+      "last_image_id": "485788",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:20:44.609753+00:00"
+    },
+    {
+      "completed": 625,
+      "last_image_id": "15117",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:20:54.365341+00:00"
+    },
+    {
+      "completed": 650,
+      "last_image_id": "555654",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:21:04.260511+00:00"
+    },
+    {
+      "completed": 675,
+      "last_image_id": "192745",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:21:14.237723+00:00"
+    },
+    {
+      "completed": 700,
+      "last_image_id": "92269",
+      "mode": "pairs",
+      "model": "smol",
+      "status": "RUNNING",
+      "task": "D E2 computational scoring",
+      "timestamp_utc": "2026-10-16T08:21:24.304353+00:00"
     }
   ],
-  "git_commit": "ef7c3e84211cfc3e424a5b9ec27adac109dfe31d",
+  "git_commit": "33720e1f2672dc610214a53379ee1a22920869a6",
   "started_utc": "2026-10-16T07:18:11+00:00"
 }
